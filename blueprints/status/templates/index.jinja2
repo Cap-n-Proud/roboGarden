@@ -1,0 +1,60 @@
+
+{#{% extends "layout.jinja2" %}
+{% block pagestyles %}
+  {% assets "status_less_bundle" %}
+    <link href="{{ ASSET_URL }}" rel="stylesheet" type="text/css">
+  {% endassets %}
+{% endblock %}
+#}
+
+{% block content %}
+
+  <div class="container">
+    <h1>{{ title }}</h1>
+    <h2>{{ subtitle }}</h2>
+    <div class="resource-links">
+      <p class="resource-link">Github repo found <a href="https://github.com/hackersandslackers/flask-blueprint-tutorial">here.</a></p>
+      <p class="resource-link">Tutorial found <a href="https://hackersandslackers.com/flask-blueprints/">here.</a></p>
+    </div>
+
+  {#  <div class="products">
+      {% for plant in plantsDB.plants %}
+          <div class="name">{{ plant.name }}</div>
+          <div class="price">{{ plant.latinName }}</div>
+      {% endfor %}
+    </div>
+  </div>
+#}
+
+
+<div class="status">
+{% for towers in status.towers %}
+ <table id={{towers.name}}>
+
+   {% for level in towers.levels  | reverse %}
+    <tr>
+      {% for pod in level.pods %}
+      <td><span style="podIDStatus" id="podID">{{pod.podID}}</span><br>
+        <div class="select">
+          <select style="color: black;" id="s{{pod.podID}}">
+            {% for plant in plantsDB.plants %}
+              <option value="{{plant.plantID}}"{% if plant.plantID == pod.plantID %} selected{% endif %}>{{plant.name}}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <br>
+        <span style="plantedDateStatus" id="plantedDateStatus">{{pod.plantedDate|iso8601_to_time|datetimeformat('%a, %B %d')}}</span>
+      </td>
+      {% endfor %}
+    </tr>
+   {% endfor %}
+
+ </table>
+ {% endfor %}
+
+</div>
+
+
+{% include "blueprintinfo.jinja2" %}
+
+{% endblock %}
