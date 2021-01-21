@@ -1,4 +1,6 @@
 {
   "readSerialInterval": "2",
-  "checkLightsInterval": "5"
+  "checkLightsInterval": "5",
+  "serialPort": "/dev/ttyACM0",
+  "serialBaud": "115200"
 }
