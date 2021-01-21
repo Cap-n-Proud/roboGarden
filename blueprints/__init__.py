@@ -17,7 +17,7 @@ def create_app():
     app.config.from_object("config.ProdConfig")
     assets = Environment()  # Create an assets environment
     assets.init_app(app)  # Initialize Flask-Assets
-
+    # init()
     # Using a development configuration
     # app.config.from_object("config.DevConfig")
 
@@ -27,7 +27,8 @@ def create_app():
         from .cmd import cmd
         from .control import control
         from .status import status
-
+        from blueprints.threads import init
+        init()
         # Register Blueprints
         app.register_blueprint(status.status_bp)
         app.register_blueprint(control.control_bp)

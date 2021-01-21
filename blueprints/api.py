@@ -3,6 +3,17 @@ import json
 from flask import current_app as app
 
 
+# Retrieve the current program, used to populate the indey.html file
+def getCurrentProgr():
+    with open("currentProgram.json") as f:
+        data = json.load(f)
+    return data
+
+def getAppConf():
+    with open("assets/appConfig.json") as f:
+        data = json.load(f)
+    return data
+
 def getPlantsDB(app):
     with open("plants.json") as f:
         data = json.load(f)
