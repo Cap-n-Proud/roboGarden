@@ -12,7 +12,8 @@ class Config:
     TEMPLATES_FOLDER = "templates"
     ASSETS_FOLDER = "assets"
     FLASK_APP = "wsgi.py"
-
+    JSON_PATH = "assets"
+    
 
 class ProdConfig(Config):
     FLASK_ENV = "production"

@@ -1,7 +1,7 @@
 """Initialize Flask app."""
 from flask import Flask
 from flask_assets import Environment
-
+import config
 # Globally accessible libraries
 # plantsDB = getPLantsDB()
 # status = getStatus()
@@ -20,9 +20,9 @@ def create_app():
     # init()
     # Using a development configuration
     # app.config.from_object("config.DevConfig")
-
+    
     with app.app_context():
-        # Import parts of our application
+        # Import parts of ou    r application
         # from .assets import compile_static_assets
         from .cmd import cmd
         from .control import control

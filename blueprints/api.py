@@ -1,11 +1,12 @@
 import json
+import config
 
 from flask import current_app as app
 
 
 # Retrieve the current program, used to populate the indey.html file
 def getCurrentProgr():
-    with open("currentProgram.json") as f:
+    with open(config.Config.CURRENTPROGRAM) as f:
         data = json.load(f)
     return data
 

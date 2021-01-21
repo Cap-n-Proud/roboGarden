@@ -3,6 +3,7 @@ import time
 from threading import Lock
 import serial
 from serial.tools import list_ports
+import config
 
 import json
 
@@ -116,10 +117,12 @@ def init():
     appConf = getAppConf()
     # currentProgram = getCurrentProgr()
     initSerial(appConf);
+
     # Setup and start the thread to read serial port
     thread_lock = Lock()
     thread = threading.Thread(target=read_from_port, args=(serial.Serial(appConf['serialPort'], appConf['serialBaud'], timeout=0.5),))
     thread.start()
+    print(config.CURRENTPROGRAM)
 
     checkL = RepeatedTimer(
         int(appConf['readSerialInterval']), testThread, "param"
