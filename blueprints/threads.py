@@ -19,7 +19,8 @@ from blueprints.api import getCurrentProgr
 from blueprints.L_events import *
 
 dataJSON = ""
-
+# LOG = logging.getLogger(__name__)
+LOG = logging.getLogger('werkzeug')
 def testThread(param):
     # time.sleep(2)
     print("Test thread ", param)
@@ -30,16 +31,16 @@ def handle_data(data):
         dataJSON = json.loads(data.decode())
         if dataJSON["type"] == "I":
             print(dataJSON)
+            LOG.info("Info from Arduino: " + dataJSON["message"])
             # broadcastInfo(dataJSON["message"])
-            # app.logger.info("Info from Arduino: " + dataJSON["message"])
 
         if dataJSON["type"] == "T":
             print(dataJSON)
             # socketio.emit("telemetry", dataJSON)
 
     except ValueError as e:
-        # app.logger.warning("Received non-JSON from Arduino: " + str(data))
-        print(e)
+        LOG.warning("Received non-JSON from Arduino: " + str(data) + e)
+
 
 def read_from_port(ser):
     while True:
@@ -52,12 +53,11 @@ def read_from_port(ser):
                 # read the bytes and convert from binary array to ASCII
                 handle_data(data_str)
         except ValueError as e:
-            print(e)
+            LOG.warning(e)
 
 
 def write_to_ser(ser, message):
     ser.write(str(message + "\n\c").encode())
-
 
 # Calculate if a time is between a time range (specified as list)
 def is_between(startTime, endTime, nowTime):
@@ -82,12 +82,12 @@ def activatePump(currentProgram):
     if is_between(currentProgram["pumpON"], currentProgram["pumpOFF"], timeNow):
         # Pump ON
         arduinoCommand("pumpStart")
-        app.logger.info("Pump is ON")
+        LOG.info("Pump is ON")
         # We stop the thread so the pump continues pumping
         time.sleep(currentProgram["pumpRunTime"])
         # Pump OFF
         arduinoCommand("pumpStop")
-        app.logger.info("Pump is OFF")
+        LOG.info("Pump is OFF")
 
 
 # Function to check the lights. If we are in the time range it will switch the light on and give the current proram RGB color
@@ -96,21 +96,21 @@ def checkLights(currentProgram):
     obj_now = datetime.now()
     timeNow = str(obj_now.hour).zfill(2) + ":" + str(obj_now.minute).zfill(2)
     if is_between(currentProgram["lightsON"], currentProgram["lightsOFF"], timeNow):
-        try:
-            # test = dataJSON["brightness"]
 
+            # test = dataJSON["brightness"]
+        
+        try:
             if dataJSON["brightness"] == 0:  # print("Lights should be ON")
                 arduinoCommand(
                     "setBrightness " + str(currentProgram["lightBrightness"])
                 )
-                app.logger.info("RGB set to " + str(currentProgram["RGB"]))
+                LOG.info("RGB set to " + str(currentProgram["RGB"]))
                 arduinoCommand("setLightRGB " + str(currentProgram["RGB"]))
-                # print("Brightness set to default")
-                app.logger.info("Lights set to " + str(currentProgram["lightBrightness"]))
+                LOG.info("Lights set to " + str(currentProgram["lightBrightness"]))
 
         except ValueError as e:
-            print(e)
+            LOG.error(e)
     else:
         if dataJSON["brightness"] != 0:  # print("Lights should be ON")
             arduinoCommand("setBrightness 0")
-            app.logger.info("Lights OFF, RGB also set")
+            LOG.info("Lights set to " + str(currentProgram["lightBrightness"]))

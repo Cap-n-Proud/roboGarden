@@ -1,0 +1,15 @@
+2021-01-21 23:30:22,340 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-21 23:30:22,717 INFO werkzeug Thread-3 : Pump is ON
+2021-01-21 23:30:27,840 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-21 23:30:28,223 INFO werkzeug Thread-3 : Pump is OFF
+2021-01-21 23:30:32,338 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-21 23:30:32,717 INFO werkzeug Thread-9 : Pump is ON
+2021-01-21 23:30:37,834 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-21 23:30:38,222 INFO werkzeug Thread-9 : Pump is OFF
+2021-01-21 23:30:39,596 INFO werkzeug Thread-19 : 127.0.0.1 - - [21/Jan/2021 23:30:39] "[37mGET /status HTTP/1.1[0m" 200 -
+2021-01-21 23:30:42,335 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-21 23:30:42,717 INFO werkzeug Thread-15 : Pump is ON
+2021-01-21 23:30:47,832 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-21 23:30:48,223 INFO werkzeug Thread-15 : Pump is OFF
+2021-01-21 23:30:52,329 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-21 23:30:52,716 INFO werkzeug Thread-22 : Pump is ON

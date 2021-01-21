@@ -3,7 +3,6 @@ import config
 
 from flask import current_app as app
 
-
 # Retrieve the current program, used to populate the indey.html file
 def getCurrentProgr():
     with open(config.JSON_Path.CURRENTPROGRAM) as f:
@@ -15,20 +14,13 @@ def getPlantsDB(app):
         data = json.load(f)
     return data
 
-
 def getStatus(app):
     with open(config.JSON_Path.STATUS) as f:
         data = json.load(f)
     return data
 
-    # plantsDB = getPLantsDB()
-    # status = getStatus()
-    # currentProgram = getCurrentProgram()
-    # programs = getPrograms()
-
-
 def newPlant(r):
-    with open("status.json", "r") as f:
+    with open(config.JSON_Path.STATUS, "r") as f:
         data = json.load(f)
         try:
             newPlant = r["plantName"]
@@ -49,24 +41,19 @@ def newPlant(r):
                 + " in "
                 + r["podID"]
             )
-
+            app.logging.info("Planted!!!")
         except Exception as e:
             print(e)
-
 
 @app.template_filter("upperstring")
 def upperstring(input):
     """Custom filter"""
     return input.upper()
 
-
 # https://stackabuse.com/converting-strings-to-datetime-in-python/
 @app.template_filter("formatDate")
 def formatDate(input):
     from datetime import datetime
-
-    # 2021-01-19T23:02:27.000Z
-    # 2016-04-26T18:09:16Z
     if len(input) == 20:
         format = "%Y-%m-%dT%H:%M:%SZ"
     else:

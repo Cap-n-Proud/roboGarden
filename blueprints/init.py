@@ -32,11 +32,7 @@ def initSerial():
     time.sleep(2)
 
 def init():
-    logging.basicConfig(
-        filename=config.Config.LOGFILE,
-        level=logging.ERROR,
-        format=f"%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s",
-    )# currentProgram = getCurrentProgr()
+    # currentProgram = getCurrentProgr()
     initSerial();
     currentProgram = getCurrentProgr();
     # Setup and start the thread to read serial port
@@ -50,7 +46,7 @@ def init():
 
     checkP = RepeatedTimer(
             int(currentProgram["pumpStartEvery"]), activatePump, currentProgram
-        )  
+        )
 
     obj_now = datetime.now()
     timeNow = str(obj_now.hour).zfill(2) + ":" + str(obj_now.minute).zfill(2)
