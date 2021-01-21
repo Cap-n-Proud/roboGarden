@@ -20,6 +20,7 @@ def getStatus(app):
     return data
 
 def newPlant(r):
+    print(config.JSON_Path.STATUS)
     with open(config.JSON_Path.STATUS, "r") as f:
         data = json.load(f)
         try:
@@ -32,7 +33,7 @@ def newPlant(r):
             currentPod["plantName"] = r["plantName"]
             currentPod["plantID"] = r["plantID"]
             currentPod["plantedDate"] = r["plantedDate"]
-            json.dump(data, open("status.json", "w"), indent=4)
+            json.dump(data, open(config.JSON_Path.STATUS, "w"), indent=4)
             I = (
                 "Planted: "
                 + currentPod["plantID"]
@@ -41,7 +42,7 @@ def newPlant(r):
                 + " in "
                 + r["podID"]
             )
-            app.logging.info("Planted!!!")
+            # app.logging.info("Planted!!!")
         except Exception as e:
             print(e)
 

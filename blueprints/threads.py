@@ -40,7 +40,7 @@ def handle_data(data):
             # socketio.emit("telemetry", dataJSON)
 
     except ValueError as e:
-        LOG.warning("Received non-JSON from Arduino: " + str(data) + e)
+        LOG.warning("Received non-JSON from Arduino: " + str(data) + str(e))
 
 
 def read_from_port(ser):

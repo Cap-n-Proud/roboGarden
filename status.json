@@ -14,9 +14,9 @@
                         },
                         {
                             "podID": "00-00-01",
-                            "plantID": "003",
-                            "plantName": "Basilico Grande Genovese",
-                            "plantedDate": "2021-01-21T00:13:32.700Z"
+                            "plantID": "020",
+                            "plantName": "Smooth-Leaf Spinach",
+                            "plantedDate": "2021-01-21T23:38:54.146Z"
                         }
                     ]
                 },
@@ -167,9 +167,9 @@
                         },
                         {
                             "podID": "00-09-01",
-                            "plantID": "004",
-                            "plantName": "Broccoletti Marathon",
-                            "plantedDate": "2021-01-21T23:23:11.200Z"
+                            "plantID": "001",
+                            "plantName": "Tomato Montfavet",
+                            "plantedDate": "2021-01-21T00:24:45.600Z"
                         }
                     ]
                 }
