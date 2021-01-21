@@ -144,9 +144,9 @@
                     "pods": [
                         {
                             "podID": "00-08-00",
-                            "plantID": "002",
-                            "plantName": "Babyleaf Salad",
-                            "plantedDate": "2021-01-21T22:10:15.300Z"
+                            "plantID": "005",
+                            "plantName": "Cayenne Pepper",
+                            "plantedDate": "2021-01-21T00:22:20.200Z"
                         },
                         {
                             "podID": "00-08-01",
@@ -167,9 +167,9 @@
                         },
                         {
                             "podID": "00-09-01",
-                            "plantID": "001",
-                            "plantName": "Tomato Montfavet",
-                            "plantedDate": "2021-01-21T00:24:45.600Z"
+                            "plantID": "004",
+                            "plantName": "Broccoletti Marathon",
+                            "plantedDate": "2021-01-21T23:23:11.200Z"
                         }
                     ]
                 }

@@ -373,3 +373,51 @@
 2021-01-22 00:15:34,122 INFO werkzeug Thread-69 : Pump is OFF
 2021-01-22 00:15:38,223 INFO werkzeug Thread-1 : Info from Arduino: Pump start
 2021-01-22 00:15:38,619 INFO werkzeug Thread-71 : Pump is ON
+2021-01-22 00:15:43,728 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:15:44,122 INFO werkzeug Thread-71 : Pump is OFF
+2021-01-22 00:15:48,225 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:15:48,619 INFO werkzeug Thread-73 : Pump is ON
+2021-01-22 00:15:53,730 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:15:54,122 INFO werkzeug Thread-73 : Pump is OFF
+2021-01-22 00:15:58,227 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:15:58,619 INFO werkzeug Thread-75 : Pump is ON
+2021-01-22 00:16:03,728 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:16:04,122 INFO werkzeug Thread-75 : Pump is OFF
+2021-01-22 00:16:08,245 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:16:08,639 INFO werkzeug Thread-77 : Pump is ON
+2021-01-22 00:16:13,750 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:16:14,145 INFO werkzeug Thread-77 : Pump is OFF
+2021-01-22 00:16:18,247 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:16:18,639 INFO werkzeug Thread-79 : Pump is ON
+2021-01-22 00:16:23,752 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:16:24,145 INFO werkzeug Thread-79 : Pump is OFF
+2021-01-22 00:16:28,245 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:16:28,639 INFO werkzeug Thread-81 : Pump is ON
+2021-01-22 00:16:33,750 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:16:34,142 INFO werkzeug Thread-81 : Pump is OFF
+2021-01-22 00:16:38,247 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:16:38,639 INFO werkzeug Thread-83 : Pump is ON
+2021-01-22 00:16:43,748 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:16:44,142 INFO werkzeug Thread-83 : Pump is OFF
+2021-01-22 00:16:48,245 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:16:48,640 INFO werkzeug Thread-85 : Pump is ON
+2021-01-22 00:16:53,750 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:16:54,144 INFO werkzeug Thread-85 : Pump is OFF
+2021-01-22 00:16:58,247 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:16:58,640 INFO werkzeug Thread-87 : Pump is ON
+2021-01-22 00:22:54,504 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:22:54,886 INFO werkzeug Thread-3 : Pump is ON
+2021-01-22 00:23:00,004 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:23:00,392 INFO werkzeug Thread-3 : Pump is OFF
+2021-01-22 00:23:04,501 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:23:04,881 INFO werkzeug Thread-5 : Pump is ON
+2021-01-22 00:23:09,998 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:23:10,387 INFO werkzeug Thread-5 : Pump is OFF
+2021-01-22 00:23:14,499 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:23:14,881 INFO werkzeug Thread-7 : Pump is ON
+2021-01-22 00:23:19,996 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:23:20,386 INFO werkzeug Thread-7 : Pump is OFF
+2021-01-22 00:23:24,493 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:23:24,881 INFO werkzeug Thread-9 : Pump is ON
+2021-01-22 00:23:29,994 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:23:30,385 INFO werkzeug Thread-9 : Pump is OFF
