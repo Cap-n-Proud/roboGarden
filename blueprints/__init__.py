@@ -20,14 +20,14 @@ def create_app():
     # init()
     # Using a development configuration
     # app.config.from_object("config.DevConfig")
-    
+
     with app.app_context():
         # Import parts of ou    r application
         # from .assets import compile_static_assets
         from .cmd import cmd
         from .control import control
         from .status import status
-        from blueprints.threads import init
+        from blueprints.init import init
         init()
         # Register Blueprints
         app.register_blueprint(status.status_bp)

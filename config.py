@@ -12,6 +12,7 @@ class Config:
     TEMPLATES_FOLDER = "templates"
     ASSETS_FOLDER = "assets"
     FLASK_APP = "wsgi.py"
+    LOGFILE = "record.log"
 
 class Hardware:
     READSERIALINTERVAL = 2
