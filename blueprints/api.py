@@ -6,23 +6,18 @@ from flask import current_app as app
 
 # Retrieve the current program, used to populate the indey.html file
 def getCurrentProgr():
-    with open(config.Config.CURRENTPROGRAM) as f:
-        data = json.load(f)
-    return data
-
-def getAppConf():
-    with open("assets/appConfig.json") as f:
+    with open(config.JSON_Path.CURRENTPROGRAM) as f:
         data = json.load(f)
     return data
 
 def getPlantsDB(app):
-    with open("plants.json") as f:
+    with open(config.JSON_Path.PLANTDB) as f:
         data = json.load(f)
     return data
 
 
 def getStatus(app):
-    with open("status.json") as f:
+    with open(config.JSON_Path.STATUS) as f:
         data = json.load(f)
     return data
 

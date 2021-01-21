@@ -1,5 +1,9 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
 import threading
 import time
+from datetime import datetime
+
 from threading import Lock
 import serial
 from serial.tools import list_ports
@@ -7,13 +11,12 @@ import config
 
 import json
 
-from blueprints.api import getCurrentProgr, getAppConf
+from blueprints.api import getCurrentProgr
 from blueprints.L_events import *
 
 def testThread(param):
     # time.sleep(2)
     print("Test thread ", param)
-
 
 def handle_data(data):
     global dataJSON
@@ -66,12 +69,12 @@ def checkPump(duration):
     if is_between(currentProgram["pumpON"], currentProgram["pumpOFF"], timeNow):
         print("pump ON")
         arduinoCommand2("pumpStart")
-        app.logger.info("Pump is ON")
+        # app.logger.info("Pump is ON")
         # We stop the thread so the pump continues pumping
         time.sleep(duration)
         print("pump OFF")
         arduinoCommand2("pumpStop")
-        app.logger.info("Pump is OFF")
+        # app.logger.info("Pump is OFF")
 
 
 # Function to check the lights. If we are in the time range it will switch the light on and give the current proram RGB color
@@ -89,24 +92,23 @@ def checkLights(currentProgram):
                 )
                 arduinoCommand2("setLightRGB " + str(currentProgram["RGB"]))
                 print("Brightness set to default")
-                app.logger.info("Lights ON, RGB also set")
+                # app.logger.info("Lights ON, RGB also set")
 
         except ValueError as e:
             print(e)
     else:
         if dataJSON["brightness"] != 0:  # print("Lights should be ON")
             arduinoCommand2("setBrightness 0")
-            app.logger.info("Lights OFF, RGB also set")
+            # app.logger.info("Lights OFF, RGB also set")
 
 
-def initSerial(appConf):
-    port = appConf['serialPort']
+def initSerial():
+    port = config.Hardware.SERIALPORT
+    baud = config.Hardware.SERIALBAUD
+
     ports = list(serial.tools.list_ports.comports())
     for p in ports:
         print(p)
-
-    # print(port.split("/")[2])
-    baud = appConf['serialBaud']
 
     serial_port = serial.Serial(port, baud, timeout=0.5)
 
@@ -114,18 +116,18 @@ def initSerial(appConf):
     time.sleep(2)
 
 def init():
-    appConf = getAppConf()
     # currentProgram = getCurrentProgr()
-    initSerial(appConf);
+    initSerial();
 
     # Setup and start the thread to read serial port
     thread_lock = Lock()
-    thread = threading.Thread(target=read_from_port, args=(serial.Serial(appConf['serialPort'], appConf['serialBaud'], timeout=0.5),))
+    thread = threading.Thread(target=read_from_port, args=(serial.Serial(config.Hardware.SERIALPORT, config.Hardware.SERIALBAUD, timeout=0.5),))
     thread.start()
-    print(config.CURRENTPROGRAM)
+    # print(config.ProdConfig.DEBUG)
+    # print(config.JSON_Path.CURRENTPROGRAM)
 
     checkL = RepeatedTimer(
-        int(appConf['readSerialInterval']), testThread, "param"
+        int(config.Hardware.READSERIALINTERVAL), testThread, "param"
     )  # it auto-starts, no need of rt.start()
 
     obj_now = datetime.now()

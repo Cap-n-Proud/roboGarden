@@ -12,8 +12,18 @@ class Config:
     TEMPLATES_FOLDER = "templates"
     ASSETS_FOLDER = "assets"
     FLASK_APP = "wsgi.py"
+
+class Hardware:
+    READSERIALINTERVAL= 2
+    CHECKLIGHTSINTERVAL= 5
+    SERIALPORT= "/dev/ttyACM0"
+    SERIALBAUD= 115200
+
+class JSON_Path:
     JSON_PATH = "assets"
-    
+    CURRENTPROGRAM = "assets/currentProgram.json"
+    PLANTDB = "assets/plants.json"
+    STATUS = "assets/status.json"
 
 class ProdConfig(Config):
     FLASK_ENV = "production"
