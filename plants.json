@@ -1,0 +1,313 @@
+{
+  "plants": [
+    {
+      "plantID": "001",
+      "name": "Tomato Montfavet",
+      "latinName": "Lycopersicon Esculentum Mil",
+      "URL":"",
+      "PHMin":"",
+      "PHMax":"",
+      "water":"",
+      "DtG":"",
+      "DtH":""
+    },
+    {
+      "plantID": "002",
+      "name": "Babyleaf Salad",
+      "latinName": "Lactuca Sativa Acephala",
+      "URL":"",
+      "PHMin":"",
+      "PHMax":"",
+      "water":"",
+      "DtG":"",
+      "DtH":""
+    },
+    {
+      "plantID": "003",
+      "name": "Basilico Grande Genovese",
+      "latinName": "Ocium Basilicum",
+      "URL":"",
+      "PHMin":"",
+      "PHMax":"",
+      "water":"Below Average",
+      "DtG":"",
+      "DtH":""
+    },
+    {
+      "plantID": "004",
+      "name": "Broccoletti Marathon",
+      "latinName": "Brassica Oleracea Italica",
+      "URL":"",
+      "PHMin":"",
+      "PHMax":"",
+      "water":"Average",
+      "DtG":"",
+      "DtH":""
+    },
+    {
+      "plantID": "005",
+      "name": "Cayenne Pepper",
+      "latinName": "Capsicum annuum",
+      "URL":"",
+      "PHMin":"",
+      "PHMax":"",
+      "water":"",
+      "DtG":"",
+      "DtH":""
+    },
+    {
+      "plantID": "006",
+      "name": "Edible Flowers",
+      "latinName": "",
+      "URL":"",
+      "PHMin":"",
+      "PHMax":"",
+      "water":"",
+      "DtG":"",
+      "DtH":""
+    },
+    {
+      "plantID": "007",
+      "name": "Fiori Romantic Pink Feeling",
+      "latinName": "",
+      "URL":"",
+      "PHMin":"",
+      "PHMax":"",
+      "water":"",
+      "DtG":"",
+      "DtH":""
+    },
+    {
+      "plantID": "008",
+      "name": "Fragola Alexandria",
+      "latinName": "Fragaria Vesca",
+      "URL":"",
+      "PHMin":"",
+      "PHMax":"",
+      "water":"Heavy",
+      "DtG":"",
+      "DtH":""
+    },
+    {
+      "plantID": "009",
+      "name": "Lattuga da taglio Bionda a foglia liscia",
+      "latinName": "Lactuca Sativa Var Crispa",
+      "URL":"",
+      "PHMin":"",
+      "PHMax":"",
+      "water":"",
+      "DtG":"",
+      "DtH":""
+    },
+    {
+      "plantID": "010",
+      "name": "Leaf Lettuce",
+      "latinName": "Lactuca Sativa",
+      "URL":"",
+      "PHMin":"",
+      "PHMax":"",
+      "water":"",
+      "DtG":"",
+      "DtH":""
+    },
+    {
+      "plantID": "011",
+      "name": "Malvarosa Halo Mix",
+      "latinName": "",
+      "URL":"",
+      "PHMin":"",
+      "PHMax":"",
+      "water":"",
+      "DtG":"",
+      "DtH":""
+    },
+    {
+      "plantID": "012",
+      "name": "Mint",
+      "latinName": "",
+      "URL":"",
+      "PHMin":"",
+      "PHMax":"",
+      "water":"",
+      "DtG":"",
+      "DtH":""
+    },
+    {
+      "plantID": "013",
+      "name": "Mint Mentha Piperita",
+      "latinName": "",
+      "URL":"",
+      "PHMin":"",
+      "PHMax":"",
+      "water":"",
+      "DtG":"",
+      "DtH":""
+    },
+    {
+      "plantID": "014",
+      "name": "Nussalad Vera",
+      "latinName": "",
+      "URL":"",
+      "PHMin":"",
+      "PHMax":"",
+      "water":"",
+      "DtG":"",
+      "DtH":""
+    },
+    {
+      "plantID": "015",
+      "name": "Oregano",
+      "latinName": "",
+      "URL":"",
+      "PHMin":"",
+      "PHMax":"",
+      "water":"",
+      "DtG":"",
+      "DtH":""
+    },
+    {
+      "plantID": "016",
+      "name": "Parsley",
+      "latinName": "",
+      "URL":"",
+      "PHMin":"",
+      "PHMax":"",
+      "water":"",
+      "DtG":"",
+      "DtH":""
+    },
+    {
+      "plantID": "017",
+      "name": "Rosemary",
+      "latinName": "",
+      "URL":"",
+      "PHMin":"",
+      "PHMax":"",
+      "water":"",
+      "DtG":"",
+      "DtH":""
+    },
+    {
+      "plantID": "018",
+      "name": "Rucola Perenne",
+      "latinName": "",
+      "URL":"",
+      "PHMin":"",
+      "PHMax":"",
+      "water":"",
+      "DtG":"",
+      "DtH":""
+    },
+    {
+      "plantID": "019",
+      "name": "Sage",
+      "latinName": "",
+      "URL":"",
+      "PHMin":"",
+      "PHMax":"",
+      "water":"",
+      "DtG":"",
+      "DtH":""
+    },
+    {
+      "plantID": "020",
+      "name": "Smooth-Leaf Spinach",
+      "latinName": "",
+      "URL":"",
+      "PHMin":"",
+      "PHMax":"",
+      "water":"",
+      "DtG":"",
+      "DtH":""
+    },
+    {
+      "plantID": "021",
+      "name": "Spinach",
+      "latinName": "",
+      "URL":"",
+      "PHMin":"",
+      "PHMax":"",
+      "water":"",
+      "DtG":"",
+      "DtH":""
+    },
+    {
+      "plantID": "022",
+      "name": "Tatsoi",
+      "latinName": "",
+      "URL":"",
+      "PHMin":"",
+      "PHMax":"",
+      "water":"",
+      "DtG":"",
+      "DtH":""
+    },
+    {
+      "plantID": "023",
+      "name": "Thyme",
+      "latinName": "",
+      "URL":"",
+      "PHMin":"",
+      "PHMax":"",
+      "water":"",
+      "DtG":"",
+      "DtH":""
+    },
+    {
+      "plantID": "024",
+      "name": "Tomato Cherry Red",
+      "latinName": "Lycopersicon Esculentum",
+      "URL":"",
+      "PHMin":"",
+      "PHMax":"",
+      "water":"",
+      "DtG":"",
+      "DtH":""
+    },
+    {
+      "plantID": "025",
+      "name": "Tomato Montfavet",
+      "latinName": "Lycopersicon Esculentum Mil",
+      "URL":"",
+      "PHMin":"",
+      "PHMax":"",
+      "water":"",
+      "DtG":"",
+      "DtH":""
+    },
+    {
+      "plantID": "026",
+      "name": "Tomatoes Red and Yelow Pear",
+      "latinName": "Lycopercicon Esculntum",
+      "URL":"",
+      "PHMin":"",
+      "PHMax":"",
+      "water":"",
+      "DtG":"",
+      "DtH":""
+    },
+    {
+      "plantID": "027",
+      "name": "",
+      "latinName": "",
+      "URL":"",
+      "PHMin":"",
+      "PHMax":"",
+      "water":"",
+      "DtG":"",
+      "DtH":""
+    },
+    {
+      "plantID": "028",
+      "name": "",
+      "latinName": "",
+      "URL":"",
+      "PHMin":"",
+      "PHMax":"",
+      "water":"",
+      "DtG":"",
+      "DtH":""
+    }
+
+  ]
+}
