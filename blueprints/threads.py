@@ -14,6 +14,8 @@ import json
 from blueprints.api import getCurrentProgr
 from blueprints.L_events import *
 
+dataJSON = ""
+
 def testThread(param):
     # time.sleep(2)
     print("Test thread ", param)
@@ -23,7 +25,8 @@ def handle_data(data):
     try:
         dataJSON = json.loads(data.decode())
         if dataJSON["type"] == "I":
-            broadcastInfo(dataJSON["message"])
+            print(dataJSON['message'])
+            # broadcastInfo(dataJSON["message"])
             # app.logger.info("Info from Arduino: " + dataJSON["message"])
 
         if dataJSON["type"] == "T":
@@ -61,19 +64,24 @@ def is_between(startTime, endTime, nowTime):
     else:  # Over midnight
         return nowTime >= startTime or nowTime <= endTime
 
+# Send command to Arduino, used for python calls
+def arduinoCommand(command):
+    serial.Serial(config.Hardware.SERIALPORT, config.Hardware.SERIALBAUD, timeout=0.5).write(str(command + "\n").encode())
+    time.sleep(0.5)
+
 
 # This will be called to regulate the pump behaviour. TODO need to add thread and parameterd
-def checkPump(duration):
+def activatePump(currentProgram):
     obj_now = datetime.now()
     timeNow = str(obj_now.hour).zfill(2) + ":" + str(obj_now.minute).zfill(2)
     if is_between(currentProgram["pumpON"], currentProgram["pumpOFF"], timeNow):
         print("pump ON")
-        arduinoCommand2("pumpStart")
+        arduinoCommand("pumpStart")
         # app.logger.info("Pump is ON")
         # We stop the thread so the pump continues pumping
-        time.sleep(duration)
+        time.sleep(currentProgram["pumpRunTime"])
         print("pump OFF")
-        arduinoCommand2("pumpStop")
+        arduinoCommand("pumpStop")
         # app.logger.info("Pump is OFF")
 
 
@@ -84,13 +92,13 @@ def checkLights(currentProgram):
     timeNow = str(obj_now.hour).zfill(2) + ":" + str(obj_now.minute).zfill(2)
     if is_between(currentProgram["lightsON"], currentProgram["lightsOFF"], timeNow):
         try:
-            test = dataJSON["brightness"]
+            # test = dataJSON["brightness"]
 
             if dataJSON["brightness"] == 0:  # print("Lights should be ON")
-                arduinoCommand2(
+                arduinoCommand(
                     "setBrightness " + str(currentProgram["lightBrightness"])
                 )
-                arduinoCommand2("setLightRGB " + str(currentProgram["RGB"]))
+                arduinoCommand("setLightRGB " + str(currentProgram["RGB"]))
                 print("Brightness set to default")
                 # app.logger.info("Lights ON, RGB also set")
 
@@ -98,7 +106,7 @@ def checkLights(currentProgram):
             print(e)
     else:
         if dataJSON["brightness"] != 0:  # print("Lights should be ON")
-            arduinoCommand2("setBrightness 0")
+            arduinoCommand("setBrightness 0")
             # app.logger.info("Lights OFF, RGB also set")
 
 
@@ -118,7 +126,7 @@ def initSerial():
 def init():
     # currentProgram = getCurrentProgr()
     initSerial();
-
+    currentProgram = getCurrentProgr();
     # Setup and start the thread to read serial port
     thread_lock = Lock()
     thread = threading.Thread(target=read_from_port, args=(serial.Serial(config.Hardware.SERIALPORT, config.Hardware.SERIALBAUD, timeout=0.5),))
@@ -127,8 +135,12 @@ def init():
     # print(config.JSON_Path.CURRENTPROGRAM)
 
     checkL = RepeatedTimer(
-        int(config.Hardware.READSERIALINTERVAL), testThread, "param"
+        int(config.Hardware.READSERIALINTERVAL), checkLights, currentProgram
     )  # it auto-starts, no need of rt.start()
+
+    checkP = RepeatedTimer(
+            int(currentProgram["pumpStartEvery"]), activatePump, currentProgram
+        )  # it auto-starts, no need of rt.start()
 
     obj_now = datetime.now()
     timeNow = str(obj_now.hour).zfill(2) + ":" + str(obj_now.minute).zfill(2)

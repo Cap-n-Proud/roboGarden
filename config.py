@@ -14,10 +14,10 @@ class Config:
     FLASK_APP = "wsgi.py"
 
 class Hardware:
-    READSERIALINTERVAL= 2
-    CHECKLIGHTSINTERVAL= 5
-    SERIALPORT= "/dev/ttyACM0"
-    SERIALBAUD= 115200
+    READSERIALINTERVAL = 2
+    CHECKLIGHTSINTERVAL = 5
+    SERIALPORT = "/dev/ttyACM0"
+    SERIALBAUD = 115200
 
 class JSON_Path:
     JSON_PATH = "assets"
