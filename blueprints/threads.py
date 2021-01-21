@@ -21,6 +21,7 @@ from blueprints.L_events import *
 dataJSON = ""
 # LOG = logging.getLogger(__name__)
 LOG = logging.getLogger('werkzeug')
+
 def testThread(param):
     # time.sleep(2)
     print("Test thread ", param)
@@ -96,9 +97,7 @@ def checkLights(currentProgram):
     obj_now = datetime.now()
     timeNow = str(obj_now.hour).zfill(2) + ":" + str(obj_now.minute).zfill(2)
     if is_between(currentProgram["lightsON"], currentProgram["lightsOFF"], timeNow):
-
-            # test = dataJSON["brightness"]
-        
+        test = dataJSON["brightness"]
         try:
             if dataJSON["brightness"] == 0:  # print("Lights should be ON")
                 arduinoCommand(

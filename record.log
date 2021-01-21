@@ -1,15 +1,375 @@
-2021-01-21 23:30:22,340 INFO werkzeug Thread-1 : Info from Arduino: Pump start
-2021-01-21 23:30:22,717 INFO werkzeug Thread-3 : Pump is ON
-2021-01-21 23:30:27,840 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
-2021-01-21 23:30:28,223 INFO werkzeug Thread-3 : Pump is OFF
-2021-01-21 23:30:32,338 INFO werkzeug Thread-1 : Info from Arduino: Pump start
-2021-01-21 23:30:32,717 INFO werkzeug Thread-9 : Pump is ON
-2021-01-21 23:30:37,834 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
-2021-01-21 23:30:38,222 INFO werkzeug Thread-9 : Pump is OFF
-2021-01-21 23:30:39,596 INFO werkzeug Thread-19 : 127.0.0.1 - - [21/Jan/2021 23:30:39] "[37mGET /status HTTP/1.1[0m" 200 -
-2021-01-21 23:30:42,335 INFO werkzeug Thread-1 : Info from Arduino: Pump start
-2021-01-21 23:30:42,717 INFO werkzeug Thread-15 : Pump is ON
-2021-01-21 23:30:47,832 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
-2021-01-21 23:30:48,223 INFO werkzeug Thread-15 : Pump is OFF
-2021-01-21 23:30:52,329 INFO werkzeug Thread-1 : Info from Arduino: Pump start
-2021-01-21 23:30:52,716 INFO werkzeug Thread-22 : Pump is ON
+2021-01-21 23:36:26,242 INFO werkzeug MainThread :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-01-21 23:36:36,335 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-21 23:36:36,709 INFO werkzeug Thread-3 : Pump is ON
+2021-01-21 23:36:41,832 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-21 23:36:42,215 INFO werkzeug Thread-3 : Pump is OFF
+2021-01-21 23:36:46,329 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-21 23:36:46,712 INFO werkzeug Thread-9 : Pump is ON
+2021-01-21 23:36:51,829 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-21 23:36:52,214 INFO werkzeug Thread-9 : Pump is OFF
+2021-01-21 23:36:56,326 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-21 23:36:56,712 INFO werkzeug Thread-15 : Pump is ON
+2021-01-21 23:37:01,827 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-21 23:37:02,214 INFO werkzeug Thread-15 : Pump is OFF
+2021-01-21 23:37:06,324 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-21 23:37:06,709 INFO werkzeug Thread-21 : Pump is ON
+2021-01-21 23:37:11,821 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-21 23:37:12,215 INFO werkzeug Thread-21 : Pump is OFF
+2021-01-21 23:37:16,322 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-21 23:37:16,709 INFO werkzeug Thread-27 : Pump is ON
+2021-01-21 23:37:22,217 INFO werkzeug Thread-27 : Pump is OFF
+2021-01-21 23:37:26,712 INFO werkzeug Thread-32 : Pump is ON
+2021-01-21 23:37:32,216 INFO werkzeug Thread-32 : Pump is OFF
+2021-01-21 23:37:36,712 INFO werkzeug Thread-39 : Pump is ON
+2021-01-21 23:37:42,220 INFO werkzeug Thread-39 : Pump is OFF
+2021-01-21 23:37:46,711 INFO werkzeug Thread-45 : Pump is ON
+2021-01-21 23:37:52,216 INFO werkzeug Thread-45 : Pump is OFF
+2021-01-21 23:37:56,711 INFO werkzeug Thread-51 : Pump is ON
+2021-01-21 23:38:02,216 INFO werkzeug Thread-51 : Pump is OFF
+2021-01-21 23:38:06,712 INFO werkzeug Thread-57 : Pump is ON
+2021-01-21 23:38:12,221 INFO werkzeug Thread-57 : Pump is OFF
+2021-01-21 23:38:16,712 INFO werkzeug Thread-63 : Pump is ON
+2021-01-21 23:38:22,220 INFO werkzeug Thread-63 : Pump is OFF
+2021-01-21 23:38:29,872 INFO werkzeug MainThread :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-01-21 23:38:39,974 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-21 23:38:40,351 INFO werkzeug Thread-3 : Pump is ON
+2021-01-21 23:38:45,471 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-21 23:38:45,855 INFO werkzeug Thread-3 : Pump is OFF
+2021-01-21 23:38:49,972 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-21 23:38:50,351 INFO werkzeug Thread-9 : Pump is ON
+2021-01-21 23:38:55,469 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-21 23:38:55,857 INFO werkzeug Thread-9 : Pump is OFF
+2021-01-21 23:38:59,970 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-21 23:39:00,351 INFO werkzeug Thread-15 : Pump is ON
+2021-01-21 23:39:05,467 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-21 23:39:05,855 INFO werkzeug Thread-15 : Pump is OFF
+2021-01-21 23:39:09,964 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-21 23:39:10,350 INFO werkzeug Thread-21 : Pump is ON
+2021-01-21 23:39:15,465 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-21 23:39:15,856 INFO werkzeug Thread-21 : Pump is OFF
+2021-01-21 23:39:19,962 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-21 23:39:20,351 INFO werkzeug Thread-27 : Pump is ON
+2021-01-21 23:39:25,462 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-21 23:39:25,854 INFO werkzeug Thread-27 : Pump is OFF
+2021-01-21 23:39:29,959 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-21 23:39:30,352 INFO werkzeug Thread-33 : Pump is ON
+2021-01-21 23:39:35,464 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-21 23:39:35,858 INFO werkzeug Thread-33 : Pump is OFF
+2021-01-21 23:39:39,957 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-21 23:39:40,351 INFO werkzeug Thread-39 : Pump is ON
+2021-01-21 23:39:45,462 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-21 23:39:45,854 INFO werkzeug Thread-39 : Pump is OFF
+2021-01-21 23:39:49,955 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-21 23:39:50,350 INFO werkzeug Thread-45 : Pump is ON
+2021-01-21 23:39:55,460 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-21 23:39:55,855 INFO werkzeug Thread-45 : Pump is OFF
+2021-01-21 23:39:59,998 INFO werkzeug MainThread :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-01-21 23:54:50,422 INFO werkzeug MainThread :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-01-21 23:55:00,539 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-21 23:55:00,915 INFO werkzeug Thread-3 : Pump is ON
+2021-01-21 23:55:06,036 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-21 23:55:06,418 INFO werkzeug Thread-3 : Pump is OFF
+2021-01-21 23:55:10,533 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-21 23:55:10,915 INFO werkzeug Thread-8 : Pump is ON
+2021-01-21 23:55:16,034 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-21 23:55:16,418 INFO werkzeug Thread-8 : Pump is OFF
+2021-01-21 23:55:20,531 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-21 23:55:20,915 INFO werkzeug Thread-14 : Pump is ON
+2021-01-21 23:55:26,032 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-21 23:55:26,421 INFO werkzeug Thread-14 : Pump is OFF
+2021-01-21 23:55:30,529 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-21 23:55:30,915 INFO werkzeug Thread-20 : Pump is ON
+2021-01-21 23:55:36,029 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-21 23:55:36,418 INFO werkzeug Thread-20 : Pump is OFF
+2021-01-21 23:55:40,527 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-21 23:55:40,916 INFO werkzeug Thread-26 : Pump is ON
+2021-01-21 23:55:46,023 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-21 23:55:46,419 INFO werkzeug Thread-26 : Pump is OFF
+2021-01-21 23:55:50,524 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-21 23:55:50,916 INFO werkzeug Thread-32 : Pump is ON
+2021-01-21 23:55:56,025 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-21 23:55:56,419 INFO werkzeug Thread-32 : Pump is OFF
+2021-01-21 23:56:00,523 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-21 23:56:00,916 INFO werkzeug Thread-38 : Pump is ON
+2021-01-21 23:56:06,023 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-21 23:56:06,418 INFO werkzeug Thread-38 : Pump is OFF
+2021-01-21 23:56:10,524 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-21 23:56:10,917 INFO werkzeug Thread-44 : Pump is ON
+2021-01-21 23:56:16,025 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-21 23:56:16,419 INFO werkzeug Thread-44 : Pump is OFF
+2021-01-21 23:56:20,522 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-21 23:56:20,917 INFO werkzeug Thread-50 : Pump is ON
+2021-01-21 23:56:26,031 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-21 23:56:26,423 INFO werkzeug Thread-50 : Pump is OFF
+2021-01-21 23:56:30,524 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-21 23:56:30,917 INFO werkzeug Thread-56 : Pump is ON
+2021-01-21 23:56:36,029 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-21 23:56:36,423 INFO werkzeug Thread-56 : Pump is OFF
+2021-01-21 23:56:40,522 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-21 23:56:40,917 INFO werkzeug Thread-62 : Pump is ON
+2021-01-21 23:56:46,030 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-21 23:56:46,423 INFO werkzeug Thread-62 : Pump is OFF
+2021-01-21 23:56:50,524 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-21 23:56:50,918 INFO werkzeug Thread-68 : Pump is ON
+2021-01-21 23:56:56,029 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-21 23:56:56,422 INFO werkzeug Thread-68 : Pump is OFF
+2021-01-21 23:57:00,526 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-21 23:57:00,918 INFO werkzeug Thread-74 : Pump is ON
+2021-01-21 23:57:06,030 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-21 23:57:06,424 INFO werkzeug Thread-74 : Pump is OFF
+2021-01-21 23:57:10,524 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-21 23:57:10,918 INFO werkzeug Thread-80 : Pump is ON
+2021-01-21 23:57:16,028 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-21 23:57:16,422 INFO werkzeug Thread-80 : Pump is OFF
+2021-01-21 23:57:20,526 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-21 23:57:20,919 INFO werkzeug Thread-86 : Pump is ON
+2021-01-21 23:57:26,030 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-21 23:57:26,425 INFO werkzeug Thread-86 : Pump is OFF
+2021-01-21 23:57:30,528 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-21 23:57:30,921 INFO werkzeug Thread-92 : Pump is ON
+2021-01-21 23:57:36,032 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-21 23:57:36,426 INFO werkzeug Thread-92 : Pump is OFF
+2021-01-21 23:57:40,525 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-21 23:57:40,920 INFO werkzeug Thread-98 : Pump is ON
+2021-01-21 23:57:46,030 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-21 23:57:46,425 INFO werkzeug Thread-98 : Pump is OFF
+2021-01-21 23:57:50,527 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-21 23:57:50,920 INFO werkzeug Thread-104 : Pump is ON
+2021-01-21 23:57:56,028 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-21 23:57:56,422 INFO werkzeug Thread-104 : Pump is OFF
+2021-01-21 23:58:00,525 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-21 23:58:00,920 INFO werkzeug Thread-110 : Pump is ON
+2021-01-21 23:58:06,034 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-21 23:58:06,427 INFO werkzeug Thread-110 : Pump is OFF
+2021-01-21 23:58:10,527 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-21 23:58:10,922 INFO werkzeug Thread-116 : Pump is ON
+2021-01-21 23:58:16,032 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-21 23:58:16,426 INFO werkzeug Thread-116 : Pump is OFF
+2021-01-21 23:58:20,529 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-21 23:58:20,921 INFO werkzeug Thread-122 : Pump is ON
+2021-01-21 23:58:26,033 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-21 23:58:26,426 INFO werkzeug Thread-122 : Pump is OFF
+2021-01-21 23:58:30,527 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-21 23:58:30,921 INFO werkzeug Thread-128 : Pump is ON
+2021-01-21 23:58:36,031 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-21 23:58:36,426 INFO werkzeug Thread-128 : Pump is OFF
+2021-01-21 23:58:40,529 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-21 23:58:40,921 INFO werkzeug Thread-134 : Pump is ON
+2021-01-21 23:58:46,034 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-21 23:58:46,427 INFO werkzeug Thread-134 : Pump is OFF
+2021-01-21 23:58:50,527 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-21 23:58:50,922 INFO werkzeug Thread-140 : Pump is ON
+2021-01-21 23:58:56,031 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-21 23:58:56,426 INFO werkzeug Thread-140 : Pump is OFF
+2021-01-22 00:06:40,294 INFO werkzeug MainThread :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-01-22 00:06:43,282 DEBUG apscheduler.scheduler APScheduler : Looking for jobs to run
+2021-01-22 00:06:43,282 INFO apscheduler.executors.default ThreadPoolExecutor-0_0 : Running job "checkLights (trigger: interval[0:00:03], next run at: 2021-01-22 00:06:43 CET)" (scheduled at 2021-01-22 00:06:43.282130+01:00)
+2021-01-22 00:06:43,283 INFO apscheduler.executors.default ThreadPoolExecutor-0_0 : Job "checkLights (trigger: interval[0:00:03], next run at: 2021-01-22 00:06:43 CET)" executed successfully
+2021-01-22 00:06:43,283 DEBUG apscheduler.scheduler APScheduler : Next wakeup is due at 2021-01-22 00:06:46.282130+01:00 (in 2.999564 seconds)
+2021-01-22 00:06:46,283 DEBUG apscheduler.scheduler APScheduler : Looking for jobs to run
+2021-01-22 00:06:46,283 DEBUG apscheduler.scheduler APScheduler : Next wakeup is due at 2021-01-22 00:06:49.282130+01:00 (in 2.998797 seconds)
+2021-01-22 00:06:46,283 INFO apscheduler.executors.default ThreadPoolExecutor-0_0 : Running job "checkLights (trigger: interval[0:00:03], next run at: 2021-01-22 00:06:49 CET)" (scheduled at 2021-01-22 00:06:46.282130+01:00)
+2021-01-22 00:06:46,284 INFO apscheduler.executors.default ThreadPoolExecutor-0_0 : Job "checkLights (trigger: interval[0:00:03], next run at: 2021-01-22 00:06:49 CET)" executed successfully
+2021-01-22 00:06:49,282 DEBUG apscheduler.scheduler APScheduler : Looking for jobs to run
+2021-01-22 00:06:49,283 DEBUG apscheduler.scheduler APScheduler : Next wakeup is due at 2021-01-22 00:06:52.282130+01:00 (in 2.999076 seconds)
+2021-01-22 00:06:49,283 INFO apscheduler.executors.default ThreadPoolExecutor-0_0 : Running job "checkLights (trigger: interval[0:00:03], next run at: 2021-01-22 00:06:52 CET)" (scheduled at 2021-01-22 00:06:49.282130+01:00)
+2021-01-22 00:06:49,283 INFO apscheduler.executors.default ThreadPoolExecutor-0_0 : Job "checkLights (trigger: interval[0:00:03], next run at: 2021-01-22 00:06:52 CET)" executed successfully
+2021-01-22 00:06:52,282 DEBUG apscheduler.scheduler APScheduler : Looking for jobs to run
+2021-01-22 00:06:52,282 DEBUG apscheduler.scheduler APScheduler : Next wakeup is due at 2021-01-22 00:06:55.282130+01:00 (in 2.999423 seconds)
+2021-01-22 00:06:52,283 INFO apscheduler.executors.default ThreadPoolExecutor-0_0 : Running job "checkLights (trigger: interval[0:00:03], next run at: 2021-01-22 00:06:55 CET)" (scheduled at 2021-01-22 00:06:52.282130+01:00)
+2021-01-22 00:06:52,283 INFO apscheduler.executors.default ThreadPoolExecutor-0_0 : Job "checkLights (trigger: interval[0:00:03], next run at: 2021-01-22 00:06:55 CET)" executed successfully
+2021-01-22 00:06:55,282 DEBUG apscheduler.scheduler APScheduler : Looking for jobs to run
+2021-01-22 00:06:55,282 DEBUG apscheduler.scheduler APScheduler : Next wakeup is due at 2021-01-22 00:06:58.282130+01:00 (in 2.999458 seconds)
+2021-01-22 00:06:55,283 INFO apscheduler.executors.default ThreadPoolExecutor-0_0 : Running job "checkLights (trigger: interval[0:00:03], next run at: 2021-01-22 00:06:58 CET)" (scheduled at 2021-01-22 00:06:55.282130+01:00)
+2021-01-22 00:06:55,283 INFO apscheduler.executors.default ThreadPoolExecutor-0_0 : Job "checkLights (trigger: interval[0:00:03], next run at: 2021-01-22 00:06:58 CET)" executed successfully
+2021-01-22 00:06:58,282 DEBUG apscheduler.scheduler APScheduler : Looking for jobs to run
+2021-01-22 00:06:58,283 DEBUG apscheduler.scheduler APScheduler : Next wakeup is due at 2021-01-22 00:07:01.282130+01:00 (in 2.999355 seconds)
+2021-01-22 00:06:58,283 INFO apscheduler.executors.default ThreadPoolExecutor-0_0 : Running job "checkLights (trigger: interval[0:00:03], next run at: 2021-01-22 00:07:01 CET)" (scheduled at 2021-01-22 00:06:58.282130+01:00)
+2021-01-22 00:06:58,283 INFO apscheduler.executors.default ThreadPoolExecutor-0_0 : Job "checkLights (trigger: interval[0:00:03], next run at: 2021-01-22 00:07:01 CET)" executed successfully
+2021-01-22 00:07:01,282 DEBUG apscheduler.scheduler APScheduler : Looking for jobs to run
+2021-01-22 00:07:01,283 DEBUG apscheduler.scheduler APScheduler : Next wakeup is due at 2021-01-22 00:07:04.282130+01:00 (in 2.999303 seconds)
+2021-01-22 00:07:01,283 INFO apscheduler.executors.default ThreadPoolExecutor-0_0 : Running job "checkLights (trigger: interval[0:00:03], next run at: 2021-01-22 00:07:04 CET)" (scheduled at 2021-01-22 00:07:01.282130+01:00)
+2021-01-22 00:07:01,283 INFO apscheduler.executors.default ThreadPoolExecutor-0_0 : Job "checkLights (trigger: interval[0:00:03], next run at: 2021-01-22 00:07:04 CET)" executed successfully
+2021-01-22 00:07:04,282 DEBUG apscheduler.scheduler APScheduler : Looking for jobs to run
+2021-01-22 00:07:04,283 DEBUG apscheduler.scheduler APScheduler : Next wakeup is due at 2021-01-22 00:07:07.282130+01:00 (in 2.999336 seconds)
+2021-01-22 00:07:04,283 INFO apscheduler.executors.default ThreadPoolExecutor-0_0 : Running job "checkLights (trigger: interval[0:00:03], next run at: 2021-01-22 00:07:07 CET)" (scheduled at 2021-01-22 00:07:04.282130+01:00)
+2021-01-22 00:07:04,283 INFO apscheduler.executors.default ThreadPoolExecutor-0_0 : Job "checkLights (trigger: interval[0:00:03], next run at: 2021-01-22 00:07:07 CET)" executed successfully
+2021-01-22 00:07:07,282 DEBUG apscheduler.scheduler APScheduler : Looking for jobs to run
+2021-01-22 00:07:07,283 DEBUG apscheduler.scheduler APScheduler : Next wakeup is due at 2021-01-22 00:07:10.282130+01:00 (in 2.999301 seconds)
+2021-01-22 00:07:07,283 INFO apscheduler.executors.default ThreadPoolExecutor-0_0 : Running job "checkLights (trigger: interval[0:00:03], next run at: 2021-01-22 00:07:10 CET)" (scheduled at 2021-01-22 00:07:07.282130+01:00)
+2021-01-22 00:07:07,283 INFO apscheduler.executors.default ThreadPoolExecutor-0_0 : Job "checkLights (trigger: interval[0:00:03], next run at: 2021-01-22 00:07:10 CET)" executed successfully
+2021-01-22 00:07:10,282 DEBUG apscheduler.scheduler APScheduler : Looking for jobs to run
+2021-01-22 00:07:10,283 DEBUG apscheduler.scheduler APScheduler : Next wakeup is due at 2021-01-22 00:07:13.282130+01:00 (in 2.999283 seconds)
+2021-01-22 00:07:10,283 INFO apscheduler.executors.default ThreadPoolExecutor-0_0 : Running job "checkLights (trigger: interval[0:00:03], next run at: 2021-01-22 00:07:13 CET)" (scheduled at 2021-01-22 00:07:10.282130+01:00)
+2021-01-22 00:07:10,283 INFO apscheduler.executors.default ThreadPoolExecutor-0_0 : Job "checkLights (trigger: interval[0:00:03], next run at: 2021-01-22 00:07:13 CET)" executed successfully
+2021-01-22 00:07:13,282 DEBUG apscheduler.scheduler APScheduler : Looking for jobs to run
+2021-01-22 00:07:13,283 DEBUG apscheduler.scheduler APScheduler : Next wakeup is due at 2021-01-22 00:07:16.282130+01:00 (in 2.999000 seconds)
+2021-01-22 00:07:13,283 INFO apscheduler.executors.default ThreadPoolExecutor-0_0 : Running job "checkLights (trigger: interval[0:00:03], next run at: 2021-01-22 00:07:16 CET)" (scheduled at 2021-01-22 00:07:13.282130+01:00)
+2021-01-22 00:07:13,283 INFO apscheduler.executors.default ThreadPoolExecutor-0_0 : Job "checkLights (trigger: interval[0:00:03], next run at: 2021-01-22 00:07:16 CET)" executed successfully
+2021-01-22 00:07:16,282 DEBUG apscheduler.scheduler APScheduler : Looking for jobs to run
+2021-01-22 00:07:16,283 DEBUG apscheduler.scheduler APScheduler : Next wakeup is due at 2021-01-22 00:07:19.282130+01:00 (in 2.999216 seconds)
+2021-01-22 00:07:16,283 INFO apscheduler.executors.default ThreadPoolExecutor-0_0 : Running job "checkLights (trigger: interval[0:00:03], next run at: 2021-01-22 00:07:19 CET)" (scheduled at 2021-01-22 00:07:16.282130+01:00)
+2021-01-22 00:07:16,283 INFO apscheduler.executors.default ThreadPoolExecutor-0_0 : Job "checkLights (trigger: interval[0:00:03], next run at: 2021-01-22 00:07:19 CET)" executed successfully
+2021-01-22 00:07:19,282 DEBUG apscheduler.scheduler APScheduler : Looking for jobs to run
+2021-01-22 00:07:19,282 DEBUG apscheduler.scheduler APScheduler : Next wakeup is due at 2021-01-22 00:07:22.282130+01:00 (in 2.999482 seconds)
+2021-01-22 00:07:19,283 INFO apscheduler.executors.default ThreadPoolExecutor-0_0 : Running job "checkLights (trigger: interval[0:00:03], next run at: 2021-01-22 00:07:22 CET)" (scheduled at 2021-01-22 00:07:19.282130+01:00)
+2021-01-22 00:07:19,283 INFO apscheduler.executors.default ThreadPoolExecutor-0_0 : Job "checkLights (trigger: interval[0:00:03], next run at: 2021-01-22 00:07:22 CET)" executed successfully
+2021-01-22 00:07:25,763 INFO werkzeug MainThread :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-01-22 00:07:28,756 DEBUG apscheduler.scheduler APScheduler : Looking for jobs to run
+2021-01-22 00:07:28,756 INFO apscheduler.executors.default ThreadPoolExecutor-0_0 : Running job "activatePump (trigger: interval[0:00:03], next run at: 2021-01-22 00:07:28 CET)" (scheduled at 2021-01-22 00:07:28.756025+01:00)
+2021-01-22 00:07:28,757 DEBUG apscheduler.scheduler APScheduler : Next wakeup is due at 2021-01-22 00:07:31.756025+01:00 (in 2.999466 seconds)
+2021-01-22 00:07:28,866 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:07:29,257 INFO werkzeug ThreadPoolExecutor-0_0 : Pump is ON
+2021-01-22 00:07:31,757 DEBUG apscheduler.scheduler APScheduler : Looking for jobs to run
+2021-01-22 00:07:31,757 WARNING apscheduler.scheduler APScheduler : Execution of job "activatePump (trigger: interval[0:00:03], next run at: 2021-01-22 00:07:31 CET)" skipped: maximum number of running instances reached (1)
+2021-01-22 00:07:31,757 DEBUG apscheduler.scheduler APScheduler : Next wakeup is due at 2021-01-22 00:07:34.756025+01:00 (in 2.998846 seconds)
+2021-01-22 00:07:34,370 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:07:34,756 DEBUG apscheduler.scheduler APScheduler : Looking for jobs to run
+2021-01-22 00:07:34,756 WARNING apscheduler.scheduler APScheduler : Execution of job "activatePump (trigger: interval[0:00:03], next run at: 2021-01-22 00:07:34 CET)" skipped: maximum number of running instances reached (1)
+2021-01-22 00:07:34,757 DEBUG apscheduler.scheduler APScheduler : Next wakeup is due at 2021-01-22 00:07:37.756025+01:00 (in 2.999250 seconds)
+2021-01-22 00:07:34,762 INFO werkzeug ThreadPoolExecutor-0_0 : Pump is OFF
+2021-01-22 00:07:34,770 INFO apscheduler.executors.default ThreadPoolExecutor-0_0 : Job "activatePump (trigger: interval[0:00:03], next run at: 2021-01-22 00:07:37 CET)" executed successfully
+2021-01-22 00:07:37,756 DEBUG apscheduler.scheduler APScheduler : Looking for jobs to run
+2021-01-22 00:07:37,756 DEBUG apscheduler.scheduler APScheduler : Next wakeup is due at 2021-01-22 00:07:40.756025+01:00 (in 2.999399 seconds)
+2021-01-22 00:07:37,756 INFO apscheduler.executors.default ThreadPoolExecutor-0_0 : Running job "activatePump (trigger: interval[0:00:03], next run at: 2021-01-22 00:07:40 CET)" (scheduled at 2021-01-22 00:07:37.756025+01:00)
+2021-01-22 00:07:37,864 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:07:38,257 INFO werkzeug ThreadPoolExecutor-0_0 : Pump is ON
+2021-01-22 00:09:48,116 INFO werkzeug MainThread :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-01-22 00:09:58,232 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:09:58,612 INFO werkzeug Thread-3 : Pump is ON
+2021-01-22 00:10:03,732 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:10:04,117 INFO werkzeug Thread-3 : Pump is OFF
+2021-01-22 00:10:08,229 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:10:08,608 INFO werkzeug Thread-5 : Pump is ON
+2021-01-22 00:10:13,726 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:10:14,110 INFO werkzeug Thread-5 : Pump is OFF
+2021-01-22 00:10:18,227 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:10:18,609 INFO werkzeug Thread-7 : Pump is ON
+2021-01-22 00:10:23,724 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:10:24,118 INFO werkzeug Thread-7 : Pump is OFF
+2021-01-22 00:10:28,221 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:10:28,608 INFO werkzeug Thread-9 : Pump is ON
+2021-01-22 00:10:33,721 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:10:34,114 INFO werkzeug Thread-9 : Pump is OFF
+2021-01-22 00:10:38,219 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:10:38,609 INFO werkzeug Thread-11 : Pump is ON
+2021-01-22 00:10:43,719 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:10:44,112 INFO werkzeug Thread-11 : Pump is OFF
+2021-01-22 00:10:48,216 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:10:48,609 INFO werkzeug Thread-13 : Pump is ON
+2021-01-22 00:10:53,721 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:10:54,114 INFO werkzeug Thread-13 : Pump is OFF
+2021-01-22 00:10:58,214 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:10:58,609 INFO werkzeug Thread-15 : Pump is ON
+2021-01-22 00:11:03,723 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:11:04,115 INFO werkzeug Thread-15 : Pump is OFF
+2021-01-22 00:11:08,217 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:11:08,609 INFO werkzeug Thread-17 : Pump is ON
+2021-01-22 00:11:13,721 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:11:14,114 INFO werkzeug Thread-17 : Pump is OFF
+2021-01-22 00:11:18,218 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:11:18,609 INFO werkzeug Thread-19 : Pump is ON
+2021-01-22 00:11:23,723 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:11:24,114 INFO werkzeug Thread-19 : Pump is OFF
+2021-01-22 00:11:28,216 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:11:28,610 INFO werkzeug Thread-21 : Pump is ON
+2021-01-22 00:11:33,721 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:11:34,114 INFO werkzeug Thread-21 : Pump is OFF
+2021-01-22 00:11:38,218 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:11:38,610 INFO werkzeug Thread-23 : Pump is ON
+2021-01-22 00:11:43,722 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:11:44,114 INFO werkzeug Thread-23 : Pump is OFF
+2021-01-22 00:11:48,216 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:11:48,611 INFO werkzeug Thread-25 : Pump is ON
+2021-01-22 00:11:53,720 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:11:54,114 INFO werkzeug Thread-25 : Pump is OFF
+2021-01-22 00:11:58,217 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:11:58,611 INFO werkzeug Thread-27 : Pump is ON
+2021-01-22 00:12:03,722 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:12:04,116 INFO werkzeug Thread-27 : Pump is OFF
+2021-01-22 00:12:08,219 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:12:08,611 INFO werkzeug Thread-29 : Pump is ON
+2021-01-22 00:12:13,720 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:12:14,114 INFO werkzeug Thread-29 : Pump is OFF
+2021-01-22 00:12:18,217 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:12:18,611 INFO werkzeug Thread-31 : Pump is ON
+2021-01-22 00:12:23,722 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:12:24,115 INFO werkzeug Thread-31 : Pump is OFF
+2021-01-22 00:12:28,219 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:12:28,612 INFO werkzeug Thread-33 : Pump is ON
+2021-01-22 00:12:33,724 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:12:34,119 INFO werkzeug Thread-33 : Pump is OFF
+2021-01-22 00:12:38,221 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:12:38,613 INFO werkzeug Thread-35 : Pump is ON
+2021-01-22 00:12:43,726 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:12:44,119 INFO werkzeug Thread-35 : Pump is OFF
+2021-01-22 00:12:48,219 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:12:48,613 INFO werkzeug Thread-37 : Pump is ON
+2021-01-22 00:12:53,724 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:12:54,119 INFO werkzeug Thread-37 : Pump is OFF
+2021-01-22 00:12:58,221 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:12:58,613 INFO werkzeug Thread-39 : Pump is ON
+2021-01-22 00:13:03,725 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:13:04,119 INFO werkzeug Thread-39 : Pump is OFF
+2021-01-22 00:13:08,219 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:13:08,613 INFO werkzeug Thread-41 : Pump is ON
+2021-01-22 00:13:13,724 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:13:14,119 INFO werkzeug Thread-41 : Pump is OFF
+2021-01-22 00:13:18,221 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:13:18,614 INFO werkzeug Thread-43 : Pump is ON
+2021-01-22 00:13:23,725 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:13:24,118 INFO werkzeug Thread-43 : Pump is OFF
+2021-01-22 00:13:28,222 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:13:28,614 INFO werkzeug Thread-45 : Pump is ON
+2021-01-22 00:13:33,728 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:13:34,121 INFO werkzeug Thread-45 : Pump is OFF
+2021-01-22 00:13:38,221 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:13:38,615 INFO werkzeug Thread-47 : Pump is ON
+2021-01-22 00:13:43,725 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:13:44,118 INFO werkzeug Thread-47 : Pump is OFF
+2021-01-22 00:13:48,222 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:13:48,615 INFO werkzeug Thread-49 : Pump is ON
+2021-01-22 00:13:53,723 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:13:54,119 INFO werkzeug Thread-49 : Pump is OFF
+2021-01-22 00:13:58,220 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:13:58,615 INFO werkzeug Thread-51 : Pump is ON
+2021-01-22 00:14:03,725 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:14:04,118 INFO werkzeug Thread-51 : Pump is OFF
+2021-01-22 00:14:08,222 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:14:08,616 INFO werkzeug Thread-53 : Pump is ON
+2021-01-22 00:14:13,726 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:14:14,118 INFO werkzeug Thread-53 : Pump is OFF
+2021-01-22 00:14:18,224 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:14:18,616 INFO werkzeug Thread-55 : Pump is ON
+2021-01-22 00:14:23,725 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:14:24,118 INFO werkzeug Thread-55 : Pump is OFF
+2021-01-22 00:14:28,222 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:14:28,616 INFO werkzeug Thread-57 : Pump is ON
+2021-01-22 00:14:33,731 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:14:34,122 INFO werkzeug Thread-57 : Pump is OFF
+2021-01-22 00:14:38,224 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:14:38,616 INFO werkzeug Thread-59 : Pump is ON
+2021-01-22 00:14:43,724 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:14:44,119 INFO werkzeug Thread-59 : Pump is OFF
+2021-01-22 00:14:48,226 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:14:48,619 INFO werkzeug Thread-61 : Pump is ON
+2021-01-22 00:14:53,730 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:14:54,122 INFO werkzeug Thread-61 : Pump is OFF
+2021-01-22 00:14:58,224 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:14:58,617 INFO werkzeug Thread-63 : Pump is ON
+2021-01-22 00:15:03,729 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:15:04,122 INFO werkzeug Thread-63 : Pump is OFF
+2021-01-22 00:15:08,225 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:15:08,617 INFO werkzeug Thread-65 : Pump is ON
+2021-01-22 00:15:13,730 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:15:14,123 INFO werkzeug Thread-65 : Pump is OFF
+2021-01-22 00:15:18,224 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:15:18,617 INFO werkzeug Thread-67 : Pump is ON
+2021-01-22 00:15:23,728 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:15:24,122 INFO werkzeug Thread-67 : Pump is OFF
+2021-01-22 00:15:28,225 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:15:28,618 INFO werkzeug Thread-69 : Pump is ON
+2021-01-22 00:15:33,730 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-22 00:15:34,122 INFO werkzeug Thread-69 : Pump is OFF
+2021-01-22 00:15:38,223 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-22 00:15:38,619 INFO werkzeug Thread-71 : Pump is ON

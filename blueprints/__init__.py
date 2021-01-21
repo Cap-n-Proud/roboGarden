@@ -39,7 +39,7 @@ def create_app():
         from .status import status
         from blueprints.init import init
         init()
-        # configure_logging()
+        configure_logging()
         # Register Blueprints
         app.register_blueprint(status.status_bp)
         app.register_blueprint(control.control_bp)

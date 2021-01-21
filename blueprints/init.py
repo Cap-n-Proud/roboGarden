@@ -17,7 +17,7 @@ from blueprints.L_events import *
 from blueprints.threads import *
 from flask import current_app as app
 
-
+# from apscheduler.schedulers.background import BackgroundScheduler
 def initSerial():
     port = config.Hardware.SERIALPORT
     baud = config.Hardware.SERIALBAUD
@@ -41,8 +41,16 @@ def init():
     thread.start()
 
     checkL = RepeatedTimer(
-        int(config.Hardware.READSERIALINTERVAL), checkLights, currentProgram
+        int(config.Hardware.CHECKLIGHTSINTERVAL), checkLights, currentProgram
     )
+
+    # schedulerL = BackgroundScheduler()
+    # schedulerL.add_job(checkLights, 'interval', args=[currentProgram] ,seconds=3)
+    # schedulerL.start()
+    #
+    # scheduler = BackgroundScheduler()
+    # scheduler.add_job(activatePump, 'interval', args=[currentProgram] ,seconds=3)
+    # scheduler.start()
 
     checkP = RepeatedTimer(
             int(currentProgram["pumpStartEvery"]), activatePump, currentProgram
