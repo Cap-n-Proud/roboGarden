@@ -23,22 +23,13 @@
         'Content-Type': 'application/json'
       }
     }
-     console.log(options)
+    // console.log(options)
     // send POST request
     fetch(URL, options)
       .then(res => res.json())
     //.then(res => console.log(res));
 
   }
-
-  var socket = io();
-
-  socket.on('I', function(msg, cb) {
-    document.getElementById("infoBox").innerHTML = msg;
-    if (cb)
-      cb();
-  });
-
 
 
 

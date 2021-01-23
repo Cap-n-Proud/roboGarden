@@ -1,0 +1,49 @@
+
+{% extends "layout.jinja2" %}
+
+{#{% block pagestyles %}
+  {% assets "status_less_bundle" %}
+    <link href="{{ ASSET_URL }}" rel="stylesheet" type="text/css">
+  {% endassets %}
+{% endblock %}
+#}
+
+{% block content %}
+<script type="text/javascript">
+        programs = {{programs|tojson}}
+
+</script>
+<table>
+  <tr>
+    <td>
+      <select style="color: black;" id="PRGsel" onchange="loadProgram(this.value)">
+          {% for p in programs |sort(attribute='progName')%}
+          <option value="{{p.progID}}"{% if p.progID == currentProgram.progID %} selected{% endif %}>{{p.progName}}</option>
+        {% endfor %}
+      </select>
+    </td>
+    <td></td>
+    <td><span id="progLabel"></span></td>
+  </tr>
+  <tr>
+    <td>
+      <label class="switch">
+        <input id="pump" type="checkbox" value="OFF" onchange="pumpControl(this)">
+        <span class="slider round"></span><input data-clocklet>
+      </label>
+      <label for="pumpPulse">duration</label>
+      <input type="number" id="pumpPulse" name="quantity" default="1" min="1" max="200" size="2">
+    </td>
+    <td><span id="pumpLabel"></span></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td colspan="3"></td>
+  </tr>
+</table>
+
+
+
+{% include "scriptsControl.jinja2" %}
+
+{% endblock %}

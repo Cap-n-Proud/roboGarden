@@ -10,8 +10,7 @@
 
 {% block content %}
 
-<div id="infoBox">
-</div>
+{% include "indexTelemetry.jinja2" %}
 
 <div class="status">
 {% for towers in status.towers %}
@@ -23,7 +22,7 @@
         <br>
         <div class="select">
           <select style="color: black;" id="s{{pod.podID}}" onchange="postPlant(this)">
-            {% for plant in plantsDB.plants %}
+            {% for plant in plantsDB.plants |sort(attribute='name')%}
               <option value="{{plant.plantID}}"{% if plant.plantID == pod.plantID %} selected{% endif %}>{{plant.name}}</option>
             {% endfor %}
           </select>

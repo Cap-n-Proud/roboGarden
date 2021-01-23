@@ -1,5 +1,5 @@
-$fn = 200;
- = 75;
+$fn = 50;
+towerDiam = 75;
 
 
 
@@ -12,7 +12,8 @@ podThickness = 2;
 podAngle = 90;
 distanceBetweenLevels = 50;
 minDistanceFromTowerBase = 30;
-hollowPods =true;
+hollowPods =true
+;
 
 baseX = 800;
 baseY = 550;
@@ -22,7 +23,7 @@ baseThickness = 20;
 borderBaseX = 80;
 borderBaseY = 30;
 
-lightBeamDiam = 20;
+lightBeamDiam = 30;
 
 
 
@@ -38,6 +39,12 @@ sprinklerHoleDiam = 5;
 
 anchor = false;
 
+
+colFunnelHeight =10;
+collectorCollarH = 40;
+drainPipeHeight = 30;
+
+collectorDiam =25;
 
 
 
@@ -296,20 +303,6 @@ module sprinkler() {
     SUB_cutSprinklerSide();
     
 }}
-//SprinklerShelve();
-//sprinkler();
-
-//towerDome();
-
-//tower();
-//level(1);
-
-//roboGarden();
-colFunnelHeight =10;
-collectorCollarH = 40;
-drainPipeHeight = 30;
-
-collectorDiam =25;
 
 
 module collectorShell(){
@@ -320,13 +313,14 @@ translate([0,0,0])cylinder(h=collectorCollarH, d2=towerDiam + 2*towerThickness ,
 
 }
 
+
+
 module collectorHole(){
 union(){
     //Funnel
  translate([0,0,collectorCollarH-colFunnelHeight])cylinder(h=colFunnelHeight , d2=collectorDiam-2*towerThickness,d1=towerDiam);
     //Top
-translate([0,0,-2*collectorCollarH])cylinder(h=6*collectorCollarH, d2=-2*towerThickness,d1=collectorDiam-2*towerThickness);
-    //Bottom
+translate([0,0,-2*collectorCollarH])cylinder(h=6*collectorCollarH, d=collectorDiam-2*towerThickness);    //Bottom
 translate([0,0,-colFunnelHeight])cylinder(h=collectorCollarH, d2=towerDiam ,d1=towerDiam );
 }}
 
@@ -336,7 +330,10 @@ collectorShell();
 translate([0,0,-2])collectorHole();
     
     
-}}
+}
+
+translate([0,0,collectorCollarH-attachZ])attachment(towerDiam);
+}
 
 
 attachX = 10;
@@ -348,20 +345,44 @@ module SUB_support(){
     translate([attachX/2,attachY/2+2,-attachZ/2])cylinder(h=10,d1=3,d2=3);}
 }
 
-module attach(){    
-translate([towerDiam/2,0,0])rotate([0,0,-90])translate([-attachX/2,0,0])SUB_support();
+module attach(diam){    
+translate([diam/2,0,0])rotate([0,0,-90])translate([-attachX/2,0,0])SUB_support();
                 
         
     
 mirror(){    
- translate([towerDiam/2,0,0])rotate([0,0,-90])translate([-attachX/2,0,0])SUB_support();
+ translate([diam/2,0,0])rotate([0,0,-90])translate([-attachX/2,0,0])SUB_support();
 }
 }
 
-module attachment(){
-attach();
-rotate([0,0,90])attach();
+module attachment(diam){
+attach(diam);
+rotate([0,0,90])attach(diam);
 }
 
-collector();
-translate([0,0,collectorCollarH-attachZ])attachment();
+
+
+module lightPoleSupport(){
+ difference(){
+    union(){ cylinder (h=20, d=lightBeamDiam + 1 + 2*towerThickness);
+    translate([0,0,20-attachZ])attachment(lightBeamDiam);        
+        
+    }
+     translate([0,0,-towerThickness])cylinder (h=20, d=lightBeamDiam+1);
+    
+ }
+    
+}
+
+//lightPoleSupport();
+//collector();
+//roboGarden();
+
+//SprinklerShelve();
+//sprinkler();
+
+//towerDome();
+
+//tower();
+//level(1);
+

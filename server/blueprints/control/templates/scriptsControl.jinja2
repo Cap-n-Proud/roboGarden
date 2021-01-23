@@ -1,0 +1,50 @@
+{% extends "layout.jinja2" %}
+
+{% block scr %}
+
+<script>
+
+function loadProgram(ID)
+{
+//console.log(programs.find(item => item.progID === ID))
+var p = programs.find(item => item.progID === ID)
+var PrgContainer = document.getElementById("progLabel");
+PrgContainer.innerHTML =""
+for (name in p) {
+  var div = document.createElement("div");
+  div.innerHTML = name + ' ' + p[name];
+  PrgContainer.appendChild(div);
+
+}
+}
+function postCommand(cmd) {
+  const URL = `${window.origin}/arduinoCommand`
+  // post body data
+  const command = {
+    command: cmd
+  };
+
+  // request options
+  const options = {
+    method: 'POST',
+    body: JSON.stringify(command),
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  }
+//Change pump status based on the checkbox TODO based on the arduino feedback
+function pumpControl(checkboxElem) {
+  var x = document.getElementById("pump");
+  if (checkboxElem.checked) {
+    var timer = document.getElementById("pumpPulse").value;
+    var cmd = "pumpRunFor" + " " + timer
+    postCommand(cmd)
+  } else {
+    var cmd = "pumpStop"
+    postCommand(cmd)
+  }
+}
+</script>
+
+
+{% endblock scr %}

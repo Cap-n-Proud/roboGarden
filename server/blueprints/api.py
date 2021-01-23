@@ -5,26 +5,37 @@ import logging
 from flask import current_app as app
 
 # LOG = logging.getLogger(__name__)
-LOG = logging.getLogger('werkzeug')
+LOG = logging.getLogger("werkzeug")
 
 # Retrieve the current program, used to populate the indey.html file
+
+
 def getCurrentProgr():
     with open(config.JSON_Path.CURRENTPROGRAM) as f:
         data = json.load(f)
     return data
+
+
+def getPrograms():
+    with open(config.JSON_Path.PROGRAMS) as f:
+        data = json.load(f)
+    return data
+
 
 def getPlantsDB(app):
     with open(config.JSON_Path.PLANTDB) as f:
         data = json.load(f)
     return data
 
+
 def getStatus(app):
     with open(config.JSON_Path.STATUS) as f:
         data = json.load(f)
     return data
 
+
 def newPlant(r):
-    print(config.JSON_Path.STATUS)
+    # print(config.JSON_Path.STATUS)
     with open(config.JSON_Path.STATUS, "r") as f:
         data = json.load(f)
         try:
@@ -45,20 +56,30 @@ def newPlant(r):
                 + " in "
                 + r["podID"]
             )
-            LOG.info('New plant planted: ' + currentPod["plantName"] + ' ID:' + currentPod["plantID"] + ' in ' + r["podID"])
-# app.logging.info("Planted!!!")
+            LOG.info(
+                "New plant planted: "
+                + currentPod["plantName"]
+                + " ID:"
+                + currentPod["plantID"]
+                + " in "
+                + r["podID"]
+            )
+        # app.logging.info("Planted!!!")
         except Exception as e:
             print(e)
+
 
 @app.template_filter("upperstring")
 def upperstring(input):
     """Custom filter"""
     return input.upper()
 
+
 # https://stackabuse.com/converting-strings-to-datetime-in-python/
 @app.template_filter("formatDate")
 def formatDate(input):
     from datetime import datetime
+
     if len(input) == 20:
         format = "%Y-%m-%dT%H:%M:%SZ"
     else:

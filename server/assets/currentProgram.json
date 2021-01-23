@@ -1,4 +1,5 @@
 {
+  "progID": "001",
   "progName": "This is the current program",
   "pumpStartEvery": 10,
   "pumpRunTime": 5,

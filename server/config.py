@@ -27,6 +27,7 @@ class Hardware:
 class JSON_Path:
     JSON_PATH = "assets"
     CURRENTPROGRAM = "assets/currentProgram.json"
+    PROGRAMS = "assets/programs.json"
     PLANTDB = "assets/plants.json"
     STATUS = "assets/status.json"
 

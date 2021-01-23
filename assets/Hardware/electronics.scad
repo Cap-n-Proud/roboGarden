@@ -1,7 +1,14 @@
-$fn=150;
+//$fn=150;
 outerDiam = 6;
 screwDiam = 2.5;
 pilarHeight = 5;
+
+boardX = 200;
+boardY = 250;
+boardZ = 2; 
+
+boardHoleDiam = 10;
+boardHoleSpace = 15;
 
 //First is the board x, y second is the position of the first hole
 megaDim = [[101.6,53.34],[14,2.5]];
@@ -20,7 +27,7 @@ raspberry3 =[[],[],[],[],[]];
 echo(len(mega));
 
 for (i=[0:len(mega)]){
-    echo(mega[i][1] );
+    //echo(mega[i][1] );
 }
 
 module pillar(){
@@ -53,3 +60,21 @@ translate([boardDim[1][0], boardDim[1][1], pilarHeight])
 
 fullmodule(raspberryDim,raspberryB);
 translate([raspberryDim[0][0] + 20,0,0])fullmodule(unoDim,uno);
+
+module holes(){
+         for(y = [0 : boardHoleDiam + boardHoleSpace: boardY-2*(boardHoleDiam + boardHoleSpace)]){
+   
+    for(x = [0 : boardHoleDiam + boardHoleSpace: boardX-2*(boardHoleDiam + boardHoleSpace)]){
+         translate([x,y,0])cylinder(h=10, d=boardHoleDiam);
+     }
+}
+}
+
+module board(){
+difference(){
+    cube([boardX, boardY, boardZ]);
+    translate([(boardHoleDiam + boardHoleSpace),(boardHoleDiam + boardHoleSpace),-5])holes();
+}
+}
+
+board();

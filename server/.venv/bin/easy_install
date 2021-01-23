@@ -1,4 +1,4 @@
-#!/home/paolo/NAS/Software/roboGarden2/.venv/bin/python3
+#!/home/paolo/NAS/Software/roboGarden/server/.venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
