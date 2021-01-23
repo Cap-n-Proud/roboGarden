@@ -1,2 +1,2 @@
-sudo apt-get install -y nano python3 python3-pip git wget screen nmap  
+sudo apt-get install -y nano python3 python3-pip git wget screen arp-scan  
 pip3 install Flask pyserial
