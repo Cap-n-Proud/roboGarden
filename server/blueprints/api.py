@@ -34,6 +34,10 @@ def getStatus(app):
     return data
 
 
+def sendArduinoCmd(cmd):
+    print(cmd)
+
+
 def newPlant(r):
     # print(config.JSON_Path.STATUS)
     with open(config.JSON_Path.STATUS, "r") as f:

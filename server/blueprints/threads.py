@@ -94,7 +94,7 @@ def is_between(startTime, endTime, nowTime):
 def arduinoCommand(command):
     serial.Serial(
         config.Hardware.SERIALPORT, config.Hardware.SERIALBAUD, timeout=0.5
-    ).write(str(command + "\n").encode())
+    ).write(str((str(command) + "\n")).encode())
     time.sleep(0.5)
 
 

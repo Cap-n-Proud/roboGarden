@@ -18,7 +18,7 @@ for (name in p) {
 }
 }
 function postCommand(cmd) {
-  const URL = `${window.origin}/arduinoCommand`
+  const URL = `${window.origin}/api/arduinocmd`
   // post body data
   const command = {
     command: cmd
@@ -32,6 +32,11 @@ function postCommand(cmd) {
       'Content-Type': 'application/json'
     }
   }
+  // send POST request
+  fetch(URL, options)
+    .then(res => res.json())
+  //.then(res => console.log(res));
+}  
 //Change pump status based on the checkbox TODO based on the arduino feedback
 function pumpControl(checkboxElem) {
   var x = document.getElementById("pump");

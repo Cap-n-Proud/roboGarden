@@ -9501,3 +9501,983 @@ TypeError: Object of type function is not JSON serializable
 2021-01-24 00:23:51,465 INFO werkzeug Thread-118 : Pump is OFF
 2021-01-24 00:23:55,567 INFO werkzeug Thread-1 : Info from Arduino: Pump start
 2021-01-24 00:23:55,960 INFO werkzeug Thread-120 : Pump is ON
+2021-01-24 00:24:01,068 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:24:01,463 INFO werkzeug Thread-120 : Pump is OFF
+2021-01-24 00:24:05,565 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:24:05,960 INFO werkzeug Thread-122 : Pump is ON
+2021-01-24 00:24:11,070 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:24:11,463 INFO werkzeug Thread-122 : Pump is OFF
+2021-01-24 00:24:15,567 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:24:15,960 INFO werkzeug Thread-124 : Pump is ON
+2021-01-24 00:24:21,072 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:24:21,466 INFO werkzeug Thread-124 : Pump is OFF
+2021-01-24 00:24:25,569 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:24:25,964 INFO werkzeug Thread-126 : Pump is ON
+2021-01-24 00:24:31,074 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:24:31,468 INFO werkzeug Thread-126 : Pump is OFF
+2021-01-24 00:24:35,569 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:24:35,961 INFO werkzeug Thread-128 : Pump is ON
+2021-01-24 00:24:41,072 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:24:41,465 INFO werkzeug Thread-128 : Pump is OFF
+2021-01-24 00:24:45,569 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:24:45,961 INFO werkzeug Thread-130 : Pump is ON
+2021-01-24 00:24:51,073 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:24:51,467 INFO werkzeug Thread-130 : Pump is OFF
+2021-01-24 00:24:55,566 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:24:55,962 INFO werkzeug Thread-132 : Pump is ON
+2021-01-24 00:25:01,075 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:25:01,468 INFO werkzeug Thread-132 : Pump is OFF
+2021-01-24 00:25:05,569 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:25:05,962 INFO werkzeug Thread-134 : Pump is ON
+2021-01-24 00:25:11,073 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:25:11,467 INFO werkzeug Thread-134 : Pump is OFF
+2021-01-24 00:25:15,570 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:25:15,963 INFO werkzeug Thread-136 : Pump is ON
+2021-01-24 00:25:21,075 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:25:21,469 INFO werkzeug Thread-136 : Pump is OFF
+2021-01-24 00:25:25,568 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:25:25,963 INFO werkzeug Thread-138 : Pump is ON
+2021-01-24 00:25:31,077 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:25:31,469 INFO werkzeug Thread-138 : Pump is OFF
+2021-01-24 00:25:35,570 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:25:35,963 INFO werkzeug Thread-140 : Pump is ON
+2021-01-24 00:25:41,075 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:25:41,469 INFO werkzeug Thread-140 : Pump is OFF
+2021-01-24 00:25:45,572 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:25:45,964 INFO werkzeug Thread-142 : Pump is ON
+2021-01-24 00:25:51,077 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:25:51,470 INFO werkzeug Thread-142 : Pump is OFF
+2021-01-24 00:25:55,570 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:25:55,964 INFO werkzeug Thread-144 : Pump is ON
+2021-01-24 00:26:01,078 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:26:01,470 INFO werkzeug Thread-144 : Pump is OFF
+2021-01-24 00:26:05,571 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:26:05,964 INFO werkzeug Thread-146 : Pump is ON
+2021-01-24 00:26:11,077 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:26:11,470 INFO werkzeug Thread-146 : Pump is OFF
+2021-01-24 00:26:15,570 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:26:15,965 INFO werkzeug Thread-148 : Pump is ON
+2021-01-24 00:26:21,074 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:26:21,467 INFO werkzeug Thread-148 : Pump is OFF
+2021-01-24 00:26:25,572 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:26:25,966 INFO werkzeug Thread-150 : Pump is ON
+2021-01-24 00:26:31,077 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:26:31,471 INFO werkzeug Thread-150 : Pump is OFF
+2021-01-24 00:26:35,573 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:26:35,965 INFO werkzeug Thread-152 : Pump is ON
+2021-01-24 00:26:41,079 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:26:41,471 INFO werkzeug Thread-152 : Pump is OFF
+2021-01-24 00:26:45,571 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:26:45,965 INFO werkzeug Thread-154 : Pump is ON
+2021-01-24 00:26:51,076 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:26:51,471 INFO werkzeug Thread-154 : Pump is OFF
+2021-01-24 00:26:55,573 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:26:55,966 INFO werkzeug Thread-156 : Pump is ON
+2021-01-24 00:27:01,078 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:27:01,471 INFO werkzeug Thread-156 : Pump is OFF
+2021-01-24 00:27:05,571 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:27:05,966 INFO werkzeug Thread-158 : Pump is ON
+2021-01-24 00:27:11,076 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:27:11,471 INFO werkzeug Thread-158 : Pump is OFF
+2021-01-24 00:27:15,573 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:27:15,966 INFO werkzeug Thread-160 : Pump is ON
+2021-01-24 00:27:21,078 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:27:21,471 INFO werkzeug Thread-160 : Pump is OFF
+2021-01-24 00:27:25,574 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:27:25,967 INFO werkzeug Thread-162 : Pump is ON
+2021-01-24 00:27:31,080 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:27:31,473 INFO werkzeug Thread-162 : Pump is OFF
+2021-01-24 00:27:35,572 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:27:35,967 INFO werkzeug Thread-164 : Pump is ON
+2021-01-24 00:27:41,077 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:27:41,471 INFO werkzeug Thread-164 : Pump is OFF
+2021-01-24 00:27:45,574 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:27:45,971 INFO werkzeug Thread-166 : Pump is ON
+2021-01-24 00:27:51,083 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:27:51,475 INFO werkzeug Thread-166 : Pump is OFF
+2021-01-24 00:27:55,572 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:27:55,968 INFO werkzeug Thread-168 : Pump is ON
+2021-01-24 00:28:01,077 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:28:01,471 INFO werkzeug Thread-168 : Pump is OFF
+2021-01-24 00:28:05,574 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:28:05,968 INFO werkzeug Thread-170 : Pump is ON
+2021-01-24 00:28:11,079 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:28:11,471 INFO werkzeug Thread-170 : Pump is OFF
+2021-01-24 00:28:15,576 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:28:15,968 INFO werkzeug Thread-172 : Pump is ON
+2021-01-24 00:28:21,081 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:28:21,474 INFO werkzeug Thread-172 : Pump is OFF
+2021-01-24 00:28:25,574 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:28:25,968 INFO werkzeug Thread-174 : Pump is ON
+2021-01-24 00:28:31,078 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:28:31,471 INFO werkzeug Thread-174 : Pump is OFF
+2021-01-24 00:28:35,576 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:28:35,969 INFO werkzeug Thread-176 : Pump is ON
+2021-01-24 00:28:41,081 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:28:41,475 INFO werkzeug Thread-176 : Pump is OFF
+2021-01-24 00:28:45,574 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:28:45,969 INFO werkzeug Thread-178 : Pump is ON
+2021-01-24 00:28:51,082 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:28:51,475 INFO werkzeug Thread-178 : Pump is OFF
+2021-01-24 00:28:55,576 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:28:55,969 INFO werkzeug Thread-180 : Pump is ON
+2021-01-24 00:29:01,080 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:29:01,475 INFO werkzeug Thread-180 : Pump is OFF
+2021-01-24 00:29:05,578 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:29:05,970 INFO werkzeug Thread-182 : Pump is ON
+2021-01-24 00:29:11,082 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:29:11,475 INFO werkzeug Thread-182 : Pump is OFF
+2021-01-24 00:29:15,579 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:29:15,971 INFO werkzeug Thread-184 : Pump is ON
+2021-01-24 00:29:21,080 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:29:21,483 INFO werkzeug Thread-184 : Pump is OFF
+2021-01-24 00:29:25,578 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:29:25,971 INFO werkzeug Thread-186 : Pump is ON
+2021-01-24 00:29:31,082 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:29:31,476 INFO werkzeug Thread-186 : Pump is OFF
+2021-01-24 00:29:35,579 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:29:35,972 INFO werkzeug Thread-188 : Pump is ON
+2021-01-24 00:29:41,084 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:29:41,476 INFO werkzeug Thread-188 : Pump is OFF
+2021-01-24 00:29:45,577 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:29:45,972 INFO werkzeug Thread-190 : Pump is ON
+2021-01-24 00:29:51,082 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:29:51,475 INFO werkzeug Thread-190 : Pump is OFF
+2021-01-24 00:29:55,579 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:29:55,972 INFO werkzeug Thread-192 : Pump is ON
+2021-01-24 00:30:01,080 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:30:01,475 INFO werkzeug Thread-192 : Pump is OFF
+2021-01-24 00:30:05,577 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:30:05,972 INFO werkzeug Thread-194 : Pump is ON
+2021-01-24 00:30:11,082 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:30:11,475 INFO werkzeug Thread-194 : Pump is OFF
+2021-01-24 00:30:15,579 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:30:15,973 INFO werkzeug Thread-196 : Pump is ON
+2021-01-24 00:30:21,083 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:30:21,476 INFO werkzeug Thread-196 : Pump is OFF
+2021-01-24 00:30:25,580 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:30:25,973 INFO werkzeug Thread-198 : Pump is ON
+2021-01-24 00:30:31,085 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:30:31,481 INFO werkzeug Thread-198 : Pump is OFF
+2021-01-24 00:30:35,583 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:30:35,975 INFO werkzeug Thread-200 : Pump is ON
+2021-01-24 00:30:41,087 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:30:41,480 INFO werkzeug Thread-200 : Pump is OFF
+2021-01-24 00:30:45,580 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:30:45,975 INFO werkzeug Thread-202 : Pump is ON
+2021-01-24 00:30:51,086 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:30:51,480 INFO werkzeug Thread-202 : Pump is OFF
+2021-01-24 00:30:55,582 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:30:55,975 INFO werkzeug Thread-204 : Pump is ON
+2021-01-24 00:31:01,087 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:31:01,480 INFO werkzeug Thread-204 : Pump is OFF
+2021-01-24 00:31:05,580 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:31:05,976 INFO werkzeug Thread-206 : Pump is ON
+2021-01-24 00:31:11,085 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:31:11,479 INFO werkzeug Thread-206 : Pump is OFF
+2021-01-24 00:31:15,583 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:31:15,976 INFO werkzeug Thread-208 : Pump is ON
+2021-01-24 00:31:21,086 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:31:21,479 INFO werkzeug Thread-208 : Pump is OFF
+2021-01-24 00:31:25,584 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:31:25,976 INFO werkzeug Thread-210 : Pump is ON
+2021-01-24 00:31:31,089 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:31:31,482 INFO werkzeug Thread-210 : Pump is OFF
+2021-01-24 00:31:35,582 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:31:35,976 INFO werkzeug Thread-212 : Pump is ON
+2021-01-24 00:31:41,086 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:31:41,479 INFO werkzeug Thread-212 : Pump is OFF
+2021-01-24 00:31:45,584 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:31:45,977 INFO werkzeug Thread-214 : Pump is ON
+2021-01-24 00:31:51,085 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:31:51,479 INFO werkzeug Thread-214 : Pump is OFF
+2021-01-24 00:31:55,586 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:31:55,979 INFO werkzeug Thread-216 : Pump is ON
+2021-01-24 00:32:01,090 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:32:01,485 INFO werkzeug Thread-216 : Pump is OFF
+2021-01-24 00:32:05,587 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:32:05,979 INFO werkzeug Thread-218 : Pump is ON
+2021-01-24 00:32:11,088 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:32:11,483 INFO werkzeug Thread-218 : Pump is OFF
+2021-01-24 00:32:15,590 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:32:15,983 INFO werkzeug Thread-220 : Pump is ON
+2021-01-24 00:32:21,094 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:32:21,487 INFO werkzeug Thread-220 : Pump is OFF
+2021-01-24 00:32:25,591 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:32:25,983 INFO werkzeug Thread-222 : Pump is ON
+2021-01-24 00:32:31,092 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:32:31,487 INFO werkzeug Thread-222 : Pump is OFF
+2021-01-24 00:32:35,590 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:32:35,984 INFO werkzeug Thread-224 : Pump is ON
+2021-01-24 00:32:41,094 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:32:41,492 INFO werkzeug Thread-224 : Pump is OFF
+2021-01-24 00:32:45,591 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:32:45,984 INFO werkzeug Thread-226 : Pump is ON
+2021-01-24 00:32:51,096 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:32:51,490 INFO werkzeug Thread-226 : Pump is OFF
+2021-01-24 00:33:57,896 INFO werkzeug MainThread :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-01-24 00:34:08,011 INFO werkzeug Thread-1 : Info from Arduino: Brightness set to: 80%
+2021-01-24 00:34:08,113 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:34:08,390 INFO werkzeug Thread-2 : RGB set to 255 0 255
+2021-01-24 00:34:08,391 INFO werkzeug Thread-3 : Pump is ON
+2021-01-24 00:34:08,515 INFO werkzeug Thread-1 : Info from Arduino: LED set to RGB: 255 0 255 
+2021-01-24 00:34:08,891 INFO werkzeug Thread-2 : Lights set to 80
+2021-01-24 00:34:12,764 INFO werkzeug Thread-6 : 127.0.0.1 - - [24/Jan/2021 00:34:12] "[37mGET /control HTTP/1.1[0m" 200 -
+2021-01-24 00:34:13,508 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:34:13,895 INFO werkzeug Thread-3 : Pump is OFF
+2021-01-24 00:34:18,008 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:34:18,387 INFO werkzeug Thread-5 : Pump is ON
+2021-01-24 00:34:21,422 INFO werkzeug Thread-9 : 127.0.0.1 - - [24/Jan/2021 00:34:21] "[37mGET /control HTTP/1.1[0m" 200 -
+2021-01-24 00:34:23,506 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:34:23,891 INFO werkzeug Thread-5 : Pump is OFF
+2021-01-24 00:34:28,002 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:34:28,387 INFO werkzeug Thread-8 : Pump is ON
+2021-01-24 00:34:33,503 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:34:33,893 INFO werkzeug Thread-8 : Pump is OFF
+2021-01-24 00:34:38,000 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:34:38,387 INFO werkzeug Thread-11 : Pump is ON
+2021-01-24 00:34:43,501 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:34:43,895 INFO werkzeug Thread-11 : Pump is OFF
+2021-01-24 00:34:47,998 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:34:48,388 INFO werkzeug Thread-13 : Pump is ON
+2021-01-24 00:34:53,498 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:34:53,891 INFO werkzeug Thread-13 : Pump is OFF
+2021-01-24 00:34:57,996 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:34:58,388 INFO werkzeug Thread-15 : Pump is ON
+2021-01-24 00:35:05,498 INFO werkzeug MainThread :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-01-24 00:35:08,075 INFO werkzeug Thread-4 : 127.0.0.1 - - [24/Jan/2021 00:35:08] "[37mGET /control HTTP/1.1[0m" 200 -
+2021-01-24 00:35:15,600 INFO werkzeug Thread-1 : Info from Arduino: Brightness set to: 80%
+2021-01-24 00:35:15,702 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:35:15,976 INFO werkzeug Thread-2 : RGB set to 255 0 255
+2021-01-24 00:35:15,977 INFO werkzeug Thread-3 : Pump is ON
+2021-01-24 00:35:16,103 INFO werkzeug Thread-1 : Info from Arduino: LED set to RGB: 255 0 255 
+2021-01-24 00:35:16,478 INFO werkzeug Thread-2 : Lights set to 80
+2021-01-24 00:35:21,096 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:35:21,483 INFO werkzeug Thread-3 : Pump is OFF
+2021-01-24 00:35:22,677 INFO werkzeug Thread-7 : 127.0.0.1 - - [24/Jan/2021 00:35:22] "[37mGET /control HTTP/1.1[0m" 200 -
+2021-01-24 00:35:25,597 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:35:25,977 INFO werkzeug Thread-6 : Pump is ON
+2021-01-24 00:35:31,094 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:35:31,479 INFO werkzeug Thread-6 : Pump is OFF
+2021-01-24 00:35:35,591 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:35:35,979 INFO werkzeug Thread-9 : Pump is ON
+2021-01-24 00:35:41,092 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:35:41,483 INFO werkzeug Thread-9 : Pump is OFF
+2021-01-24 00:35:45,589 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:35:45,977 INFO werkzeug Thread-11 : Pump is ON
+2021-01-24 00:35:51,090 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:35:51,484 INFO werkzeug Thread-11 : Pump is OFF
+2021-01-24 00:35:55,587 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:35:55,977 INFO werkzeug Thread-13 : Pump is ON
+2021-01-24 00:36:01,091 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:36:01,483 INFO werkzeug Thread-13 : Pump is OFF
+2021-01-24 00:36:05,584 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:36:05,977 INFO werkzeug Thread-15 : Pump is ON
+2021-01-24 00:36:11,090 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:36:11,484 INFO werkzeug Thread-15 : Pump is OFF
+2021-01-24 00:36:15,582 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:36:15,978 INFO werkzeug Thread-17 : Pump is ON
+2021-01-24 00:36:21,091 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:36:21,484 INFO werkzeug Thread-17 : Pump is OFF
+2021-01-24 00:36:25,979 INFO werkzeug Thread-19 : Pump is ON
+2021-01-24 00:36:31,485 INFO werkzeug Thread-19 : Pump is OFF
+2021-01-24 00:36:35,981 INFO werkzeug Thread-21 : Pump is ON
+2021-01-24 00:36:41,489 INFO werkzeug Thread-21 : Pump is OFF
+2021-01-24 00:36:45,981 INFO werkzeug Thread-23 : Pump is ON
+2021-01-24 00:36:51,488 INFO werkzeug Thread-23 : Pump is OFF
+2021-01-24 00:36:59,087 INFO werkzeug MainThread :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-01-24 00:37:01,070 INFO werkzeug Thread-4 : 127.0.0.1 - - [24/Jan/2021 00:37:01] "[37mGET /control HTTP/1.1[0m" 200 -
+2021-01-24 00:37:09,189 INFO werkzeug Thread-1 : Info from Arduino: Brightness set to: 80%
+2021-01-24 00:37:09,291 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:37:09,566 INFO werkzeug Thread-2 : RGB set to 255 0 255
+2021-01-24 00:37:09,567 INFO werkzeug Thread-3 : Pump is ON
+2021-01-24 00:37:09,692 INFO werkzeug Thread-1 : Info from Arduino: LED set to RGB: 255 0 255 
+2021-01-24 00:37:10,068 INFO werkzeug Thread-2 : Lights set to 80
+2021-01-24 00:37:14,689 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:37:15,071 INFO werkzeug Thread-3 : Pump is OFF
+2021-01-24 00:37:19,186 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:37:19,568 INFO werkzeug Thread-6 : Pump is ON
+2021-01-24 00:37:24,683 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:37:25,071 INFO werkzeug Thread-6 : Pump is OFF
+2021-01-24 00:37:29,184 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:37:29,565 INFO werkzeug Thread-8 : Pump is ON
+2021-01-24 00:37:34,680 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:37:35,071 INFO werkzeug Thread-8 : Pump is OFF
+2021-01-24 00:37:39,177 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:37:39,565 INFO werkzeug Thread-10 : Pump is ON
+2021-01-24 00:37:44,678 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:37:45,071 INFO werkzeug Thread-10 : Pump is OFF
+2021-01-24 00:37:49,176 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:37:49,566 INFO werkzeug Thread-12 : Pump is ON
+2021-01-24 00:37:54,676 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:37:55,069 INFO werkzeug Thread-12 : Pump is OFF
+2021-01-24 00:37:59,173 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:37:59,566 INFO werkzeug Thread-14 : Pump is ON
+2021-01-24 00:38:04,678 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:38:05,071 INFO werkzeug Thread-14 : Pump is OFF
+2021-01-24 00:38:09,171 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:38:09,566 INFO werkzeug Thread-16 : Pump is ON
+2021-01-24 00:38:14,676 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:38:15,071 INFO werkzeug Thread-16 : Pump is OFF
+2021-01-24 00:38:19,173 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:38:19,566 INFO werkzeug Thread-18 : Pump is ON
+2021-01-24 00:38:24,678 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:38:25,071 INFO werkzeug Thread-18 : Pump is OFF
+2021-01-24 00:38:29,174 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:38:29,567 INFO werkzeug Thread-20 : Pump is ON
+2021-01-24 00:38:34,676 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:38:35,071 INFO werkzeug Thread-20 : Pump is OFF
+2021-01-24 00:38:39,173 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:38:39,567 INFO werkzeug Thread-22 : Pump is ON
+2021-01-24 00:38:44,677 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:38:45,071 INFO werkzeug Thread-22 : Pump is OFF
+2021-01-24 00:38:49,175 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:38:49,568 INFO werkzeug Thread-24 : Pump is ON
+2021-01-24 00:38:54,679 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:38:55,071 INFO werkzeug Thread-24 : Pump is OFF
+2021-01-24 00:38:59,176 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:38:59,569 INFO werkzeug Thread-26 : Pump is ON
+2021-01-24 00:39:04,681 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:39:05,075 INFO werkzeug Thread-26 : Pump is OFF
+2021-01-24 00:39:09,175 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:39:09,569 INFO werkzeug Thread-28 : Pump is ON
+2021-01-24 00:39:14,683 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:39:15,075 INFO werkzeug Thread-28 : Pump is OFF
+2021-01-24 00:39:19,176 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:39:19,569 INFO werkzeug Thread-30 : Pump is ON
+2021-01-24 00:39:24,681 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:39:25,075 INFO werkzeug Thread-30 : Pump is OFF
+2021-01-24 00:39:29,174 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:39:29,569 INFO werkzeug Thread-32 : Pump is ON
+2021-01-24 00:39:34,683 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:39:35,075 INFO werkzeug Thread-32 : Pump is OFF
+2021-01-24 00:39:39,176 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:39:39,569 INFO werkzeug Thread-34 : Pump is ON
+2021-01-24 00:39:44,681 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:39:45,075 INFO werkzeug Thread-34 : Pump is OFF
+2021-01-24 00:39:49,178 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:39:49,569 INFO werkzeug Thread-36 : Pump is ON
+2021-01-24 00:39:54,683 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:39:55,075 INFO werkzeug Thread-36 : Pump is OFF
+2021-01-24 00:39:59,176 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:39:59,569 INFO werkzeug Thread-38 : Pump is ON
+2021-01-24 00:40:01,707 INFO werkzeug Thread-41 : 127.0.0.1 - - [24/Jan/2021 00:40:01] "[37mGET /control HTTP/1.1[0m" 200 -
+2021-01-24 00:40:04,681 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:40:05,075 INFO werkzeug Thread-38 : Pump is OFF
+2021-01-24 00:40:09,178 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:40:09,570 INFO werkzeug Thread-40 : Pump is ON
+2021-01-24 00:40:14,683 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:40:15,076 INFO werkzeug Thread-40 : Pump is OFF
+2021-01-24 00:40:19,176 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:40:19,570 INFO werkzeug Thread-43 : Pump is ON
+2021-01-24 00:40:24,680 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:40:25,075 INFO werkzeug Thread-43 : Pump is OFF
+2021-01-24 00:40:29,178 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:40:29,571 INFO werkzeug Thread-45 : Pump is ON
+2021-01-24 00:40:34,682 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:40:35,075 INFO werkzeug Thread-45 : Pump is OFF
+2021-01-24 00:40:39,175 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:40:39,571 INFO werkzeug Thread-47 : Pump is ON
+2021-01-24 00:40:44,680 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:40:45,075 INFO werkzeug Thread-47 : Pump is OFF
+2021-01-24 00:40:49,178 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:40:49,571 INFO werkzeug Thread-49 : Pump is ON
+2021-01-24 00:40:54,699 INFO werkzeug MainThread :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-01-24 00:40:54,936 INFO werkzeug Thread-4 : 127.0.0.1 - - [24/Jan/2021 00:40:54] "[37mGET /control HTTP/1.1[0m" 200 -
+2021-01-24 00:40:57,999 INFO werkzeug Thread-5 : 127.0.0.1 - - [24/Jan/2021 00:40:57] "[37mGET /control HTTP/1.1[0m" 200 -
+2021-01-24 00:41:04,795 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:41:04,897 INFO werkzeug Thread-1 : Info from Arduino: Brightness set to: 80%
+2021-01-24 00:41:05,173 INFO werkzeug Thread-3 : Pump is ON
+2021-01-24 00:41:05,174 INFO werkzeug Thread-2 : RGB set to 255 0 255
+2021-01-24 00:41:05,299 INFO werkzeug Thread-1 : Info from Arduino: LED set to RGB: 255 0 255 
+2021-01-24 00:41:05,675 INFO werkzeug Thread-2 : Lights set to 80
+2021-01-24 00:41:10,295 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:41:10,679 INFO werkzeug Thread-3 : Pump is OFF
+2021-01-24 00:41:14,793 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:41:15,173 INFO werkzeug Thread-7 : Pump is ON
+2021-01-24 00:41:20,289 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:41:20,679 INFO werkzeug Thread-7 : Pump is OFF
+2021-01-24 00:41:24,790 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:41:25,173 INFO werkzeug Thread-9 : Pump is ON
+2021-01-24 00:41:30,287 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:41:30,677 INFO werkzeug Thread-9 : Pump is OFF
+2021-01-24 00:41:34,788 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:41:35,173 INFO werkzeug Thread-11 : Pump is ON
+2021-01-24 00:41:40,285 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:41:40,679 INFO werkzeug Thread-11 : Pump is OFF
+2021-01-24 00:41:44,782 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:41:45,174 INFO werkzeug Thread-13 : Pump is ON
+2021-01-24 00:41:50,287 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:41:50,680 INFO werkzeug Thread-13 : Pump is OFF
+2021-01-24 00:41:54,780 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:41:55,174 INFO werkzeug Thread-14 : Pump is ON
+2021-01-24 00:42:00,679 INFO werkzeug Thread-14 : Pump is OFF
+2021-01-24 00:42:05,176 INFO werkzeug Thread-17 : Pump is ON
+2021-01-24 00:42:10,682 INFO werkzeug Thread-17 : Pump is OFF
+2021-01-24 00:42:15,177 INFO werkzeug Thread-19 : Pump is ON
+2021-01-24 00:42:20,684 INFO werkzeug Thread-19 : Pump is OFF
+2021-01-24 00:42:25,177 INFO werkzeug Thread-21 : Pump is ON
+2021-01-24 00:42:30,685 INFO werkzeug Thread-21 : Pump is OFF
+2021-01-24 00:42:35,178 INFO werkzeug Thread-23 : Pump is ON
+2021-01-24 00:42:40,685 INFO werkzeug Thread-23 : Pump is OFF
+2021-01-24 00:42:45,178 INFO werkzeug Thread-25 : Pump is ON
+2021-01-24 00:42:50,689 INFO werkzeug Thread-25 : Pump is OFF
+2021-01-24 00:42:55,178 INFO werkzeug Thread-27 : Pump is ON
+2021-01-24 00:43:01,892 INFO werkzeug MainThread :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-01-24 00:43:04,097 INFO werkzeug Thread-4 : 127.0.0.1 - - [24/Jan/2021 00:43:04] "[37mGET /control HTTP/1.1[0m" 200 -
+2021-01-24 00:43:08,436 ERROR blueprints Thread-5 : Exception on /api/arduinocmd [POST]
+Traceback (most recent call last):
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/cmd/cmd.py", line 38, in arduinocmd
+    arduinoCommand(req)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 97, in arduinoCommand
+    ).write(str(command + "\n").encode())
+TypeError: unsupported operand type(s) for +: 'dict' and 'str'
+2021-01-24 00:43:08,449 INFO werkzeug Thread-5 : 127.0.0.1 - - [24/Jan/2021 00:43:08] "[35m[1mPOST /api/arduinocmd HTTP/1.1[0m" 500 -
+2021-01-24 00:43:11,998 INFO werkzeug Thread-1 : Info from Arduino: Brightness set to: 80%
+2021-01-24 00:43:12,096 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:43:12,374 INFO werkzeug Thread-3 : Pump is ON
+2021-01-24 00:43:12,374 INFO werkzeug Thread-2 : RGB set to 255 0 255
+2021-01-24 00:43:12,497 INFO werkzeug Thread-1 : Info from Arduino: LED set to RGB: 255 0 255 
+2021-01-24 00:43:12,876 INFO werkzeug Thread-2 : Lights set to 80
+2021-01-24 00:43:17,495 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:43:17,879 INFO werkzeug Thread-3 : Pump is OFF
+2021-01-24 00:43:21,992 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:43:22,372 INFO werkzeug Thread-7 : Pump is ON
+2021-01-24 00:43:27,488 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:43:27,875 INFO werkzeug Thread-7 : Pump is OFF
+2021-01-24 00:43:31,989 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:43:32,372 INFO werkzeug Thread-9 : Pump is ON
+2021-01-24 00:43:37,486 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:43:37,878 INFO werkzeug Thread-9 : Pump is OFF
+2021-01-24 00:43:41,987 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:43:42,372 INFO werkzeug Thread-11 : Pump is ON
+2021-01-24 00:43:47,484 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:43:47,875 INFO werkzeug Thread-11 : Pump is OFF
+2021-01-24 00:43:51,981 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:43:52,372 INFO werkzeug Thread-13 : Pump is ON
+2021-01-24 00:43:57,482 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:43:57,876 INFO werkzeug Thread-13 : Pump is OFF
+2021-01-24 00:44:01,979 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:44:02,373 INFO werkzeug Thread-15 : Pump is ON
+2021-01-24 00:44:07,483 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:44:07,875 INFO werkzeug Thread-15 : Pump is OFF
+2021-01-24 00:44:11,980 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:44:12,373 INFO werkzeug Thread-17 : Pump is ON
+2021-01-24 00:44:17,485 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:44:17,879 INFO werkzeug Thread-17 : Pump is OFF
+2021-01-24 00:44:22,374 INFO werkzeug Thread-19 : Pump is ON
+2021-01-24 00:44:27,881 INFO werkzeug Thread-19 : Pump is OFF
+2021-01-24 00:44:32,377 INFO werkzeug Thread-21 : Pump is ON
+2021-01-24 00:44:37,883 INFO werkzeug Thread-21 : Pump is OFF
+2021-01-24 00:44:42,376 INFO werkzeug Thread-23 : Pump is ON
+2021-01-24 00:44:47,881 INFO werkzeug Thread-23 : Pump is OFF
+2021-01-24 00:44:52,377 INFO werkzeug Thread-25 : Pump is ON
+2021-01-24 00:44:57,885 INFO werkzeug Thread-25 : Pump is OFF
+2021-01-24 00:45:02,378 INFO werkzeug Thread-27 : Pump is ON
+2021-01-24 00:45:07,885 INFO werkzeug Thread-27 : Pump is OFF
+2021-01-24 00:45:12,378 INFO werkzeug Thread-29 : Pump is ON
+2021-01-24 00:45:15,327 INFO werkzeug MainThread :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-01-24 00:45:17,825 INFO werkzeug Thread-4 : 127.0.0.1 - - [24/Jan/2021 00:45:17] "[37mGET /control HTTP/1.1[0m" 200 -
+2021-01-24 00:45:20,339 WARNING werkzeug Thread-1 : Received non-JSON from Arduino: b"#Command: '{'command': 'pumpRunFor 1'}' not recognised\r\n"Expecting value: line 1 column 1 (char 0)
+2021-01-24 00:45:20,830 ERROR blueprints Thread-5 : Exception on /api/arduinocmd [POST]
+Traceback (most recent call last):
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/cmd/cmd.py", line 39, in arduinocmd
+    return redirect(url_for("control_bp.control", message="OK"))
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/helpers.py", line 357, in url_for
+    rv = url_adapter.build(
+  File "/home/paolo/.local/lib/python3.8/site-packages/werkzeug/routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'control_bp.control' with values ['message']. Did you mean 'control_bp.status' instead?
+2021-01-24 00:45:20,837 INFO werkzeug Thread-5 : 127.0.0.1 - - [24/Jan/2021 00:45:20] "[35m[1mPOST /api/arduinocmd HTTP/1.1[0m" 500 -
+2021-01-24 00:45:25,430 INFO werkzeug Thread-1 : Info from Arduino: Brightness set to: 80%
+2021-01-24 00:45:25,529 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:45:25,824 INFO werkzeug Thread-2 : RGB set to 255 0 255
+2021-01-24 00:45:25,825 INFO werkzeug Thread-3 : Pump is ON
+2021-01-24 00:45:25,935 INFO werkzeug Thread-1 : Info from Arduino: LED set to RGB: 255 0 255 
+2021-01-24 00:45:26,326 INFO werkzeug Thread-2 : Lights set to 80
+2021-01-24 00:45:30,939 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:45:31,331 INFO werkzeug Thread-3 : Pump is OFF
+2021-01-24 00:45:35,425 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:45:35,807 INFO werkzeug Thread-7 : Pump is ON
+2021-01-24 00:45:40,924 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:45:41,311 INFO werkzeug Thread-7 : Pump is OFF
+2021-01-24 00:45:43,026 WARNING werkzeug Thread-1 : Received non-JSON from Arduino: b"#Command: '{'command': 'pumpStop'}' not recognised\r\n"Expecting value: line 1 column 1 (char 0)
+2021-01-24 00:45:43,519 ERROR blueprints Thread-10 : Exception on /api/arduinocmd [POST]
+Traceback (most recent call last):
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/cmd/cmd.py", line 39, in arduinocmd
+    return redirect(url_for("control_bp.control", message="OK"))
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/helpers.py", line 357, in url_for
+    rv = url_adapter.build(
+  File "/home/paolo/.local/lib/python3.8/site-packages/werkzeug/routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'control_bp.control' with values ['message']. Did you mean 'control_bp.status' instead?
+2021-01-24 00:45:43,521 INFO werkzeug Thread-10 : 127.0.0.1 - - [24/Jan/2021 00:45:43] "[35m[1mPOST /api/arduinocmd HTTP/1.1[0m" 500 -
+2021-01-24 00:45:45,422 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:45:45,807 INFO werkzeug Thread-9 : Pump is ON
+2021-01-24 00:45:50,918 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:45:51,311 INFO werkzeug Thread-9 : Pump is OFF
+2021-01-24 00:45:53,196 WARNING werkzeug Thread-1 : Received non-JSON from Arduino: b"#Command: '{'command': 'pumpRunFor 6'}' not recognised\r\n"Expecting value: line 1 column 1 (char 0)
+2021-01-24 00:45:53,687 ERROR blueprints Thread-13 : Exception on /api/arduinocmd [POST]
+Traceback (most recent call last):
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/cmd/cmd.py", line 39, in arduinocmd
+    return redirect(url_for("control_bp.control", message="OK"))
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/helpers.py", line 357, in url_for
+    rv = url_adapter.build(
+  File "/home/paolo/.local/lib/python3.8/site-packages/werkzeug/routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'control_bp.control' with values ['message']. Did you mean 'control_bp.status' instead?
+2021-01-24 00:45:53,688 INFO werkzeug Thread-13 : 127.0.0.1 - - [24/Jan/2021 00:45:53] "[35m[1mPOST /api/arduinocmd HTTP/1.1[0m" 500 -
+2021-01-24 00:45:55,419 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:45:55,807 INFO werkzeug Thread-12 : Pump is ON
+2021-01-24 00:46:00,916 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:46:01,311 INFO werkzeug Thread-12 : Pump is OFF
+2021-01-24 00:46:05,414 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:46:05,807 INFO werkzeug Thread-15 : Pump is ON
+2021-01-24 00:46:10,918 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:46:11,311 INFO werkzeug Thread-15 : Pump is OFF
+2021-01-24 00:46:15,415 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:46:15,807 INFO werkzeug Thread-17 : Pump is ON
+2021-01-24 00:46:20,920 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:46:21,312 INFO werkzeug Thread-17 : Pump is OFF
+2021-01-24 00:46:25,311 WARNING werkzeug Thread-1 : Received non-JSON from Arduino: b'{"type":"T",htness":80}\r\n'Expecting property name enclosed in double quotes: line 1 column 13 (char 12)
+2021-01-24 00:46:25,413 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:46:25,807 INFO werkzeug Thread-19 : Pump is ON
+2021-01-24 00:46:30,918 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:46:31,323 INFO werkzeug Thread-19 : Pump is OFF
+2021-01-24 00:46:35,415 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:46:35,808 INFO werkzeug Thread-21 : Pump is ON
+2021-01-24 00:46:40,916 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:46:41,311 INFO werkzeug Thread-21 : Pump is OFF
+2021-01-24 00:46:45,413 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:46:45,808 INFO werkzeug Thread-23 : Pump is ON
+2021-01-24 00:46:50,968 INFO werkzeug MainThread :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-01-24 00:46:51,288 INFO werkzeug Thread-4 : 127.0.0.1 - - [24/Jan/2021 00:46:51] "[37mGET /control HTTP/1.1[0m" 200 -
+2021-01-24 00:46:54,473 WARNING werkzeug Thread-1 : Received non-JSON from Arduino: b"#Command: '{'command': 'pumpStop'}' not recognised\r\n"Expecting value: line 1 column 1 (char 0)
+2021-01-24 00:46:54,868 ERROR blueprints Thread-5 : Exception on /api/arduinocmd [POST]
+Traceback (most recent call last):
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/cmd/cmd.py", line 39, in arduinocmd
+    return redirect(url_for("control.control_bp", message="OK"))
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/helpers.py", line 357, in url_for
+    rv = url_adapter.build(
+  File "/home/paolo/.local/lib/python3.8/site-packages/werkzeug/routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'control.control_bp' with values ['message']. Did you mean 'control_bp.status' instead?
+2021-01-24 00:46:54,874 INFO werkzeug Thread-5 : 127.0.0.1 - - [24/Jan/2021 00:46:54] "[35m[1mPOST /api/arduinocmd HTTP/1.1[0m" 500 -
+2021-01-24 00:46:58,353 WARNING werkzeug Thread-1 : Received non-JSON from Arduino: b"#Command: '{'command': 'pumpRunFor 6'}' not recognised\r\n"Expecting value: line 1 column 1 (char 0)
+2021-01-24 00:46:58,844 ERROR blueprints Thread-6 : Exception on /api/arduinocmd [POST]
+Traceback (most recent call last):
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/cmd/cmd.py", line 39, in arduinocmd
+    return redirect(url_for("control.control_bp", message="OK"))
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/helpers.py", line 357, in url_for
+    rv = url_adapter.build(
+  File "/home/paolo/.local/lib/python3.8/site-packages/werkzeug/routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'control.control_bp' with values ['message']. Did you mean 'control_bp.status' instead?
+2021-01-24 00:46:58,845 INFO werkzeug Thread-6 : 127.0.0.1 - - [24/Jan/2021 00:46:58] "[35m[1mPOST /api/arduinocmd HTTP/1.1[0m" 500 -
+2021-01-24 00:47:01,071 INFO werkzeug Thread-1 : Info from Arduino: Brightness set to: 80%
+2021-01-24 00:47:01,170 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:47:01,174 WARNING werkzeug Thread-1 : Received non-JSON from Arduino: b"#Command: '{'command': 'pumpStop'}' not recognised\r\n"Expecting value: line 1 column 1 (char 0)
+2021-01-24 00:47:01,445 INFO werkzeug Thread-2 : RGB set to 255 0 255
+2021-01-24 00:47:01,446 INFO werkzeug Thread-3 : Pump is ON
+2021-01-24 00:47:01,572 INFO werkzeug Thread-1 : Info from Arduino: LED set to RGB: 255 0 255 
+2021-01-24 00:47:01,602 ERROR blueprints Thread-9 : Exception on /api/arduinocmd [POST]
+Traceback (most recent call last):
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/cmd/cmd.py", line 39, in arduinocmd
+    return redirect(url_for("control.control_bp", message="OK"))
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/helpers.py", line 357, in url_for
+    rv = url_adapter.build(
+  File "/home/paolo/.local/lib/python3.8/site-packages/werkzeug/routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'control.control_bp' with values ['message']. Did you mean 'control_bp.status' instead?
+2021-01-24 00:47:01,604 INFO werkzeug Thread-9 : 127.0.0.1 - - [24/Jan/2021 00:47:01] "[35m[1mPOST /api/arduinocmd HTTP/1.1[0m" 500 -
+2021-01-24 00:47:01,947 INFO werkzeug Thread-2 : Lights set to 80
+2021-01-24 00:47:03,358 WARNING werkzeug Thread-1 : Received non-JSON from Arduino: b"#Command: '{'command': 'pumpRunFor 6'}' not recognised\r\n"Expecting value: line 1 column 1 (char 0)
+2021-01-24 00:47:03,849 ERROR blueprints Thread-10 : Exception on /api/arduinocmd [POST]
+Traceback (most recent call last):
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/cmd/cmd.py", line 39, in arduinocmd
+    return redirect(url_for("control.control_bp", message="OK"))
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/helpers.py", line 357, in url_for
+    rv = url_adapter.build(
+  File "/home/paolo/.local/lib/python3.8/site-packages/werkzeug/routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'control.control_bp' with values ['message']. Did you mean 'control_bp.status' instead?
+2021-01-24 00:47:03,850 INFO werkzeug Thread-10 : 127.0.0.1 - - [24/Jan/2021 00:47:03] "[35m[1mPOST /api/arduinocmd HTTP/1.1[0m" 500 -
+2021-01-24 00:47:06,568 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:47:06,952 INFO werkzeug Thread-3 : Pump is OFF
+2021-01-24 00:47:11,065 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:47:11,446 INFO werkzeug Thread-8 : Pump is ON
+2021-01-24 00:47:16,562 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:47:16,951 INFO werkzeug Thread-8 : Pump is OFF
+2021-01-24 00:47:21,063 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:47:21,446 INFO werkzeug Thread-12 : Pump is ON
+2021-01-24 00:47:26,559 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:47:26,952 INFO werkzeug Thread-12 : Pump is OFF
+2021-01-24 00:47:31,057 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:47:31,446 INFO werkzeug Thread-14 : Pump is ON
+2021-01-24 00:47:36,557 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:47:36,951 INFO werkzeug Thread-14 : Pump is OFF
+2021-01-24 00:47:42,386 INFO werkzeug MainThread :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-01-24 00:47:42,793 INFO werkzeug Thread-4 : 127.0.0.1 - - [24/Jan/2021 00:47:42] "[37mGET /control HTTP/1.1[0m" 200 -
+2021-01-24 00:47:46,567 WARNING werkzeug Thread-1 : Received non-JSON from Arduino: b"#Command: '{'command': 'pumpStop'}' not recognised\r\n"Expecting value: line 1 column 1 (char 0)
+2021-01-24 00:47:47,058 INFO werkzeug Thread-5 : 127.0.0.1 - - [24/Jan/2021 00:47:47] "[32mPOST /api/arduinocmd HTTP/1.1[0m" 302 -
+2021-01-24 00:47:47,079 INFO werkzeug Thread-6 : 127.0.0.1 - - [24/Jan/2021 00:47:47] "[37mGET /control?message=OK HTTP/1.1[0m" 200 -
+2021-01-24 00:47:48,427 WARNING werkzeug Thread-1 : Received non-JSON from Arduino: b"#Command: '{'command': 'pumpRunFor 6'}' not recognised\r\n"Expecting value: line 1 column 1 (char 0)
+2021-01-24 00:47:48,917 INFO werkzeug Thread-7 : 127.0.0.1 - - [24/Jan/2021 00:47:48] "[32mPOST /api/arduinocmd HTTP/1.1[0m" 302 -
+2021-01-24 00:47:48,944 INFO werkzeug Thread-8 : 127.0.0.1 - - [24/Jan/2021 00:47:48] "[37mGET /control?message=OK HTTP/1.1[0m" 200 -
+2021-01-24 00:47:52,486 INFO werkzeug Thread-1 : Info from Arduino: Brightness set to: 80%
+2021-01-24 00:47:52,584 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:47:52,859 INFO werkzeug Thread-2 : RGB set to 255 0 255
+2021-01-24 00:47:52,860 INFO werkzeug Thread-3 : Pump is ON
+2021-01-24 00:47:52,986 INFO werkzeug Thread-1 : Info from Arduino: LED set to RGB: 255 0 255 
+2021-01-24 00:47:53,360 INFO werkzeug Thread-2 : Lights set to 80
+2021-01-24 00:47:54,185 WARNING werkzeug Thread-1 : Received non-JSON from Arduino: b"#Command: '{'command': 'pumpStop'}' not recognised\r\n"Expecting value: line 1 column 1 (char 0)
+2021-01-24 00:47:54,676 INFO werkzeug Thread-11 : 127.0.0.1 - - [24/Jan/2021 00:47:54] "[32mPOST /api/arduinocmd HTTP/1.1[0m" 302 -
+2021-01-24 00:47:54,696 INFO werkzeug Thread-12 : 127.0.0.1 - - [24/Jan/2021 00:47:54] "[37mGET /control?message=OK HTTP/1.1[0m" 200 -
+2021-01-24 00:47:55,066 WARNING werkzeug Thread-1 : Received non-JSON from Arduino: b"#Command: '{'command': 'pumpRunFor 6'}' not recognised\r\n"Expecting value: line 1 column 1 (char 0)
+2021-01-24 00:47:55,558 INFO werkzeug Thread-13 : 127.0.0.1 - - [24/Jan/2021 00:47:55] "[32mPOST /api/arduinocmd HTTP/1.1[0m" 302 -
+2021-01-24 00:47:55,578 INFO werkzeug Thread-14 : 127.0.0.1 - - [24/Jan/2021 00:47:55] "[37mGET /control?message=OK HTTP/1.1[0m" 200 -
+2021-01-24 00:47:57,982 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:47:58,367 INFO werkzeug Thread-3 : Pump is OFF
+2021-01-24 00:48:01,886 WARNING werkzeug Thread-1 : Received non-JSON from Arduino: b"#Command: '{'command': 'pumpStop'}' not recognised\r\n"Expecting value: line 1 column 1 (char 0)
+2021-01-24 00:48:02,345 INFO werkzeug Thread-15 : 127.0.0.1 - - [24/Jan/2021 00:48:02] "[32mPOST /api/arduinocmd HTTP/1.1[0m" 302 -
+2021-01-24 00:48:02,363 INFO werkzeug Thread-17 : 127.0.0.1 - - [24/Jan/2021 00:48:02] "[37mGET /control?message=OK HTTP/1.1[0m" 200 -
+2021-01-24 00:48:02,479 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:48:02,859 INFO werkzeug Thread-10 : Pump is ON
+2021-01-24 00:48:02,885 WARNING werkzeug Thread-1 : Received non-JSON from Arduino: b"#Command: '{'command': 'pumpRunFor 6'}' not recognised\r\n"Expecting value: line 1 column 1 (char 0)
+2021-01-24 00:48:03,311 INFO werkzeug Thread-19 : 127.0.0.1 - - [24/Jan/2021 00:48:03] "[32mPOST /api/arduinocmd HTTP/1.1[0m" 302 -
+2021-01-24 00:48:03,330 INFO werkzeug Thread-20 : 127.0.0.1 - - [24/Jan/2021 00:48:03] "[37mGET /control?message=OK HTTP/1.1[0m" 200 -
+2021-01-24 00:48:07,976 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:48:08,363 INFO werkzeug Thread-10 : Pump is OFF
+2021-01-24 00:48:12,477 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:48:12,859 INFO werkzeug Thread-18 : Pump is ON
+2021-01-24 00:48:17,974 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:48:18,363 INFO werkzeug Thread-18 : Pump is OFF
+2021-01-24 00:48:22,471 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:48:22,860 INFO werkzeug Thread-22 : Pump is ON
+2021-01-24 00:48:27,972 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:48:28,363 INFO werkzeug Thread-22 : Pump is OFF
+2021-01-24 00:48:32,469 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:48:32,860 INFO werkzeug Thread-24 : Pump is ON
+2021-01-24 00:48:37,969 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:48:38,363 INFO werkzeug Thread-24 : Pump is OFF
+2021-01-24 00:48:42,467 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:48:42,860 INFO werkzeug Thread-26 : Pump is ON
+2021-01-24 00:48:47,972 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:48:48,366 INFO werkzeug Thread-26 : Pump is OFF
+2021-01-24 00:48:52,469 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:48:52,861 INFO werkzeug Thread-28 : Pump is ON
+2021-01-24 00:48:57,969 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:48:58,363 INFO werkzeug Thread-28 : Pump is OFF
+2021-01-24 00:49:02,861 INFO werkzeug Thread-30 : Pump is ON
+2021-01-24 00:49:08,369 INFO werkzeug Thread-30 : Pump is OFF
+2021-01-24 00:49:12,865 INFO werkzeug Thread-32 : Pump is ON
+2021-01-24 00:49:18,373 INFO werkzeug Thread-32 : Pump is OFF
+2021-01-24 00:49:22,863 INFO werkzeug Thread-34 : Pump is ON
+2021-01-24 00:49:28,368 INFO werkzeug Thread-34 : Pump is OFF
+2021-01-24 00:49:32,866 INFO werkzeug Thread-36 : Pump is ON
+2021-01-24 00:49:37,199 INFO werkzeug MainThread :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-01-24 00:49:37,901 INFO werkzeug Thread-4 : 127.0.0.1 - - [24/Jan/2021 00:49:37] "[37mGET /control HTTP/1.1[0m" 200 -
+2021-01-24 00:49:40,270 WARNING werkzeug Thread-1 : Received non-JSON from Arduino: b"#Command: '{'command': 'pumpStop'}' not recognised\r\n"Expecting value: line 1 column 1 (char 0)
+2021-01-24 00:49:40,762 INFO werkzeug Thread-5 : 127.0.0.1 - - [24/Jan/2021 00:49:40] "[32mPOST /api/arduinocmd HTTP/1.1[0m" 302 -
+2021-01-24 00:49:40,783 INFO werkzeug Thread-6 : 127.0.0.1 - - [24/Jan/2021 00:49:40] "[37mGET /control?message=OK HTTP/1.1[0m" 200 -
+2021-01-24 00:49:42,589 WARNING werkzeug Thread-1 : Received non-JSON from Arduino: b"#Command: '{'command': 'pumpRunFor 6'}' not recognised\r\n"Expecting value: line 1 column 1 (char 0)
+2021-01-24 00:49:43,079 INFO werkzeug Thread-7 : 127.0.0.1 - - [24/Jan/2021 00:49:43] "[32mPOST /api/arduinocmd HTTP/1.1[0m" 302 -
+2021-01-24 00:49:43,097 INFO werkzeug Thread-8 : 127.0.0.1 - - [24/Jan/2021 00:49:43] "[37mGET /control?message=OK HTTP/1.1[0m" 200 -
+2021-01-24 00:49:47,304 INFO werkzeug Thread-1 : Info from Arduino: Brightness set to: 80%
+2021-01-24 00:49:47,406 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:49:47,683 INFO werkzeug Thread-2 : RGB set to 255 0 255
+2021-01-24 00:49:47,683 INFO werkzeug Thread-3 : Pump is ON
+2021-01-24 00:49:47,803 INFO werkzeug Thread-1 : Info from Arduino: LED set to RGB: 255 0 255 
+2021-01-24 00:49:48,195 INFO werkzeug Thread-2 : Lights set to 80
+2021-01-24 00:49:50,903 WARNING werkzeug Thread-1 : Received non-JSON from Arduino: b"#Command: '{'command': 'pumpStop'}' not recognised\r\n"Expecting value: line 1 column 1 (char 0)
+2021-01-24 00:49:51,396 INFO werkzeug Thread-11 : 127.0.0.1 - - [24/Jan/2021 00:49:51] "[32mPOST /api/arduinocmd HTTP/1.1[0m" 302 -
+2021-01-24 00:49:51,415 INFO werkzeug Thread-12 : 127.0.0.1 - - [24/Jan/2021 00:49:51] "[37mGET /control?message=OK HTTP/1.1[0m" 200 -
+2021-01-24 00:49:52,800 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:49:53,188 INFO werkzeug Thread-3 : Pump is OFF
+2021-01-24 00:49:57,297 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:49:57,682 INFO werkzeug Thread-10 : Pump is ON
+2021-01-24 00:50:02,797 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:50:03,189 INFO werkzeug Thread-10 : Pump is OFF
+2021-01-24 00:50:07,295 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:50:07,678 INFO werkzeug Thread-14 : Pump is ON
+2021-01-24 00:50:12,795 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:50:13,184 INFO werkzeug Thread-14 : Pump is OFF
+2021-01-24 00:50:17,293 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:50:17,680 INFO werkzeug Thread-16 : Pump is ON
+2021-01-24 00:50:22,793 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:50:23,183 INFO werkzeug Thread-16 : Pump is OFF
+2021-01-24 00:50:27,290 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:50:27,679 INFO werkzeug Thread-18 : Pump is ON
+2021-01-24 00:50:32,791 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:50:33,183 INFO werkzeug Thread-18 : Pump is OFF
+2021-01-24 00:50:37,288 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:50:37,680 INFO werkzeug Thread-20 : Pump is ON
+2021-01-24 00:50:43,183 INFO werkzeug Thread-20 : Pump is OFF
+2021-01-24 00:50:47,682 INFO werkzeug Thread-22 : Pump is ON
+2021-01-24 00:50:53,190 INFO werkzeug Thread-22 : Pump is OFF
+2021-01-24 00:50:57,682 INFO werkzeug Thread-24 : Pump is ON
+2021-01-24 00:51:03,189 INFO werkzeug Thread-24 : Pump is OFF
+2021-01-24 00:51:07,682 INFO werkzeug Thread-26 : Pump is ON
+2021-01-24 00:51:13,192 INFO werkzeug Thread-26 : Pump is OFF
+2021-01-24 00:51:17,683 INFO werkzeug Thread-28 : Pump is ON
+2021-01-24 00:51:23,189 INFO werkzeug Thread-28 : Pump is OFF
+2021-01-24 00:51:27,684 INFO werkzeug Thread-30 : Pump is ON
+2021-01-24 00:51:33,190 INFO werkzeug Thread-30 : Pump is OFF
+2021-01-24 00:51:37,686 INFO werkzeug Thread-32 : Pump is ON
+2021-01-24 00:51:43,193 INFO werkzeug Thread-32 : Pump is OFF
+2021-01-24 00:51:48,309 INFO werkzeug MainThread :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-01-24 00:51:50,001 INFO werkzeug Thread-4 : 127.0.0.1 - - [24/Jan/2021 00:51:50] "[37mGET /control HTTP/1.1[0m" 200 -
+2021-01-24 00:51:52,311 WARNING werkzeug Thread-1 : Received non-JSON from Arduino: b"#Command: '{'command': 'pumpRunFor 6'}' not recognised\r\n"Expecting value: line 1 column 1 (char 0)
+2021-01-24 00:51:52,770 INFO werkzeug Thread-5 : 127.0.0.1 - - [24/Jan/2021 00:51:52] "[32mPOST /api/arduinocmd HTTP/1.1[0m" 302 -
+2021-01-24 00:51:52,789 INFO werkzeug Thread-6 : 127.0.0.1 - - [24/Jan/2021 00:51:52] "[37mGET /control?message=OK HTTP/1.1[0m" 200 -
+2021-01-24 00:51:56,574 WARNING werkzeug Thread-1 : Received non-JSON from Arduino: b"#Command: '{'command': 'pumpStop'}' not recognised\r\n"Expecting value: line 1 column 1 (char 0)
+2021-01-24 00:51:57,067 INFO werkzeug Thread-7 : 127.0.0.1 - - [24/Jan/2021 00:51:57] "[32mPOST /api/arduinocmd HTTP/1.1[0m" 302 -
+2021-01-24 00:51:57,088 INFO werkzeug Thread-8 : 127.0.0.1 - - [24/Jan/2021 00:51:57] "[37mGET /control?message=OK HTTP/1.1[0m" 200 -
+2021-01-24 00:51:58,405 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:51:58,508 INFO werkzeug Thread-1 : Info from Arduino: Brightness set to: 80%
+2021-01-24 00:51:58,784 INFO werkzeug Thread-3 : Pump is ON
+2021-01-24 00:51:58,785 INFO werkzeug Thread-2 : RGB set to 255 0 255
+2021-01-24 00:51:58,909 INFO werkzeug Thread-1 : Info from Arduino: LED set to RGB: 255 0 255 
+2021-01-24 00:51:58,913 WARNING werkzeug Thread-1 : Received non-JSON from Arduino: b"#Command: '{'command': 'pumpRunFor 6'}' not recognised\r\n"Expecting value: line 1 column 1 (char 0)
+2021-01-24 00:51:59,286 INFO werkzeug Thread-2 : Lights set to 80
+2021-01-24 00:51:59,329 INFO werkzeug Thread-11 : 127.0.0.1 - - [24/Jan/2021 00:51:59] "[32mPOST /api/arduinocmd HTTP/1.1[0m" 302 -
+2021-01-24 00:51:59,352 INFO werkzeug Thread-12 : 127.0.0.1 - - [24/Jan/2021 00:51:59] "[37mGET /control?message=OK HTTP/1.1[0m" 200 -
+2021-01-24 00:52:03,493 WARNING werkzeug Thread-1 : Received non-JSON from Arduino: b"#Command: '{'command': 'pumpStop'}' not recognised\r\n"Expecting value: line 1 column 1 (char 0)
+2021-01-24 00:52:03,906 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:52:03,984 INFO werkzeug Thread-13 : 127.0.0.1 - - [24/Jan/2021 00:52:03] "[32mPOST /api/arduinocmd HTTP/1.1[0m" 302 -
+2021-01-24 00:52:04,002 INFO werkzeug Thread-14 : 127.0.0.1 - - [24/Jan/2021 00:52:04] "[37mGET /control?message=OK HTTP/1.1[0m" 200 -
+2021-01-24 00:52:04,287 INFO werkzeug Thread-3 : Pump is OFF
+2021-01-24 00:52:06,139 WARNING werkzeug Thread-1 : Received non-JSON from Arduino: b"#Command: '{'command': 'pumpRunFor 6'}' not recognised\r\n"Expecting value: line 1 column 1 (char 0)
+2021-01-24 00:52:06,631 INFO werkzeug Thread-15 : 127.0.0.1 - - [24/Jan/2021 00:52:06] "[32mPOST /api/arduinocmd HTTP/1.1[0m" 302 -
+2021-01-24 00:52:06,652 INFO werkzeug Thread-16 : 127.0.0.1 - - [24/Jan/2021 00:52:06] "[37mGET /control?message=OK HTTP/1.1[0m" 200 -
+2021-01-24 00:52:08,403 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:52:08,783 INFO werkzeug Thread-10 : Pump is ON
+2021-01-24 00:52:13,900 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:52:14,287 INFO werkzeug Thread-10 : Pump is OFF
+2021-01-24 00:52:18,401 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:52:18,783 INFO werkzeug Thread-18 : Pump is ON
+2021-01-24 00:52:23,897 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:52:24,287 INFO werkzeug Thread-18 : Pump is OFF
+2021-01-24 00:52:28,395 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:52:28,784 INFO werkzeug Thread-20 : Pump is ON
+2021-01-24 00:52:33,895 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:52:34,287 INFO werkzeug Thread-20 : Pump is OFF
+2021-01-24 00:52:38,393 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:52:38,783 INFO werkzeug Thread-22 : Pump is ON
+2021-01-24 00:52:43,893 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:52:44,288 INFO werkzeug Thread-22 : Pump is OFF
+2021-01-24 00:52:48,390 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:52:48,784 INFO werkzeug Thread-24 : Pump is ON
+2021-01-24 00:52:53,895 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:52:54,287 INFO werkzeug Thread-24 : Pump is OFF
+2021-01-24 00:53:00,795 INFO werkzeug MainThread :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-01-24 00:53:06,945 ERROR blueprints Thread-4 : Exception on /api/arduinocmd [POST]
+Traceback (most recent call last):
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/paolo/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/cmd/cmd.py", line 38, in arduinocmd
+    arduinoCommand(req)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 97, in arduinoCommand
+    ).write(str((str(command.command) + "\n")).encode())
+AttributeError: 'dict' object has no attribute 'command'
+2021-01-24 00:53:06,959 INFO werkzeug Thread-4 : 127.0.0.1 - - [24/Jan/2021 00:53:06] "[35m[1mPOST /api/arduinocmd HTTP/1.1[0m" 500 -
+2021-01-24 00:53:42,649 INFO werkzeug MainThread :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-01-24 00:53:45,556 INFO werkzeug Thread-4 : 127.0.0.1 - - [24/Jan/2021 00:53:45] "[37mGET /control HTTP/1.1[0m" 200 -
+2021-01-24 00:53:48,668 WARNING werkzeug Thread-1 : Received non-JSON from Arduino: b"#Command: '{'command': 'pumpRunFor 6'}' not recognised\r\n"Expecting value: line 1 column 1 (char 0)
+2021-01-24 00:53:49,158 INFO werkzeug Thread-5 : 127.0.0.1 - - [24/Jan/2021 00:53:49] "[32mPOST /api/arduinocmd HTTP/1.1[0m" 302 -
+2021-01-24 00:53:49,177 INFO werkzeug Thread-6 : 127.0.0.1 - - [24/Jan/2021 00:53:49] "[37mGET /control?message=OK HTTP/1.1[0m" 200 -
+2021-01-24 00:53:52,751 INFO werkzeug Thread-1 : Info from Arduino: Brightness set to: 80%
+2021-01-24 00:53:52,853 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:54:02,745 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:54:12,743 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:54:22,740 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:54:37,444 INFO werkzeug MainThread :  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-01-24 00:54:38,317 INFO werkzeug Thread-4 : 127.0.0.1 - - [24/Jan/2021 00:54:38] "[37mGET /control HTTP/1.1[0m" 200 -
+2021-01-24 00:54:41,200 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:54:41,594 INFO werkzeug Thread-5 : 127.0.0.1 - - [24/Jan/2021 00:54:41] "[32mPOST /api/arduinocmd HTTP/1.1[0m" 302 -
+2021-01-24 00:54:41,618 INFO werkzeug Thread-6 : 127.0.0.1 - - [24/Jan/2021 00:54:41] "[37mGET /control?message=OK HTTP/1.1[0m" 200 -
+2021-01-24 00:54:43,928 INFO werkzeug Thread-1 : Info from Arduino: Pump started for: 6 minutes
+2021-01-24 00:54:44,320 INFO werkzeug Thread-7 : 127.0.0.1 - - [24/Jan/2021 00:54:44] "[32mPOST /api/arduinocmd HTTP/1.1[0m" 302 -
+2021-01-24 00:54:44,339 INFO werkzeug Thread-8 : 127.0.0.1 - - [24/Jan/2021 00:54:44] "[37mGET /control?message=OK HTTP/1.1[0m" 200 -
+2021-01-24 00:54:47,524 INFO werkzeug Thread-1 : Info from Arduino: Brightness set to: 80%
+2021-01-24 00:54:47,729 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:54:47,918 INFO werkzeug Thread-2 : RGB set to 255 0 255
+2021-01-24 00:54:47,919 INFO werkzeug Thread-3 : Pump is ON
+2021-01-24 00:54:48,029 INFO werkzeug Thread-1 : Info from Arduino: LED set to RGB: 255 0 255 
+2021-01-24 00:54:48,419 INFO werkzeug Thread-2 : Lights set to 80
+2021-01-24 00:54:53,029 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:54:53,423 INFO werkzeug Thread-3 : Pump is OFF
+2021-01-24 00:54:54,356 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:54:54,753 INFO werkzeug Thread-11 : 127.0.0.1 - - [24/Jan/2021 00:54:54] "[32mPOST /api/arduinocmd HTTP/1.1[0m" 302 -
+2021-01-24 00:54:54,769 INFO werkzeug Thread-12 : 127.0.0.1 - - [24/Jan/2021 00:54:54] "[37mGET /control?message=OK HTTP/1.1[0m" 200 -
+2021-01-24 00:54:56,493 INFO werkzeug Thread-1 : Info from Arduino: Pump started for: 6 minutes
+2021-01-24 00:54:56,884 INFO werkzeug Thread-13 : 127.0.0.1 - - [24/Jan/2021 00:54:56] "[32mPOST /api/arduinocmd HTTP/1.1[0m" 302 -
+2021-01-24 00:54:56,900 INFO werkzeug Thread-14 : 127.0.0.1 - - [24/Jan/2021 00:54:56] "[37mGET /control?message=OK HTTP/1.1[0m" 200 -
+2021-01-24 00:54:57,522 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:54:57,923 INFO werkzeug Thread-10 : Pump is ON
+2021-01-24 00:55:03,035 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:55:03,429 INFO werkzeug Thread-10 : Pump is OFF
+2021-01-24 00:55:07,524 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:55:07,917 INFO werkzeug Thread-16 : Pump is ON
+2021-01-24 00:55:13,028 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:55:13,423 INFO werkzeug Thread-16 : Pump is OFF
+2021-01-24 00:55:17,522 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:55:17,917 INFO werkzeug Thread-18 : Pump is ON
+2021-01-24 00:55:23,031 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:55:23,423 INFO werkzeug Thread-18 : Pump is OFF
+2021-01-24 00:55:27,524 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:55:27,917 INFO werkzeug Thread-20 : Pump is ON
+2021-01-24 00:55:33,028 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:55:33,423 INFO werkzeug Thread-20 : Pump is OFF
+2021-01-24 00:55:37,525 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 00:55:37,917 INFO werkzeug Thread-22 : Pump is ON
+2021-01-24 00:55:43,026 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 00:55:43,421 INFO werkzeug Thread-22 : Pump is OFF
