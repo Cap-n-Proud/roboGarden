@@ -48,8 +48,8 @@ Folders:
 
 
 ## BoM
-- Hardware  
--  Cabinet:  [PLATSA 80x55x40 cm](https://www.ikea.com/ch/it/p/platsa-struttura-bianco-10330948/)
+### Hardware  
+#### Cabinet:  [PLATSA 80x55x40 cm](https://www.ikea.com/ch/it/p/platsa-struttura-bianco-10330948/)
 -  Towers  
   [Colonization cups](https://www.aliexpress.com/item/32857138128.html?spm=2114.12010612.8148356.69.77e049a6AKkXlr)  
 -  Water tank  
