@@ -1,0 +1,11 @@
+{
+  "progName": "This is the current program",
+  "pumpStartEvery": 2400,
+  "pumpRunTime": 30,
+  "pumpON": "08:00",
+  "pumpOFF": "01:00",
+  "lightBrightness": 80,
+  "RGB": "255 0 255",
+  "lightsON": "04:00",
+  "lightsOFF": "01:00"
+}

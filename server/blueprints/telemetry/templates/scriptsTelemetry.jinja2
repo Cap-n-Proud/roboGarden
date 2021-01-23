@@ -1,0 +1,68 @@
+{% extends "layout.jinja2" %}
+
+{% block scr %}
+
+<script>
+
+//Calls functions to load defaults and info.
+document.addEventListener("DOMContentLoaded", function() {
+
+
+});
+
+var socket = io();
+var telemetry = {'type': 'N/A', 'pumpON': 0, 'RGB': '0 0 0', 'brightness': 0}
+
+function hexTorgb(hex) {
+  return ['0x' + hex[1] + hex[2] | 0, '0x' + hex[3] + hex[4] | 0, '0x' + hex[5] + hex[6] | 0];
+}
+
+function R_G_BtoHEX(red, green, blue) {
+  red = red < 0 ? 0 : red > 255 ? 255 : red;
+  green = green < 0 ? 0 : green > 255 ? 255 : green;
+  blue = blue < 0 ? 0 : blue > 255 ? 255 : blue;
+
+  return "#" +
+    ("0" + parseInt(red, 10).toString(16)).slice(-2) +
+    ("0" + parseInt(green, 10).toString(16)).slice(-2) +
+    ("0" + parseInt(blue, 10).toString(16)).slice(-2);
+}
+//Capture and publish the information stream
+  socket.on('I', function(msg, cb) {
+    document.getElementById("infoBox").innerHTML = msg;
+    if (cb)
+      cb();
+  });
+
+  //Capture and publish the telemetry stream and create the global variable telemetry
+    socket.on('T', function(msg, cb) {
+      updatePumpStatus(msg);
+      updateLightsStatus(msg);
+      if (cb)
+        cb();
+    });
+
+//Capture and publish the pump status
+  function updatePumpStatus(telemetry) {
+    var x = document.getElementById("pump");
+    if (telemetry.pumpON) {
+      //document.getElementById("pump-text").innerHTML = "ON";
+      document.getElementById("pump").setAttribute("style", "color: RoyalBlue");
+    } else {
+    //  document.getElementById("pump-text").innerHTML = "OFF";
+      document.getElementById("pump").setAttribute("style", "color: LightGray");
+    }
+  }
+
+//Capture and publish the light RGB color
+  function updateLightsStatus(telemetry) {
+    var rgb = telemetry['RGB'].split(" ");
+    hexColor = R_G_BtoHEX(rgb[0], rgb[1], rgb[2])
+    document.getElementById("LED").setAttribute("style", "background-color: " + R_G_BtoHEX(rgb[0],rgb[1],rgb[2]));
+    document.getElementById("RGBColor").innerHTML = telemetry['RGB'] + " @ " + telemetry['brightness'] + "%";
+  }
+
+</script>
+
+
+{% endblock scr %}

@@ -1,0 +1,48 @@
+{% extends "layout.jinja2" %}
+
+{% block scr %}
+
+<script>
+
+// https://stackoverflow.com/questions/610336/retrieving-the-text-of-the-selected-option-in-select-element
+  function postPlant(cmd) {
+    const URL = `${window.origin}/api/plant`
+    // post body data
+    const command = {
+      plantName: cmd.options[cmd.selectedIndex].text,
+      plantID: cmd.value,
+      podID: cmd.id.replace('s',''),
+      plantedDate: (new Date().toJSON())
+    };
+
+    // request options
+    const options = {
+      method: 'POST',
+      body: JSON.stringify(command),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    }
+     console.log(options)
+    // send POST request
+    fetch(URL, options)
+      .then(res => res.json())
+    //.then(res => console.log(res));
+
+  }
+
+  var socket = io();
+
+  socket.on('I', function(msg, cb) {
+    document.getElementById("infoBox").innerHTML = msg;
+    if (cb)
+      cb();
+  });
+
+
+
+
+</script>
+
+
+{% endblock scr %}

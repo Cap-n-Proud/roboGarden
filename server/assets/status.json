@@ -1,0 +1,529 @@
+{
+    "towers": [
+        {
+            "name": "tower01",
+            "levels": [
+                {
+                    "level": "0",
+                    "pods": [
+                        {
+                            "podID": "00-00-00",
+                            "plantID": "003",
+                            "plantName": "Basilico Grande Genovese",
+                            "plantedDate": "2021-01-21T00:24:05.000Z"
+                        },
+                        {
+                            "podID": "00-00-01",
+                            "plantID": "019",
+                            "plantName": "Sage",
+                            "plantedDate": "2021-01-21T23:42:57.133Z"
+                        }
+                    ]
+                },
+                {
+                    "level": "1",
+                    "pods": [
+                        {
+                            "podID": "00-01-00",
+                            "plantID": "003",
+                            "plantName": "Basilico Grande Genovese",
+                            "plantedDate": "2021-01-21T00:24:09.000Z"
+                        },
+                        {
+                            "podID": "00-01-01",
+                            "plantID": "003",
+                            "plantName": "Basilico Grande Genovese",
+                            "plantedDate": "2021-01-18T23:29:53.600Z"
+                        }
+                    ]
+                },
+                {
+                    "level": "2",
+                    "pods": [
+                        {
+                            "podID": "00-02-00",
+                            "plantID": "003",
+                            "plantName": "Basilico Grande Genovese",
+                            "plantedDate": "2021-01-21T00:19:19.700Z"
+                        },
+                        {
+                            "podID": "00-02-01",
+                            "plantID": "003",
+                            "plantName": "Basilico Grande Genovese",
+                            "plantedDate": "2021-01-21T00:13:44.800Z"
+                        }
+                    ]
+                },
+                {
+                    "level": "3",
+                    "pods": [
+                        {
+                            "podID": "00-03-00",
+                            "plantID": "000",
+                            "plantName": "Basil",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        },
+                        {
+                            "podID": "00-03-01",
+                            "plantID": "004",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        }
+                    ]
+                },
+                {
+                    "level": "4",
+                    "pods": [
+                        {
+                            "podID": "00-04-00",
+                            "plantID": "000",
+                            "plantName": "Basil",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        },
+                        {
+                            "podID": "00-04-01",
+                            "plantID": "000",
+                            "plantName": "Basil",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        }
+                    ]
+                },
+                {
+                    "level": "5",
+                    "pods": [
+                        {
+                            "podID": "00-05-00",
+                            "plantID": "000",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        },
+                        {
+                            "podID": "00-05-01",
+                            "plantID": "000",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        }
+                    ]
+                },
+                {
+                    "level": "6",
+                    "pods": [
+                        {
+                            "podID": "00-06-00",
+                            "plantID": "000",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        },
+                        {
+                            "podID": "00-06-01",
+                            "plantID": "000",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        }
+                    ]
+                },
+                {
+                    "level": "7",
+                    "pods": [
+                        {
+                            "podID": "00-07-00",
+                            "plantID": "000",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        },
+                        {
+                            "podID": "00-07-01",
+                            "plantID": "015",
+                            "plantName": "Oregano",
+                            "plantedDate": "2021-01-22T20:49:40.900Z"
+                        }
+                    ]
+                },
+                {
+                    "level": "8",
+                    "pods": [
+                        {
+                            "podID": "00-08-00",
+                            "plantID": "005",
+                            "plantName": "Cayenne Pepper",
+                            "plantedDate": "2021-01-21T00:22:20.200Z"
+                        },
+                        {
+                            "podID": "00-08-01",
+                            "plantID": "012",
+                            "plantName": "Mint",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        }
+                    ]
+                },
+                {
+                    "level": "9",
+                    "pods": [
+                        {
+                            "podID": "00-09-00",
+                            "plantID": "001",
+                            "plantName": "Tomato Montfavet",
+                            "plantedDate": "2021-01-21T00:24:28.600Z"
+                        },
+                        {
+                            "podID": "00-09-01",
+                            "plantID": "003",
+                            "plantName": "Basilico Grande Genovese",
+                            "plantedDate": "2021-01-22T11:33:32.800Z"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "tower02",
+            "levels": [
+                {
+                    "level": "0",
+                    "pods": [
+                        {
+                            "podID": "01-00-00",
+                            "plantID": "007",
+                            "plantName": "Fiori Romantic Pink Feeling",
+                            "plantedDate": "2021-01-21T23:43:20.300Z"
+                        },
+                        {
+                            "podID": "01-00-01",
+                            "plantID": "017",
+                            "plantName": "Rosemary",
+                            "plantedDate": "2021-01-22T13:21:35.000Z"
+                        }
+                    ]
+                },
+                {
+                    "level": "1",
+                    "pods": [
+                        {
+                            "podID": "01-01-00",
+                            "plantID": "014",
+                            "plantName": "Nussalad Vera",
+                            "plantedDate": "2021-01-22T13:21:43.500Z"
+                        },
+                        {
+                            "podID": "01-01-01",
+                            "plantID": "018",
+                            "plantName": "Rucola Perenne",
+                            "plantedDate": "2021-01-22T13:21:39.900Z"
+                        }
+                    ]
+                },
+                {
+                    "level": "2",
+                    "pods": [
+                        {
+                            "podID": "01-02-00",
+                            "plantID": "003",
+                            "plantName": "Tomato Montfavet",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        },
+                        {
+                            "podID": "01-02-01",
+                            "plantID": "000",
+                            "plantName": "Mint",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        }
+                    ]
+                },
+                {
+                    "level": "3",
+                    "pods": [
+                        {
+                            "podID": "01-03-00",
+                            "plantID": "002",
+                            "plantName": "Lattuga da taglio Bionda a foglia liscia",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        },
+                        {
+                            "podID": "01-03-01",
+                            "plantID": "000",
+                            "plantName": "Basil",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        }
+                    ]
+                },
+                {
+                    "level": "4",
+                    "pods": [
+                        {
+                            "podID": "01-04-00",
+                            "plantID": "000",
+                            "plantName": "Basil",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        },
+                        {
+                            "podID": "01-04-01",
+                            "plantID": "000",
+                            "plantName": "Basil",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        }
+                    ]
+                },
+                {
+                    "level": "5",
+                    "pods": [
+                        {
+                            "podID": "01-05-00",
+                            "plantID": "000",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        },
+                        {
+                            "podID": "01-05-01",
+                            "plantID": "000",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        }
+                    ]
+                },
+                {
+                    "level": "6",
+                    "pods": [
+                        {
+                            "podID": "01-06-00",
+                            "plantID": "000",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        },
+                        {
+                            "podID": "01-06-01",
+                            "plantID": "000",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        }
+                    ]
+                },
+                {
+                    "level": "7",
+                    "pods": [
+                        {
+                            "podID": "01-07-00",
+                            "plantID": "000",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        },
+                        {
+                            "podID": "01-07-01",
+                            "plantID": "000",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        }
+                    ]
+                },
+                {
+                    "level": "8",
+                    "pods": [
+                        {
+                            "podID": "01-08-00",
+                            "plantID": "000",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        },
+                        {
+                            "podID": "01-08-01",
+                            "plantID": "000",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        }
+                    ]
+                },
+                {
+                    "level": "9",
+                    "pods": [
+                        {
+                            "podID": "01-09-00",
+                            "plantID": "005",
+                            "plantName": "Cayenne Pepper",
+                            "plantedDate": "2021-01-22T11:41:48.100Z"
+                        },
+                        {
+                            "podID": "01-09-01",
+                            "plantID": "000",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "tower03",
+            "levels": [
+                {
+                    "level": "0",
+                    "pods": [
+                        {
+                            "podID": "02-00-00",
+                            "plantID": "004",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        },
+                        {
+                            "podID": "02-00-01",
+                            "plantID": "000",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        }
+                    ]
+                },
+                {
+                    "level": "1",
+                    "pods": [
+                        {
+                            "podID": "02-01-00",
+                            "plantID": "000",
+                            "plantName": "Lettuce",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        },
+                        {
+                            "podID": "02-01-01",
+                            "plantID": "000",
+                            "plantName": "Lettuce",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        }
+                    ]
+                },
+                {
+                    "level": "2",
+                    "pods": [
+                        {
+                            "podID": "02-02-00",
+                            "plantID": "000",
+                            "plantName": "Mint",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        },
+                        {
+                            "podID": "02-02-01",
+                            "plantID": "000",
+                            "plantName": "Mint",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        }
+                    ]
+                },
+                {
+                    "level": "3",
+                    "pods": [
+                        {
+                            "podID": "02-03-00",
+                            "plantID": "000",
+                            "plantName": "Basil",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        },
+                        {
+                            "podID": "02-03-01",
+                            "plantID": "000",
+                            "plantName": "Basil",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        }
+                    ]
+                },
+                {
+                    "level": "4",
+                    "pods": [
+                        {
+                            "podID": "02-04-00",
+                            "plantID": "000",
+                            "plantName": "Basil",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        },
+                        {
+                            "podID": "02-04-01",
+                            "plantID": "000",
+                            "plantName": "Basil",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        }
+                    ]
+                },
+                {
+                    "level": "5",
+                    "pods": [
+                        {
+                            "podID": "02-05-00",
+                            "plantID": "000",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        },
+                        {
+                            "podID": "02-05-01",
+                            "plantID": "000",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        }
+                    ]
+                },
+                {
+                    "level": "6",
+                    "pods": [
+                        {
+                            "podID": "02-06-00",
+                            "plantID": "000",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        },
+                        {
+                            "podID": "02-06-01",
+                            "plantID": "000",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        }
+                    ]
+                },
+                {
+                    "level": "7",
+                    "pods": [
+                        {
+                            "podID": "02-07-00",
+                            "plantID": "000",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        },
+                        {
+                            "podID": "02-07-01",
+                            "plantID": "000",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        }
+                    ]
+                },
+                {
+                    "level": "8",
+                    "pods": [
+                        {
+                            "podID": "02-08-00",
+                            "plantID": "000",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        },
+                        {
+                            "podID": "02-08-01",
+                            "plantID": "000",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        }
+                    ]
+                },
+                {
+                    "level": "9",
+                    "pods": [
+                        {
+                            "podID": "02-09-00",
+                            "plantID": "000",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z"
+                        },
+                        {
+                            "podID": "02-09-01",
+                            "plantID": "001",
+                            "plantName": "Tomato Montfavet",
+                            "plantedDate": "2021-01-18T23:31:41.900Z"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

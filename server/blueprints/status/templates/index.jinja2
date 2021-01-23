@@ -1,0 +1,44 @@
+
+{% extends "layout.jinja2" %}
+
+{#{% block pagestyles %}
+  {% assets "status_less_bundle" %}
+    <link href="{{ ASSET_URL }}" rel="stylesheet" type="text/css">
+  {% endassets %}
+{% endblock %}
+#}
+
+{% block content %}
+
+<div id="infoBox">
+</div>
+
+<div class="status">
+{% for towers in status.towers %}
+ <table id={{towers.name}}>
+   {% for level in towers.levels  | reverse %}
+    <tr>
+      {% for pod in level.pods %}
+      <td><span style="podIDStatus" id="podID">{{pod.podID}}</span><br>
+        <br>
+        <div class="select">
+          <select style="color: black;" id="s{{pod.podID}}" onchange="postPlant(this)">
+            {% for plant in plantsDB.plants %}
+              <option value="{{plant.plantID}}"{% if plant.plantID == pod.plantID %} selected{% endif %}>{{plant.name}}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <br>
+        <span style="plantedDateStatus" id="plantedDateStatus">{{pod.plantedDate|formatDate}}</span>
+      </td>
+      {% endfor %}
+    </tr>
+   {% endfor %}
+ </table>
+ {% endfor %}
+</div>
+
+{% include "blueprintinfo.jinja2" %}
+{% include "scriptsStatus.jinja2" %}
+
+{% endblock %}
