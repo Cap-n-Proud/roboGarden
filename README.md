@@ -72,11 +72,11 @@ Folders:
 
 - Electronics    
   |  
-  +--  (Relay)(https://www.aliexpress.com/item/32444992490.html?spm=2114.12010612.8148356.35.4409469aTo8NwN)
+  +--  (Relay)(https://www.aliexpress.com/item/32444992490.html?spm=2114.12010612.8148356.35.4409469aTo8NwN)  
   |  
-  |   +-- [LED driver](https://www.aliexpress.com/item/32858168662.html?spm=a2g0s.9042311.0.0.27424c4d7wl3sN)
-  |   +-- [LED strip](https://www.aliexpress.com/item/1599651146.html?spm=a2g0s.9042311.0.0.27424c4d7wl3sN)
-  |   +-- [LED Strip OPT2](https://www.aliexpress.com/item/4001228860479.html?spm=a2g0s.9042311.0.0.27424c4d7wl3sN)
+  |   +-- [LED driver](https://www.aliexpress.com/item/32858168662.html?spm=a2g0s.9042311.0.0.27424c4d7wl3sN)  
+  |   +-- [LED strip](https://www.aliexpress.com/item/1599651146.html?spm=a2g0s.9042311.0.0.27424c4d7wl3sN)  
+  |   +-- [LED Strip OPT2](https://www.aliexpress.com/item/4001228860479.html?spm=a2g0s.9042311.0.0.27424c4d7wl3sN)  
   |   +--
   +--  
   |   +--
