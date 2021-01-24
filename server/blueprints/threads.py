@@ -50,7 +50,7 @@ def handle_data(data):
         if dataJSON["type"] == "T":
             print(dataJSON)
             io.emit(config.Config.TELEMETRYTAG, dataJSON)
-            print(threading.active_count())
+            # print(threading.active_count())
 
     except ValueError as e:
         LOG.warning("Received non-JSON from Arduino: " + str(data) + str(e))

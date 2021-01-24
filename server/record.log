@@ -9930,3 +9930,152 @@ NameError: name 'newPlant' is not defined
 2021-01-24 12:13:01,978 INFO werkzeug Thread-8980 : 127.0.0.1 - - [24/Jan/2021 12:13:01] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6E0y&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
 2021-01-24 12:13:02,478 INFO werkzeug Thread-8981 : 127.0.0.1 - - [24/Jan/2021 12:13:02] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6E7C&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
 2021-01-24 12:13:02,977 INFO werkzeug Thread-8982 : 127.0.0.1 - - [24/Jan/2021 12:13:02] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6EGa&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:03,477 INFO werkzeug Thread-8983 : 127.0.0.1 - - [24/Jan/2021 12:13:03] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6EOO&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:03,977 INFO werkzeug Thread-8984 : 127.0.0.1 - - [24/Jan/2021 12:13:03] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6EWC&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:04,476 INFO werkzeug Thread-8985 : 127.0.0.1 - - [24/Jan/2021 12:13:04] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6EcS&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:04,869 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 12:13:04,870 INFO werkzeug Thread-8986 : 127.0.0.1 - - [24/Jan/2021 12:13:04] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6Elq&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:04,977 INFO werkzeug Thread-8989 : 127.0.0.1 - - [24/Jan/2021 12:13:04] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6Es4&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:05,263 INFO werkzeug Thread-8964 : Pump is ON
+2021-01-24 12:13:05,476 INFO werkzeug Thread-8990 : 127.0.0.1 - - [24/Jan/2021 12:13:05] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6Ete&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:05,976 INFO werkzeug Thread-8991 : 127.0.0.1 - - [24/Jan/2021 12:13:05] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6E_S&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:06,476 INFO werkzeug Thread-8992 : 127.0.0.1 - - [24/Jan/2021 12:13:06] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6F7G&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:06,964 INFO werkzeug Thread-8993 : 127.0.0.1 - - [24/Jan/2021 12:13:06] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6FF4&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:06,980 INFO werkzeug Thread-8994 : 127.0.0.1 - - [24/Jan/2021 12:13:06] "[37mPOST /socket.io/?EIO=4&transport=polling&t=NSq6FMu&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:06,981 INFO werkzeug Thread-8996 : 127.0.0.1 - - [24/Jan/2021 12:13:06] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6FMu.0&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:07,475 INFO werkzeug Thread-8997 : 127.0.0.1 - - [24/Jan/2021 12:13:07] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6FMu.1&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:07,974 INFO werkzeug Thread-8998 : 127.0.0.1 - - [24/Jan/2021 12:13:07] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6FUi&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:08,475 INFO werkzeug Thread-8999 : 127.0.0.1 - - [24/Jan/2021 12:13:08] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6FcW&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:08,974 INFO werkzeug Thread-9000 : 127.0.0.1 - - [24/Jan/2021 12:13:08] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6FkK&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:09,474 INFO werkzeug Thread-9001 : 127.0.0.1 - - [24/Jan/2021 12:13:09] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6Fs8&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:09,974 INFO werkzeug Thread-9002 : 127.0.0.1 - - [24/Jan/2021 12:13:09] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6Fzy&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:10,374 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 12:13:10,374 INFO werkzeug Thread-9003 : 127.0.0.1 - - [24/Jan/2021 12:13:10] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6G4C&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:10,477 INFO werkzeug Thread-9004 : 127.0.0.1 - - [24/Jan/2021 12:13:10] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6GC0&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:10,769 INFO werkzeug Thread-8964 : Pump is OFF
+2021-01-24 12:13:10,976 INFO werkzeug Thread-9005 : 127.0.0.1 - - [24/Jan/2021 12:13:10] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6GDa&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:11,477 INFO werkzeug Thread-9006 : 127.0.0.1 - - [24/Jan/2021 12:13:11] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6GLO&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:11,976 INFO werkzeug Thread-9007 : 127.0.0.1 - - [24/Jan/2021 12:13:11] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6GTC&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:12,476 INFO werkzeug Thread-9008 : 127.0.0.1 - - [24/Jan/2021 12:13:12] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6Gb0&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:12,975 INFO werkzeug Thread-9009 : 127.0.0.1 - - [24/Jan/2021 12:13:12] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6GhG&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:13,481 INFO werkzeug Thread-9010 : 127.0.0.1 - - [24/Jan/2021 12:13:13] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6Gp4&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:13,978 INFO werkzeug Thread-9011 : 127.0.0.1 - - [24/Jan/2021 12:13:13] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6Gwu&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:14,475 INFO werkzeug Thread-9012 : 127.0.0.1 - - [24/Jan/2021 12:13:14] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6H2i&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:14,871 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 12:13:14,872 INFO werkzeug Thread-9013 : 127.0.0.1 - - [24/Jan/2021 12:13:14] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6HAW&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:14,975 INFO werkzeug Thread-9016 : 127.0.0.1 - - [24/Jan/2021 12:13:14] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6HIK&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:15,263 INFO werkzeug Thread-8988 : Pump is ON
+2021-01-24 12:13:15,474 INFO werkzeug Thread-9017 : 127.0.0.1 - - [24/Jan/2021 12:13:15] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6HIK.0&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:15,978 INFO werkzeug Thread-9018 : 127.0.0.1 - - [24/Jan/2021 12:13:15] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6HRi&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:16,477 INFO werkzeug Thread-9019 : 127.0.0.1 - - [24/Jan/2021 12:13:16] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6HZW&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:16,977 INFO werkzeug Thread-9020 : 127.0.0.1 - - [24/Jan/2021 12:13:16] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6HhK&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:17,476 INFO werkzeug Thread-9021 : 127.0.0.1 - - [24/Jan/2021 12:13:17] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6Hp8&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:17,976 INFO werkzeug Thread-9022 : 127.0.0.1 - - [24/Jan/2021 12:13:17] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6Hwy&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:18,476 INFO werkzeug Thread-9023 : 127.0.0.1 - - [24/Jan/2021 12:13:18] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6I2m&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:18,976 INFO werkzeug Thread-9024 : 127.0.0.1 - - [24/Jan/2021 12:13:18] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6IAa&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:19,476 INFO werkzeug Thread-9025 : 127.0.0.1 - - [24/Jan/2021 12:13:19] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6IGq&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:19,975 INFO werkzeug Thread-9026 : 127.0.0.1 - - [24/Jan/2021 12:13:19] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6IQC&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:20,376 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 12:13:20,376 INFO werkzeug Thread-9027 : 127.0.0.1 - - [24/Jan/2021 12:13:20] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6IY0&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:20,479 INFO werkzeug Thread-9028 : 127.0.0.1 - - [24/Jan/2021 12:13:20] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6IeG&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:20,768 INFO werkzeug Thread-8988 : Pump is OFF
+2021-01-24 12:13:20,978 INFO werkzeug Thread-9029 : 127.0.0.1 - - [24/Jan/2021 12:13:20] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6IhO&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:21,478 INFO werkzeug Thread-9030 : 127.0.0.1 - - [24/Jan/2021 12:13:21] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6Ine&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:21,978 INFO werkzeug Thread-9031 : 127.0.0.1 - - [24/Jan/2021 12:13:21] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6IvS&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:22,477 INFO werkzeug Thread-9032 : 127.0.0.1 - - [24/Jan/2021 12:13:22] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6J1G&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:22,977 INFO werkzeug Thread-9033 : 127.0.0.1 - - [24/Jan/2021 12:13:22] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6J94&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:23,477 INFO werkzeug Thread-9034 : 127.0.0.1 - - [24/Jan/2021 12:13:23] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6JGu&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:23,977 INFO werkzeug Thread-9035 : 127.0.0.1 - - [24/Jan/2021 12:13:23] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6JN8&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:24,476 INFO werkzeug Thread-9036 : 127.0.0.1 - - [24/Jan/2021 12:13:24] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6JWW&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:24,869 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 12:13:24,870 INFO werkzeug Thread-9037 : 127.0.0.1 - - [24/Jan/2021 12:13:24] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6Jcm&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:24,976 INFO werkzeug Thread-9040 : 127.0.0.1 - - [24/Jan/2021 12:13:24] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6Jka&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:25,263 INFO werkzeug Thread-9015 : Pump is ON
+2021-01-24 12:13:25,476 INFO werkzeug Thread-9041 : 127.0.0.1 - - [24/Jan/2021 12:13:25] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6Jm8&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:25,976 INFO werkzeug Thread-9042 : 127.0.0.1 - - [24/Jan/2021 12:13:25] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6Jty&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:26,476 INFO werkzeug Thread-9043 : 127.0.0.1 - - [24/Jan/2021 12:13:26] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6J_m&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:26,979 INFO werkzeug Thread-9044 : 127.0.0.1 - - [24/Jan/2021 12:13:26] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6K7a&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:27,478 INFO werkzeug Thread-9045 : 127.0.0.1 - - [24/Jan/2021 12:13:27] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6KFO&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:27,978 INFO werkzeug Thread-9046 : 127.0.0.1 - - [24/Jan/2021 12:13:27] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6KNC&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:28,478 INFO werkzeug Thread-9047 : 127.0.0.1 - - [24/Jan/2021 12:13:28] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6KV0&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:28,978 INFO werkzeug Thread-9048 : 127.0.0.1 - - [24/Jan/2021 12:13:28] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6Kcq&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:29,477 INFO werkzeug Thread-9049 : 127.0.0.1 - - [24/Jan/2021 12:13:29] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6Kke&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:29,977 INFO werkzeug Thread-9050 : 127.0.0.1 - - [24/Jan/2021 12:13:29] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6KsS&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:30,374 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 12:13:30,374 INFO werkzeug Thread-9051 : 127.0.0.1 - - [24/Jan/2021 12:13:30] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6K-G&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:30,477 INFO werkzeug Thread-9052 : 127.0.0.1 - - [24/Jan/2021 12:13:30] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6L4W&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:30,768 INFO werkzeug Thread-9015 : Pump is OFF
+2021-01-24 12:13:30,977 INFO werkzeug Thread-9053 : 127.0.0.1 - - [24/Jan/2021 12:13:30] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6L64&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:31,476 INFO werkzeug Thread-9054 : 127.0.0.1 - - [24/Jan/2021 12:13:31] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6LDu&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:31,976 INFO werkzeug Thread-9055 : 127.0.0.1 - - [24/Jan/2021 12:13:31] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6LLi&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:32,004 INFO werkzeug Thread-9056 : 127.0.0.1 - - [24/Jan/2021 12:13:32] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6LTW&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:32,022 INFO werkzeug Thread-9057 : 127.0.0.1 - - [24/Jan/2021 12:13:32] "[37mPOST /socket.io/?EIO=4&transport=polling&t=NSq6LTW.0&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:32,476 INFO werkzeug Thread-9059 : 127.0.0.1 - - [24/Jan/2021 12:13:32] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6LTW.1&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:32,976 INFO werkzeug Thread-9060 : 127.0.0.1 - - [24/Jan/2021 12:13:32] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6LbK&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:33,475 INFO werkzeug Thread-9061 : 127.0.0.1 - - [24/Jan/2021 12:13:33] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6Lj8&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:33,975 INFO werkzeug Thread-9062 : 127.0.0.1 - - [24/Jan/2021 12:13:33] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6Lqy&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:34,474 INFO werkzeug Thread-9063 : 127.0.0.1 - - [24/Jan/2021 12:13:34] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6LxC&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:34,871 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 12:13:34,871 INFO werkzeug Thread-9064 : 127.0.0.1 - - [24/Jan/2021 12:13:34] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6M4a&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:34,974 INFO werkzeug Thread-9067 : 127.0.0.1 - - [24/Jan/2021 12:13:34] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6MAq&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:35,264 INFO werkzeug Thread-9039 : Pump is ON
+2021-01-24 12:13:35,477 INFO werkzeug Thread-9068 : 127.0.0.1 - - [24/Jan/2021 12:13:35] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6MCO&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:35,977 INFO werkzeug Thread-9069 : 127.0.0.1 - - [24/Jan/2021 12:13:35] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6MKC&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:36,477 INFO werkzeug Thread-9070 : 127.0.0.1 - - [24/Jan/2021 12:13:36] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6MS0&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:36,976 INFO werkzeug Thread-9071 : 127.0.0.1 - - [24/Jan/2021 12:13:36] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6MZq&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:37,476 INFO werkzeug Thread-9072 : 127.0.0.1 - - [24/Jan/2021 12:13:37] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6Mg4&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:37,976 INFO werkzeug Thread-9073 : 127.0.0.1 - - [24/Jan/2021 12:13:37] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6MpS&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:38,476 INFO werkzeug Thread-9074 : 127.0.0.1 - - [24/Jan/2021 12:13:38] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6MxG&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:38,976 INFO werkzeug Thread-9075 : 127.0.0.1 - - [24/Jan/2021 12:13:38] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6N1W&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:39,475 INFO werkzeug Thread-9076 : 127.0.0.1 - - [24/Jan/2021 12:13:39] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6NAu&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:39,974 INFO werkzeug Thread-9077 : 127.0.0.1 - - [24/Jan/2021 12:13:39] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6NIi&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:40,375 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 12:13:40,376 INFO werkzeug Thread-9078 : 127.0.0.1 - - [24/Jan/2021 12:13:40] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6NQW&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:40,479 INFO werkzeug Thread-9079 : 127.0.0.1 - - [24/Jan/2021 12:13:40] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6NWm&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:40,769 INFO werkzeug Thread-9039 : Pump is OFF
+2021-01-24 12:13:40,979 INFO werkzeug Thread-9080 : 127.0.0.1 - - [24/Jan/2021 12:13:40] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6NYK&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:41,478 INFO werkzeug Thread-9081 : 127.0.0.1 - - [24/Jan/2021 12:13:41] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6Ng8&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:41,978 INFO werkzeug Thread-9082 : 127.0.0.1 - - [24/Jan/2021 12:13:41] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6Nny&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:42,479 INFO werkzeug Thread-9083 : 127.0.0.1 - - [24/Jan/2021 12:13:42] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6Nvm&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:42,977 INFO werkzeug Thread-9084 : 127.0.0.1 - - [24/Jan/2021 12:13:42] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6O1a&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:43,477 INFO werkzeug Thread-9085 : 127.0.0.1 - - [24/Jan/2021 12:13:43] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6O9O&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:43,976 INFO werkzeug Thread-9086 : 127.0.0.1 - - [24/Jan/2021 12:13:43] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6OHC&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:44,476 INFO werkzeug Thread-9087 : 127.0.0.1 - - [24/Jan/2021 12:13:44] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6ONS&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:44,869 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 12:13:44,869 INFO werkzeug Thread-9088 : 127.0.0.1 - - [24/Jan/2021 12:13:44] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6OWq&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:44,979 INFO werkzeug Thread-9091 : 127.0.0.1 - - [24/Jan/2021 12:13:44] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6ObW&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:45,264 INFO werkzeug Thread-9066 : Pump is ON
+2021-01-24 12:13:45,476 INFO werkzeug Thread-9092 : 127.0.0.1 - - [24/Jan/2021 12:13:45] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6Oee&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:45,976 INFO werkzeug Thread-9093 : 127.0.0.1 - - [24/Jan/2021 12:13:45] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6OmS&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:46,478 INFO werkzeug Thread-9094 : 127.0.0.1 - - [24/Jan/2021 12:13:46] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6OuG&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:46,978 INFO werkzeug Thread-9095 : 127.0.0.1 - - [24/Jan/2021 12:13:46] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6O-W&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:47,478 INFO werkzeug Thread-9096 : 127.0.0.1 - - [24/Jan/2021 12:13:47] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6P7u&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:47,977 INFO werkzeug Thread-9097 : 127.0.0.1 - - [24/Jan/2021 12:13:47] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6PE8&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:48,477 INFO werkzeug Thread-9098 : 127.0.0.1 - - [24/Jan/2021 12:13:48] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6PNW&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:48,977 INFO werkzeug Thread-9099 : 127.0.0.1 - - [24/Jan/2021 12:13:48] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6PVK&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:49,476 INFO werkzeug Thread-9100 : 127.0.0.1 - - [24/Jan/2021 12:13:49] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6Pd8&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:49,976 INFO werkzeug Thread-9101 : 127.0.0.1 - - [24/Jan/2021 12:13:49] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6Pky&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:50,373 INFO werkzeug Thread-1 : Info from Arduino: Pump stopped
+2021-01-24 12:13:50,374 INFO werkzeug Thread-9102 : 127.0.0.1 - - [24/Jan/2021 12:13:50] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6Psm&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:50,480 INFO werkzeug Thread-9103 : 127.0.0.1 - - [24/Jan/2021 12:13:50] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6Pz0&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:50,769 INFO werkzeug Thread-9066 : Pump is OFF
+2021-01-24 12:13:50,976 INFO werkzeug Thread-9104 : 127.0.0.1 - - [24/Jan/2021 12:13:50] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6P-a&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:51,475 INFO werkzeug Thread-9105 : 127.0.0.1 - - [24/Jan/2021 12:13:51] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6Q6O&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:51,979 INFO werkzeug Thread-9106 : 127.0.0.1 - - [24/Jan/2021 12:13:51] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6QCe&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:52,479 INFO werkzeug Thread-9107 : 127.0.0.1 - - [24/Jan/2021 12:13:52] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6QKS&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:52,975 INFO werkzeug Thread-9108 : 127.0.0.1 - - [24/Jan/2021 12:13:52] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6QSG&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:53,475 INFO werkzeug Thread-9109 : 127.0.0.1 - - [24/Jan/2021 12:13:53] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6Qa4&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:53,978 INFO werkzeug Thread-9110 : 127.0.0.1 - - [24/Jan/2021 12:13:53] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6QjS&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:54,478 INFO werkzeug Thread-9111 : 127.0.0.1 - - [24/Jan/2021 12:13:54] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6QrG&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:54,870 INFO werkzeug Thread-1 : Info from Arduino: Pump start
+2021-01-24 12:13:54,871 INFO werkzeug Thread-9112 : 127.0.0.1 - - [24/Jan/2021 12:13:54] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6Qz4&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:54,977 INFO werkzeug Thread-9115 : 127.0.0.1 - - [24/Jan/2021 12:13:54] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6R3K&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:55,264 INFO werkzeug Thread-9090 : Pump is ON
+2021-01-24 12:13:55,477 INFO werkzeug Thread-9116 : 127.0.0.1 - - [24/Jan/2021 12:13:55] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6R3K.0&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:55,976 INFO werkzeug Thread-9117 : 127.0.0.1 - - [24/Jan/2021 12:13:55] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6RCi&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:56,476 INFO werkzeug Thread-9118 : 127.0.0.1 - - [24/Jan/2021 12:13:56] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6RKW&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:56,976 INFO werkzeug Thread-9119 : 127.0.0.1 - - [24/Jan/2021 12:13:56] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6RSK&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:57,044 INFO werkzeug Thread-9120 : 127.0.0.1 - - [24/Jan/2021 12:13:57] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6RYa&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:57,064 INFO werkzeug Thread-9121 : 127.0.0.1 - - [24/Jan/2021 12:13:57] "[37mPOST /socket.io/?EIO=4&transport=polling&t=NSq6Ra8&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:57,477 INFO werkzeug Thread-9123 : 127.0.0.1 - - [24/Jan/2021 12:13:57] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6Ra8.0&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
+2021-01-24 12:13:57,975 INFO werkzeug Thread-9124 : 127.0.0.1 - - [24/Jan/2021 12:13:57] "[37mGET /socket.io/?EIO=4&transport=polling&t=NSq6Rhy&sid=cGKOPw-D5ViNtAsZAAAA HTTP/1.1[0m" 200 -
