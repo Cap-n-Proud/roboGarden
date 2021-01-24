@@ -1,4 +1,5 @@
 from blueprints.threads import arduinoCommand
+from blueprints.api import newPlant, getStatus, getPlantsDB
 
 # from flask import render_template
 from flask import Blueprint, Flask

@@ -319,15 +319,15 @@
                     "pods": [
                         {
                             "podID": "01-08-00",
-                            "plantID": "012",
-                            "plantName": "Mint",
-                            "plantedDate": "2021-01-23T22:55:10.400Z"
+                            "plantID": "009",
+                            "plantName": "Cutting Lettuce",
+                            "plantedDate": "2021-01-24T22:25:54.335Z"
                         },
                         {
                             "podID": "01-08-01",
-                            "plantID": "000",
-                            "plantName": "Strawberry",
-                            "plantedDate": "2016-04-26T18:09:16Z"
+                            "plantID": "009",
+                            "plantName": "Cutting Lettuce",
+                            "plantedDate": "2021-01-24T22:25:57.317Z"
                         }
                     ]
                 },
@@ -338,13 +338,13 @@
                             "podID": "01-09-00",
                             "plantID": "005",
                             "plantName": "Cayenne Pepper",
-                            "plantedDate": "2021-01-22T11:41:48.100Z"
+                            "plantedDate": "2021-01-24T22:28:08.100Z"
                         },
                         {
                             "podID": "01-09-01",
-                            "plantID": "000",
-                            "plantName": "Strawberry",
-                            "plantedDate": "2016-04-26T18:09:16Z"
+                            "plantID": "005",
+                            "plantName": "Cayenne Pepper",
+                            "plantedDate": "2021-01-24T22:28:05.700Z"
                         }
                     ]
                 }
@@ -494,15 +494,15 @@
                     "pods": [
                         {
                             "podID": "02-08-00",
-                            "plantID": "000",
-                            "plantName": "Strawberry",
-                            "plantedDate": "2016-04-26T18:09:16Z"
+                            "plantID": "009",
+                            "plantName": "Cutting Lettuce",
+                            "plantedDate": "2021-01-24T22:25:59.881Z"
                         },
                         {
                             "podID": "02-08-01",
-                            "plantID": "000",
-                            "plantName": "Strawberry",
-                            "plantedDate": "2016-04-26T18:09:16Z"
+                            "plantID": "009",
+                            "plantName": "Cutting Lettuce",
+                            "plantedDate": "2021-01-24T22:26:02.077Z"
                         }
                     ]
                 },
@@ -511,15 +511,15 @@
                     "pods": [
                         {
                             "podID": "02-09-00",
-                            "plantID": "000",
-                            "plantName": "Strawberry",
-                            "plantedDate": "2016-04-26T18:09:16Z"
+                            "plantID": "003",
+                            "plantName": "Basilico Grande Genovese",
+                            "plantedDate": "2021-01-24T22:25:23.400Z"
                         },
                         {
                             "podID": "02-09-01",
-                            "plantID": "001",
-                            "plantName": "Tomato Montfavet",
-                            "plantedDate": "2021-01-18T23:31:41.900Z"
+                            "plantID": "003",
+                            "plantName": "Basilico Grande Genovese",
+                            "plantedDate": "2021-01-24T22:25:26.100Z"
                         }
                     ]
                 }
