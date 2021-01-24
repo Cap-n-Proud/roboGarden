@@ -1,0 +1,42 @@
+2021-01-24 22:22:45,447 WARNING Received non-JSON from Arduino: b'{"type":"T","pumpON"'Expecting ':' delimiter: line 1 column 21 (char 20)
+2021-01-24 22:22:45,648 WARNING Received non-JSON from Arduino: b':0,"RGB":"0 0 0","brightness":0}\r\n'Expecting value: line 1 column 1 (char 0)
+2021-01-24 22:22:47,655 WARNING Received non-JSON from Arduino: b'{"type":"I","message":"Brightness set to: 80%"}\r\n{"type":"I","message":"Pump start"}\r\n'Extra data: line 2 column 1 (char 49)
+2021-01-24 22:22:47,933 INFO RGB set to 255 0 255
+2021-01-24 22:22:47,933 INFO Pump is ON
+2021-01-24 22:22:48,057 WARNING Received non-JSON from Arduino: b'{"type":"T","pumpON":1,"RGB":"0 0 0","brightness":80}\r\n{"type":"I","message":"LED set to RGB: 255 0 255 "}\r\n'Extra data: line 2 column 1 (char 55)
+2021-01-24 22:22:48,434 INFO Lights set to 80
+2021-01-24 22:22:53,073 WARNING Received non-JSON from Arduino: b'{"type":"T","pumpON":1,"RGB":"255 0 255","brightness":80}\r\n{"type":"I","message":"Pump stopped"}\r\n'Extra data: line 2 column 1 (char 59)
+2021-01-24 22:22:53,439 INFO Pump is OFF
+2021-01-24 22:22:57,687 INFO Info from Arduino: Pump start
+2021-01-24 22:22:57,929 INFO Pump is ON
+2021-01-24 22:23:03,107 WARNING Received non-JSON from Arduino: b'{"type":"T","pumpON":1,"RGB":"255 0 255","brightness":80}\r\n{"type":"I","message":"Pump stopped"}\r\n'Extra data: line 2 column 1 (char 59)
+2021-01-24 22:23:03,436 INFO Pump is OFF
+2021-01-24 22:23:07,722 INFO Info from Arduino: Pump start
+2021-01-24 22:23:07,930 INFO Pump is ON
+2021-01-24 22:23:12,940 WARNING Received non-JSON from Arduino: b'{'Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2021-01-24 22:23:13,141 WARNING Received non-JSON from Arduino: b'"type":"T","pumpON":1,"RGB":"255 0 255","brightness":80}\r\n{"type":"I","message":"Pump stopped"}\r\n'Extra data: line 1 column 7 (char 6)
+2021-01-24 22:23:13,435 INFO Pump is OFF
+2021-01-24 22:23:13,943 WARNING Received non-JSON from Arduino: b'{"type":"T","pumpON":0,"RGB":"255 0 255","brightness'Unterminated string starting at: line 1 column 42 (char 41)
+2021-01-24 22:23:14,144 WARNING Received non-JSON from Arduino: b'":80}\r\n'Invalid control character at: line 1 column 6 (char 5)
+2021-01-24 22:23:17,554 WARNING Received non-JSON from Arduino: b'{"type":"T","pumpON":0,"RGB":"255 0 255","brightness":80}\r\n{"type":"I","message":"Pump start"}\r\n'Extra data: line 2 column 1 (char 59)
+2021-01-24 22:23:17,931 INFO Pump is ON
+2021-01-24 22:23:23,172 INFO Info from Arduino: Pump stopped
+2021-01-24 22:23:23,433 INFO Pump is OFF
+2021-01-24 22:23:27,586 WARNING Received non-JSON from Arduino: b'{"type":"T","pumpON":0,"RGB":"255 0 255","brightness":80}\r\n{"type":"I","message":"Pump start"}\r\n'Extra data: line 2 column 1 (char 59)
+2021-01-24 22:23:27,932 INFO Pump is ON
+2021-01-24 22:23:33,202 INFO Info from Arduino: Pump stopped
+2021-01-24 22:23:33,439 INFO Pump is OFF
+2021-01-24 22:23:37,614 WARNING Received non-JSON from Arduino: b'{"type":"T","pumpON":0,"RGB":"255 0 255","brightness":80}\r\n{"type":"I","message":"Pump start"}\r\n'Extra data: line 2 column 1 (char 59)
+2021-01-24 22:23:37,932 INFO Pump is ON
+2021-01-24 22:23:43,230 INFO Info from Arduino: Pump stopped
+2021-01-24 22:23:43,432 WARNING Received non-JSON from Arduino: b'{"type":"T","pumpON":0,"RGB"'Expecting ':' delimiter: line 1 column 29 (char 28)
+2021-01-24 22:23:43,439 INFO Pump is OFF
+2021-01-24 22:23:43,633 WARNING Received non-JSON from Arduino: b':"255 0 255","brightness":80}\r\n'Expecting value: line 1 column 1 (char 0)
+2021-01-24 22:23:47,643 INFO Info from Arduino: Pump start
+2021-01-24 22:23:47,933 INFO Pump is ON
+2021-01-24 22:23:53,055 INFO Info from Arduino: Pump stopped
+2021-01-24 22:23:53,439 INFO Pump is OFF
+2021-01-24 22:23:57,668 INFO Info from Arduino: Pump start
+2021-01-24 22:23:57,933 INFO Pump is ON
+2021-01-24 22:24:03,083 INFO Info from Arduino: Pump stopped
+2021-01-24 22:24:03,439 INFO Pump is OFF

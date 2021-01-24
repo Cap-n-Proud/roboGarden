@@ -23,7 +23,7 @@ dataJSON = ""
 from flask import current_app as app
 
 # LOG = logging.getLogger(__name__)
-LOG = logging.getLogger("werkzeug")
+LOG = logging.getLogger(config.Config.APPLOGNAME)
 io = SocketIO(app)  # engineio_logger=True)
 
 
@@ -56,23 +56,28 @@ def handle_data(data):
         LOG.warning("Received non-JSON from Arduino: " + str(data) + str(e))
 
 
+# https://stackoverflow.com/questions/17553543/pyserial-non-blocking-read-loop
 def read_from_port(ser):
     except_counter = ""
-    while True:
+    while ser.is_open:
         # NB: for PySerial v3.0 or later, use property `in_waiting` instead of function `inWaiting()` below!
         try:
             if (
                 ser.in_waiting > 0
             ):  # if incoming bytes are waiting to be read from the serial input buffer
-                data_str = ser.readline(ser.in_waiting + 100)
-                # read the bytes and convert from binary array to ASCII
+                data_str = ser.read(ser.in_waiting)
+                # read the bytes and co nvert from binary array to ASCII
                 handle_data(data_str)
+            time.sleep(0.2)
         except serial.serialutil.SerialException:
             except_counter += 1
-            LOG.warning(serial.serialutil.SerialException)
+            LOG.warning(ser.serialutil.SerialException)
             if except_counter == 5:
                 break
-            time.sleep(1)
+                time.sleep(1)
+
+        except serial.SerialTimeoutException:
+            LOG.warning(serial.SerialTimeoutException)
 
 
 def write_to_ser(ser, message):

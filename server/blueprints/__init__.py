@@ -4,6 +4,7 @@ from flask_assets import Environment
 from flask_socketio import SocketIO
 import config
 import logging
+from flask.logging import default_handler
 
 # Globally accessible libraries
 # plantsDB = getPLantsDB()
@@ -12,17 +13,37 @@ import logging
 # programs = getPrograms()
 #  SOCKETS https://gist.github.com/astrolox/445e84068d12ed9fa28f277241edf57b
 
+#
+# def configure_logging():
+#     # app.logger.removeHandler(default_handler)
+#     # register root logging
+#     logging.basicConfig(
+#         filename=config.Config.WERKZEUGLOGFILE,
+#         log=logging.getLogger("werkzeug"),
+#         level=logging.ERROR,
+#         format=f"%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s",
+#     )
 
-def configure_logging():
-    # register root logging
-    logging.basicConfig(
-        filename=config.Config.LOGFILE,
-        level=logging.INFO,
-        format=f"%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s",
-    )
+
+formatter = logging.Formatter("%(asctime)s %(levelname)s %(message)s")
+
+
+def setup_logger(name, log_file, level=logging.INFO):
+    """To setup as many loggers as you want"""
+
+    handler = logging.FileHandler(log_file)
+    handler.setFormatter(formatter)
+
+    logger = logging.getLogger(name)
+    logger.setLevel(level)
+    logger.addHandler(handler)
+
+    return logger
 
 
 def create_app():
+    roboG = setup_logger(config.Config.APPLOGNAME, config.Config.APPLOGFILE)
+
     """Create Flask application."""
     app = Flask(__name__, instance_relative_config=False)
     # app.config.from_object("config.Config")

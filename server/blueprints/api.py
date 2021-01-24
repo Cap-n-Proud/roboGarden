@@ -5,7 +5,7 @@ import logging
 from flask import current_app as app
 
 # LOG = logging.getLogger(__name__)
-LOG = logging.getLogger("werkzeug")
+LOG = logging.getLogger(config.Config.APPLOGNAME)
 
 # Retrieve the current program, used to populate the indey.html file
 

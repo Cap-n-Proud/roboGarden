@@ -12,9 +12,12 @@ class Config:
     TEMPLATES_FOLDER = "templates"
     ASSETS_FOLDER = "assets"
     FLASK_APP = "wsgi.py"
-    LOGFILE = "record.log"
+    APPLOGFILE = "logs/app.log"
+    APPLOGNAME = "roboLog"
+    WERKZEUGLOGFILE = "logs/werkzeug.log"
     INFOTAG = "I"
     TELEMETRYTAG = "T"
+    LOGFORMAT = "%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s"
 
 
 class Hardware:

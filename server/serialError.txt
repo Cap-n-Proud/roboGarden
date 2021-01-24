@@ -19,5 +19,7 @@ UnboundLocalError: local variable 'except_counter' referenced before assignment
 
 
 
-
+https://stackoverflow.com/questions/17553543/pyserial-non-blocking-read-loop
 https://github.com/pyserial/pyserial/issues/86
+https://github.com/pyserial/pyserial/issues/216#issuecomment-369414522
+https://stackoverflow.com/questions/39111502/python-pyserial-threading
