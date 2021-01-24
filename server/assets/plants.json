@@ -1,312 +1,274 @@
 {
-  "plants": [
-    {
+  "plants": [{
       "plantID": "001",
       "name": "Tomato Montfavet",
       "latinName": "Lycopersicon Esculentum Mil",
-      "URL":"",
-      "PHMin":"",
-      "PHMax":"",
-      "water":"",
-      "DtG":"",
-      "DtH":""
-    },
-    {
+      "URL": "https://pfaf.org/user/plant.aspx?LatinName=Lycopersicon+esculentum",
+      "PHMin": "",
+      "PHMax": "",
+      "water": "",
+      "DtG": "",
+      "DtH": "150",
+      "Notes": ""
+    }, {
       "plantID": "002",
       "name": "Babyleaf Salad",
       "latinName": "Lactuca Sativa Acephala",
-      "URL":"",
-      "PHMin":"",
-      "PHMax":"",
-      "water":"",
-      "DtG":"",
-      "DtH":""
-    },
-    {
+      "URL": "https://pfaf.org/user/Plant.aspx?LatinName=Lactuca+sativa+capitata",
+      "PHMin": "",
+      "PHMax": "",
+      "water": "",
+      "DtG": "10",
+      "DtH": "",
+      "Notes": ""
+    }, {
       "plantID": "003",
       "name": "Basilico Grande Genovese",
       "latinName": "Ocium Basilicum",
-      "URL":"",
-      "PHMin":"",
-      "PHMax":"",
-      "water":"Below Average",
-      "DtG":"",
-      "DtH":""
-    },
-    {
+      "URL": "https://pfaf.org/user/Plant.aspx?LatinName=Ocimum+basilicum",
+      "PHMin": "",
+      "PHMax": "",
+      "water": "Below Average",
+      "DtG": "14",
+      "DtH": "50"
+    }, {
       "plantID": "004",
       "name": "Broccoletti Marathon",
       "latinName": "Brassica Oleracea Italica",
-      "URL":"",
-      "PHMin":"",
-      "PHMax":"",
-      "water":"Average",
-      "DtG":"",
-      "DtH":""
-    },
-    {
+      "URL": "https://pfaf.org/user/Plant.aspx?LatinName=Brassica+oleracea+italica",
+      "PHMin": "",
+      "PHMax": "",
+      "water": "Average",
+      "DtG": "10",
+      "DtH": "90",
+      "Notes": ""
+    }, {
       "plantID": "005",
       "name": "Cayenne Pepper",
       "latinName": "Capsicum annuum",
-      "URL":"",
-      "PHMin":"",
-      "PHMax":"",
-      "water":"",
-      "DtG":"",
-      "DtH":""
-    },
-    {
+      "URL": "https://pfaf.org/User/Plant.aspx?LatinName=Capsicum+annuum",
+      "PHMin": "4.3",
+      "PHMax": "8.3",
+      "water": "",
+      "DtG": "",
+      "DtH": "",
+      "Notes": ""
+    }, {
       "plantID": "006",
       "name": "Edible Flowers",
       "latinName": "",
-      "URL":"",
-      "PHMin":"",
-      "PHMax":"",
-      "water":"",
-      "DtG":"",
-      "DtH":""
-    },
-    {
+      "URL": "",
+      "PHMin": "",
+      "PHMax": "",
+      "water": "",
+      "DtG": "14",
+      "DtH": "",
+      "Notes": ""
+    }, {
       "plantID": "007",
       "name": "Fiori Romantic Pink Feeling",
       "latinName": "",
-      "URL":"",
-      "PHMin":"",
-      "PHMax":"",
-      "water":"",
-      "DtG":"",
-      "DtH":""
-    },
-    {
+      "URL": "",
+      "PHMin": "",
+      "PHMax": "",
+      "water": "",
+      "DtG": "",
+      "DtH": "",
+      "Notes": ""
+    }, {
       "plantID": "008",
-      "name": "Fragola Alexandria",
+      "name": "Strawberry Alexandria",
       "latinName": "Fragaria Vesca",
-      "URL":"",
-      "PHMin":"",
-      "PHMax":"",
-      "water":"Heavy",
-      "DtG":"",
-      "DtH":""
-    },
-    {
+      "URL": "https://pfaf.org/user/plant.aspx?latinname=Fragaria+vesca",
+      "PHMin": "",
+      "PHMax": "",
+      "water": "Heavy",
+      "DtG": "30",
+      "DtH": ""
+    }, {
       "plantID": "009",
-      "name": "Lattuga da taglio Bionda a foglia liscia",
+      "name": "Cutting Lettuce",
       "latinName": "Lactuca Sativa Var Crispa",
-      "URL":"",
-      "PHMin":"",
-      "PHMax":"",
-      "water":"",
-      "DtG":"",
-      "DtH":""
-    },
-    {
+      "URL": "https://pfaf.org/user/Plant.aspx?LatinName=Lactuca+sativa+crispa",
+      "PHMin": "",
+      "PHMax": "",
+      "water": "",
+      "DtG": "7",
+      "DtH": "",
+      "Notes": ""
+    }, {
       "plantID": "010",
       "name": "Leaf Lettuce",
       "latinName": "Lactuca Sativa",
-      "URL":"",
-      "PHMin":"",
-      "PHMax":"",
-      "water":"",
-      "DtG":"",
-      "DtH":""
-    },
-    {
+      "URL": "https://pfaf.org/user/Plant.aspx?LatinName=Lactuca+sativa",
+      "PHMin": "",
+      "PHMax": "",
+      "water": "",
+      "DtG": "",
+      "DtH": ""
+    }, {
       "plantID": "011",
       "name": "Malvarosa Halo Mix",
-      "latinName": "",
-      "URL":"",
-      "PHMin":"",
-      "PHMax":"",
-      "water":"",
-      "DtG":"",
-      "DtH":""
-    },
-    {
+      "latinName": "Alcea rosea, Malvacee",
+      "URL": "https://pfaf.org/user/Plant.aspx?LatinName=Alcea+rosea",
+      "PHMin": "",
+      "PHMax": "",
+      "water": "",
+      "DtG": "28",
+      "DtH": "",
+      "Notes": ""
+    }, {
       "plantID": "012",
-      "name": "Mint",
-      "latinName": "",
-      "URL":"",
-      "PHMin":"",
-      "PHMax":"",
-      "water":"",
-      "DtG":"",
-      "DtH":""
-    },
-    {
-      "plantID": "013",
       "name": "Mint Mentha Piperita",
       "latinName": "",
-      "URL":"",
-      "PHMin":"",
-      "PHMax":"",
-      "water":"",
-      "DtG":"",
-      "DtH":""
-    },
-    {
-      "plantID": "014",
+      "URL": "https://pfaf.org/user/Plant.aspx?LatinName=Mentha+x+piperita+officinalis",
+      "PHMin": "",
+      "PHMax": "",
+      "water": "",
+      "DtG": "20",
+      "DtH": "",
+      "Notes": ""
+    }, {
+      "plantID": "013",
       "name": "Nussalad Vera",
       "latinName": "",
-      "URL":"",
-      "PHMin":"",
-      "PHMax":"",
-      "water":"",
-      "DtG":"",
-      "DtH":""
-    },
-    {
+      "URL": "",
+      "PHMin": "",
+      "PHMax": "",
+      "water": "",
+      "DtG": "18",
+      "DtH": "40",
+      "Notes": ""
+    }, {
       "plantID": "015",
       "name": "Oregano",
-      "latinName": "",
-      "URL":"",
-      "PHMin":"",
-      "PHMax":"",
-      "water":"",
-      "DtG":"",
-      "DtH":""
-    },
-    {
+      "latinName": " Origanum vulgare - L.
+      ",
+      "URL": "https://pfaf.org/user/plant.aspx?latinname=Origanum+vulgare",
+      "PHMin": "",
+      "PHMax": "",
+      "water": "",
+      "DtG": "10",
+      "DtH": "",
+      "Notes": ""
+    }, {
       "plantID": "016",
       "name": "Parsley",
-      "latinName": "",
-      "URL":"",
-      "PHMin":"",
-      "PHMax":"",
-      "water":"",
-      "DtG":"",
-      "DtH":""
-    },
-    {
+      "latinName": "Petroselinum crispum - (Mill.)Nyman. ex A.W.Hill.",
+      "URL": "https://pfaf.org/user/plant.aspx?LatinName=Petroselinum+crispum",
+      "PHMin": "",
+      "PHMax": "",
+      "water": "",
+      "DtG": "",
+      "DtH": "",
+      "Notes": ""
+    }, {
       "plantID": "017",
       "name": "Rosemary",
-      "latinName": "",
-      "URL":"",
-      "PHMin":"",
-      "PHMax":"",
-      "water":"",
-      "DtG":"",
-      "DtH":""
-    },
-    {
+      "latinName": "Rosmarinus officinalis - L",
+      "URL": "https://pfaf.org/user/plant.aspx?latinname=Rosmarinus+officinalis",
+      "PHMin": "",
+      "PHMax": "",
+      "water": "",
+      "DtG": "",
+      "DtH": "",
+      "Notes": ""
+    }, {
       "plantID": "018",
       "name": "Rucola Perenne",
-      "latinName": "",
-      "URL":"",
-      "PHMin":"",
-      "PHMax":"",
-      "water":"",
-      "DtG":"",
-      "DtH":""
-    },
-    {
+      "latinName": "Diplotaxis erucoides",
+      "URL": "",
+      "PHMin": "",
+      "PHMax": "",
+      "water": "",
+      "DtG": "",
+      "DtH": "",
+      "Notes": ""
+    }, {
       "plantID": "019",
       "name": "Sage",
-      "latinName": "",
-      "URL":"",
-      "PHMin":"",
-      "PHMax":"",
-      "water":"",
-      "DtG":"",
-      "DtH":""
-    },
-    {
+      "latinName": "Salvia officinalis - L.",
+      "URL": "https://pfaf.org/user/Plant.aspx?LatinName=Salvia+officinalis",
+      "PHMin": "",
+      "PHMax": "",
+      "water": "",
+      "DtG": "",
+      "DtH": "",
+      "Notes": ""
+    }, {
       "plantID": "020",
       "name": "Smooth-Leaf Spinach",
-      "latinName": "",
-      "URL":"",
-      "PHMin":"",
-      "PHMax":"",
-      "water":"",
-      "DtG":"",
-      "DtH":""
-    },
-    {
-      "plantID": "021",
-      "name": "Spinach",
-      "latinName": "",
-      "URL":"",
-      "PHMin":"",
-      "PHMax":"",
-      "water":"",
-      "DtG":"",
-      "DtH":""
-    },
-    {
+      "latinName": "Spinacia oleracea - L.",
+      "URL": "https://pfaf.org/user/plant.aspx?LatinName=Spinacia+oleracea",
+      "PHMin": "",
+      "PHMax": "",
+      "water": "",
+      "DtG": "",
+      "DtH": "",
+      "Notes": ""
+    }, {
       "plantID": "022",
       "name": "Tatsoi",
       "latinName": "",
-      "URL":"",
-      "PHMin":"",
-      "PHMax":"",
-      "water":"",
-      "DtG":"",
-      "DtH":""
-    },
-    {
+      "URL": "",
+      "PHMin": "",
+      "PHMax": "",
+      "water": "",
+      "DtG": "",
+      "DtH": "",
+      "Notes": ""
+    }, {
       "plantID": "023",
       "name": "Thyme",
-      "latinName": "",
-      "URL":"",
-      "PHMin":"",
-      "PHMax":"",
-      "water":"",
-      "DtG":"",
-      "DtH":""
-    },
-    {
+      "latinName": "Thymus vulgaris - L.",
+      "URL": "",
+      "PHMin": "",
+      "PHMax": "",
+      "water": "",
+      "DtG": "",
+      "DtH": ""
+    }, {
       "plantID": "024",
       "name": "Tomato Cherry Red",
       "latinName": "Lycopersicon Esculentum",
-      "URL":"",
-      "PHMin":"",
-      "PHMax":"",
-      "water":"",
-      "DtG":"",
-      "DtH":""
-    },
-    {
-      "plantID": "025",
-      "name": "Tomato Montfavet",
-      "latinName": "Lycopersicon Esculentum Mil",
-      "URL":"",
-      "PHMin":"",
-      "PHMax":"",
-      "water":"",
-      "DtG":"",
-      "DtH":""
-    },
-    {
+      "URL": "",
+      "PHMin": "",
+      "PHMax": "",
+      "water": "",
+      "DtG": "10",
+      "DtH": "90",
+      "Notes": ""
+    }, {
       "plantID": "026",
       "name": "Tomatoes Red and Yelow Pear",
       "latinName": "Lycopercicon Esculntum",
-      "URL":"",
-      "PHMin":"",
-      "PHMax":"",
-      "water":"",
-      "DtG":"",
-      "DtH":""
-    },
-    {
+      "URL": "",
+      "PHMin": "",
+      "PHMax": "",
+      "water": "",
+      "DtG": "13",
+      "DtH": "150"
+    }, {
       "plantID": "027",
-      "name": "",
-      "latinName": "",
-      "URL":"",
-      "PHMin":"",
-      "PHMax":"",
-      "water":"",
-      "DtG":"",
-      "DtH":""
-    },
-    {
+      "name": "Spinat",
+      "latinName": "Spinacia oleracea",
+      "URL": "https://pfaf.org/user/plant.aspx?LatinName=Spinacia+oleracea",
+      "PHMin": "",
+      "PHMax": "",
+      "water": "",
+      "DtG": "",
+      "DtH": "",
+      "Notes": ""
+    }, {
       "plantID": "028",
-      "name": "",
-      "latinName": "",
-      "URL":"",
-      "PHMin":"",
-      "PHMax":"",
-      "water":"",
-      "DtG":"",
-      "DtH":""
+      "name": "Chili Cayenne",
+      "latinName": "Capsicum annuum",
+      "URL": "https://pfaf.org/user/Plant.aspx?LatinName=Capsi",
+      "PHMin": "",
+      "PHMax": "",
+      "water": "",
+      "DtG": "14",
+      "DtH": ""
     }
 
   ]
