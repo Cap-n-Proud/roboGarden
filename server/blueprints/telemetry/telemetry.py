@@ -2,6 +2,7 @@ from blueprints.api import getPlantsDB, getStatus
 from flask import Blueprint
 from flask import current_app as app
 from flask import render_template
+import config
 
 # status = getStatus()
 # currentProgram = getCurrentProgram()
@@ -21,4 +22,6 @@ def telemetry():
         title="Telemetry",
         subtitle="Demonstration of Flask blueprints in action.",
         template="telemetry-template",
+        INFOTAG=config.Config.INFOTAG,
+        TELEMETRYTAG=config.Config.TELEMETRYTAG,
     )

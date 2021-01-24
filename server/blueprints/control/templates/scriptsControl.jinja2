@@ -3,6 +3,15 @@
 {% block scr %}
 
 <script>
+var socket = io();
+
+socket.on(TELEMETRYTAG, function(msg, cb) {
+  document.getElementById("telemetryBox").innerHTML = msg.RGB + " @   " + msg.brightness
+  if (cb)
+    cb();
+});
+
+
 
 function loadProgram(ID)
 {
@@ -35,8 +44,8 @@ function postCommand(cmd) {
   // send POST request
   fetch(URL, options)
     .then(res => res.json())
-  //.then(res => console.log(res));
-}  
+}
+
 //Change pump status based on the checkbox TODO based on the arduino feedback
 function pumpControl(checkboxElem) {
   var x = document.getElementById("pump");
@@ -49,6 +58,34 @@ function pumpControl(checkboxElem) {
     postCommand(cmd)
   }
 }
+
+
+function hexTorgb(hex) {
+  return ['0x' + hex[1] + hex[2] | 0, '0x' + hex[3] + hex[4] | 0, '0x' + hex[5] + hex[6] | 0];
+}
+
+function R_G_BtoHEX(red, green, blue) {
+  red = red < 0 ? 0 : red > 255 ? 255 : red;
+  green = green < 0 ? 0 : green > 255 ? 255 : green;
+  blue = blue < 0 ? 0 : blue > 255 ? 255 : blue;
+
+  return "#" +
+    ("0" + parseInt(red, 10).toString(16)).slice(-2) +
+    ("0" + parseInt(green, 10).toString(16)).slice(-2) +
+    ("0" + parseInt(blue, 10).toString(16)).slice(-2);
+}
+
+function setColor(newColor){
+  RGB = hexTorgb(newColor)
+  var cmd = "setLightRGB " + RGB[0] + " " + RGB[1] + " " + RGB[2]
+  postCommand(cmd)
+}
+
+function setBrightness(newBrightness){
+  var cmd = "setBrightness " + newBrightness
+  postCommand(cmd)
+}
+
 </script>
 
 

@@ -2,6 +2,7 @@ from flask import Blueprint
 from flask import current_app as app
 from blueprints.api import getPlantsDB, getPrograms, getCurrentProgr
 from flask import render_template
+import config
 
 # Blueprint Configuration
 control_bp = Blueprint(
@@ -21,4 +22,6 @@ def status():
         template="control-template",
         programs=programs,
         currentProgram=getCurrentProgr,
+        INFOTAG=config.Config.INFOTAG,
+        TELEMETRYTAG=config.Config.TELEMETRYTAG,
     )

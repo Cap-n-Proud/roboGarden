@@ -27,15 +27,16 @@ function R_G_BtoHEX(red, green, blue) {
     ("0" + parseInt(green, 10).toString(16)).slice(-2) +
     ("0" + parseInt(blue, 10).toString(16)).slice(-2);
 }
+
 //Capture and publish the information stream
-  socket.on('I', function(msg, cb) {
+  socket.on(INFOTAG, function(msg, cb) {
     document.getElementById("infoBox").innerHTML = msg;
     if (cb)
       cb();
   });
 
   //Capture and publish the telemetry stream and create the global variable telemetry
-    socket.on('T', function(msg, cb) {
+    socket.on(TELEMETRYTAG, function(msg, cb) {
       updatePumpStatus(msg);
       updateLightsStatus(msg);
       if (cb)
