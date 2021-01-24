@@ -24,7 +24,7 @@ from flask.logging import default_handler
 #         format=f"%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s",
 #     )
 
-
+# https://stackoverflow.com/questions/11232230/logging-to-two-files-with-different-settings#11233293
 formatter = logging.Formatter("%(asctime)s %(levelname)s %(message)s")
 
 
@@ -43,6 +43,8 @@ def setup_logger(name, log_file, level=logging.INFO):
 
 def create_app():
     roboG = setup_logger(config.Config.APPLOGNAME, config.Config.APPLOGFILE)
+    log = logging.getLogger("werkzeug")
+    log.setLevel(logging.ERROR)
 
     """Create Flask application."""
     app = Flask(__name__, instance_relative_config=False)
@@ -72,7 +74,7 @@ def create_app():
         from blueprints.init import init
 
         init()
-        configure_logging()
+        # configure_logging()
         # Register Blueprints
         app.register_blueprint(status.status_bp)
         app.register_blueprint(control.control_bp)
