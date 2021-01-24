@@ -17,7 +17,7 @@ def configure_logging():
     # register root logging
     logging.basicConfig(
         filename=config.Config.LOGFILE,
-        level=logging.DEBUG,
+        level=logging.INFO,
         format=f"%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s",
     )
 

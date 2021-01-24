@@ -30,11 +30,12 @@ def initSerial():
 
     print("serial interface configured. Pyserisal version: " + serial.VERSION)
     time.sleep(2)
+    return serial_port
 
 
 def init():
     # currentProgram = getCurrentProgr()
-    initSerial()
+    # initSerial()
     currentProgram = getCurrentProgr()
     # Setup and start the thread to read serial port
     thread_lock = Lock()
@@ -42,7 +43,7 @@ def init():
         target=read_from_port,
         args=(
             serial.Serial(
-                config.Hardware.SERIALPORT, config.Hardware.SERIALBAUD, timeout=1
+                config.Hardware.SERIALPORT, config.Hardware.SERIALBAUD, timeout=5
             ),
         ),
     )

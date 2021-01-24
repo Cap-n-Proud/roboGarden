@@ -35,7 +35,7 @@ def testThread(param):
 # Broadcast info to every client
 def broadcastInfo(data):
     socketio.emit("info", data)
-    print(data + " sent")
+    # print(data + " sent")
 
 
 def handle_data(data):
@@ -50,12 +50,14 @@ def handle_data(data):
         if dataJSON["type"] == "T":
             print(dataJSON)
             io.emit(config.Config.TELEMETRYTAG, dataJSON)
+            print(threading.active_count())
 
     except ValueError as e:
         LOG.warning("Received non-JSON from Arduino: " + str(data) + str(e))
 
 
 def read_from_port(ser):
+    except_counter = ""
     while True:
         # NB: for PySerial v3.0 or later, use property `in_waiting` instead of function `inWaiting()` below!
         try:
@@ -70,7 +72,6 @@ def read_from_port(ser):
             LOG.warning(serial.serialutil.SerialException)
             if except_counter == 5:
                 break
-
             time.sleep(1)
 
 
