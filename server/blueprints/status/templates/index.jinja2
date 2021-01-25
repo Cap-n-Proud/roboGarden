@@ -1,19 +1,14 @@
 
 {% extends "layout.jinja2" %}
-
-{#{% block pagestyles %}
-  {% assets "status_less_bundle" %}
-    <link href="{{ ASSET_URL }}" rel="stylesheet" type="text/css">
-  {% endassets %}
-{% endblock %}
-#}
+{#{% include "headerStatus.jinja2" %}#}
 
 {% block content %}
 <script type="text/javascript">
         INFOTAG = "{{INFOTAG}}"
         TELEMETRYTAG = "{{TELEMETRYTAG}}"
 </script>
-{% include "indexTelemetry.jinja2" %}
+{#{% include "indexTelemetry.jinja2" %}#}
+{% include "telemetryModule.jinja2" %}
 
 <div class="status">
 {% for towers in status.towers %}
@@ -40,7 +35,6 @@
  {% endfor %}
 </div>
 
-{% include "blueprintinfo.jinja2" %}
 {% include "scriptsStatus.jinja2" %}
 
 {% endblock %}

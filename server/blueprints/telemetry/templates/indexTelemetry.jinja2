@@ -1,4 +1,6 @@
 
+{% include "telemetryHeader.jinja2" %}
+
 {% extends "layout.jinja2" %}
 
 {#{% block pagestyles %}
@@ -9,30 +11,7 @@
 #}
 
 {% block content %}
-<script type="text/javascript">
-        INFOTAG = "{{INFOTAG}}"
-        TELEMETRYTAG = "{{TELEMETRYTAG}}"
-</script>
-<table>
-  <tr>
-    <td>
-      <i id="LED" class="material-icons" style="background: rgba(0,0, 0,0)">lightbulb-outline</i>
-    </td>
-    <td id="RGBColor"></td>
-    <td><i id="pump" class="material-icons">swap_vert</i></td>
-  </tr>
-{#  <tr>
-    <td id="LED-text"></td>
-    <td></td>
-    <td id="pump-text"></td>
-  </tr> #}
-  <tr>
-    <td id="infoBox" colspan="3"></td>
-  </tr>
-</table>
 
+{% include "telemetryModule.jinja2" %}
 
-{#{% include "scriptsTelemetry.jinja2" %}
-#}
 {% endblock %}
-{% include "scriptsTelemetry.jinja2" %}

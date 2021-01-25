@@ -17,8 +17,8 @@ def status():
     currentProgr = getCurrentProgr()
     return render_template(
         "indexControl.jinja2",
-        title="Flask Blueprint Demo",
-        subtitle="Demonstration of Flask blueprints in action.",
+        title="Control",
+        subtitle="Use this to control lights, pump and other features.",
         template="control-template",
         programs=programs,
         currentProgram=getCurrentProgr,

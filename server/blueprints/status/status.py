@@ -23,7 +23,7 @@ def status():
     return render_template(
         "index.jinja2",
         title="Status",
-        subtitle="Demonstration of Flask blueprints in action.",
+        subtitle="Control the status of roboGarden and the status of the pods.",
         template="status-template",
         plantsDB=plantsDB,
         status=status,
