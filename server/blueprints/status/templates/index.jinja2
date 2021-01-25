@@ -1,3 +1,4 @@
+{% include "headerStatus.jinja2" %}
 
 {% extends "layout.jinja2" %}
 {#{% include "headerStatus.jinja2" %}#}
@@ -7,7 +8,7 @@
         INFOTAG = "{{INFOTAG}}"
         TELEMETRYTAG = "{{TELEMETRYTAG}}"
 </script>
-{#{% include "indexTelemetry.jinja2" %}#}
+
 {% include "telemetryModule.jinja2" %}
 
 <div class="status">
@@ -26,7 +27,8 @@
           </select>
         </div>
         <br>
-        <span style="plantedDateStatus" id="plantedDateStatus">{{pod.plantedDate|formatDate}}</span>
+      {#  <input type="date" class="no-outline" value="{{pod.plantedDate|formatDate}}" podID="{{pod.podID}}" onchange="changePlantedDate('{{pod.podID}}')" id="plantedDateStatus-{{pod.podID}}"> #}
+        <span style="plantedDateStatus" onchange="changePlantedDate({{pod.podID}})" id="plantedDateStatus-{{pod.podID}}">{{pod.plantedDate|formatDate}}</span>
       </td>
       {% endfor %}
     </tr>
