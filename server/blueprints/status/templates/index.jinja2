@@ -9,7 +9,10 @@
 #}
 
 {% block content %}
-
+<script type="text/javascript">
+        INFOTAG = "{{INFOTAG}}"
+        TELEMETRYTAG = "{{TELEMETRYTAG}}"
+</script>
 {% include "indexTelemetry.jinja2" %}
 
 <div class="status">

@@ -5,13 +5,30 @@
 <script>
 var socket = io();
 
+function hexTorgb(hex) {
+  return ['0x' + hex[1] + hex[2] | 0, '0x' + hex[3] + hex[4] | 0, '0x' + hex[5] + hex[6] | 0];
+}
+
+function R_G_BtoHEX(red, green, blue) {
+  red = red < 0 ? 0 : red > 255 ? 255 : red;
+  green = green < 0 ? 0 : green > 255 ? 255 : green;
+  blue = blue < 0 ? 0 : blue > 255 ? 255 : blue;
+
+  return "#" +
+    ("0" + parseInt(red, 10).toString(16)).slice(-2) +
+    ("0" + parseInt(green, 10).toString(16)).slice(-2) +
+    ("0" + parseInt(blue, 10).toString(16)).slice(-2);
+}
+
 socket.on(TELEMETRYTAG, function(msg, cb) {
   document.getElementById("telemetryBox").innerHTML = msg.RGB + " @   " + msg.brightness
+
+  var x = msg.RGB.split(" ");
+  document.getElementById("LEDColor").value = R_G_BtoHEX(x[0],x[1],x[2]);
+
   if (cb)
     cb();
 });
-
-
 
 function loadProgram(ID)
 {
