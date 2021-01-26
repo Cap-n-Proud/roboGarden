@@ -11,7 +11,7 @@ control_bp = Blueprint(
 
 
 @control_bp.route("/control", methods=["POST", "GET"])
-def status():
+def control():
     """Control page."""
     programs = getPrograms()
     currentProgr = getCurrentProgr()

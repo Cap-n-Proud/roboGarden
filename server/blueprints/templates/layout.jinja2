@@ -6,9 +6,12 @@
 </head>
 
 <body class="{{ template }}">
+  {% include "navigation.jinja2" %}
+
   {% block content %}{% endblock %}
 
   {% include "blueprintinfo.jinja2" %}
+
   {% block scr %}{% endblock %}
 
 </body>

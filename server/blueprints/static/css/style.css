@@ -3,7 +3,22 @@ table, th, td {
   border-collapse: collapse;
   display: table-cell;
   vertical-align: middle;
-  padding: 20px;
+  padding: 10px;
+}
+
+.navigation {
+  display: block;
+  justify-content: center;
+  margin-right: 0px;
+  padding: 10;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  color: #57657e;
+  font-family: CamphorPro-Medium, HelveticaNeue, sans-serif;
+  font-size: 1em;
+  letter-spacing: .5px;
+  transition: all .2s ease-out;
 }
 
 .select select {

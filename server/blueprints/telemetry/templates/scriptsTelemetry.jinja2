@@ -57,7 +57,11 @@ function R_G_BtoHEX(red, green, blue) {
   function updateLightsStatus(telemetry) {
     var rgb = telemetry['RGB'].split(" ");
     hexColor = R_G_BtoHEX(rgb[0], rgb[1], rgb[2])
-    document.getElementById("LED").setAttribute("style", "background-color: " + R_G_BtoHEX(rgb[0],rgb[1],rgb[2]));
+
+    document.getElementById("LEDContainer").setAttribute("style", "background-color: " + R_G_BtoHEX(rgb[0],rgb[1],rgb[2]));
+    //document.getElementById("LEDContainer").setAttribute("style", "background-color: " + R_G_BtoHEX(rgb[0],rgb[1],rgb[2]) + "; " + "filter: brightness(" + telemetry['brightness'] + ")");
+    document.getElementById("LED").setAttribute("style", "color: " + R_G_BtoHEX(0.6*rgb[0],0.6*rgb[1],0.6 *rgb[2]));
+    //console.log(R_G_BtoHEX(0.8*rgb[0],0.8*rgb[1],0.8*rgb[2]))
     document.getElementById("RGBColor").innerHTML = telemetry['RGB'] + " @ " + telemetry['brightness'] + "%";
   }
 

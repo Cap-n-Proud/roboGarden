@@ -22,7 +22,7 @@ class Config:
 
 class Hardware:
     READSERIALINTERVAL = 2
-    CHECKLIGHTSINTERVAL = 10
+    CHECKLIGHTSINTERVAL = 5
     SERIALPORT = "/dev/ttyACM0"
     SERIALBAUD = 115200
 

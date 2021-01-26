@@ -37,4 +37,4 @@ def plant():
 def arduinocmd():
     req = request.get_json()
     arduinoCommand(req["command"])
-    return redirect(url_for("control_bp.status", message="OK"))
+    return redirect(url_for("control_bp.control", message="OK"))
