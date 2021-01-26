@@ -53,7 +53,10 @@ def handle_data(data):
             # print(threading.active_count())
 
     except ValueError as e:
-        LOG.warning("Received non-JSON from Arduino: " + str(data) + str(e))
+        # We need to replace double quotes with single ones to save it in the json logs
+        LOG.warning(
+            "Received non-JSON from Arduino: " + str(data).replace('"', "'") + str(e)
+        )
 
 
 # https://stackoverflow.com/questions/17553543/pyserial-non-blocking-read-loop

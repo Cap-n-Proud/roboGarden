@@ -1,4 +1,4 @@
-$fn = 50;
+$fn = 200;
 towerDiam = 75;
 
 
@@ -134,7 +134,7 @@ module roboGarden() {
 
 }
 
-module dome(d = 5, h = 2, hollow = false, wallWidth = 0.5, $fn = 128) {
+module dome(d = 5, h = 2, hollow = false, wallWidth = 0.5) {
   sphereRadius = (pow(h, 2) + pow((d / 2), 2)) / (2 * h);
 
   translate([0, 0, (sphereRadius - h) * -1]) {
@@ -149,6 +149,7 @@ module dome(d = 5, h = 2, hollow = false, wallWidth = 0.5, $fn = 128) {
     }
   }
 }
+
 
 module towerDome() {
   difference(){
@@ -385,4 +386,4 @@ module lightPoleSupport(){
 
 //tower();
 //level(1);
-
+towerDome();

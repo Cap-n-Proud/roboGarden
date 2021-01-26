@@ -4,6 +4,8 @@ from flask_assets import Environment
 from flask_socketio import SocketIO
 import config
 import logging
+
+# from pythonjsonlogger import jsonlogger
 from flask.logging import default_handler
 
 # Globally accessible libraries
@@ -31,12 +33,19 @@ formatter = logging.Formatter("%(asctime)s %(levelname)s %(message)s")
 def setup_logger(name, log_file, level=logging.INFO):
     """To setup as many loggers as you want"""
 
-    handler = logging.FileHandler(log_file)
-    handler.setFormatter(formatter)
-
+    file_handler = logging.FileHandler(log_file)
+    stream_handler = logging.StreamHandler()
+    stream_formatter = logging.Formatter("%(asctime)-15s %(levelname)-8s %(message)s")
+    file_formatter = logging.Formatter(
+        '{"time": "%(asctime)s", "name": "%(name)s", "level": "%(levelname)s", "message": "%(message)s"},'
+    )
+    file_handler.setFormatter(file_formatter)
+    # stream_handler.setFormatter(stream_formatter)
+    # formatter = jsonlogger.JsonFormatter("%(asctime)s %(levelname)s %(message)s")
     logger = logging.getLogger(name)
     logger.setLevel(level)
-    logger.addHandler(handler)
+    logger.addHandler(file_handler)
+    # logger.addHandler(stream_handler)
 
     return logger
 

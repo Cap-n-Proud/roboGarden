@@ -1,8 +1,9 @@
 from blueprints.threads import arduinoCommand
 from blueprints.api import newPlant, getStatus, getPlantsDB
+import config
 
 # from flask import render_template
-from flask import Blueprint, Flask
+from flask import Blueprint, Flask, send_file
 from flask import current_app as app
 from flask import (
     jsonify,
@@ -38,3 +39,9 @@ def arduinocmd():
     req = request.get_json()
     arduinoCommand(req["command"])
     return redirect(url_for("control_bp.control", message="OK"))
+
+
+@cmd_bp.route("/api/getlog")
+def getlog():
+    print("getlog")
+    return send_file("../" + config.Config.APPLOGFILE, as_attachment=True)
