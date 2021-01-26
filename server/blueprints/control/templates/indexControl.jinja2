@@ -16,7 +16,7 @@
 </script>
 <table>
   <tr>
-  <td><span>Program</span>
+  <td><label for="PRGSel">Program</label>
   <select style="color: black;" id="PRGsel" onchange="loadProgram(this.value)">
       {% for p in programs |sort(attribute='progName')%}
       <option value="{{p.progID}}"{% if p.progID == currentProgram.progID %} selected{% endif %}>{{p.progName}}</option>
@@ -27,7 +27,7 @@
     </td>
   </tr>
   <tr>
-  <td><span id="pumpLabel">Pump</span></td>
+  <td><label for="pump">Pump</label></td>
   <td>
       <label class="switch">
         <input id="pump" type="checkbox" value="OFF" onchange="pumpControl(this)">

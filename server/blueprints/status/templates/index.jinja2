@@ -10,10 +10,11 @@
 </script>
 
 {% include "telemetryModule.jinja2" %}
-
+<br>
 <div class="status">
 {% for towers in status.towers %}
  <table id={{towers.name}}>
+  <caption>{{towers.name}}</caption>
    {% for level in towers.levels  | reverse %}
     <tr>
       {% for pod in level.pods %}
