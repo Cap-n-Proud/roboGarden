@@ -24,6 +24,7 @@ CRGB leds[NUM_LEDS];
 auto timer = timer_create_default(); // create a timer with default settings
 
 bool pumpON = false;
+bool pumpOverride = false;
 int RGBLED[3] = {0, 0, 0};
 int Brightness = 0;
 String info = "";

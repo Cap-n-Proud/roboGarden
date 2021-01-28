@@ -6,18 +6,58 @@ const commandList_t commands[] = {
   {"pumpStart",   pumpStart,   "Start pump"},
   {"pumpStop",    pumpStop,   "Stop pump"},
   {"setBrightness",         setBrightness,   "Set brightness"},
+  {"stopAll",         stopAll,   "Stop pump, lights and sensor readings"},
+  {"LEDShow",         LEDShow,   "Start a ledshow of n seconds"},
+
 };
 
 // pumpStart
 // pumpStop
+// pumpRunFor 2
 // setBrightness 15
 // setLightRGB 23 10 115
+// stopAll
+// LEDShow 5 0.2
+
 // printSysInfo => TBD
 // sendInfo
 
 //Initialisation function
 void initialiseCommander() {
   cmd.begin(&Serial, commands, sizeof(commands)); //start Commander on Serial
+}
+
+
+void LEDShow(Commander &Cmdr) {
+  int val1 = 0;
+  int val2 = 0;
+  int val3 = 0;
+  float freq = 0;
+  float dur = 0;
+  float values[3] = {0, 0};
+  for (int n = 0; n < 2; n++) {
+    //try and unpack an int, if it fails there are no more left so exit the loop
+    if (Cmdr.getFloat(values[n])) {
+
+    } else break;
+  }
+  dur = 1000 * values[0];
+  freq = 1000 * values[1];
+
+  sendInfo(String("Lightshow started. Duration " + String(dur/1000) + " freq " + String((freq/1000))));
+  for (int i = 0; i < dur / freq; i++) {
+    val1 = random();
+    val2 = random();
+    val3 = random();
+
+    leds[0] = CRGB(val2, val3, val1);
+    FastLED.show();
+    delay(freq);
+  }
+  leds[0] = CRGB::Black;
+  FastLED.show();
+  sendInfo(String("Lightshow stopped"));
+
 }
 
 void sendInfo(String info)
@@ -30,11 +70,26 @@ void sendInfo(String info)
   //return 0;
 }
 
+//this will be an emergency stop
+void stopAll(Commander &Cmdr)
+{
+
+  removeOverride();
+  sendInfo(String("Override manually removed"));
+
+  return 0;
+}
 
 bool pumpStop(Commander &Cmdr) {
-  // Here code to swith the pump on
-  pumpON = false;
-  sendInfo(String("Pump stopped"));
+  if (!pumpOverride)
+  { // Here code to swith the pump off
+    pumpON = false;
+    sendInfo(String("Pump stopped"));
+  }
+  else
+  {
+    sendInfo(String("Punp cannot stop, pump stop override active"));
+  }
   return 0;
 }
 
@@ -45,14 +100,22 @@ bool pumpStart(Commander &Cmdr) {
   return 0;
 }
 
+bool removeOverride() {
+  pumpOverride = false;
+
+}
+
 bool pumpRunFor(Commander &Cmdr) {
   long myInt;
+  pumpOverride = true;
   if (Cmdr.getInt(myInt)) {
-    //Cmdr.print("Pump timer set to: ");
-    //Cmdr.println(myInt);
     pumpON = true;
     timer.in(myInt * 1000 * 60, pumpStop);
+    timer.in(myInt * 1000 * 60 - 1, removeOverride);
     sendInfo(String("Pump started for: ") + myInt + String(" minutes"));
+  }
+  else
+  { sendInfo(String("Command pumpRunFor failed: no duration supplied"));
   }
 
   return 0;
@@ -80,7 +143,7 @@ bool setBrightness(Commander &Cmdr) {
   int myInt;
   //The server has brigtness range 0-100, the hardware is library depndant so we need to scale Sx:100=Hx:MAX_BRIGHTNESS
   if (Cmdr.getInt(myInt)) {
-    Brightness = (MAX_BRIGHTNESS/100)*myInt;
+    Brightness = (MAX_BRIGHTNESS / 100) * myInt;
     FastLED.setBrightness(Brightness);
     FastLED.show();
     sendInfo(String("Brightness set to: ") + myInt + String("%"));
@@ -106,7 +169,7 @@ bool setLightRGB(Commander &Cmdr) {
     pRGB = pRGB + String(values[n]) + String(" ");
     RGBLED[n] = values[n];
   }
-  
+
   leds[0] = CRGB(RGBLED[0], RGBLED[1], RGBLED[2]);
   FastLED.show();
   sendInfo(String("LED set to RGB: ") + pRGB);

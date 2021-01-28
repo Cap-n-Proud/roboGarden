@@ -2,6 +2,17 @@
 
 <script>
 var socket = io();
+document.getElementById("showTime").addEventListener("click", LEDShow);
+
+//Strts a LED show!
+function LEDShow(checkboxElem) {
+var d = document.getElementById("LEDShowDur").value;
+var f = document.getElementById("LEDShowFreq").value;
+
+    var cmd = "LEDShow " + d + " " + f;
+    postCommand(cmd)
+    console.log(cmd)
+}
 
 function hexTorgb(hex) {
   return ['0x' + hex[1] + hex[2] | 0, '0x' + hex[3] + hex[4] | 0, '0x' + hex[5] + hex[6] | 0];
