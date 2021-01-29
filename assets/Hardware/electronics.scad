@@ -1,14 +1,14 @@
 $fn = 50;
-outerDiam = 4;
-screwDiam = 2.5;
+outerDiam = 6;
+screwDiam = 3;
 pilarHeight = 5;
 
 boardX = 180;
 boardY = 180;
-boardZ = 1.2;
+boardZ = 2.4;
 
-boardHoleDiam = 10;
-boardHoleSpace = 15;
+boardHoleDiam = 25;
+boardHoleSpace = 0.2 * boardHoleDiam;
 
 // First is the board x, y second is the position of the first hole
 megaDim = [ [ 101.6, 53.34 ], [ 14, 2.5 ] ];
@@ -43,7 +43,7 @@ module pillar(base) {
         cylinder(h = pilarHeight + 2, d1 = screwDiam, d2 = screwDiam);
   }
   if(base){
-  cylinder(h = boardZ, d = boardHoleDiam);}
+  cylinder(h = boardZ, d = boardHoleDiam/2);}
 }
 
 module mount(component,basePillar) {
@@ -88,6 +88,16 @@ module board() {
   }
 }
 
+
+module baseSupport(){
+    cube([boardX/2-0.2*boardX,10,15]);
+    
+    
+}
+
+baseSupport();
+
+module electronicsBase(){
 board();
 baseShow = false;
 basePillar = true;
@@ -111,3 +121,5 @@ translate([ 140, 155, 0 ]) rotate([ 0, 0, 0 ])
 
 // fullmodule(raspberryDim,raspberryB);
 // translate([raspberryDim[0][0] + 20,0,0])fullmodule(unoDim,uno);
+}
+
