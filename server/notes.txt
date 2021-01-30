@@ -3,3 +3,21 @@ https://pfaf.org/user/Plant.aspx?LatinName=Lactuca+sativa+crispa
 
 how to daemonize
 https://tranindigo.github.io/article-django-gunicorn.html
+
+
+
+ /etc/systemd/system/
+
+
+[Unit]
+Description=roboGarden daemon
+After=network.target
+
+[Service]
+User=pi
+Group=www-data
+WorkingDirectory=//home/pi/roboGarden/server
+ExecStart=/home/pi/.local/bin/gunicorn -b 0.0.0.0:5000 wsgi:app
+
+[Install]
+WantedBy=multi-user.target

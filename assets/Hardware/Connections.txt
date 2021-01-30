@@ -1,0 +1,9 @@
+LED
+
+#define DATA_PIN 2 => DIN
+#define CLOCK_PIN 3	=> CIN
+5V => VCC
+GND => GND
+
+
+
