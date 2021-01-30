@@ -90,7 +90,7 @@ module board() {
 
 
 module baseSupport(){
-    cube([boardX/2-0.2*boardX,10,15]);
+    cube([boardX/2-0.2*boardX,10,20]);
     
     
 }

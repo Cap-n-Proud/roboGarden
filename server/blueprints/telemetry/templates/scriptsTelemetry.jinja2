@@ -37,6 +37,12 @@ function R_G_BtoHEX(red, green, blue) {
     socket.on(TELEMETRYTAG, function(msg, cb) {
       updatePumpStatus(msg);
       updateLightsStatus(msg);
+      var elem = document.getElementById("telemetry");
+      elem.innerHTML = "";
+      for (name in msg) {
+        elem.innerHTML = elem.innerHTML + name + ' ' + msg[name] + "<br>";
+
+      }
       if (cb)
         cb();
     });

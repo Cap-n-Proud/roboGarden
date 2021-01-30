@@ -38,7 +38,7 @@ table, th, td {
   line-height: inherit;
 }
 
-.datePlantedStatus {
+.datePlantedStatus, .telemetryInfo {
   font-size: 80%;
   color: gray;
 }

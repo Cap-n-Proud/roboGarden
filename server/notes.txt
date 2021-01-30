@@ -16,8 +16,39 @@ After=network.target
 [Service]
 User=pi
 Group=www-data
-WorkingDirectory=//home/pi/roboGarden/server
+WorkingDirectory=/home/pi/roboGarden/server
 ExecStart=/home/pi/.local/bin/gunicorn -b 0.0.0.0:5000 wsgi:app
 
 [Install]
 WantedBy=multi-user.target
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------
+Then we can start the gunicorn service with the following commands:
+
+sudo systemctl start gunicorn
+sudo systemctl enable gunicorn
+
+This will start gunicorn in the background. In the next tutorial, we'll find out how to use nginx as a reverse proxy to connect our socket to the external world.
+Useful commands and troubleshooting
+
+When working with systemctl, some systems allow you to use the service command to control services. In our case, the following comands are available to us:
+
+service gunicorn start
+service gunicorn stop
+service gunicorn restart (which is just really a shortcut for the two commands above)
+
+Also, systemd unit files (such as our service file above) need to be reloaded every time they are changed. This will reload all unit files and recreate the daemon. To reload the service file, use the following command:
+
+systemctl daemon-reload
+
+You'll need to perform an additional service gunicorn restart if you want to restart the service itself.
