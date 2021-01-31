@@ -1,7 +1,7 @@
 $fn = 50;
 outerDiam = 6;
 screwDiam = 3;
-pilarHeight = 5;
+pilarHeight = 8;
 
 boardX = 180;
 boardY = 180;
@@ -95,7 +95,6 @@ module baseSupport(){
     
 }
 
-baseSupport();
 
 module electronicsBase(){
 board();
@@ -123,3 +122,6 @@ translate([ 140, 155, 0 ]) rotate([ 0, 0, 0 ])
 // translate([raspberryDim[0][0] + 20,0,0])fullmodule(unoDim,uno);
 }
 
+
+//baseSupport();
+pillar();

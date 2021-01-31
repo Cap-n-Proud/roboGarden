@@ -1,9 +1,9 @@
 https://pfaf.org/user/Plant.aspx?LatinName=Lactuca+sativa+crispa
-
+https://university.upstartfarmers.com/blog/hydroponic-basil
 
 how to daemonize
 https://tranindigo.github.io/article-django-gunicorn.html
-
+https://bonnieplants.com/product/dragon-cayenne-pepper/
 
 
  /etc/systemd/system/
