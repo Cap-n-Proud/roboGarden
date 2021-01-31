@@ -14,7 +14,10 @@
         INFOTAG = {{INFOTAG|tojson}}
         TELEMETRYTAG = {{TELEMETRYTAG|tojson}}
 </script>
-<table>
+
+      {% include "telemetryModule.jinja2" %}<br>
+
+<table width="100%">
   <tr>
   <td><label for="PRGSel">Program</label>
   <select style="color: black;" id="PRGsel" onchange="loadProgram(this.value)">
@@ -57,11 +60,8 @@
        <button id="showTime" class="button button3">show!</button>
     </td>
   </tr>
-  <tr>
-    <td><label for="telemetryBox">Info</label></td>
-    <td id="telemetryBox"></td>
-  </tr>
 </table>
+
 
 {% include "scriptsControl.jinja2" %}
 

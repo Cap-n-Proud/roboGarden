@@ -1,4 +1,4 @@
-$fn = 200;
+$fn = 50;
 towerDiam = 75;
 
 
@@ -12,7 +12,7 @@ podThickness = 2;
 podAngle = 90;
 distanceBetweenLevels = 50;
 minDistanceFromTowerBase = 30;
-hollowPods =true
+hollowPods = false;
 ;
 
 baseX = 800;
@@ -384,6 +384,6 @@ module lightPoleSupport(){
 
 //towerDome();
 
-//tower();
+tower();
 //level(1);
-towerDome();
+//towerDome();

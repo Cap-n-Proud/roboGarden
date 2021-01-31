@@ -30,7 +30,7 @@ function R_G_BtoHEX(red, green, blue) {
 }
 
 socket.on(TELEMETRYTAG, function(msg, cb) {
-  document.getElementById("telemetryBox").innerHTML = msg.RGB + " @   " + msg.brightness
+  //document.getElementById("telemetryBox").innerHTML = msg.RGB + " @   " + msg.brightness
 
   var x = msg.RGB.split(" ");
   document.getElementById("LEDColor").value = R_G_BtoHEX(x[0],x[1],x[2]);
