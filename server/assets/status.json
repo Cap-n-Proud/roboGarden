@@ -1,468 +1,597 @@
 {
-  "towers": [{
-    "name": "tower01",
-    "levels": [{
-      "level": "0",
-      "pods": [{
-        "podID": "00-00-00",
-        "plantID": "003",
-        "plantName": "Basilico Grande Genovese",
-        "plantedDate": "2021-01-21T00:24:05.000Z",
-        "harvestTime": "0"
-      }, {
-        "podID": "00-00-01",
-        "plantID": "019",
-        "plantName": "Sage",
-        "plantedDate": "2021-01-21T23:42:57.133Z",
-        "harvestTime": "0"
-      }]
-    }, {
-      "level": "1",
-      "pods": [{
-        "podID": "00-01-00",
-        "plantID": "003",
-        "plantName": "Basilico Grande Genovese",
-        "plantedDate": "2021-01-21T00:24:09.000Z",
-        "harvestTime": "0"
-      }, {
-        "podID": "00-01-01",
-        "plantID": "003",
-        "plantName": "Basilico Grande Genovese",
-        "plantedDate": "2021-01-18T23:29:53.600Z",
-        "harvestTime": "0"
-      }]
-    }, {
-      "level": "2",
-      "pods": [{
-        "podID": "00-02-00",
-        "plantID": "003",
-        "plantName": "Basilico Grande Genovese",
-        "plantedDate": "2021-01-21T00:19:19.700Z",
-        "harvestTime": "0"
-      }, {
-        "podID": "00-02-01",
-        "plantID": "003",
-        "plantName": "Basilico Grande Genovese",
-        "plantedDate": "2021-01-21T00:13:44.800Z",
-        "harvestTime": "0"
-      }]
-    }, {
-      "level": "3",
-      "pods": [{
-        "podID": "00-03-00",
-        "plantID": "001",
-        "plantName": "Basil",
-        "plantedDate": "2016-04-26T18:09:16Z",
-        "harvestTime": "0"
-      }, {
-        "podID": "00-03-01",
-        "plantID": "004",
-        "plantName": "Strawberry",
-        "plantedDate": "2016-04-26T18:09:16Z",
-        "harvestTime": "0"
-      }]
-    }, {
-      "level": "4",
-      "pods": [{
-        "podID": "00-04-00",
-        "plantID": "001",
-        "plantName": "Basil",
-        "plantedDate": "2016-04-26T18:09:16Z",
-        "harvestTime": "0"
-      }, {
-        "podID": "00-04-01",
-        "plantID": "001",
-        "plantName": "Basil",
-        "plantedDate": "2016-04-26T18:09:16Z",
-        "harvestTime": "0"
-      }]
-    }, {
-      "level": "5",
-      "pods": [{
-        "podID": "00-05-00",
-        "plantID": "001",
-        "plantName": "Strawberry",
-        "plantedDate": "2016-04-26T18:09:16Z",
-        "harvestTime": "0"
-      }, {
-        "podID": "00-05-01",
-        "plantID": "001",
-        "plantName": "Strawberry",
-        "plantedDate": "2016-04-26T18:09:16Z",
-        "harvestTime": "0"
-      }]
-    }, {
-      "level": "6",
-      "pods": [{
-        "podID": "00-06-00",
-        "plantID": "001",
-        "plantName": "Strawberry",
-        "plantedDate": "2016-04-26T18:09:16Z",
-        "harvestTime": "0"
-      }, {
-        "podID": "00-06-01",
-        "plantID": "001",
-        "plantName": "Strawberry",
-        "plantedDate": "2016-04-26T18:09:16Z",
-        "harvestTime": "0"
-      }]
-    }, {
-      "level": "7",
-      "pods": [{
-        "podID": "00-07-00",
-        "plantID": "001",
-        "plantName": "Strawberry",
-        "plantedDate": "2016-04-26T18:09:16Z",
-        "harvestTime": "0"
-      }, {
-        "podID": "00-07-01",
-        "plantID": "015",
-        "plantName": "Oregano",
-        "plantedDate": "2021-01-22T20:49:40.900Z",
-        "harvestTime": "0"
-      }]
-    }, {
-      "level": "8",
-      "pods": [{
-        "podID": "00-08-00",
-        "plantID": "005",
-        "plantName": "Cayenne Pepper",
-        "plantedDate": "2021-01-21T00:22:20.200Z",
-        "harvestTime": "0"
-      }, {
-        "podID": "00-08-01",
-        "plantID": "012",
-        "plantName": "Mint",
-        "plantedDate": "2016-04-26T18:09:16Z",
-        "harvestTime": "0"
-      }]
-    }, {
-      "level": "9",
-      "pods": [{
-        "podID": "00-09-00",
-        "plantID": "001",
-        "plantName": "Tomato Montfavet",
-        "plantedDate": "2021-01-21T00:24:28.600Z"
-      }, {
-        "podID": "00-09-01",
-        "plantID": "006",
-        "plantName": "Edible Flowers",
-        "plantedDate": "2021-01-26T15:39:09.800Z",
-        "harvestTime": "0"
-      }]
-    }]
-  }, {
-    "name": "tower02",
-    "levels": [{
-      "level": "0",
-      "pods": [{
-        "podID": "01-00-00",
-        "plantID": "007",
-        "plantName": "Fiori Romantic Pink Feeling",
-        "plantedDate": "2021-01-21T23:43:20.300Z",
-        "harvestTime": "0"
-      }, {
-        "podID": "01-00-01",
-        "plantID": "017",
-        "plantName": "Rosemary",
-        "plantedDate": "2021-01-22T13:21:35.000Z",
-        "harvestTime": "0"
-      }]
-    }, {
-      "level": "1",
-      "pods": [{
-        "podID": "01-01-00",
-        "plantID": "014",
-        "plantName": "Nussalad Vera",
-        "plantedDate": "2021-01-22T13:21:43.500Z",
-        "harvestTime": "0"
-      }, {
-        "podID": "01-01-01",
-        "plantID": "018",
-        "plantName": "Rucola Perenne",
-        "plantedDate": "2021-01-22T13:21:39.900Z",
-        "harvestTime": "0"
-      }]
-    }, {
-      "level": "2",
-      "pods": [{
-        "podID": "01-02-00",
-        "plantID": "003",
-        "plantName": "Tomato Montfavet",
-        "plantedDate": "2016-04-26T18:09:16Z",
-        "harvestTime": "0"
-      }, {
-        "podID": "01-02-01",
-        "plantID": "001",
-        "plantName": "Mint",
-        "plantedDate": "2016-04-26T18:09:16Z",
-        "harvestTime": "0"
-      }]
-    }, {
-      "level": "3",
-      "pods": [{
-        "podID": "01-03-00",
-        "plantID": "002",
-        "plantName": "Lattuga da taglio Bionda a foglia liscia",
-        "plantedDate": "2016-04-26T18:09:16Z",
-        "harvestTime": "0"
-      }, {
-        "podID": "01-03-01",
-        "plantID": "001",
-        "plantName": "Basil",
-        "plantedDate": "2016-04-26T18:09:16Z",
-        "harvestTime": "0"
-      }]
-    }, {
-      "level": "4",
-      "pods": [{
-        "podID": "01-04-00",
-        "plantID": "001",
-        "plantName": "Basil",
-        "plantedDate": "2016-04-26T18:09:16Z",
-        "harvestTime": "0"
-      }, {
-        "podID": "01-04-01",
-        "plantID": "001",
-        "plantName": "Basil",
-        "plantedDate": "2016-04-26T18:09:16Z",
-        "harvestTime": "0"
-      }]
-    }, {
-      "level": "5",
-      "pods": [{
-        "podID": "01-05-00",
-        "plantID": "001",
-        "plantName": "Strawberry",
-        "plantedDate": "2016-04-26T18:09:16Z",
-        "harvestTime": "0"
-      }, {
-        "podID": "01-05-01",
-        "plantID": "001",
-        "plantName": "Strawberry",
-        "plantedDate": "2016-04-26T18:09:16Z",
-        "harvestTime": "0"
-      }]
-    }, {
-      "level": "6",
-      "pods": [{
-        "podID": "01-06-00",
-        "plantID": "001",
-        "plantName": "Strawberry",
-        "plantedDate": "2016-04-26T18:09:16Z",
-        "harvestTime": "0"
-      }, {
-        "podID": "01-06-01",
-        "plantID": "001",
-        "plantName": "Strawberry",
-        "plantedDate": "2016-04-26T18:09:16Z",
-        "harvestTime": "0"
-      }]
-    }, {
-      "level": "7",
-      "pods": [{
-        "podID": "01-07-00",
-        "plantID": "001",
-        "plantName": "Strawberry",
-        "plantedDate": "2016-04-26T18:09:16Z",
-        "harvestTime": "0"
-      }, {
-        "podID": "01-07-01",
-        "plantID": "001",
-        "plantName": "Strawberry",
-        "plantedDate": "2016-04-26T18:09:16Z",
-        "harvestTime": "0"
-      }]
-    }, {
-      "level": "8",
-      "pods": [{
-        "podID": "01-08-00",
-        "plantID": "009",
-        "plantName": "Cutting Lettuce",
-        "plantedDate": "2021-01-24T22:25:54.335Z",
-        "harvestTime": "0"
-      }, {
-        "podID": "01-08-01",
-        "plantID": "009",
-        "plantName": "Cutting Lettuce",
-        "plantedDate": "2021-01-24T22:25:57.317Z",
-        "harvestTime": "0"
-      }]
-    }, {
-      "level": "9",
-      "pods": [{
-        "podID": "01-09-00",
-        "plantID": "005",
-        "plantName": "Cayenne Pepper",
-        "plantedDate": "2021-01-24T22:28:08.100Z",
-        "harvestTime": "0"
-      }, {
-        "podID": "01-09-01",
-        "plantID": "005",
-        "plantName": "Cayenne Pepper",
-        "plantedDate": "2021-01-24T22:28:05.700Z",
-        "harvestTime": "0"
-      }]
-    }]
-  }, {
-    "name": "tower03",
-    "levels": [{
-      "level": "0",
-      "pods": [{
-        "podID": "02-00-00",
-        "plantID": "004",
-        "plantName": "Strawberry",
-        "plantedDate": "2016-04-26T18:09:16Z",
-        "harvestTime": "0"
-      }, {
-        "podID": "02-00-01",
-        "plantID": "001",
-        "plantName": "Strawberry",
-        "plantedDate": "2016-04-26T18:09:16Z",
-        "harvestTime": "0"
-      }]
-    }, {
-      "level": "1",
-      "pods": [{
-        "podID": "02-01-00",
-        "plantID": "001",
-        "plantName": "Lettuce",
-        "plantedDate": "2016-04-26T18:09:16Z",
-        "harvestTime": "0"
-      }, {
-        "podID": "02-01-01",
-        "plantID": "001",
-        "plantName": "Lettuce",
-        "plantedDate": "2016-04-26T18:09:16Z",
-        "harvestTime": "0"
-      }]
-    }, {
-      "level": "2",
-      "pods": [{
-        "podID": "02-02-00",
-        "plantID": "001",
-        "plantName": "Mint",
-        "plantedDate": "2016-04-26T18:09:16Z",
-        "harvestTime": "0"
-      }, {
-        "podID": "02-02-01",
-        "plantID": "001",
-        "plantName": "Mint",
-        "plantedDate": "2016-04-26T18:09:16Z",
-        "harvestTime": "0"
-      }]
-    }, {
-      "level": "3",
-      "pods": [{
-        "podID": "02-03-00",
-        "plantID": "001",
-        "plantName": "Basil",
-        "plantedDate": "2016-04-26T18:09:16Z",
-        "harvestTime": "0"
-      }, {
-        "podID": "02-03-01",
-        "plantID": "001",
-        "plantName": "Basil",
-        "plantedDate": "2016-04-26T18:09:16Z",
-        "harvestTime": "0"
-      }]
-    }, {
-      "level": "4",
-      "pods": [{
-        "podID": "02-04-00",
-        "plantID": "001",
-        "plantName": "Basil",
-        "plantedDate": "2016-04-26T18:09:16Z",
-        "harvestTime": "0"
-      }, {
-        "podID": "02-04-01",
-        "plantID": "001",
-        "plantName": "Basil",
-        "plantedDate": "2016-04-26T18:09:16Z",
-        "harvestTime": "0"
-      }]
-    }, {
-      "level": "5",
-      "pods": [{
-        "podID": "02-05-00",
-        "plantID": "001",
-        "plantName": "Strawberry",
-        "plantedDate": "2016-04-26T18:09:16Z",
-        "harvestTime": "0"
-      }, {
-        "podID": "02-05-01",
-        "plantID": "001",
-        "plantName": "Strawberry",
-        "plantedDate": "2016-04-26T18:09:16Z",
-        "harvestTime": "0"
-      }]
-    }, {
-      "level": "6",
-      "pods": [{
-        "podID": "02-06-00",
-        "plantID": "001",
-        "plantName": "Strawberry",
-        "plantedDate": "2016-04-26T18:09:16Z",
-        "harvestTime": "0"
-      }, {
-        "podID": "02-06-01",
-        "plantID": "001",
-        "plantName": "Strawberry",
-        "plantedDate": "2016-04-26T18:09:16Z",
-        "harvestTime": "0"
-      }]
-    }, {
-      "level": "7",
-      "pods": [{
-        "podID": "02-07-00",
-        "plantID": "001",
-        "plantName": "Strawberry",
-        "plantedDate": "2016-04-26T18:09:16Z",
-        "harvestTime": "0"
-      }, {
-        "podID": "02-07-01",
-        "plantID": "001",
-        "plantName": "Strawberry",
-        "plantedDate": "2016-04-26T18:09:16Z",
-        "harvestTime": "0"
-      }]
-    }, {
-      "level": "8",
-      "pods": [{
-        "podID": "02-08-00",
-        "plantID": "009",
-        "plantName": "Cutting Lettuce",
-        "plantedDate": "2021-01-24T22:25:59.881Z",
-        "harvestTime": "0"
-      }, {
-        "podID": "02-08-01",
-        "plantID": "009",
-        "plantName": "Cutting Lettuce",
-        "plantedDate": "2021-01-24T22:26:02.077Z",
-        "harvestTime": "0"
-      }]
-    }, {
-      "level": "9",
-      "pods": [{
-        "podID": "02-09-00",
-        "plantID": "003",
-        "plantName": "Basilico Grande Genovese",
-        "plantedDate": "2021-01-24T22:25:23.400Z",
-        "harvestTime": "0"
-      }, {
-        "podID": "02-09-01",
-        "plantID": "003",
-        "plantName": "Basilico Grande Genovese",
-        "plantedDate": "2021-01-24T22:25:26.100Z",
-        "harvestTime": "0"
-      }]
-    }]
-  }],
-  "maintenance": [{
-    "lastWaterChange": "2021-01-24T22:25:26.100Z",
-    "lastH2O2Added": "2021-01-24T22:25:26.100Z",
-    "lastNutrientsAdded": "2021-01-24T22:25:26.100Z",
-    "lastTowerMaintenance": "2021-01-24T22:25:26.100Z",
-    "lastTankMaintenance": "2021-01-24T22:25:26.100Z"
-  }]
+    "towers": [
+        {
+            "name": "tower01",
+            "levels": [
+                {
+                    "level": "0",
+                    "pods": [
+                        {
+                            "podID": "00-00-00",
+                            "plantID": "003",
+                            "plantName": "Basilico Grande Genovese",
+                            "plantedDate": "2021-01-21T00:24:05.000Z",
+                            "harvestTime": "0"
+                        },
+                        {
+                            "podID": "00-00-01",
+                            "plantID": "019",
+                            "plantName": "Sage",
+                            "plantedDate": "2021-01-21T23:42:57.133Z",
+                            "harvestTime": "0"
+                        }
+                    ]
+                },
+                {
+                    "level": "1",
+                    "pods": [
+                        {
+                            "podID": "00-01-00",
+                            "plantID": "003",
+                            "plantName": "Basilico Grande Genovese",
+                            "plantedDate": "2021-01-21T00:24:09.000Z",
+                            "harvestTime": "0"
+                        },
+                        {
+                            "podID": "00-01-01",
+                            "plantID": "003",
+                            "plantName": "Basilico Grande Genovese",
+                            "plantedDate": "2021-01-18T23:29:53.600Z",
+                            "harvestTime": "0"
+                        }
+                    ]
+                },
+                {
+                    "level": "2",
+                    "pods": [
+                        {
+                            "podID": "00-02-00",
+                            "plantID": "003",
+                            "plantName": "Basilico Grande Genovese",
+                            "plantedDate": "2021-01-21T00:19:19.700Z",
+                            "harvestTime": "0"
+                        },
+                        {
+                            "podID": "00-02-01",
+                            "plantID": "003",
+                            "plantName": "Basilico Grande Genovese",
+                            "plantedDate": "2021-01-21T00:13:44.800Z",
+                            "harvestTime": "0"
+                        }
+                    ]
+                },
+                {
+                    "level": "3",
+                    "pods": [
+                        {
+                            "podID": "00-03-00",
+                            "plantID": "001",
+                            "plantName": "Basil",
+                            "plantedDate": "2016-04-26T18:09:16Z",
+                            "harvestTime": "1596"
+                        },
+                        {
+                            "podID": "00-03-01",
+                            "plantID": "004",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z",
+                            "harvestTime": "1656"
+                        }
+                    ]
+                },
+                {
+                    "level": "4",
+                    "pods": [
+                        {
+                            "podID": "00-04-00",
+                            "plantID": "001",
+                            "plantName": "Basil",
+                            "plantedDate": "2016-04-26T18:09:16Z",
+                            "harvestTime": "1596"
+                        },
+                        {
+                            "podID": "00-04-01",
+                            "plantID": "001",
+                            "plantName": "Basil",
+                            "plantedDate": "2016-04-26T18:09:16Z",
+                            "harvestTime": "1596"
+                        }
+                    ]
+                },
+                {
+                    "level": "5",
+                    "pods": [
+                        {
+                            "podID": "00-05-00",
+                            "plantID": "001",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z",
+                            "harvestTime": "1596"
+                        },
+                        {
+                            "podID": "00-05-01",
+                            "plantID": "001",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z",
+                            "harvestTime": "1596"
+                        }
+                    ]
+                },
+                {
+                    "level": "6",
+                    "pods": [
+                        {
+                            "podID": "00-06-00",
+                            "plantID": "001",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z",
+                            "harvestTime": "1596"
+                        },
+                        {
+                            "podID": "00-06-01",
+                            "plantID": "001",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z",
+                            "harvestTime": "1596"
+                        }
+                    ]
+                },
+                {
+                    "level": "7",
+                    "pods": [
+                        {
+                            "podID": "00-07-00",
+                            "plantID": "001",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z",
+                            "harvestTime": "1596"
+                        },
+                        {
+                            "podID": "00-07-01",
+                            "plantID": "015",
+                            "plantName": "Oregano",
+                            "plantedDate": "2021-01-22T20:49:40.900Z",
+                            "harvestTime": "0"
+                        }
+                    ]
+                },
+                {
+                    "level": "8",
+                    "pods": [
+                        {
+                            "podID": "00-08-00",
+                            "plantID": "005",
+                            "plantName": "Cayenne Pepper",
+                            "plantedDate": "2021-01-21T00:22:20.200Z",
+                            "harvestTime": "0"
+                        },
+                        {
+                            "podID": "00-08-01",
+                            "plantID": "012",
+                            "plantName": "Mint",
+                            "plantedDate": "2016-04-26T18:09:16Z",
+                            "harvestTime": "0"
+                        }
+                    ]
+                },
+                {
+                    "level": "9",
+                    "pods": [
+                        {
+                            "podID": "00-09-00",
+                            "plantID": "001",
+                            "plantName": "Tomato Montfavet",
+                            "plantedDate": "2021-01-21T00:24:28.600Z"
+                        },
+                        {
+                            "podID": "00-09-01",
+                            "plantID": "006",
+                            "plantName": "Edible Flowers",
+                            "plantedDate": "2021-01-26T15:39:09.800Z",
+                            "harvestTime": "0"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "tower02",
+            "levels": [
+                {
+                    "level": "0",
+                    "pods": [
+                        {
+                            "podID": "01-00-00",
+                            "plantID": "007",
+                            "plantName": "Fiori Romantic Pink Feeling",
+                            "plantedDate": "2021-01-21T23:43:20.300Z",
+                            "harvestTime": "0"
+                        },
+                        {
+                            "podID": "01-00-01",
+                            "plantID": "017",
+                            "plantName": "Rosemary",
+                            "plantedDate": "2021-01-22T13:21:35.000Z",
+                            "harvestTime": "0"
+                        }
+                    ]
+                },
+                {
+                    "level": "1",
+                    "pods": [
+                        {
+                            "podID": "01-01-00",
+                            "plantID": "014",
+                            "plantName": "Nussalad Vera",
+                            "plantedDate": "2021-01-22T13:21:43.500Z",
+                            "harvestTime": "0"
+                        },
+                        {
+                            "podID": "01-01-01",
+                            "plantID": "018",
+                            "plantName": "Rucola Perenne",
+                            "plantedDate": "2021-01-22T13:21:39.900Z",
+                            "harvestTime": "0"
+                        }
+                    ]
+                },
+                {
+                    "level": "2",
+                    "pods": [
+                        {
+                            "podID": "01-02-00",
+                            "plantID": "003",
+                            "plantName": "Tomato Montfavet",
+                            "plantedDate": "2016-04-26T18:09:16Z",
+                            "harvestTime": "1696"
+                        },
+                        {
+                            "podID": "01-02-01",
+                            "plantID": "001",
+                            "plantName": "Mint",
+                            "plantedDate": "2016-04-26T18:09:16Z",
+                            "harvestTime": "1596"
+                        }
+                    ]
+                },
+                {
+                    "level": "3",
+                    "pods": [
+                        {
+                            "podID": "01-03-00",
+                            "plantID": "002",
+                            "plantName": "Lattuga da taglio Bionda a foglia liscia",
+                            "plantedDate": "2016-04-26T18:09:16Z",
+                            "harvestTime": "0"
+                        },
+                        {
+                            "podID": "01-03-01",
+                            "plantID": "001",
+                            "plantName": "Basil",
+                            "plantedDate": "2016-04-26T18:09:16Z",
+                            "harvestTime": "1596"
+                        }
+                    ]
+                },
+                {
+                    "level": "4",
+                    "pods": [
+                        {
+                            "podID": "01-04-00",
+                            "plantID": "001",
+                            "plantName": "Basil",
+                            "plantedDate": "2016-04-26T18:09:16Z",
+                            "harvestTime": "1596"
+                        },
+                        {
+                            "podID": "01-04-01",
+                            "plantID": "001",
+                            "plantName": "Basil",
+                            "plantedDate": "2016-04-26T18:09:16Z",
+                            "harvestTime": "1596"
+                        }
+                    ]
+                },
+                {
+                    "level": "5",
+                    "pods": [
+                        {
+                            "podID": "01-05-00",
+                            "plantID": "001",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z",
+                            "harvestTime": "1596"
+                        },
+                        {
+                            "podID": "01-05-01",
+                            "plantID": "001",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z",
+                            "harvestTime": "1596"
+                        }
+                    ]
+                },
+                {
+                    "level": "6",
+                    "pods": [
+                        {
+                            "podID": "01-06-00",
+                            "plantID": "001",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z",
+                            "harvestTime": "1596"
+                        },
+                        {
+                            "podID": "01-06-01",
+                            "plantID": "001",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z",
+                            "harvestTime": "1596"
+                        }
+                    ]
+                },
+                {
+                    "level": "7",
+                    "pods": [
+                        {
+                            "podID": "01-07-00",
+                            "plantID": "001",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z",
+                            "harvestTime": "1596"
+                        },
+                        {
+                            "podID": "01-07-01",
+                            "plantID": "001",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z",
+                            "harvestTime": "1596"
+                        }
+                    ]
+                },
+                {
+                    "level": "8",
+                    "pods": [
+                        {
+                            "podID": "01-08-00",
+                            "plantID": "009",
+                            "plantName": "Cutting Lettuce",
+                            "plantedDate": "2021-01-24T22:25:54.335Z",
+                            "harvestTime": "0"
+                        },
+                        {
+                            "podID": "01-08-01",
+                            "plantID": "009",
+                            "plantName": "Cutting Lettuce",
+                            "plantedDate": "2021-01-24T22:25:57.317Z",
+                            "harvestTime": "0"
+                        }
+                    ]
+                },
+                {
+                    "level": "9",
+                    "pods": [
+                        {
+                            "podID": "01-09-00",
+                            "plantID": "005",
+                            "plantName": "Cayenne Pepper",
+                            "plantedDate": "2021-01-24T22:28:08.100Z",
+                            "harvestTime": "0"
+                        },
+                        {
+                            "podID": "01-09-01",
+                            "plantID": "005",
+                            "plantName": "Cayenne Pepper",
+                            "plantedDate": "2021-01-24T22:28:05.700Z",
+                            "harvestTime": "0"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "tower03",
+            "levels": [
+                {
+                    "level": "0",
+                    "pods": [
+                        {
+                            "podID": "02-00-00",
+                            "plantID": "004",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z",
+                            "harvestTime": "1656"
+                        },
+                        {
+                            "podID": "02-00-01",
+                            "plantID": "001",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z",
+                            "harvestTime": "1596"
+                        }
+                    ]
+                },
+                {
+                    "level": "1",
+                    "pods": [
+                        {
+                            "podID": "02-01-00",
+                            "plantID": "001",
+                            "plantName": "Lettuce",
+                            "plantedDate": "2016-04-26T18:09:16Z",
+                            "harvestTime": "1596"
+                        },
+                        {
+                            "podID": "02-01-01",
+                            "plantID": "001",
+                            "plantName": "Lettuce",
+                            "plantedDate": "2016-04-26T18:09:16Z",
+                            "harvestTime": "1596"
+                        }
+                    ]
+                },
+                {
+                    "level": "2",
+                    "pods": [
+                        {
+                            "podID": "02-02-00",
+                            "plantID": "001",
+                            "plantName": "Mint",
+                            "plantedDate": "2016-04-26T18:09:16Z",
+                            "harvestTime": "1596"
+                        },
+                        {
+                            "podID": "02-02-01",
+                            "plantID": "001",
+                            "plantName": "Mint",
+                            "plantedDate": "2016-04-26T18:09:16Z",
+                            "harvestTime": "1596"
+                        }
+                    ]
+                },
+                {
+                    "level": "3",
+                    "pods": [
+                        {
+                            "podID": "02-03-00",
+                            "plantID": "001",
+                            "plantName": "Basil",
+                            "plantedDate": "2016-04-26T18:09:16Z",
+                            "harvestTime": "1596"
+                        },
+                        {
+                            "podID": "02-03-01",
+                            "plantID": "001",
+                            "plantName": "Basil",
+                            "plantedDate": "2016-04-26T18:09:16Z",
+                            "harvestTime": "1596"
+                        }
+                    ]
+                },
+                {
+                    "level": "4",
+                    "pods": [
+                        {
+                            "podID": "02-04-00",
+                            "plantID": "001",
+                            "plantName": "Basil",
+                            "plantedDate": "2016-04-26T18:09:16Z",
+                            "harvestTime": "1596"
+                        },
+                        {
+                            "podID": "02-04-01",
+                            "plantID": "001",
+                            "plantName": "Basil",
+                            "plantedDate": "2016-04-26T18:09:16Z",
+                            "harvestTime": "1596"
+                        }
+                    ]
+                },
+                {
+                    "level": "5",
+                    "pods": [
+                        {
+                            "podID": "02-05-00",
+                            "plantID": "001",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z",
+                            "harvestTime": "1596"
+                        },
+                        {
+                            "podID": "02-05-01",
+                            "plantID": "001",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z",
+                            "harvestTime": "1596"
+                        }
+                    ]
+                },
+                {
+                    "level": "6",
+                    "pods": [
+                        {
+                            "podID": "02-06-00",
+                            "plantID": "001",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z",
+                            "harvestTime": "1596"
+                        },
+                        {
+                            "podID": "02-06-01",
+                            "plantID": "001",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z",
+                            "harvestTime": "1596"
+                        }
+                    ]
+                },
+                {
+                    "level": "7",
+                    "pods": [
+                        {
+                            "podID": "02-07-00",
+                            "plantID": "001",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z",
+                            "harvestTime": "1596"
+                        },
+                        {
+                            "podID": "02-07-01",
+                            "plantID": "001",
+                            "plantName": "Strawberry",
+                            "plantedDate": "2016-04-26T18:09:16Z",
+                            "harvestTime": "1596"
+                        }
+                    ]
+                },
+                {
+                    "level": "8",
+                    "pods": [
+                        {
+                            "podID": "02-08-00",
+                            "plantID": "009",
+                            "plantName": "Cutting Lettuce",
+                            "plantedDate": "2021-01-24T22:25:59.881Z",
+                            "harvestTime": "0"
+                        },
+                        {
+                            "podID": "02-08-01",
+                            "plantID": "009",
+                            "plantName": "Cutting Lettuce",
+                            "plantedDate": "2021-01-24T22:26:02.077Z",
+                            "harvestTime": "0"
+                        }
+                    ]
+                },
+                {
+                    "level": "9",
+                    "pods": [
+                        {
+                            "podID": "02-09-00",
+                            "plantID": "003",
+                            "plantName": "Basilico Grande Genovese",
+                            "plantedDate": "2021-01-24T22:25:23.400Z",
+                            "harvestTime": "0"
+                        },
+                        {
+                            "podID": "02-09-01",
+                            "plantID": "003",
+                            "plantName": "Basilico Grande Genovese",
+                            "plantedDate": "2021-01-24T22:25:26.100Z",
+                            "harvestTime": "0"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "maintenance": [
+        {
+            "lastWaterChange": "2021-01-24T22:25:26.100Z",
+            "lastH2O2Added": "2021-01-24T22:25:26.100Z",
+            "lastNutrientsAdded": "2021-01-24T22:25:26.100Z",
+            "lastTowerMaintenance": "2021-01-24T22:25:26.100Z",
+            "lastTankMaintenance": "2021-01-24T22:25:26.100Z"
+        }
+    ]
 }

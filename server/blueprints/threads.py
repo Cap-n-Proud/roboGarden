@@ -146,10 +146,39 @@ def checkLights(currentProgram):
             LOG.info("Lights set to " + str(currentProgram["lightBrightness"]))
 
 
+# This function is called once a day and writes in each plant the days between harvest
 def guessHarvest():
+    from datetime import date
+    from datetime import datetime
+
+    dt = datetime.combine(date.today(), datetime.min.time())
+    dt = date.today()
+
     plantsDB = getPlantsDB(app)
     status = getStatus(app)
-    print(plantsDB)
+    # print(plantsDB["plants"][0]["plantID"])
+    for tower in status["towers"]:
+        print(tower["name"])
+        for level in tower["levels"]:
+            # print(level)pod["plantedDate"]
+            for pod in level["pods"]:
+                # print(pod["podID"], pod["plantedDate"])
+                for i in plantsDB["plants"]:
+                    if i["plantID"] == pod["plantID"]:
+                        daysPlanted = (dt - formatDate(pod["plantedDate"])).days
+                        # print(i["DtH"].isnumeric())
+                        if (
+                            daysPlanted >= int(float(i["DtH"]))
+                            and int(float(i["DtH"])) > 0
+                        ):
+                            pod["harvestTime"] = str(daysPlanted - int(float(i["DtH"])))
 
-
-guessHarvest()
+                            print(
+                                "Harvest "
+                                + pod["podID"]
+                                + " "
+                                + str(daysPlanted - int(float(i["DtH"])))
+                                + " days after DtH"
+                            )
+                        break
+                json.dump(status, open(config.JSON_Path.STATUS, "w"), indent=4)
