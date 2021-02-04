@@ -58,9 +58,6 @@ def guessHarvest():
                             and int(float(i["DtH"])) > 0
                         ):
                             pod["harvestTime"] = str(daysPlanted - int(float(i["DtH"])))
-                            json.dump(
-                                status, open(config.JSON_Path.STATUS, "w"), indent=4
-                            )
 
                             print(
                                 "Harvest "
@@ -70,6 +67,7 @@ def guessHarvest():
                                 + " days after DtH"
                             )
                         break
+                json.dump(status, open(config.JSON_Path.STATUS, "w"), indent=4)
 
 
 # currentPod = data["towers"][int(l[0])]["levels"][int(l[1])]["pods"][
