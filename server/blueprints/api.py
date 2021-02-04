@@ -1,3 +1,6 @@
+# Collection of functions to perform task on request of blueprints main files.
+# This includes also filters for templates
+
 import json
 import config
 import logging

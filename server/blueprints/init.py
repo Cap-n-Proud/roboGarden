@@ -1,3 +1,4 @@
+# Main script. Although this is not the entry point this collates all the pieces.
 # This initializes the key functionalites such as serial port,threads etc
 
 import threading
@@ -51,14 +52,6 @@ def init():
     checkL = RepeatedTimer(
         int(config.Hardware.CHECKLIGHTSINTERVAL), checkLights, currentProgram
     )
-
-    # schedulerL = BackgroundScheduler()
-    # schedulerL.add_job(checkLights, 'interval', args=[currentProgram] ,seconds=3)
-    # schedulerL.start()
-    #
-    # scheduler = BackgroundScheduler()
-    # scheduler.add_job(activatePump, 'interval', args=[currentProgram] ,seconds=3)
-    # scheduler.start()
 
     checkP = RepeatedTimer(
         int(currentProgram["pumpStartEvery"]), activatePump, currentProgram

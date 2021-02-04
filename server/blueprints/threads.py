@@ -16,7 +16,7 @@ import serial
 from serial.tools import list_ports
 import config
 
-from blueprints.api import getCurrentProgr
+from blueprints.api import getCurrentProgr, getPlantsDB, getStatus
 from blueprints.L_events import *
 
 dataJSON = ""
@@ -144,3 +144,12 @@ def checkLights(currentProgram):
         if dataJSON["brightness"] != 0:  # print("Lights should be ON")
             arduinoCommand("setBrightness 0")
             LOG.info("Lights set to " + str(currentProgram["lightBrightness"]))
+
+
+def guessHarvest():
+    plantsDB = getPlantsDB(app)
+    status = getStatus(app)
+    print(plantsDB)
+
+
+guessHarvest()

@@ -19,7 +19,7 @@
       "PHMax": "6.5",
       "water": "",
       "DtG": "10",
-      "DtH": "",
+      "DtH": "0",
       "Notes": ""
     }, {
       "plantID": "003",
@@ -62,7 +62,7 @@
       "PHMax": "",
       "water": "",
       "DtG": "14",
-      "DtH": "",
+      "DtH": "0",
       "Notes": ""
     }, {
       "plantID": "007",
@@ -73,7 +73,7 @@
       "PHMax": "",
       "water": "",
       "DtG": "",
-      "DtH": "",
+      "DtH": "0",
       "Notes": ""
     }, {
       "plantID": "008",
@@ -84,7 +84,7 @@
       "PHMax": "6.8",
       "water": "Heavy",
       "DtG": "30",
-      "DtH": ""
+      "DtH": "0"
     }, {
       "plantID": "009",
       "name": "Cutting Lettuce",
@@ -94,7 +94,7 @@
       "PHMax": "",
       "water": "",
       "DtG": "7",
-      "DtH": "",
+      "DtH": "0",
       "Notes": ""
     }, {
       "plantID": "010",
@@ -105,7 +105,7 @@
       "PHMax": "",
       "water": "",
       "DtG": "",
-      "DtH": ""
+      "DtH": "0"
     }, {
       "plantID": "011",
       "name": "Malvarosa Halo Mix",
@@ -115,7 +115,7 @@
       "PHMax": "",
       "water": "",
       "DtG": "28",
-      "DtH": "",
+      "DtH": "0",
       "Notes": ""
     }, {
       "plantID": "012",
@@ -126,7 +126,7 @@
       "PHMax": "",
       "water": "",
       "DtG": "20",
-      "DtH": "",
+      "DtH": "0",
       "Notes": ""
     }, {
       "plantID": "013",
@@ -148,7 +148,7 @@
       "PHMax": "8.0",
       "water": "",
       "DtG": "10",
-      "DtH": "",
+      "DtH": "0",
       "Notes": ""
     }, {
       "plantID": "016",
@@ -159,7 +159,7 @@
       "PHMax": "",
       "water": "",
       "DtG": "",
-      "DtH": "",
+      "DtH": "0",
       "Notes": ""
     }, {
       "plantID": "017",
@@ -170,7 +170,7 @@
       "PHMax": "7.0",
       "water": "",
       "DtG": "",
-      "DtH": "",
+      "DtH": "0",
       "Notes": ""
     }, {
       "plantID": "018",
@@ -181,7 +181,7 @@
       "PHMax": "",
       "water": "",
       "DtG": "",
-      "DtH": "",
+      "DtH": "0",
       "Notes": ""
     }, {
       "plantID": "019",
@@ -192,7 +192,7 @@
       "PHMax": "7.0",
       "water": "",
       "DtG": "",
-      "DtH": "",
+      "DtH": "0",
       "Notes": ""
     }, {
       "plantID": "020",
@@ -203,7 +203,7 @@
       "PHMax": "7.0",
       "water": "",
       "DtG": "",
-      "DtH": "",
+      "DtH": "0",
       "Notes": ""
     }, {
       "plantID": "022",
@@ -214,7 +214,7 @@
       "PHMax": "",
       "water": "",
       "DtG": "",
-      "DtH": "",
+      "DtH": "0",
       "Notes": ""
     }, {
       "plantID": "023",
@@ -225,7 +225,7 @@
       "PHMax": "",
       "water": "",
       "DtG": "",
-      "DtH": ""
+      "DtH": "0"
     }, {
       "plantID": "024",
       "name": "Tomato Cherry Red",
@@ -256,7 +256,7 @@
       "PHMax": "7.0",
       "water": "",
       "DtG": "",
-      "DtH": "",
+      "DtH": "0",
       "Notes": ""
     }
 
