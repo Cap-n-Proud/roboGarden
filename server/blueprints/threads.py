@@ -42,12 +42,12 @@ def handle_data(data):
     global dataJSON
     try:
         dataJSON = json.loads(data.decode())
-        if dataJSON["type"] == "I":
+        if dataJSON["type"] == config.Config.INFOTAG:
             print(dataJSON)
             LOG.info("Info from Arduino: " + dataJSON["message"])
             io.emit(config.Config.INFOTAG, dataJSON["message"])
 
-        if dataJSON["type"] == "T":
+        if dataJSON["type"] == config.Config.TELEMETRYTAG:
             print(dataJSON)
             io.emit(config.Config.TELEMETRYTAG, dataJSON)
             # print(threading.active_count())
@@ -146,8 +146,19 @@ def checkLights(currentProgram):
             LOG.info("Lights set to " + str(currentProgram["lightBrightness"]))
 
 
+def formatDate(input):
+    from datetime import datetime
+
+    if len(input) == 20:
+        format = "%Y-%m-%dT%H:%M:%SZ"
+    else:
+        format = "%Y-%m-%dT%H:%M:%S.%fZ"
+    d = datetime.strptime(input, format)
+    return d.date()
+
+
 # This function is called once a day and writes in each plant the days between harvest
-def guessHarvest():
+def guessHarvest(app):
     from datetime import date
     from datetime import datetime
 
@@ -156,9 +167,10 @@ def guessHarvest():
 
     plantsDB = getPlantsDB(app)
     status = getStatus(app)
+    ready = 0
     # print(plantsDB["plants"][0]["plantID"])
     for tower in status["towers"]:
-        print(tower["name"])
+        # print(tower["name"])
         for level in tower["levels"]:
             # print(level)pod["plantedDate"]
             for pod in level["pods"]:
@@ -167,18 +179,21 @@ def guessHarvest():
                     if i["plantID"] == pod["plantID"]:
                         daysPlanted = (dt - formatDate(pod["plantedDate"])).days
                         # print(i["DtH"].isnumeric())
-                        if (
-                            daysPlanted >= int(float(i["DtH"]))
-                            and int(float(i["DtH"])) > 0
-                        ):
-                            pod["harvestTime"] = str(daysPlanted - int(float(i["DtH"])))
 
-                            print(
-                                "Harvest "
-                                + pod["podID"]
-                                + " "
-                                + str(daysPlanted - int(float(i["DtH"])))
-                                + " days after DtH"
-                            )
-                        break
+                        pod["harvestTime"] = str(daysPlanted - int(float(i["DtH"])))
+                        if daysPlanted - int(float(i["DtH"])) > 0:
+                            ready = ready + 1
+                        # print(
+                        #     "Harvest "
+                        #     + pod["podID"]
+                        #     + " "
+                        #     + str(daysPlanted - int(float(i["DtH"])))
+                        #     + " days after DtH"
+                        # )
+                    break
                 json.dump(status, open(config.JSON_Path.STATUS, "w"), indent=4)
+                LOG.info(
+                    "Time to harvest computed.  "
+                    + str(ready)
+                    + " plants should be ready!"
+                )

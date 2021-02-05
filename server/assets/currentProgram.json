@@ -1,8 +1,8 @@
 {
   "progID": "001",
   "progName": "This is the current program",
-  "pumpStartEvery": 10,
-  "pumpRunTime": 5,
+  "pumpStartEvery": 30,
+  "pumpRunTime": 10,
   "pumpON": "08:00",
   "pumpOFF": "01:00",
   "lightBrightness": 80,

@@ -53,6 +53,8 @@ def init():
         int(config.Hardware.CHECKLIGHTSINTERVAL), checkLights, currentProgram
     )
 
+    checkH = RepeatedTimer(30, guessHarvest, app)
+
     checkP = RepeatedTimer(
         int(currentProgram["pumpStartEvery"]), activatePump, currentProgram
     )
@@ -60,4 +62,10 @@ def init():
     obj_now = datetime.now()
     timeNow = str(obj_now.hour).zfill(2) + ":" + str(obj_now.minute).zfill(2)
     app.logger.info("System started. System time is: " + timeNow)
-    print("System started. System time is: " + timeNow)
+    app.logger.info("Current program: " + str(currentProgram))
+    print(
+        "System started. System time is: "
+        + timeNow
+        + " current program "
+        + str(currentProgram)
+    )

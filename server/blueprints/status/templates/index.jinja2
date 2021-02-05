@@ -18,6 +18,7 @@
    {% for level in towers.levels  | reverse %}
     <tr>
       {% for pod in level.pods %}
+
       <td><span style="podIDStatus" id="podID">{{pod.podID}}</span><br>
         <br>
         <div class="select">
@@ -29,7 +30,7 @@
         </div>
         <br>
       {#  <input type="date" class="no-outline" value="{{pod.plantedDate|formatDate}}" podID="{{pod.podID}}" onchange="changePlantedDate('{{pod.podID}}')" id="plantedDateStatus-{{pod.podID}}"> #}
-        <span style="plantedDateStatus" onchange="changePlantedDate({{pod.podID}})" id="plantedDateStatus-{{pod.podID}}">{{pod.plantedDate|formatDate}}</span>
+        <span style="plantedDateStatus" onchange="changePlantedDate({{pod.podID}})" id="plantedDateStatus-{{pod.podID}}">{{pod.plantedDate|formatDate}} <span style="plantedDateStatus;  float:right; {% if pod.harvestTime | int >= 0 %}background-color:rgba(0,255,0,0.2); color:DodgerBlue;{% endif %}">&emsp;{{pod.harvestTime}}</span></span>
       </td>
       {% endfor %}
     </tr>

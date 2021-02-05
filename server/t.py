@@ -53,20 +53,17 @@ def guessHarvest():
                     if i["plantID"] == pod["plantID"]:
                         daysPlanted = (dt - formatDate(pod["plantedDate"])).days
                         # print(i["DtH"].isnumeric())
-                        if (
-                            daysPlanted >= int(float(i["DtH"]))
-                            and int(float(i["DtH"])) > 0
-                        ):
-                            pod["harvestTime"] = str(daysPlanted - int(float(i["DtH"])))
 
-                            print(
-                                "Harvest "
-                                + pod["podID"]
-                                + " "
-                                + str(daysPlanted - int(float(i["DtH"])))
-                                + " days after DtH"
-                            )
-                        break
+                        pod["harvestTime"] = str(daysPlanted - int(float(i["DtH"])))
+
+                        print(
+                            "Harvest "
+                            + pod["podID"]
+                            + " "
+                            + str(daysPlanted - int(float(i["DtH"])))
+                            + " days after DtH"
+                        )
+                    break
                 json.dump(status, open(config.JSON_Path.STATUS, "w"), indent=4)
 
 
