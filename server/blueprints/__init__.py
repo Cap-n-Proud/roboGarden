@@ -5,26 +5,7 @@ from flask_socketio import SocketIO
 import config
 import logging
 
-# from pythonjsonlogger import jsonlogger
 from flask.logging import default_handler
-
-# Globally accessible libraries
-# plantsDB = getPLantsDB()
-# status = getStatus()
-# currentProgram = getCurrentProgram()
-# programs = getPrograms()
-#  SOCKETS https://gist.github.com/astrolox/445e84068d12ed9fa28f277241edf57b
-
-#
-# def configure_logging():
-#     # app.logger.removeHandler(default_handler)
-#     # register root logging
-#     logging.basicConfig(
-#         filename=config.Config.WERKZEUGLOGFILE,
-#         log=logging.getLogger("werkzeug"),
-#         level=logging.ERROR,
-#         format=f"%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s",
-#     )
 
 # https://stackoverflow.com/questions/11232230/logging-to-two-files-with-different-settings#11233293
 formatter = logging.Formatter("%(asctime)s %(levelname)s %(message)s")
@@ -69,9 +50,6 @@ def create_app():
     socketio.init_app(app)
     socketio = SocketIO(app, async_mode=async_mode)
 
-    # init()
-    # Using a development configuration
-    # app.config.from_object("config.DevConfig")
     # https://gist.github.com/lotusirous/9d5c942c154077f845b4b03413d48751
     with app.app_context():
         # Import parts of our application
@@ -80,15 +58,17 @@ def create_app():
         from .control import control
         from .status import status
         from .telemetry import telemetry
+        from .currentProgram import currentProgram
+
         from blueprints.init import init
 
         init()
-        # configure_logging()
-        # Register Blueprints
+
         app.register_blueprint(status.status_bp)
         app.register_blueprint(control.control_bp)
         app.register_blueprint(cmd.cmd_bp)
         app.register_blueprint(telemetry.telemetry_bp)
+        app.register_blueprint(currentProgram.currentProgram_bp)
 
         # Compile static assets
         # compile_static_assets(assets)  # Execute logic
