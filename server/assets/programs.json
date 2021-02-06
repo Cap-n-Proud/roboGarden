@@ -1,21 +1,23 @@
 [{
   "progID": "001",
-  "progName": "default",
-  "pumpStartEvery": 60,
-  "pumpRunTime": 5,
-  "pumpStopHours": "20:00, 04:00",
-  "lightBrightness": 80,
-  "RGB": "255 0 0",
-  "lightsON": "04:00, 20:00"
+  "progName": "Default",
+  "pumpStartEvery": 3600,
+  "pumpRunTime": 20,
+  "pumpStopHours": "20:00, 06:00",
+  "lightBrightness": 100,
+  "RGB": "255 150 255",
+  "lightsON": "05:00, 23:00",
+  "notes": ""
 }, {
   "progID": "002",
-  "progName": "Seeds",
+  "progName": "Green",
   "pumpStartEvery": 600,
   "pumpRunTime": 3,
   "pumpStopHours": "20:00, 04:00",
-  "lightBrightness": 80,
+  "lightBrightness": 100,
   "RGB": "0 255 00",
-  "lightsON": "04:00, 20:00"
+  "lightsON": "04:00, 20:00",
+  "notes": ""
 }, {
   "progID": "003",
   "progName": "Herbs",
@@ -24,7 +26,8 @@
   "pumpStopHours": "20:00, 04:00",
   "lightBrightness": 100,
   "RGB": "255 255 255",
-  "lightsON": "04:00, 20:00"
+  "lightsON": "04:00, 20:00",
+  "notes": ""
 }, {
   "progID": "004",
   "progName": "Tomatoes",
@@ -34,7 +37,8 @@
   "lightBrightness": 15,
   "RGB": "0 255 255",
   "lightsON": "04:00, 20:00",
-  "lightsBightness": 100
+  "lightsBightness": 100,
+  "notes": ""
 }, {
   "progID": "005",
   "progName": "General",
@@ -44,14 +48,16 @@
   "lightBrightness": 30,
   "RGB": "100 100 100",
   "lightsON": "04:00, 20:00",
-  "lightsBightness": 100
+  "lightsBightness": 100,
+  "notes": ""
 }, {
   "progID": "006",
-  "progName": "General2",
-  "pumpStartEvery": 600,
-  "pumpRunTime": 3,
+  "progName": "Test",
+  "pumpStartEvery": 60,
+  "pumpRunTime": 30,
   "pumpStopHours": "20:00, 04:00",
-  "lightBrightness": 50,
+  "lightBrightness": 30,
   "RGB": "0 0 0",
-  "lightsON": "04:00, 20:00"
+  "lightsON": "04:00, 20:00",
+  "notes": "THis program can be used to test."
 }]

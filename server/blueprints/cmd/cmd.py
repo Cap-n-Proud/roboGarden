@@ -1,5 +1,5 @@
 from blueprints.threads import arduinoCommand
-from blueprints.api import newPlant, getStatus, getPlantsDB
+from blueprints.api import newPlant, getStatus, getPlantsDB, changePrg
 import config
 
 # from flask import render_template
@@ -38,6 +38,13 @@ def plant():
 def arduinocmd():
     req = request.get_json()
     arduinoCommand(req["command"])
+    return redirect(url_for("control_bp.control", message="OK"))
+
+
+@cmd_bp.route("/api/changeprogram", methods=["POST", "GET"])
+def changeprogram():
+    req = request.get_json()
+    changePrg(req["command"])
     return redirect(url_for("control_bp.control", message="OK"))
 
 

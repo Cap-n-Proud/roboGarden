@@ -16,7 +16,7 @@ def control():
     programs = getPrograms()
     currentProgr = getCurrentProgr()
     return render_template(
-        "indexControl.jinja2",
+        "indexControl.html.j2",
         title="Control",
         subtitle="Use this to control lights, pump and other features.",
         template="control-template",

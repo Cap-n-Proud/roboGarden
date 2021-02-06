@@ -3,16 +3,24 @@
 <script>
 var socket = io();
 document.getElementById("showTime").addEventListener("click", LEDShow);
+document.getElementById("changeProgr").addEventListener("click", changeProgram);
 
-//Strts a LED show!
-function LEDShow(checkboxElem) {
-var d = document.getElementById("LEDShowDur").value;
-var f = document.getElementById("LEDShowFreq").value;
+//Load selected proram to arduino
+function changeProgram(){
+  var prg = document.getElementById("PRGsel").value;
+  //console.log(prg)
+  postCommand(prg, 'changeprogram')
 
-    var cmd = "LEDShow " + d + " " + f;
-    postCommand(cmd)
-    console.log(cmd)
 }
+
+//Starts a LED show!
+function LEDShow(checkboxElem) {
+  var d = document.getElementById("LEDShowDur").value;
+  var f = document.getElementById("LEDShowFreq").value;
+      var cmd = "LEDShow " + d + " " + f;
+      postCommand(cmd, 'arduinocmd')
+      //console.log(cmd)
+  }
 
 function hexTorgb(hex) {
   return ['0x' + hex[1] + hex[2] | 0, '0x' + hex[3] + hex[4] | 0, '0x' + hex[5] + hex[6] | 0];
@@ -52,8 +60,9 @@ for (name in p) {
 
 }
 }
-function postCommand(cmd) {
-  const URL = `${window.origin}/api/arduinocmd`
+
+function postCommand(cmd, location) {
+  const URL = `${window.origin}/api/` + location
   // post body data
   const command = {
     command: cmd
@@ -78,10 +87,10 @@ function pumpControl(checkboxElem) {
   if (checkboxElem.checked) {
     var timer = document.getElementById("pumpPulse").value;
     var cmd = "pumpRunFor" + " " + timer
-    postCommand(cmd)
+    postCommand(cmd, 'arduinocmd')
   } else {
     var cmd = "pumpStop"
-    postCommand(cmd)
+    postCommand(cmd, 'arduinocmd')
   }
 }
 
@@ -104,12 +113,12 @@ function R_G_BtoHEX(red, green, blue) {
 function setColor(newColor){
   RGB = hexTorgb(newColor)
   var cmd = "setLightRGB " + RGB[0] + " " + RGB[1] + " " + RGB[2]
-  postCommand(cmd)
+  postCommand(cmd ,'arduinocmd')
 }
 
 function setBrightness(newBrightness){
   var cmd = "setBrightness " + newBrightness
-  postCommand(cmd)
+  postCommand(cmd, 'arduinocmd')
 }
 
 </script>

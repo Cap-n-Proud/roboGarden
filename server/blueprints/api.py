@@ -79,6 +79,15 @@ def newPlant(r):
             print(e)
 
 
+def changePrg(prg):
+    print("changed! " + prg)
+    programs = getPrograms()
+    for program in programs:
+        if program["progID"] == prg:
+            print(str(program))
+            json.dump(program, open(config.JSON_Path.CURRENTPROGRAM, "w"), indent=4)
+
+
 @app.template_filter("upperstring")
 def upperstring(input):
     """Custom filter"""

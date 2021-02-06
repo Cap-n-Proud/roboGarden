@@ -24,9 +24,10 @@
       {% for p in programs |sort(attribute='progName')%}
       <option value="{{p.progID}}"{% if p.progID == currentProgram.progID %} selected{% endif %}>{{p.progName}}</option>
     {% endfor %}
-  </select></td>
+  </select><br>
+  <button id="changeProgr" class="button button3">change</button>
+  </td>
   <td id="progLabel">
-
     </td>
   </tr>
   <tr>
@@ -48,7 +49,6 @@
       <label for="LEDColor"></label>
       <input type="color" id="LEDColor" name="LEDColor" onchange="setColor(this.value)">
     </td>
-
   </tr>
   <tr>
     <td>
@@ -63,6 +63,6 @@
 </table>
 
 
-{% include "scriptsControl.jinja2" %}
+{% include "scriptsControl.j2" %}
 
 {% endblock %}
