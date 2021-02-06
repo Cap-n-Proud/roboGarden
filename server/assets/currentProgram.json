@@ -1,11 +1,11 @@
 {
   "progID": "001",
   "progName": "This is the current program",
-  "pumpStartEvery": 30,
-  "pumpRunTime": 10,
+  "pumpStartEvery": 3600,
+  "pumpRunTime": 30,
   "pumpON": "08:00",
   "pumpOFF": "01:00",
-  "lightBrightness": 80,
+  "lightBrightness": 20,
   "RGB": "255 0 255",
   "lightsON": "04:00",
   "lightsOFF": "01:00"
