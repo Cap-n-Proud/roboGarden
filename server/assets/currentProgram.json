@@ -1,11 +1,13 @@
 {
-    "progID": "005",
-    "progName": "General",
-    "pumpStartEvery": 600,
-    "pumpRunTime": 3,
-    "pumpStopHours": "20:00, 04:00",
-    "lightBrightness": 30,
-    "RGB": "100 100 100",
-    "lightsON": "04:00, 20:00",
-    "lightsBightness": 100
+    "progID": "002",
+    "progName": "Herbs",
+    "pumpStartEvery": 3600,
+    "pumpRunTime": 20,
+    "pumpON": "08:00",
+    "pumpOFF": "01:00",
+    "lightBrightness": 100,
+    "RGB": "255 150 255",
+    "lightsON": "06:00",
+    "lightsOFF": "23:00",
+    "notes": ""
 }

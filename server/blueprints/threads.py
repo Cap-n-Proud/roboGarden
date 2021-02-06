@@ -127,6 +127,7 @@ def activatePump(currentProgram):
 def checkLights(currentProgram):
     obj_now = datetime.now()
     timeNow = str(obj_now.hour).zfill(2) + ":" + str(obj_now.minute).zfill(2)
+    print(currentProgram["progID"])
     if is_between(currentProgram["lightsON"], currentProgram["lightsOFF"], timeNow):
         if "brightness" in dataJSON:
             try:
