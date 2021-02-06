@@ -1,5 +1,16 @@
 {
   "plants": [{
+      "plantID": "000",
+      "name": "000-Empty",
+      "latinName": "Vacuus",
+      "URL": "",
+      "PHMin": "",
+      "PHMax": "",
+      "water": "",
+      "DtG": "0",
+      "DtH": "9999",
+      "Notes": ""
+    }, {
       "plantID": "001",
       "name": "Tomato Montfavet",
       "latinName": "Lycopersicon Esculentum Mil",

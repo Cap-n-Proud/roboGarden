@@ -42,6 +42,8 @@ def sendArduinoCmd(cmd):
 
 
 def newPlant(r):
+    from blueprints.threads import guessHarvest
+
     # print(config.JSON_Path.STATUS)
     with open(config.JSON_Path.STATUS, "r") as f:
         data = json.load(f)
@@ -71,6 +73,7 @@ def newPlant(r):
                 + " in "
                 + r["podID"]
             )
+            guessHarvest(app)
         # app.logging.info("Planted!!!")
         except Exception as e:
             print(e)

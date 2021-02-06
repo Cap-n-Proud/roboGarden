@@ -16,11 +16,11 @@ import serial
 from serial.tools import list_ports
 import config
 
-from blueprints.api import getCurrentProgr, getPlantsDB, getStatus
 from blueprints.L_events import *
 
 dataJSON = ""
 from flask import current_app as app
+from blueprints.api import getCurrentProgr, getPlantsDB, getStatus
 
 # LOG = logging.getLogger(__name__)
 LOG = logging.getLogger(config.Config.APPLOGNAME)
@@ -191,9 +191,5 @@ def guessHarvest(app):
                         #     + " days after DtH"
                         # )
                     break
-                json.dump(status, open(config.JSON_Path.STATUS, "w"), indent=4)
-                LOG.info(
-                    "Time to harvest computed.  "
-                    + str(ready)
-                    + " plants should be ready!"
-                )
+    json.dump(status, open(config.JSON_Path.STATUS, "w"), indent=4)
+    LOG.info("Time to harvest computed.  " + str(ready) + " plants should be ready!")

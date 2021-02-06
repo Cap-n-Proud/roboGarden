@@ -53,7 +53,7 @@ def init():
         int(config.Hardware.CHECKLIGHTSINTERVAL), checkLights, currentProgram
     )
 
-    checkH = RepeatedTimer(30, guessHarvest, app)
+    checkH = RepeatedTimer(24 * 60 * 60, guessHarvest, app)
 
     checkP = RepeatedTimer(
         int(currentProgram["pumpStartEvery"]), activatePump, currentProgram
