@@ -7,6 +7,6 @@
   "pumpOFF": "01:00",
   "lightBrightness": 20,
   "RGB": "255 0 255",
-  "lightsON": "04:00",
-  "lightsOFF": "01:00"
+  "lightsON": "06:00",
+  "lightsOFF": "23:00"
 }
