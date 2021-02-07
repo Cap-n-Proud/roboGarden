@@ -11,14 +11,14 @@
                             "plantID": "000",
                             "plantName": "000-Empty",
                             "plantedDate": "2021-02-05T22:48:47.200Z",
-                            "harvestTime": "-9999"
+                            "harvestTime": "-9997"
                         },
                         {
                             "podID": "00-00-01",
                             "plantID": "000",
                             "plantName": "000-Empty",
                             "plantedDate": "2021-02-05T22:48:50.900Z",
-                            "harvestTime": "-9999"
+                            "harvestTime": "-9997"
                         }
                     ]
                 },
@@ -30,14 +30,14 @@
                             "plantID": "000",
                             "plantName": "000-Empty",
                             "plantedDate": "2021-02-05T22:48:53.300Z",
-                            "harvestTime": "-9999"
+                            "harvestTime": "-9997"
                         },
                         {
                             "podID": "00-01-01",
                             "plantID": "000",
                             "plantName": "000-Empty",
                             "plantedDate": "2021-02-05T22:48:56.600Z",
-                            "harvestTime": "-9999"
+                            "harvestTime": "-9997"
                         }
                     ]
                 },
@@ -167,9 +167,9 @@
                         },
                         {
                             "podID": "00-08-01",
-                            "plantID": "012",
-                            "plantName": "Mint",
-                            "plantedDate": "2016-04-26T18:09:16Z",
+                            "plantID": "011",
+                            "plantName": "Malvarosa Halo Mix",
+                            "plantedDate": "2021-02-07T21:43:53.000Z",
                             "harvestTime": "0"
                         }
                     ]
@@ -182,14 +182,14 @@
                             "plantID": "000",
                             "plantName": "000-Empty",
                             "plantedDate": "2021-02-05T22:48:26.100Z",
-                            "harvestTime": "-9999"
+                            "harvestTime": "-9997"
                         },
                         {
                             "podID": "00-09-01",
                             "plantID": "000",
                             "plantName": "000-Empty",
                             "plantedDate": "2021-02-05T22:48:23.200Z",
-                            "harvestTime": "-9999"
+                            "harvestTime": "-9997"
                         }
                     ]
                 }
@@ -206,14 +206,14 @@
                             "plantID": "000",
                             "plantName": "000-Empty",
                             "plantedDate": "2021-02-05T22:48:59.500Z",
-                            "harvestTime": "-9999"
+                            "harvestTime": "-9997"
                         },
                         {
                             "podID": "01-00-01",
                             "plantID": "000",
                             "plantName": "000-Empty",
                             "plantedDate": "2021-02-05T22:49:02.000Z",
-                            "harvestTime": "-9999"
+                            "harvestTime": "-9997"
                         }
                     ]
                 },
@@ -225,14 +225,14 @@
                             "plantID": "000",
                             "plantName": "000-Empty",
                             "plantedDate": "2021-02-05T22:49:09.500Z",
-                            "harvestTime": "-9999"
+                            "harvestTime": "-9997"
                         },
                         {
                             "podID": "01-01-01",
                             "plantID": "000",
                             "plantName": "000-Empty",
                             "plantedDate": "2021-02-05T22:49:06.500Z",
-                            "harvestTime": "-9999"
+                            "harvestTime": "-9997"
                         }
                     ]
                 },
@@ -336,16 +336,16 @@
                     "pods": [
                         {
                             "podID": "01-07-00",
-                            "plantID": "001",
-                            "plantName": "Strawberry",
-                            "plantedDate": "2016-04-26T18:09:16Z",
+                            "plantID": "005",
+                            "plantName": "Cayenne Pepper",
+                            "plantedDate": "2021-02-07T21:51:05.200Z",
                             "harvestTime": "1596"
                         },
                         {
                             "podID": "01-07-01",
-                            "plantID": "001",
-                            "plantName": "Strawberry",
-                            "plantedDate": "2016-04-26T18:09:16Z",
+                            "plantID": "005",
+                            "plantName": "Cayenne Pepper",
+                            "plantedDate": "2021-02-07T21:51:09.000Z",
                             "harvestTime": "1596"
                         }
                     ]
@@ -355,9 +355,9 @@
                     "pods": [
                         {
                             "podID": "01-08-00",
-                            "plantID": "015",
-                            "plantName": "Oregano",
-                            "plantedDate": "2021-02-05T21:45:22.200Z",
+                            "plantID": "007",
+                            "plantName": "Fiori Romantic Pink Feeling",
+                            "plantedDate": "2021-02-07T21:44:43.800Z",
                             "harvestTime": "0"
                         },
                         {
@@ -377,14 +377,14 @@
                             "plantID": "000",
                             "plantName": "000-Empty",
                             "plantedDate": "2021-02-05T22:48:21.600Z",
-                            "harvestTime": "-9999"
+                            "harvestTime": "-9997"
                         },
                         {
                             "podID": "01-09-01",
                             "plantID": "000",
                             "plantName": "Empty",
                             "plantedDate": "2021-02-05T22:47:56.600Z",
-                            "harvestTime": "-9999"
+                            "harvestTime": "-9997"
                         }
                     ]
                 }
@@ -401,7 +401,7 @@
                             "plantID": "000",
                             "plantName": "000-Empty",
                             "plantedDate": "2021-02-05T22:49:41.000Z",
-                            "harvestTime": "-9999"
+                            "harvestTime": "-9997"
                         },
                         {
                             "podID": "02-00-01",
@@ -531,9 +531,9 @@
                     "pods": [
                         {
                             "podID": "02-07-00",
-                            "plantID": "001",
-                            "plantName": "Strawberry",
-                            "plantedDate": "2016-04-26T18:09:16Z",
+                            "plantID": "005",
+                            "plantName": "Cayenne Pepper",
+                            "plantedDate": "2021-02-07T21:51:13.000Z",
                             "harvestTime": "1596"
                         },
                         {
