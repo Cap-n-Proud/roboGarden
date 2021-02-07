@@ -1,6 +1,6 @@
 {
-    "progID": "002",
-    "progName": "Herbs",
+    "progID": "006",
+    "progName": "Default",
     "pumpStartEvery": 3600,
     "pumpRunTime": 20,
     "pumpON": "08:00",

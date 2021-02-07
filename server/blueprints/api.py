@@ -86,6 +86,10 @@ def changePrg(prg):
         if program["progID"] == prg:
             print(str(program))
             json.dump(program, open(config.JSON_Path.CURRENTPROGRAM, "w"), indent=4)
+            # from blueprints.init import init, checkL
+            #
+            # checkL.stop()
+            # init()
 
 
 @app.template_filter("upperstring")
