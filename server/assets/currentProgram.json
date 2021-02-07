@@ -1,6 +1,6 @@
 {
-    "progID": "006",
-    "progName": "Default",
+    "progID": "004",
+    "progName": "Sage",
     "pumpStartEvery": 3600,
     "pumpRunTime": 20,
     "pumpON": "08:00",

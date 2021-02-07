@@ -86,10 +86,9 @@ def changePrg(prg):
         if program["progID"] == prg:
             print(str(program))
             json.dump(program, open(config.JSON_Path.CURRENTPROGRAM, "w"), indent=4)
-            # from blueprints.init import init, checkL
-            #
-            # checkL.stop()
-            # init()
+            import os
+
+            os.system("sudo service robogarden restart")
 
 
 @app.template_filter("upperstring")
