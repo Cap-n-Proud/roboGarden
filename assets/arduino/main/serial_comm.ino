@@ -8,6 +8,7 @@ const commandList_t commands[] = {
   {"setBrightness",         setBrightness,   "Set brightness"},
   {"stopAll",         stopAll,   "Stop pump, lights and sensor readings"},
   {"LEDShow",         LEDShow,   "Start a ledshow of n seconds"},
+  {"sysInfo",         sysInfo,   "Prints some information on the system"},
 
 };
 
@@ -18,8 +19,8 @@ const commandList_t commands[] = {
 // setLightRGB 23 10 115
 // stopAll
 // LEDShow 5 0.2
+// sysInfo
 
-// printSysInfo => TBD
 // sendInfo
 
 //Initialisation function
@@ -63,10 +64,10 @@ void LEDShow(Commander &Cmdr) {
 void sendInfo(String info)
 { // for help on dtostrf http://forum.arduino.cc/index.php?topic=85523.0
   //{"type": "I", "pumpON":1,"RGB": "20 255 30","brightness":80}
-  delay(100);
   String line = "";
   line = String("{\"type\":") + String("\"I\",") + "\"message\":" + "\"" + info + "\"" + "}";
   Serial.println(line);
+  delay(100);
   //return 0;
 }
 
@@ -140,11 +141,11 @@ bool setLightsONTime(Commander &Cmdr) {
 
 bool setBrightness(Commander &Cmdr) {
   // Here code to swith the pump on
-  int myInt;
+  long myInt;
   //The server has brigtness range 0-100, the hardware is library depndant so we need to scale Sx:100=Hx:MAX_BRIGHTNESS
   if (Cmdr.getInt(myInt)) {
-    Brightness = (MAX_BRIGHTNESS / 100) * myInt;
-    FastLED.setBrightness(Brightness);
+    Brightness = (MAX_BRIGHTNESS) * myInt/100;
+    FastLED.setBrightness(Brightness);    
     FastLED.show();
     sendInfo(String("Brightness set to: ") + myInt + String("%"));
   }
@@ -152,6 +153,17 @@ bool setBrightness(Commander &Cmdr) {
   return 0;
 }
 
+bool sysInfo(Commander &Cmdr){
+  String line = "";
+  String commands ="pumpStart, pumpStop, pumpRunFor 2, setBrightness 15, setLightRGB 23 10 115, stopAll, LEDShow 5 0.2 sysInfo";
+  line = String("{\"version\":") + VERSION + ",\"baud rate\":" + "\"" + BAUDRATE + "\"" ",\"commands\":" + "\"" + commands + "\"}";
+
+
+  Serial.println(line);
+  delay(100);
+ 
+  
+}
 
 //setLightRGB 255 255 255
 bool setLightRGB(Commander &Cmdr) {

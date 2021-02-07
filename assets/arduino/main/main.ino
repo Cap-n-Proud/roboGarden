@@ -13,7 +13,8 @@
 
 #define MIN_BRIGHTNESS  0
 #define MAX_BRIGHTNESS 255
-
+#define VERSION 0.60
+#define BAUDRATE 115200
 
 // Define the array of leds
 CRGB leds[NUM_LEDS];
@@ -26,7 +27,7 @@ auto timer = timer_create_default(); // create a timer with default settings
 bool pumpON = false;
 bool pumpOverride = false;
 int RGBLED[3] = {0, 0, 0};
-int Brightness = 0;
+long Brightness = 0;
 String info = "";
 
 Commander cmd;
@@ -35,7 +36,7 @@ String SEPARATOR = ","; //Used as separator for telemetry
 //Now the sketch setup, loop and any other functions
 void setup() {
   randomSeed(analogRead(0));
-  Serial.begin(115200);
+  Serial.begin(BAUDRATE);
   while (!Serial) {
     ; //Wait for the serial port to open (if using USB)
   }
