@@ -48,19 +48,19 @@
   "notes": ""
 }, {
   "progID": "005",
-  "progName": "Default",
+  "progName": "Test",
   "pumpStartEvery": 3600,
   "pumpRunTime": 20,
   "pumpON": "08:00",
   "pumpOFF": "01:00",
-  "lightBrightness": 100,
+  "lightBrightness": 20,
   "RGB": "255 150 255",
   "lightsON": "06:00",
   "lightsOFF": "23:00",
   "notes": ""
 }, {
   "progID": "006",
-  "progName": "Default",
+  "progName": "Test2",
   "pumpStartEvery": 3600,
   "pumpRunTime": 20,
   "pumpON": "08:00",
