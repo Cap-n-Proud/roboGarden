@@ -3,6 +3,7 @@ from flask import Blueprint
 from flask import current_app as app
 from flask import render_template
 import config
+from blueprints.init import timeStarted
 
 # status = getStatus()
 # currentProgram = getCurrentProgram()
@@ -23,4 +24,5 @@ def currentProgram():
         subtitle="Demonstration of Flask blueprints in action.",
         template="currentProgram-template",
         currentProgram=getCurrentProgr(),
+        timeStarted=timeStarted,
     )

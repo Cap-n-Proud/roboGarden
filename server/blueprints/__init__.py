@@ -60,7 +60,7 @@ def create_app():
         from .telemetry import telemetry
         from .currentProgram import currentProgram
 
-        from blueprints.init import init
+        from blueprints.init import initialize
 
         initialize()
 

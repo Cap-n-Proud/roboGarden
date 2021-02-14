@@ -3,6 +3,7 @@ from flask import current_app as app
 from blueprints.api import getPlantsDB, getPrograms, getCurrentProgr
 from flask import render_template
 import config
+from blueprints.init import timeStarted
 
 # Blueprint Configuration
 control_bp = Blueprint(
@@ -24,4 +25,5 @@ def control():
         currentProgram=getCurrentProgr,
         INFOTAG=config.Config.INFOTAG,
         TELEMETRYTAG=config.Config.TELEMETRYTAG,
+        timeStarted=timeStarted,
     )

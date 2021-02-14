@@ -18,6 +18,8 @@ from blueprints.L_events import *
 from blueprints.threads import *
 from flask import current_app as app
 
+timeStarted = datetime.now()
+
 # from apscheduler.schedulers.background import BackgroundScheduler
 def initSerial():
     port = config.Hardware.SERIALPORT
@@ -59,7 +61,6 @@ def initialize():
         int(currentProgram["pumpStartEvery"]), activatePump, currentProgram
     )
 
-    obj_now = datetime.now()
     timeNow = str(obj_now.hour).zfill(2) + ":" + str(obj_now.minute).zfill(2)
     app.logger.info("System started. System time is: " + timeNow)
     app.logger.info("Current program: " + str(currentProgram))
