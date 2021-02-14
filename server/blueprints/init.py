@@ -61,7 +61,7 @@ def initialize():
         int(currentProgram["pumpStartEvery"]), activatePump, currentProgram
     )
 
-    timeNow = str(obj_now.hour).zfill(2) + ":" + str(obj_now.minute).zfill(2)
+    timeNow = str(timeStarted.hour).zfill(2) + ":" + str(timeStarted.minute).zfill(2)
     app.logger.info("System started. System time is: " + timeNow)
     app.logger.info("Current program: " + str(currentProgram))
     print(
