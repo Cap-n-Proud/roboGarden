@@ -1,22 +1,22 @@
 [{
   "progID": "001",
-  "progName": "Default",
+  "progName": "Default - quiet hours",
   "pumpStartEvery": 3600,
-  "pumpRunTime": 20,
+  "pumpRunTime": 10,
   "pumpON": "08:00",
-  "pumpOFF": "01:00",
+  "pumpOFF": "22:00",
   "lightBrightness": 100,
   "RGB": "255 150 255",
   "lightsON": "06:00",
   "lightsOFF": "23:00",
-  "notes": ""
+  "notes": "Default program, lights and pump are off during quiet hours. Medium watering"
 }, {
   "progID": "002",
-  "progName": "Herbs",
+  "progName": "Quiet hours, medium watering.",
   "pumpStartEvery": 3600,
   "pumpRunTime": 20,
   "pumpON": "08:00",
-  "pumpOFF": "01:00",
+  "pumpOFF": "22:00",
   "lightBrightness": 100,
   "RGB": "255 150 255",
   "lightsON": "06:00",
@@ -24,11 +24,11 @@
   "notes": ""
 }, {
   "progID": "003",
-  "progName": "Tomatoes",
-  "pumpStartEvery": 3600,
+  "progName": "Harvest - Quiet hours, high watering",
+  "pumpStartEvery": 2700,
   "pumpRunTime": 20,
   "pumpON": "08:00",
-  "pumpOFF": "01:00",
+  "pumpOFF": "24:00",
   "lightBrightness": 100,
   "RGB": "255 150 255",
   "lightsON": "06:00",
@@ -36,16 +36,16 @@
   "notes": ""
 }, {
   "progID": "004",
-  "progName": "Sage",
-  "pumpStartEvery": 3600,
-  "pumpRunTime": 20,
+  "progName": "Growth - quiet hours, low watering, more red light",
+  "pumpStartEvery": 7200,
+  "pumpRunTime": 15,
   "pumpON": "08:00",
-  "pumpOFF": "01:00",
+  "pumpOFF": "21:00",
   "lightBrightness": 100,
-  "RGB": "255 150 255",
+  "RGB": "255 150 150",
   "lightsON": "06:00",
   "lightsOFF": "23:00",
-  "notes": ""
+  "notes": "Program designed to grow, less water."
 }, {
   "progID": "005",
   "progName": "Test",
@@ -61,7 +61,7 @@
 }, {
   "progID": "006",
   "progName": "Test2",
-  "pumpStartEvery": 3600,
+  "pumpStartEvery": 120,
   "pumpRunTime": 20,
   "pumpON": "08:00",
   "pumpOFF": "01:00",
@@ -69,5 +69,5 @@
   "RGB": "255 150 255",
   "lightsON": "06:00",
   "lightsOFF": "23:00",
-  "notes": ""
+  "notes": "Test program pump runs every 2 min and lights are dimmed."
 }]

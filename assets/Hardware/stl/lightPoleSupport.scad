@@ -24,6 +24,11 @@ borderBaseY = 30;
 
 lightBeamDiam = 30;
 
+colFunnelHeight =10;
+collectorCollarH = 40;
+drainPipeHeight = 30;
+
+collectorDiam =25;
 
 
 T = 1;
@@ -33,9 +38,9 @@ sprinkleRingThickness = 2;
 sprinklerHolesAngle = 30;
 sprinklePlateHeight = 3;
 sprinlkerAngle=10;
-sprinklerDiam=towerID;
+sprinklerDiam=towerID+1;
 sprinklerHoleDiam = 5;
-
+pipeDiamIN = 10;
 anchor = false;
 
 
@@ -252,11 +257,13 @@ module SUB_sprinklerRing() {
 
 }
 
-module SUB_sprinklerPlate() {
+module SUB_sprinklerPlate(holes = true) {
   translate([0,0,0])difference() {
     rotate([0, -sprinlkerAngle, 0]) cylinder(h = sprinklePlateHeight , d1 = (sprinklerDiam+2*cos(sprinlkerAngle)), d2 = (sprinklerDiam+2*cos(sprinlkerAngle)));
    translate([0,0,-10])cylinder(h = 60, d1 = (pipeDiamIN - T), d2 = (pipeDiamIN - T));
-    SUB_sprinklerHoles();
+      if (holes == true){ 
+    SUB_sprinklerHoles();}
+        
     rotate([0, 0, 160])arc(10, 20, 30, 130);
 
   }
@@ -285,31 +292,31 @@ module SUB_sprinklerHoles() {
   }
 }
 
-module sprinkler() {
+module sprinkler_v1() {
     difference(){
     union(){
-    SUB_sprinklerPlate();
-    SUB_sprinklerRing();
-    SUB_sprinklerInflow();
+        SUB_sprinklerPlate();
+        SUB_sprinklerRing();        
+        SUB_sprinklerInflow();
     }
     SUB_cutSprinklerTop();
     SUB_cutSprinklerSide();
     
-}}
-//SprinklerShelve();
-//sprinkler();
+    }
+}
 
-//towerDome();
-
-//tower();
-//level(1);
-
-//roboGarden();
-colFunnelHeight =10;
-collectorCollarH = 40;
-drainPipeHeight = 30;
-
-collectorDiam =25;
+module sprinkler_v2() {
+    difference(){
+    union(){
+        SUB_sprinklerPlate(false);
+        SUB_sprinklerRing();        
+        SUB_sprinklerInflow();
+    }
+    SUB_cutSprinklerTop();
+    SUB_cutSprinklerSide();
+    
+    }
+}
 
 
 module collectorShell(){
@@ -381,4 +388,16 @@ module lightPoleSupport(){
     
 }
 
-lightPoleSupport();
+//lightPoleSupport();
+
+//SprinklerShelve();
+difference(){sprinkler_v2();
+translate([0,0,-30])rotate([0, 0, -25])arc(1, 400, towerDiam/2-1, 130);
+}
+//translate([0,0,0])rotate([0, 0, -25])arc(1, 50, towerDiam/2-1, 130);
+//towerDome();
+
+//tower();
+//level(1);
+
+//roboGarden();

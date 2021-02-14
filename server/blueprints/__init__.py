@@ -62,7 +62,7 @@ def create_app():
 
         from blueprints.init import init
 
-        init()
+        initialize()
 
         app.register_blueprint(status.status_bp)
         app.register_blueprint(control.control_bp)

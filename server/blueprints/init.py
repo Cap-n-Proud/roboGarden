@@ -33,7 +33,7 @@ def initSerial():
     time.sleep(2)
 
 
-def init():
+def initialize():
     # currentProgram = getCurrentProgr()
     initSerial()
     currentProgram = getCurrentProgr()

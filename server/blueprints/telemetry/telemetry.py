@@ -3,6 +3,7 @@ from flask import Blueprint
 from flask import current_app as app
 from flask import render_template
 import config
+import init
 
 # status = getStatus()
 # currentProgram = getCurrentProgram()
@@ -24,4 +25,5 @@ def telemetry():
         template="telemetry-template",
         INFOTAG=config.Config.INFOTAG,
         TELEMETRYTAG=config.Config.TELEMETRYTAG,
+        timestarted=init.obj_now,
     )
