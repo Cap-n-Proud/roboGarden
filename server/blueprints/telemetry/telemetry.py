@@ -1,4 +1,4 @@
-from blueprints.api import getPlantsDB, getStatus
+from blueprints.api import getPlantsDB, getStatus, getCurrentProgr
 from flask import Blueprint
 from flask import current_app as app
 from flask import render_template
@@ -19,11 +19,12 @@ telemetry_bp = Blueprint(
 def telemetry():
     """Telemetry page."""
     return render_template(
-        "indexTelemetry.jinja2",
+        "indexTelemetry.html.j2",
         title="Telemetry",
         subtitle="Demonstration of Flask blueprints in action.",
         template="telemetry-template",
         INFOTAG=config.Config.INFOTAG,
         TELEMETRYTAG=config.Config.TELEMETRYTAG,
         timeStarted=timeStarted,
+        currentProgram=getCurrentProgr(),
     )

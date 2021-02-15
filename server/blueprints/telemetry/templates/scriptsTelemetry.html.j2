@@ -1,6 +1,10 @@
 {% block scr %}
 
-
+<script type="text/javascript">
+        INFOTAG = "{{INFOTAG}}"
+        TELEMETRYTAG = "{{TELEMETRYTAG}}"
+        timeStarted = "{{timeStarted}}"
+</script>
 <script>
 
 //Calls functions to load defaults and info.
@@ -13,6 +17,7 @@ window.onload = function() {
   // Month Day, Year Hour:Minute:Second, id-of-element-container
   //timeStarted = "2021-02-13 21:00:43.405472"
   countUpFromTime(timeStarted, 'countup1'); // ****** Change this line!
+  updateProgram();
 };
 
 var socket = io();
@@ -109,6 +114,15 @@ function R_G_BtoHEX(red, green, blue) {
     document.getElementById("RGBColor").innerHTML = telemetry['RGB'] + " @ " + telemetry['brightness'] + "%";
   }
 
+
+
+  function updateProgram() {
+    var currentProgram = JSON.parse('{{ currentProgram | tojson | safe}}');
+
+    document.getElementById("progID").innerHTML = currentProgram.progID;
+    document.getElementById("progName").innerHTML = currentProgram.progName;
+    document.getElementById("progDescription").innerHTML = currentProgram.progDescription;
+  }
 </script>
 
 

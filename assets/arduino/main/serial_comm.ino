@@ -142,14 +142,13 @@ bool setLightsONTime(Commander &Cmdr) {
 bool setBrightness(Commander &Cmdr) {
   // Here code to swith the pump on
   long myInt;
-  //The server has brigtness range 0-100, the hardware is library depndant so we need to scale Sx:100=Hx:MAX_BRIGHTNESS
+  //The server has brigtness range 0-255, the hardware is library dependent. We do not scale but keep the same ranger in the GUI Sx:100=Hx:MAX_BRIGHTNESS
   if (Cmdr.getInt(myInt)) {
-    Brightness = (MAX_BRIGHTNESS) * myInt/100;
+    Brightness = myInt;
     FastLED.setBrightness(Brightness);    
     FastLED.show();
-    sendInfo(String("Brightness set to: ") + myInt + String("%"));
+    sendInfo(String("Brightness set to: ") + myInt + String(" (") + 100*myInt/255 + String("%)"));
   }
-
   return 0;
 }
 

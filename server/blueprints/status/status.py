@@ -1,4 +1,4 @@
-from blueprints.api import getPlantsDB, getStatus
+from blueprints.api import getPlantsDB, getStatus, getCurrentProgr
 from flask import Blueprint
 from flask import current_app as app
 from flask import render_template
@@ -31,4 +31,5 @@ def status():
         INFOTAG=config.Config.INFOTAG,
         TELEMETRYTAG=config.Config.TELEMETRYTAG,
         timeStarted=timeStarted,
+        currentProgram=getCurrentProgr(),
     )

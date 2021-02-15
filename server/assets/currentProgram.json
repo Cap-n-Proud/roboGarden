@@ -1,13 +1,13 @@
 {
-    "progID": "004",
-    "progName": "Growth - quiet hours, low watering, more red light",
-    "pumpStartEvery": 7200,
-    "pumpRunTime": 15,
+    "progID": "005",
+    "progName": "Test",
+    "pumpStartEvery": 20,
+    "pumpRunTime": 5,
     "pumpON": "08:00",
-    "pumpOFF": "21:00",
-    "lightBrightness": 100,
-    "RGB": "255 150 150",
+    "pumpOFF": "01:00",
+    "lightBrightness": 50,
+    "RGB": "255 0 255",
     "lightsON": "06:00",
-    "lightsOFF": "23:00",
-    "notes": "Program designed to grow, less water."
+    "lightsOFF": "05:00",
+    "progDescription": "Test program, pump runs every 20 sec and lights are on"
 }

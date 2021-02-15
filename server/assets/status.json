@@ -11,14 +11,14 @@
                             "plantID": "000",
                             "plantName": "000-Empty",
                             "plantedDate": "2021-02-05T22:48:47.200Z",
-                            "harvestTime": "-9997"
+                            "harvestTime": "-9989"
                         },
                         {
                             "podID": "00-00-01",
                             "plantID": "000",
                             "plantName": "000-Empty",
                             "plantedDate": "2021-02-05T22:48:50.900Z",
-                            "harvestTime": "-9997"
+                            "harvestTime": "-9989"
                         }
                     ]
                 },
@@ -30,14 +30,14 @@
                             "plantID": "000",
                             "plantName": "000-Empty",
                             "plantedDate": "2021-02-05T22:48:53.300Z",
-                            "harvestTime": "-9997"
+                            "harvestTime": "-9989"
                         },
                         {
                             "podID": "00-01-01",
                             "plantID": "000",
                             "plantName": "000-Empty",
                             "plantedDate": "2021-02-05T22:48:56.600Z",
-                            "harvestTime": "-9997"
+                            "harvestTime": "-9989"
                         }
                     ]
                 },
@@ -46,9 +46,9 @@
                     "pods": [
                         {
                             "podID": "00-02-00",
-                            "plantID": "003",
-                            "plantName": "Basilico Grande Genovese",
-                            "plantedDate": "2021-01-21T00:19:19.700Z",
+                            "plantID": "001",
+                            "plantName": "Tomato Montfavet",
+                            "plantedDate": "2021-02-15T18:38:23.900Z",
                             "harvestTime": "0"
                         },
                         {
@@ -182,14 +182,14 @@
                             "plantID": "000",
                             "plantName": "000-Empty",
                             "plantedDate": "2021-02-05T22:48:26.100Z",
-                            "harvestTime": "-9997"
+                            "harvestTime": "-9989"
                         },
                         {
                             "podID": "00-09-01",
                             "plantID": "000",
                             "plantName": "000-Empty",
                             "plantedDate": "2021-02-05T22:48:23.200Z",
-                            "harvestTime": "-9997"
+                            "harvestTime": "-9989"
                         }
                     ]
                 }
@@ -206,14 +206,14 @@
                             "plantID": "000",
                             "plantName": "000-Empty",
                             "plantedDate": "2021-02-05T22:48:59.500Z",
-                            "harvestTime": "-9997"
+                            "harvestTime": "-9989"
                         },
                         {
                             "podID": "01-00-01",
                             "plantID": "000",
                             "plantName": "000-Empty",
                             "plantedDate": "2021-02-05T22:49:02.000Z",
-                            "harvestTime": "-9997"
+                            "harvestTime": "-9989"
                         }
                     ]
                 },
@@ -225,14 +225,14 @@
                             "plantID": "000",
                             "plantName": "000-Empty",
                             "plantedDate": "2021-02-05T22:49:09.500Z",
-                            "harvestTime": "-9997"
+                            "harvestTime": "-9989"
                         },
                         {
                             "podID": "01-01-01",
                             "plantID": "000",
                             "plantName": "000-Empty",
                             "plantedDate": "2021-02-05T22:49:06.500Z",
-                            "harvestTime": "-9997"
+                            "harvestTime": "-9989"
                         }
                     ]
                 },
@@ -317,9 +317,9 @@
                     "pods": [
                         {
                             "podID": "01-06-00",
-                            "plantID": "001",
-                            "plantName": "Strawberry",
-                            "plantedDate": "2016-04-26T18:09:16Z",
+                            "plantID": "024",
+                            "plantName": "Tomato Cherry Red",
+                            "plantedDate": "2021-02-15T18:38:09.200Z",
                             "harvestTime": "1596"
                         },
                         {
@@ -355,16 +355,16 @@
                     "pods": [
                         {
                             "podID": "01-08-00",
-                            "plantID": "007",
-                            "plantName": "Fiori Romantic Pink Feeling",
-                            "plantedDate": "2021-02-07T21:44:43.800Z",
+                            "plantID": "024",
+                            "plantName": "Tomato Cherry Red",
+                            "plantedDate": "2021-02-15T19:52:34.700Z",
                             "harvestTime": "0"
                         },
                         {
                             "podID": "01-08-01",
-                            "plantID": "001",
-                            "plantName": "Tomato Montfavet",
-                            "plantedDate": "2021-02-05T21:45:30.000Z",
+                            "plantID": "024",
+                            "plantName": "Tomato Cherry Red",
+                            "plantedDate": "2021-02-15T18:37:47.100Z",
                             "harvestTime": "-150"
                         }
                     ]
@@ -377,14 +377,14 @@
                             "plantID": "000",
                             "plantName": "000-Empty",
                             "plantedDate": "2021-02-05T22:48:21.600Z",
-                            "harvestTime": "-9997"
+                            "harvestTime": "-9989"
                         },
                         {
                             "podID": "01-09-01",
                             "plantID": "000",
                             "plantName": "Empty",
                             "plantedDate": "2021-02-05T22:47:56.600Z",
-                            "harvestTime": "-9997"
+                            "harvestTime": "-9989"
                         }
                     ]
                 }
@@ -401,7 +401,7 @@
                             "plantID": "000",
                             "plantName": "000-Empty",
                             "plantedDate": "2021-02-05T22:49:41.000Z",
-                            "harvestTime": "-9997"
+                            "harvestTime": "-9989"
                         },
                         {
                             "podID": "02-00-01",

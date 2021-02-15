@@ -16,7 +16,7 @@
         timeStarted = "{{timestarted}}"
 </script>
 
-      {% include "telemetryModule.jinja2" %}<br>
+{% include "telemetryModule.html.j2" %}<br>
 
 <table width="100%">
   <tr>
@@ -46,7 +46,7 @@
     <td>
       <label for="LEDBrightness">Color</label>
     </td>
-    <td><input type="range" min="0" max="100" value="50" id="LEDBrightness" onchange="setBrightness(this.value)">
+    <td><input type="range" min="0" max="255" value="50" id="LEDBrightness" onchange="setBrightness(this.value)">
       <label for="LEDColor"></label>
       <input type="color" id="LEDColor" name="LEDColor" onchange="setColor(this.value)">
     </td>
@@ -64,6 +64,6 @@
 </table>
 
 
-{% include "scriptsControl.j2" %}
+{% include "scriptsControl.html.j2" %}
 
 {% endblock %}

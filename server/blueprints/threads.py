@@ -131,13 +131,26 @@ def checkLights(currentProgram):
     # print(currentProgram)
     if is_between(currentProgram["lightsON"], currentProgram["lightsOFF"], timeNow):
         if "brightness" in dataJSON:
+            # print("D " + str(dataJSON) + str(currentProgram))
             try:
-                arduinoCommand(
-                    "setBrightness " + str(currentProgram["lightBrightness"])
-                )
-                LOG.info("RGB set to " + str(currentProgram["RGB"]))
-                arduinoCommand("setLightRGB " + str(currentProgram["RGB"]))
-                LOG.info("Lights set to " + str(currentProgram["lightBrightness"]))
+                if int(dataJSON["brightness"]) != int(
+                    currentProgram["lightBrightness"]
+                ):
+                    print(
+                        "Different B"
+                        + str(dataJSON["brightness"])
+                        + " "
+                        + str(currentProgram["lightBrightness"])
+                    )
+                    arduinoCommand(
+                        "setBrightness " + str(currentProgram["lightBrightness"])
+                    )
+                    LOG.info("RGB set to " + str(currentProgram["RGB"]))
+                # if dataJSON["RGB"] != currentProgram["RGB"]:
+                # print("Different RGB")
+                if dataJSON["RGB"] != currentProgram["RGB"]:
+                    arduinoCommand("setLightRGB " + str(currentProgram["RGB"]))
+                    LOG.info("Lights set to " + str(currentProgram["lightBrightness"]))
 
             except ValueError as e:
                 LOG.error(e)

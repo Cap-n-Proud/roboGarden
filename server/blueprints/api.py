@@ -5,11 +5,14 @@ import json
 import config
 import logging
 
+from flask_socketio import SocketIO
+from flask_socketio import emit, ConnectionRefusedError, disconnect
 
 from flask import current_app as app
 
 # LOG = logging.getLogger(__name__)
 LOG = logging.getLogger(config.Config.APPLOGNAME)
+io = SocketIO(app)  # engineio_logger=True)
 
 # Retrieve the current program, used to populate the indey.html file
 
@@ -90,33 +93,29 @@ def changePrg(prg):
     programs = getPrograms()
     for program in programs:
         if program["progID"] == prg:
-            LOG.info("New program: " + str(program))
-            print("New program: " + str(program))
-
             json.dump(program, open(config.JSON_Path.CURRENTPROGRAM, "w"), indent=4)
-            # scheduler.remove_job(job_id="checkL")
-            # scheduler.remove_job(job_id="checkP")
-            # scheduler.add_job(
-            #     checkLights,
-            #     "interval",
-            #     seconds=int(config.Hardware.CHECKLIGHTSINTERVAL),
-            #     id="checkL",
-            #     args=[program],
-            #     replace_existing=True,
-            # )
-            scheduler.modify_job(job_id="checkL", args=[program])
-            scheduler.modify_job(
-                job_id="checkP", seconds=int(program["pumpStartEvery"]), args=[program]
+            scheduler.remove_job(job_id="checkL")
+            scheduler.add_job(
+                checkLights,
+                "interval",
+                seconds=int(config.Hardware.CHECKLIGHTSINTERVAL),
+                id="checkL",
+                args=[program],
+                replace_existing=True,
             )
 
-            # scheduler.add_job(
-            #     activatePump,
-            #     "interval",
-            #     seconds=int(program["pumpStartEvery"]),
-            #     id="checkP",
-            #     args=[program],
-            #     replace_existing=True,
-            # )
+            scheduler.remove_job(job_id="checkP")
+            scheduler.add_job(
+                activatePump,
+                "interval",
+                seconds=int(program["pumpStartEvery"]),
+                id="checkP",
+                args=[program],
+                replace_existing=True,
+            )
+            data = "Program changed to: " + prg
+            LOG.info("New program: " + str(program))
+            socketio.emit("info", data)
 
 
 @app.template_filter("upperstring")

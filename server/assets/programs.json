@@ -5,11 +5,11 @@
   "pumpRunTime": 10,
   "pumpON": "08:00",
   "pumpOFF": "22:00",
-  "lightBrightness": 100,
+  "lightBrightness": 255,
   "RGB": "255 150 255",
   "lightsON": "06:00",
   "lightsOFF": "23:00",
-  "notes": "Default program, lights and pump are off during quiet hours. Medium watering"
+  "progDescription": "Default program, lights and pump are off during quiet hours. Medium watering"
 }, {
   "progID": "002",
   "progName": "Quiet hours, medium watering.",
@@ -17,11 +17,11 @@
   "pumpRunTime": 20,
   "pumpON": "08:00",
   "pumpOFF": "22:00",
-  "lightBrightness": 100,
+  "lightBrightness": 255,
   "RGB": "255 150 255",
   "lightsON": "06:00",
   "lightsOFF": "23:00",
-  "notes": ""
+  "progDescription": ""
 }, {
   "progID": "003",
   "progName": "Harvest - Quiet hours, high watering",
@@ -29,11 +29,11 @@
   "pumpRunTime": 20,
   "pumpON": "08:00",
   "pumpOFF": "24:00",
-  "lightBrightness": 100,
+  "lightBrightness": 255,
   "RGB": "255 150 255",
   "lightsON": "06:00",
   "lightsOFF": "23:00",
-  "notes": ""
+  "progDescription": ""
 }, {
   "progID": "004",
   "progName": "Growth - quiet hours, low watering, more red light",
@@ -41,11 +41,11 @@
   "pumpRunTime": 15,
   "pumpON": "08:00",
   "pumpOFF": "21:00",
-  "lightBrightness": 100,
+  "lightBrightness": 255,
   "RGB": "255 150 150",
   "lightsON": "06:00",
   "lightsOFF": "23:00",
-  "notes": "Program designed to grow, less water."
+  "progDescription": "Program designed to grow, less water."
 }, {
   "progID": "005",
   "progName": "Test",
@@ -53,11 +53,11 @@
   "pumpRunTime": 5,
   "pumpON": "08:00",
   "pumpOFF": "01:00",
-  "lightBrightness": 20,
+  "lightBrightness": 50,
   "RGB": "255 0 255",
   "lightsON": "06:00",
   "lightsOFF": "05:00",
-  "notes": "Test program, pump runs every 20 sec and lights are on"
+  "progDescription": "Test program, pump runs every 20 sec and lights are on"
 }, {
   "progID": "006",
   "progName": "Test2",
@@ -65,9 +65,9 @@
   "pumpRunTime": 20,
   "pumpON": "08:00",
   "pumpOFF": "01:00",
-  "lightBrightness": 100,
+  "lightBrightness": 255,
   "RGB": "255 150 255",
   "lightsON": "06:00",
   "lightsOFF": "23:00",
-  "notes": "Test program pump runs every 2 min and lights are dimmed."
+  "progDescription": "Test program pump runs every 2 min and lights are dimmed."
 }]

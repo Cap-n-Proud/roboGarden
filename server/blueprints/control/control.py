@@ -22,8 +22,8 @@ def control():
         subtitle="Use this to control lights, pump and other features.",
         template="control-template",
         programs=programs,
-        currentProgram=getCurrentProgr,
         INFOTAG=config.Config.INFOTAG,
         TELEMETRYTAG=config.Config.TELEMETRYTAG,
         timeStarted=timeStarted,
+        currentProgram=getCurrentProgr(),
     )
