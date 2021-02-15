@@ -18,9 +18,12 @@ from blueprints.L_events import *
 from blueprints.threads import *
 from flask import current_app as app
 
+from apscheduler.schedulers.background import BackgroundScheduler
+
 timeStarted = datetime.now()
 checkL = ""
 checkP = ""
+schesuler = ""
 # from apscheduler.schedulers.background import BackgroundScheduler
 def initSerial():
     port = config.Hardware.SERIALPORT
@@ -37,8 +40,7 @@ def initSerial():
 
 
 def initialize():
-    global checkL
-    global checkP
+    global scheduler
     # currentProgram = getCurrentProgr()
     initSerial()
     currentProgram = getCurrentProgr()
@@ -54,18 +56,43 @@ def initialize():
     )
     thread.start()
 
-    checkL = RepeatedTimer(
-        int(config.Hardware.CHECKLIGHTSINTERVAL), checkLights, currentProgram
-    )
-    # checkL = threading.Timer(
-    #     int(config.Hardware.CHECKLIGHTSINTERVAL), lambda: checkLights(currentProgram)
+    # checkL = RepeatedTimer(
+    #     int(config.Hardware.CHECKLIGHTSINTERVAL), checkLights, currentProgram
     # )
-    # checkL.start()
-    checkH = RepeatedTimer(24 * 60 * 60, guessHarvest, app)
-
-    checkP = RepeatedTimer(
-        int(currentProgram["pumpStartEvery"]), activatePump, currentProgram
+    scheduler = BackgroundScheduler()
+    # scheduler.init_app(app)
+    # replace_existing=True
+    # scheduler.add_job(
+    #     checkLights,
+    #     "interval",
+    #     args=currentProgram,
+    #     seconds=2,
+    #     id="12345",
+    #     replace_existing=True,
+    # )
+    scheduler.start()
+    scheduler.add_job(
+        checkLights,
+        "interval",
+        seconds=int(config.Hardware.CHECKLIGHTSINTERVAL),
+        id="checkL",
+        args=[currentProgram],
+        replace_existing=True,
     )
+    scheduler.add_job(
+        activatePump,
+        "interval",
+        seconds=int(currentProgram["pumpStartEvery"]),
+        id="checkP",
+        args=[currentProgram],
+        replace_existing=True,
+    )
+
+    # checkH = RepeatedTimer(24 * 60 * 60, guessHarvest, app)
+
+    # checkP = RepeatedTimer(
+    #     int(currentProgram["pumpStartEvery"]), activatePump, currentProgram
+    # )
 
     timeNow = str(timeStarted.hour).zfill(2) + ":" + str(timeStarted.minute).zfill(2)
     app.logger.info("System started. System time is: " + timeNow)

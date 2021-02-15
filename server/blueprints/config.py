@@ -18,6 +18,7 @@ class Config:
     INFOTAG = "I"
     TELEMETRYTAG = "T"
     LOGFORMAT = "%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s"
+    CHECKHARVESTINTERVAL = 86400
 
 
 class Hardware:

@@ -4,7 +4,7 @@
 import json
 import config
 import logging
-from blueprints.L_events import *
+
 
 from flask import current_app as app
 
@@ -83,30 +83,33 @@ def newPlant(r):
 def changePrg(prg):
     global checkL
     global checkP
-    from blueprints.init import checkL, checkP
+    from blueprints.init import scheduler
     from blueprints.threads import checkLights, activatePump
+    from apscheduler.schedulers.background import BackgroundScheduler
 
-    print("changed! " + prg)
     programs = getPrograms()
     for program in programs:
         if program["progID"] == prg:
-            print(str(program))
+            LOG.info("New program: " + str(program))
             json.dump(program, open(config.JSON_Path.CURRENTPROGRAM, "w"), indent=4)
-            # import os
-            # try this https://stackoverflow.com/questions/16578652/threading-timer
-            checkL.stop()
-
-            del checkL
-            checkL = RepeatedTimer(
-                int(config.Hardware.CHECKLIGHTSINTERVAL), checkLights, program
+            scheduler.remove_job(job_id="checkL")
+            scheduler.remove_job(job_id="checkP")
+            scheduler.add_job(
+                checkLights,
+                "interval",
+                seconds=3,
+                id="checkL",
+                args=[program],
+                replace_existing=True,
             )
-
-            # checkP.stop()
-
-            # checkP = RepeatedTimer(
-            #     int(program["pumpStartEvery"]), activatePump, program
-            # )
-            # os.system("sudo service robogarden restart")
+            scheduler.add_job(
+                activatePump,
+                "interval",
+                seconds=int(program["pumpStartEvery"]),
+                id="checkP",
+                args=[program],
+                replace_existing=True,
+            )
 
 
 @app.template_filter("upperstring")

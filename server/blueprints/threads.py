@@ -127,7 +127,8 @@ def checkLights(currentProgram):
     obj_now = datetime.now()
     timeNow = str(obj_now.hour).zfill(2) + ":" + str(obj_now.minute).zfill(2)
     # # DEBUG:
-    print(currentProgram["progID"])
+    # print(currentProgram["progID"])
+    # print(currentProgram)
     if is_between(currentProgram["lightsON"], currentProgram["lightsOFF"], timeNow):
         if "brightness" in dataJSON:
             try:
