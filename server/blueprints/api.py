@@ -91,25 +91,32 @@ def changePrg(prg):
     for program in programs:
         if program["progID"] == prg:
             LOG.info("New program: " + str(program))
+            print("New program: " + str(program))
+
             json.dump(program, open(config.JSON_Path.CURRENTPROGRAM, "w"), indent=4)
-            scheduler.remove_job(job_id="checkL")
-            scheduler.remove_job(job_id="checkP")
-            scheduler.add_job(
-                checkLights,
-                "interval",
-                seconds=3,
-                id="checkL",
-                args=[program],
-                replace_existing=True,
+            # scheduler.remove_job(job_id="checkL")
+            # scheduler.remove_job(job_id="checkP")
+            # scheduler.add_job(
+            #     checkLights,
+            #     "interval",
+            #     seconds=int(config.Hardware.CHECKLIGHTSINTERVAL),
+            #     id="checkL",
+            #     args=[program],
+            #     replace_existing=True,
+            # )
+            scheduler.modify_job(job_id="checkL", args=[program])
+            scheduler.modify_job(
+                job_id="checkP", seconds=int(program["pumpStartEvery"]), args=[program]
             )
-            scheduler.add_job(
-                activatePump,
-                "interval",
-                seconds=int(program["pumpStartEvery"]),
-                id="checkP",
-                args=[program],
-                replace_existing=True,
-            )
+
+            # scheduler.add_job(
+            #     activatePump,
+            #     "interval",
+            #     seconds=int(program["pumpStartEvery"]),
+            #     id="checkP",
+            #     args=[program],
+            #     replace_existing=True,
+            # )
 
 
 @app.template_filter("upperstring")
