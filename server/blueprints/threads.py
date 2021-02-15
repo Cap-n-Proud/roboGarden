@@ -196,6 +196,7 @@ def guessHarvest(app):
                         # print(i["DtH"].isnumeric())
 
                         pod["harvestTime"] = str(daysPlanted - int(float(i["DtH"])))
+                        # print(pod["harvestTime"])
                         if daysPlanted - int(float(i["DtH"])) > 0:
                             ready = ready + 1
                         # print(
@@ -205,6 +206,6 @@ def guessHarvest(app):
                         #     + str(daysPlanted - int(float(i["DtH"])))
                         #     + " days after DtH"
                         # )
-                    break
+                        break
     json.dump(status, open(config.JSON_Path.STATUS, "w"), indent=4)
     LOG.info("Time to harvest computed.  " + str(ready) + " plants should be ready!")
