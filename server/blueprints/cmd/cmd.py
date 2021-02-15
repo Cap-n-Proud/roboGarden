@@ -50,5 +50,4 @@ def changeprogram():
 
 @cmd_bp.route("/api/getlog")
 def getlog():
-    print("getlog")
     return send_file("../" + config.Config.APPLOGFILE, as_attachment=True)
