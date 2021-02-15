@@ -94,7 +94,7 @@ def changePrg(prg):
             json.dump(program, open(config.JSON_Path.CURRENTPROGRAM, "w"), indent=4)
             # import os
             # try this https://stackoverflow.com/questions/16578652/threading-timer
-            checkL.cancel()
+            checkL.stop()
 
             del checkL
             checkL = RepeatedTimer(

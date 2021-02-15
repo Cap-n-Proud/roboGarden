@@ -57,7 +57,10 @@ def initialize():
     checkL = RepeatedTimer(
         int(config.Hardware.CHECKLIGHTSINTERVAL), checkLights, currentProgram
     )
-
+    # checkL = threading.Timer(
+    #     int(config.Hardware.CHECKLIGHTSINTERVAL), lambda: checkLights(currentProgram)
+    # )
+    # checkL.start()
     checkH = RepeatedTimer(24 * 60 * 60, guessHarvest, app)
 
     checkP = RepeatedTimer(
