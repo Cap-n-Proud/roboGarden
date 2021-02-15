@@ -1,13 +1,13 @@
 {
     "progID": "004",
-    "progName": "Sage",
-    "pumpStartEvery": 3600,
-    "pumpRunTime": 20,
+    "progName": "Growth - quiet hours, low watering, more red light",
+    "pumpStartEvery": 7200,
+    "pumpRunTime": 15,
     "pumpON": "08:00",
-    "pumpOFF": "01:00",
+    "pumpOFF": "21:00",
     "lightBrightness": 100,
-    "RGB": "255 150 255",
+    "RGB": "255 150 150",
     "lightsON": "06:00",
     "lightsOFF": "23:00",
-    "notes": ""
+    "notes": "Program designed to grow, less water."
 }

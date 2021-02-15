@@ -123,10 +123,10 @@ def activatePump(currentProgram):
 
 
 # Function to check the lights. If we are in the time range it will switch the light on and give the current proram RGB color
-# TODO when the web UI set pump to off it returns an error (even with the try statement)
 def checkLights(currentProgram):
     obj_now = datetime.now()
     timeNow = str(obj_now.hour).zfill(2) + ":" + str(obj_now.minute).zfill(2)
+    # # DEBUG:
     print(currentProgram["progID"])
     if is_between(currentProgram["lightsON"], currentProgram["lightsOFF"], timeNow):
         if "brightness" in dataJSON:

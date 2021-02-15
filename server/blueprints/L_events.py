@@ -5,6 +5,9 @@ from datetime import datetime
 from threading import Lock
 from threading import Timer
 
+# https://stackoverflow.com/questions/2398661/schedule-a-repeating-event-in-python-3
+# https://www.educba.com/python-threading-timer/
+
 
 class RepeatedTimer(object):
     """
@@ -19,7 +22,7 @@ class RepeatedTimer(object):
         self.args = args
         self.kwargs = kwargs
         self._stopped = True
-        if kwargs.pop('autostart', True):
+        if kwargs.pop("autostart", True):
             self.start()
 
     def start(self, from_run=False):

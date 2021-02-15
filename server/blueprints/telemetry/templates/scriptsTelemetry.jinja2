@@ -1,9 +1,5 @@
 {% block scr %}
-<script type="text/javascript">
-        INFOTAG = "{{INFOTAG}}"
-        TELEMETRYTAG = "{{TELEMETRYTAG}}"
-        timeStarted = "{{timeStarted}}"
-</script>
+
 
 <script>
 
@@ -19,7 +15,6 @@ window.onload = function() {
   countUpFromTime(timeStarted, 'countup1'); // ****** Change this line!
 };
 
-console.log(timestarted)
 var socket = io();
 var telemetry = {'type': 'N/A', 'pumpON': 0, 'RGB': '0 0 0', 'brightness': 0}
 

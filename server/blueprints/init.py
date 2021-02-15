@@ -19,7 +19,8 @@ from blueprints.threads import *
 from flask import current_app as app
 
 timeStarted = datetime.now()
-
+checkL = ""
+checkP = ""
 # from apscheduler.schedulers.background import BackgroundScheduler
 def initSerial():
     port = config.Hardware.SERIALPORT
@@ -36,6 +37,8 @@ def initSerial():
 
 
 def initialize():
+    global checkL
+    global checkP
     # currentProgram = getCurrentProgr()
     initSerial()
     currentProgram = getCurrentProgr()
