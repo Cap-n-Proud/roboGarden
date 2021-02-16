@@ -23,18 +23,6 @@
   "lightsOFF": "23:00",
   "progDescription": ""
 }, {
-  "progID": "003",
-  "progName": "Harvest - Quiet hours, high watering",
-  "pumpStartEvery": 2700,
-  "pumpRunTime": 20,
-  "pumpON": "08:00",
-  "pumpOFF": "24:00",
-  "lightBrightness": 255,
-  "RGB": "255 150 255",
-  "lightsON": "06:00",
-  "lightsOFF": "23:00",
-  "progDescription": ""
-}, {
   "progID": "004",
   "progName": "Growth - quiet hours, low watering, more red light",
   "pumpStartEvery": 7200,
@@ -45,7 +33,19 @@
   "RGB": "255 150 150",
   "lightsON": "06:00",
   "lightsOFF": "23:00",
-  "progDescription": "Program designed to grow, less water."
+  "progDescription": "Program seeds to small plants, less water."
+}, {
+  "progID": "003",
+  "progName": "Harvest - quiet hours, high watering",
+  "pumpStartEvery": 2700,
+  "pumpRunTime": 20,
+  "pumpON": "08:00",
+  "pumpOFF": "24:00",
+  "lightBrightness": 255,
+  "RGB": "255 150 255",
+  "lightsON": "06:00",
+  "lightsOFF": "23:00",
+  "progDescription": "Program for plant maturity, higher water and more light hours"
 }, {
   "progID": "005",
   "progName": "Test",
@@ -57,17 +57,17 @@
   "RGB": "255 0 255",
   "lightsON": "06:00",
   "lightsOFF": "05:00",
-  "progDescription": "Test program, pump runs every 20 sec and lights are on"
+  "progDescription": "Test program, pump runs every 20 sec and lights are on."
 }, {
   "progID": "006",
   "progName": "Test2",
-  "pumpStartEvery": 120,
+  "pumpStartEvery": 20,
   "pumpRunTime": 20,
   "pumpON": "08:00",
   "pumpOFF": "01:00",
   "lightBrightness": 255,
-  "RGB": "255 150 255",
+  "RGB": "255 150 150",
   "lightsON": "06:00",
   "lightsOFF": "23:00",
-  "progDescription": "Test program pump runs every 2 min and lights are dimmed."
+  "progDescription": "Test program pump runs every 20 sec and lights are dimmed."
 }]
