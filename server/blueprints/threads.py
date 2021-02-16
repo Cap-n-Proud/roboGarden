@@ -136,12 +136,6 @@ def checkLights(currentProgram):
                 if int(dataJSON["brightness"]) != int(
                     currentProgram["lightBrightness"]
                 ):
-                    print(
-                        "Different B"
-                        + str(dataJSON["brightness"])
-                        + " "
-                        + str(currentProgram["lightBrightness"])
-                    )
                     arduinoCommand(
                         "setBrightness " + str(currentProgram["lightBrightness"])
                     )

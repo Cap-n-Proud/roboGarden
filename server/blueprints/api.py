@@ -115,7 +115,7 @@ def changePrg(prg):
             )
             data = "Program changed to: " + prg
             LOG.info("New program: " + str(program))
-            socketio.emit("info", data)
+            io.emit("info", data)
 
 
 @app.template_filter("upperstring")

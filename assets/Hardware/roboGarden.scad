@@ -27,20 +27,20 @@ lightBeamDiam = 30;
 colFunnelHeight =10;
 collectorCollarH = 40;
 drainPipeHeight = 30;
+collectorOutFlowH = 50;
 
-collectorDiam =25;
-
+collectorDiam =33;
 
 T = 1;
 
 
-sprinkleRingThickness = 2;
+sprinkleRingThickness = 5;
 sprinklerHolesAngle = 30;
 sprinklePlateHeight = 3;
-sprinlkerAngle=10;
+sprinlkerAngle=15;
 sprinklerDiam=towerID+1;
 sprinklerHoleDiam = 5;
-pipeDiamIN = 10;
+pipeDiamIN = 8;
 anchor = false;
 
 
@@ -321,7 +321,7 @@ module sprinkler_v2() {
 
 module collectorShell(){
 union(){
- translate([0,0,collectorCollarH])cylinder(h=collectorCollarH, d2=collectorDiam,d1=collectorDiam);
+ translate([0,0,collectorCollarH])cylinder(h=collectorOutFlowH, d2=collectorDiam,d1=collectorDiam);
 translate([0,0,0])cylinder(h=collectorCollarH, d2=towerDiam + 2*towerThickness ,d1=towerDiam + 2*towerThickness);
 }
 
@@ -346,7 +346,7 @@ translate([0,0,-2])collectorHole();
     
 }
 
-translate([0,0,collectorCollarH-attachZ])attachment();
+translate([0,0,collectorCollarH-attachZ])attachment(towerDiam);
 }
 
 
@@ -391,13 +391,24 @@ module lightPoleSupport(){
 //lightPoleSupport();
 
 //SprinklerShelve();
+module sprinklerFlat(){
 difference(){sprinkler_v2();
-translate([0,0,-30])rotate([0, 0, -25])arc(1, 400, towerDiam/2-1, 130);
+rotate([0,0,-90]){
+    translate([0,0,-30])rotate([0, 0, -25])arc(2, 400, towerDiam/2-1, 40);
+    mirror(){
+            translate([0,0,-30])rotate([0, 0, -25])arc(2, 400, towerDiam/2-1, 40);
+            }
+        }
 }
+}
+
+sprinklerFlat();
+//collector();
 //translate([0,0,0])rotate([0, 0, -25])arc(1, 50, towerDiam/2-1, 130);
 //towerDome();
-
+//rotate([sprinlkerAngle,0,-75])translate([-sprinklerDiam/2,0,sprinkleRingThickness/2])cube([sprinklerDiam/2, sprinkleRingThickness/2,sprinkleRingThickness/2]);
 //tower();
 //level(1);
 
 //roboGarden();
+
