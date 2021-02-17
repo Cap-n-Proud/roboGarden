@@ -1,0 +1,8 @@
+{
+  "changeWaterEvery": "30",
+  "topWaterEvery": "5",
+  "addH2O2Every": "5",
+  "addNutrientsEvery": "30",
+  "towerMaintenanceEvery": "60",
+  "tankMaintenanceEvery": "30"
+}

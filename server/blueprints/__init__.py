@@ -58,6 +58,7 @@ def create_app():
         from .control import control
         from .status import status
         from .telemetry import telemetry
+        from .maintenance import maintenace
         from .currentProgram import currentProgram
 
         from blueprints.init import initialize
