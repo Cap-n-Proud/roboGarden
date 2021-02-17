@@ -1,9 +1,8 @@
-from blueprints.api import getPlantsDB, getStatus, getCurrentProgr
+from blueprints.api import getMaintSchedule, getStatus
 from flask import Blueprint
 from flask import current_app as app
 from flask import render_template
 import config
-from blueprints.init import timeStarted
 
 # status = getStatus()
 # currentProgram = getCurrentProgram()
@@ -15,12 +14,14 @@ maintenance_bp = Blueprint(
 )
 
 
-@telemetry_bp.route("/maitenance", methods=["POST", "GET"])
-def telemetry():
+@maintenance_bp.route("/maintenance", methods=["POST", "GET"])
+def maintenance():
     """Maintenance page."""
     return render_template(
         "indexMaintenance.html.j2",
         title="Maintenance",
         subtitle="Demonstration of Flask blueprints in action.",
         template="maintenance-template",
+        status=getStatus(),
+        maintSchedule=getMaintSchedule(),
     )

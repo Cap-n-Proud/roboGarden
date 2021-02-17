@@ -19,7 +19,7 @@ status_bp = Blueprint(
 def status():
     """Status page."""
     plantsDB = getPlantsDB(app)
-    status = getStatus(app)
+    status = getStatus()
     # print(config.Config.ASSETS_FOLDER)
     return render_template(
         "index.jinja2",

@@ -175,7 +175,7 @@ def guessHarvest(app):
     dt = date.today()
 
     plantsDB = getPlantsDB(app)
-    status = getStatus(app)
+    status = getStatus()
     ready = 0
     # print(plantsDB["plants"][0]["plantID"])
     for tower in status["towers"]:

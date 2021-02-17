@@ -9,6 +9,7 @@ from flask_socketio import SocketIO
 from flask_socketio import emit, ConnectionRefusedError, disconnect
 
 from flask import current_app as app
+from datetime import datetime
 
 # LOG = logging.getLogger(__name__)
 LOG = logging.getLogger(config.Config.APPLOGNAME)
@@ -19,6 +20,12 @@ io = SocketIO(app)  # engineio_logger=True)
 
 def getCurrentProgr():
     with open(config.JSON_Path.CURRENTPROGRAM) as f:
+        data = json.load(f)
+    return data
+
+
+def getMaintSchedule():
+    with open("assets/maintSchedule.json") as f:
         data = json.load(f)
     return data
 
@@ -35,7 +42,7 @@ def getPlantsDB(app):
     return data
 
 
-def getStatus(app):
+def getStatus():
     with open(config.JSON_Path.STATUS) as f:
         data = json.load(f)
     return data
@@ -81,6 +88,13 @@ def newPlant(r):
         # app.logging.info("Planted!!!")
         except Exception as e:
             print(e)
+
+
+def resetMaintInterval(task):
+    maint = getStatus()
+    maint["maintenance"][0][task["taskPerformed"]] = task["newDate"]
+    json.dump(maint, open(config.JSON_Path.STATUS, "w"), indent=4)
+    LOG.info("Reset maint interval: " + str(task))
 
 
 def changePrg(prg):

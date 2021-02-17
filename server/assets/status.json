@@ -531,11 +531,12 @@
     ],
     "maintenance": [
         {
-            "lastWaterChange": "2021-01-24T22:25:26.100Z",
-            "lastH2O2Added": "2021-01-24T22:25:26.100Z",
-            "lastNutrientsAdded": "2021-01-24T22:25:26.100Z",
-            "lastTowerMaintenance": "2021-01-24T22:25:26.100Z",
-            "lastTankMaintenance": "2021-01-24T22:25:26.100Z"
+            "changeWater": "2021-02-17T23:45:24.300Z",
+            "addH2O2": "2021-01-24T22:25:26.100Z",
+            "addNutrients": "2021-01-24T22:25:26.100Z",
+            "towerMaintenance": "2021-01-24T22:25:26.100Z",
+            "tankMaintenance": "2021-01-24T22:25:26.100Z",
+            "topWater": "2021-02-17T23:45:33.100Z"
         }
     ]
 }

@@ -1,22 +1,68 @@
 {% block scr %}
 
-<script type="text/javascript">
-
-</script>
 <script>
 
 //Calls functions to load defaults and info.
 document.addEventListener("DOMContentLoaded", function() {
 
-
 });
 
 window.onload = function() {
-  // Month Day, Year Hour:Minute:Second, id-of-element-container
-  //timeStarted = "2021-02-13 21:00:43.405472"
-
+  updateMaintEvents();
 };
 
+function updateMaintEvents() {
+  ms = Date.now();
+  var status = JSON.parse('{{ status | tojson | safe}}');
+  document.getElementById("id-changeWater").innerHTML = timeDifference(ms,new Date(status.maintenance[0].changeWater));
+  document.getElementById("id-addH2O2").innerHTML = timeDifference(ms,new Date(status.maintenance[0].addH2O2));
+  document.getElementById("id-addNutrients").innerHTML = timeDifference(ms,new Date(status.maintenance[0].addNutrients));
+  document.getElementById("id-towerMaintenance").innerHTML = timeDifference(ms,new Date(status.maintenance[0].towerMaintenance));
+  document.getElementById("id-tankMaintenance").innerHTML = timeDifference(ms,new Date(status.maintenance[0].tankMaintenance));
+  document.getElementById("id-topWater").innerHTML = timeDifference(ms,new Date(status.maintenance[0].topWater));
+}
+
+function timeDifference(date1,date2) {
+  const d1 = new Date(date1);
+  const d2 = new Date(date2);
+  const diffTime = Math.abs(date2 - date1);
+  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+  //console.log(diffTime + " milliseconds");
+  //console.log(diffDays + " days");
+  return diffDays
+}
 
 
+function postCommand(cmd, location) {
+  const URL = `${window.origin}/api/` + location
+  // post body data
+  const command = {
+    command: cmd
+  };
+
+  // request options
+  const options = {
+    method: 'POST',
+    body: JSON.stringify(command),
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  }
+  // send POST request
+  fetch(URL, options)
+    .then(res => res.json())
+}
+
+function resetTime(task){
+  const command = {
+    taskPerformed: task,
+    newDate: (new Date().toJSON())
+  };
+  postCommand(command, 'resetMaintInterval')
+}
+
+
+
+
+</script>
 {% endblock scr %}

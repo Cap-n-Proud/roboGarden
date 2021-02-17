@@ -1,5 +1,11 @@
 from blueprints.threads import arduinoCommand
-from blueprints.api import newPlant, getStatus, getPlantsDB, changePrg
+from blueprints.api import (
+    newPlant,
+    getStatus,
+    getPlantsDB,
+    changePrg,
+    resetMaintInterval,
+)
 import config
 
 # from flask import render_template
@@ -28,7 +34,7 @@ def plant():
     req = request.get_json()
     newPlant(req)
     plantsDB = getPlantsDB(app)
-    status = getStatus(app)
+    status = getStatus()
     # return make_response("Test worked!", 200)
     # print(config.Config.ASSETS_FOLDER)
     return redirect(url_for("status_bp.status", message="OK"))
@@ -46,6 +52,14 @@ def changeprogram():
     req = request.get_json()
     changePrg(req["command"])
     return redirect(url_for("control_bp.control", message="OK"))
+
+
+@cmd_bp.route("/api/resetMaintInterval", methods=["POST", "GET"])
+def rMaintInterval():
+    req = request.get_json()
+    resetMaintInterval(req["command"])
+    # print(req["command"])
+    return redirect(url_for("maintenance_bp.maintenance", message="OK"))
 
 
 @cmd_bp.route("/api/getlog")

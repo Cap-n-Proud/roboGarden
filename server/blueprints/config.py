@@ -29,7 +29,8 @@ class Hardware:
 
 
 class JSON_Path:
-    JSON_PATH = "assets"
+    MSCHEDULE = "assets/maintSchedule.json"
+    JSON_BASE_PATH = "assets"
     CURRENTPROGRAM = "assets/currentProgram.json"
     PROGRAMS = "assets/programs.json"
     PLANTDB = "assets/plants.json"

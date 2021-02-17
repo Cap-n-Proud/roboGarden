@@ -58,7 +58,7 @@ def create_app():
         from .control import control
         from .status import status
         from .telemetry import telemetry
-        from .maintenance import maintenace
+        from .maintenance import maintenance
         from .currentProgram import currentProgram
 
         from blueprints.init import initialize
@@ -70,6 +70,7 @@ def create_app():
         app.register_blueprint(cmd.cmd_bp)
         app.register_blueprint(telemetry.telemetry_bp)
         app.register_blueprint(currentProgram.currentProgram_bp)
+        app.register_blueprint(maintenance.maintenance_bp)
 
         # Compile static assets
         # compile_static_assets(assets)  # Execute logic
