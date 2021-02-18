@@ -5,6 +5,7 @@ from blueprints.api import (
     getPlantsDB,
     changePrg,
     resetMaintInterval,
+    newPlantedDate,
 )
 import config
 
@@ -60,6 +61,13 @@ def rMaintInterval():
     resetMaintInterval(req["command"])
     # print(req["command"])
     return redirect(url_for("maintenance_bp.maintenance", message="OK"))
+
+
+@cmd_bp.route("/api/newPlantedDate", methods=["POST", "GET"])
+def newPlantedD():
+    req = request.get_json()
+    newPlantedDate(req["command"])
+    return redirect(url_for("status_bp.status", message="OK"))
 
 
 @cmd_bp.route("/api/getlog")

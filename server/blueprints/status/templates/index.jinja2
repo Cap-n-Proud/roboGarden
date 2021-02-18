@@ -30,8 +30,7 @@
           </select>
         </div>
         <br>
-      {#  <input type="date" class="no-outline" value="{{pod.plantedDate|formatDate}}" podID="{{pod.podID}}" onchange="changePlantedDate('{{pod.podID}}')" id="plantedDateStatus-{{pod.podID}}"> #}
-        <span style="plantedDateStatus" onchange="changePlantedDate({{pod.podID}})" id="plantedDateStatus-{{pod.podID}}">{{pod.plantedDate|formatDate}} <span style="plantedDateStatus;  float:right; {% if pod.harvestTime | int >= 0 %}background-color:rgba(0,255,0,0.2); color:DodgerBlue;{% endif %}">&emsp;{{pod.harvestTime}}</span></span>
+        <input type="date" style="color: gray;border-style: none;" value="{{pod.plantedDate|formatDate}}" id="d{{pod.podID}}" name="plantedDateStatus-{{pod.podID}}" onchange="changePlantedDate(this)"  placeholder="planted date"><span style="plantedDateStatus;  float:right; {% if pod.harvestTime | int >= 0 %}background-color:rgba(0,255,0,0.2); color:DodgerBlue;{% endif %}">&emsp;{{pod.harvestTime}}</span>
       </td>
       {% endfor %}
     </tr>

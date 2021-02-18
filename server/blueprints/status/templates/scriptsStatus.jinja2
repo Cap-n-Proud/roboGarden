@@ -29,13 +29,37 @@
 
   }
 
+
+  function postCommand(cmd, location) {
+    const URL = `${window.origin}/api/` + location
+    // post body data
+    const command = {
+      command: cmd
+    };
+
+    // request options
+    const options = {
+      method: 'POST',
+      body: JSON.stringify(command),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    }
+    // send POST request
+    fetch(URL, options)
+      .then(res => res.json())
+  }
+
 function changePlantedDate(datePicker)
 {
-
-
-console.log(document.getElementById("plantedDateStatus-" + datePicker).value)
-
+const command = {
+  podID: datePicker.id.replace('d',''),
+  plantedDate: (new Date(datePicker.value).toJSON())
+};
+  postCommand(command, 'newPlantedDate')
 }
+
+
 
 </script>
 

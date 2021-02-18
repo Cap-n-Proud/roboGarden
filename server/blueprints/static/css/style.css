@@ -38,16 +38,6 @@ table, th, td {
   line-height: inherit;
 }
 
-.datePlantedStatus, .telemetryInfo {
-  font-size: 80%;
-  color: gray;
-}
-
-span {
-  font-size: 80%;
-  color: gray;
-}
-
 .showOnHover {
   display: none;
 }

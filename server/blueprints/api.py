@@ -132,6 +132,18 @@ def changePrg(prg):
             io.emit("info", data)
 
 
+def newPlantedDate(cmd):
+    from blueprints.threads import guessHarvest
+
+    status = getStatus()
+    status["towers"][int(cmd["podID"][0:2])]["levels"][int(cmd["podID"][3:5])]["pods"][
+        int(cmd["podID"][6:8])
+    ]["plantedDate"] = cmd["plantedDate"]
+    json.dump(status, open(config.JSON_Path.STATUS, "w"), indent=4)
+    LOG.info("Updated planted date: " + str(cmd))
+    guessHarvest(app)
+
+
 @app.template_filter("upperstring")
 def upperstring(input):
     """Custom filter"""
