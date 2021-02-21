@@ -19,6 +19,7 @@ class Config:
     TELEMETRYTAG = "T"
     LOGFORMAT = "%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s"
     CHECKHARVESTINTERVAL = 86400
+    TIMEZONE = "Europe/Zurich"
 
 
 class Hardware:
