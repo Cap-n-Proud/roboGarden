@@ -54,9 +54,9 @@ var p = programs.find(item => item.progID === ID)
 var PrgContainer = document.getElementById("progLabel");
 PrgContainer.innerHTML =""
 for (name in p) {
-  var div = document.createElement("div");
-  div.innerHTML = name + ' ' + p[name];
-  PrgContainer.appendChild(div);
+  var li = document.createElement("li");
+  li.innerHTML = name + ' ' + p[name];
+  PrgContainer.appendChild(li);
 
 }
 }

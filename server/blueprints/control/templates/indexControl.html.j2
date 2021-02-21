@@ -21,7 +21,7 @@
 <table width="100%">
   <tr>
   <td><label for="PRGSel">Program</label>
-  <select style="color: black;" id="PRGsel" onchange="loadProgram(this.value)">
+  <select style="color: black; width: 50px !important;" id="PRGsel" onchange="loadProgram(this.value)">
       {% for p in programs |sort(attribute='progName')%}
       <option value="{{p.progID}}"{% if p.progID == currentProgram.progID %} selected{% endif %}>{{p.progName}}</option>
     {% endfor %}
