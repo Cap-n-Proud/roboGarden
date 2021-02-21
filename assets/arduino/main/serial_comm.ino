@@ -85,6 +85,8 @@ bool pumpStop(Commander &Cmdr) {
   if (!pumpOverride)
   { // Here code to swith the pump off
     pumpON = false;
+    digitalWrite(PUMP_PIN,HIGH);
+
     sendInfo(String("Pump stopped"));
   }
   else
@@ -98,6 +100,8 @@ bool pumpStart(Commander &Cmdr) {
   // Here code to swith the pump on
   pumpON = true;
   sendInfo(String("Pump start"));
+  digitalWrite(PUMP_PIN,LOW);
+
   return 0;
 }
 

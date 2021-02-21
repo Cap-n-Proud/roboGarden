@@ -61,13 +61,13 @@
 }, {
   "progID": "006",
   "progName": "Test2",
-  "pumpStartEvery": 20,
-  "pumpRunTime": 20,
+  "pumpStartEvery": 30,
+  "pumpRunTime": 10,
   "pumpON": "08:00",
   "pumpOFF": "01:00",
   "lightBrightness": 255,
   "RGB": "255 150 150",
   "lightsON": "06:00",
   "lightsOFF": "23:00",
-  "progDescription": "Test program pump runs every 20 sec and lights are dimmed."
+  "progDescription": "Test program pump runs every 30 sec and lights are dimmed."
 }]

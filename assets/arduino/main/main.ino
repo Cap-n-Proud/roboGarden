@@ -10,6 +10,7 @@
 // Clock pin only needed for SPI based chipsets when not using hardware SPI
 #define DATA_PIN 2
 #define CLOCK_PIN 3
+#define PUMP_PIN 53
 
 #define MIN_BRIGHTNESS  0
 #define MAX_BRIGHTNESS 255
@@ -35,6 +36,9 @@ Commander cmd;
 String SEPARATOR = ","; //Used as separator for telemetry
 //Now the sketch setup, loop and any other functions
 void setup() {
+  pinMode(PUMP_PIN,OUTPUT);
+  digitalWrite(PUMP_PIN,HIGH);
+
   randomSeed(analogRead(0));
   Serial.begin(BAUDRATE);
   while (!Serial) {

@@ -43,17 +43,18 @@ def handle_data(data):
     try:
         dataJSON = json.loads(data.decode())
         if dataJSON["type"] == config.Config.INFOTAG:
-            print(dataJSON)
+            # print(dataJSON)
             LOG.info("Info from Arduino: " + dataJSON["message"])
             io.emit(config.Config.INFOTAG, dataJSON["message"])
 
         if dataJSON["type"] == config.Config.TELEMETRYTAG:
-            print(dataJSON)
+            # print(dataJSON)
             io.emit(config.Config.TELEMETRYTAG, dataJSON)
             # print(threading.active_count())
 
     except ValueError as e:
         # We need to replace double quotes with single ones to save it in the json logs
+        print("Received non-JSON from Arduino: " + str(data).replace('"', "'"))
         LOG.warning(
             "Received non-JSON from Arduino: " + str(data).replace('"', "'") + str(e)
         )
@@ -65,13 +66,11 @@ def read_from_port(ser):
     while ser.is_open:
         # NB: for PySerial v3.0 or later, use property `in_waiting` instead of function `inWaiting()` below!
         try:
-            if (
-                ser.in_waiting > 0
-            ):  # if incoming bytes are waiting to be read from the serial input buffer
-                data_str = ser.read(ser.in_waiting)
-                # read the bytes and co nvert from binary array to ASCII
-                handle_data(data_str)
-            time.sleep(0.2)
+            # if incoming bytes are waiting to be read from the serial input bufferser.in_waiting
+            data_str = ser.readline()
+            # read the bytes and co nvert from binary array to ASCII
+            handle_data(data_str)
+            time.sleep(0.1)
         except serial.serialutil.SerialException:
             except_counter += 1
             LOG.warning(ser.serialutil.SerialException)

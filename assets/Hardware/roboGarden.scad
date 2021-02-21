@@ -25,7 +25,7 @@ borderBaseY = 30;
 lightBeamDiam = 30;
 
 colFunnelHeight =10;
-collectorCollarH = 40;
+collectorCollarH = 50;
 drainPipeHeight = 30;
 collectorOutFlowH = 50;
 
@@ -322,7 +322,7 @@ module sprinkler_v2() {
 module collectorShell(){
 union(){
  translate([0,0,collectorCollarH])cylinder(h=collectorOutFlowH, d2=collectorDiam,d1=collectorDiam);
-translate([0,0,0])cylinder(h=collectorCollarH, d2=towerDiam + 2*towerThickness ,d1=towerDiam + 2*towerThickness);
+translate([0,0,0])cylinder(h=collectorCollarH, d2=towerDiam + 4*towerThickness ,d1=towerDiam + 4*towerThickness);
 }
 
 }
@@ -334,7 +334,7 @@ union(){
     //Funnel
  translate([0,0,collectorCollarH-colFunnelHeight])cylinder(h=colFunnelHeight , d2=collectorDiam-2*towerThickness,d1=towerDiam);
     //Top
-translate([0,0,-2*collectorCollarH])cylinder(h=6*collectorCollarH, d=collectorDiam-2*towerThickness);    //Bottom
+translate([0,0,-2*collectorCollarH])cylinder(h=6*collectorCollarH, d=collectorDiam-3*towerThickness);    //Bottom
 translate([0,0,-colFunnelHeight])cylinder(h=collectorCollarH, d2=towerDiam ,d1=towerDiam );
 }}
 
@@ -352,11 +352,11 @@ translate([0,0,collectorCollarH-attachZ])attachment(towerDiam);
 
 attachX = 10;
 attachY = 15;
-attachZ = 5;
+attachZ = 10;
 
 module SUB_support(){    
     difference(){cube([attachX,attachY,attachZ]);
-    translate([attachX/2,attachY/2+2,-attachZ/2])cylinder(h=10,d1=3,d2=3);}
+    translate([attachX/2,attachY/2+2,-attachZ/2])cylinder(h=30,d1=3,d2=3);}
 }
 
 module attach(diam){    
@@ -394,9 +394,9 @@ module lightPoleSupport(){
 module sprinklerFlat(){
 difference(){sprinkler_v2();
 rotate([0,0,-90]){
-    translate([0,0,-30])rotate([0, 0, -25])arc(2, 400, towerDiam/2-1, 40);
+    translate([0,0,-30])rotate([0, 0, -25])arc(3, 400, towerDiam/2-1, 70);
     mirror(){
-            translate([0,0,-30])rotate([0, 0, -25])arc(2, 400, towerDiam/2-1, 40);
+            translate([0,0,-30])rotate([0, 0, -25])arc(3, 400, towerDiam/2-1, 70);
             }
         }
 }
