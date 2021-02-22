@@ -26,6 +26,7 @@ checkP = ""
 schesuler = ""
 # from apscheduler.schedulers.background import BackgroundScheduler
 def initSerial():
+    LOG = logging.getLogger(config.Config.APPLOGNAME)
     port = config.Hardware.SERIALPORT
     baud = config.Hardware.SERIALBAUD
 
@@ -34,13 +35,30 @@ def initSerial():
         print(p)
 
     serial_port = serial.Serial(port, baud, timeout=None)
+    LOG.info(
+        "Serial interface configured on "
+        + port
+        + "@"
+        + str(baud)
+        + " Pyserisal version: "
+        + serial.VERSION
+    )
 
-    print("serial interface configured. Pyserisal version: " + serial.VERSION)
+    print(
+        "Serial interface configured on "
+        + port
+        + "@"
+        + str(baud)
+        + " Pyserisal version: "
+        + serial.VERSION
+    )
     time.sleep(2)
 
 
 def initialize():
     global scheduler
+    LOG = logging.getLogger(config.Config.APPLOGNAME)
+
     # currentProgram = getCurrentProgr()
     initSerial()
     currentProgram = getCurrentProgr()
@@ -95,11 +113,12 @@ def initialize():
     # )
 
     timeNow = str(timeStarted.hour).zfill(2) + ":" + str(timeStarted.minute).zfill(2)
-    app.logger.info("System started. System time is: " + timeNow)
-    app.logger.info("Current program: " + str(currentProgram))
-    print(
-        "System started. System time is: "
-        + timeNow
-        + " current program "
-        + str(currentProgram)
-    )
+    LOG.info("System started. System time is: " + timeNow)
+    LOG.info("Current program: " + str(currentProgram))
+    LOG.info("Background jobs: " + str(scheduler.get_jobs()))
+    # print(
+    #     "System started. System time is: "
+    #     + timeNow
+    #     + " current program "
+    #     + str(currentProgram)
+    # )

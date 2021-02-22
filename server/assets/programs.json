@@ -49,18 +49,18 @@
 }, {
   "progID": "005",
   "progName": "Test",
-  "pumpStartEvery": 20,
-  "pumpRunTime": 5,
+  "pumpStartEvery": 30,
+  "pumpRunTime": 10,
   "pumpON": "08:00",
   "pumpOFF": "01:00",
   "lightBrightness": 50,
   "RGB": "255 0 255",
   "lightsON": "06:00",
   "lightsOFF": "05:00",
-  "progDescription": "Test program, pump runs every 20 sec and lights are on."
+  "progDescription": "Test program, pump runs every 30 sec and lights are dimmed."
 }, {
   "progID": "006",
-  "progName": "Test2",
+  "progName": "Test2 - high power consumption",
   "pumpStartEvery": 30,
   "pumpRunTime": 10,
   "pumpON": "08:00",
@@ -69,5 +69,5 @@
   "RGB": "255 150 150",
   "lightsON": "06:00",
   "lightsOFF": "23:00",
-  "progDescription": "Test program pump runs every 30 sec and lights are dimmed."
+  "progDescription": "Test program pump runs every 30 sec and lights are 100%."
 }]

@@ -73,13 +73,13 @@ def read_from_port(ser):
             time.sleep(0.1)
         except serial.serialutil.SerialException:
             except_counter += 1
-            LOG.warning(ser.serialutil.SerialException)
+            LOG.warning(str(ser.serialutil.SerialException))
             if except_counter == 5:
                 break
                 time.sleep(1)
 
         except serial.SerialTimeoutException:
-            LOG.warning(serial.SerialTimeoutException)
+            LOG.warning(str(serial.SerialTimeoutException))
 
 
 def write_to_ser(ser, message):
@@ -113,12 +113,12 @@ def activatePump(currentProgram):
     if is_between(currentProgram["pumpON"], currentProgram["pumpOFF"], timeNow):
         # Pump ON
         arduinoCommand("pumpStart")
-        LOG.info("Pump is ON")
+        LOG.debug("Pump is ON")
         # We stop the thread so the pump continues pumping
         time.sleep(currentProgram["pumpRunTime"])
         # Pump OFF
         arduinoCommand("pumpStop")
-        LOG.info("Pump is OFF")
+        LOG.debug("Pump is OFF")
 
 
 # Function to check the lights. If we are in the time range it will switch the light on and give the current proram RGB color
