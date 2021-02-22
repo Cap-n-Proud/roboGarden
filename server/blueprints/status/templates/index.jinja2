@@ -20,7 +20,15 @@
     <tr>
       {% for pod in level.pods %}
 
-      <td><span style="podIDStatus" id="podID">{{pod.podID}}</span><br>
+      <td><span style="podIDStatus" id="podID">{{pod.podID}}</span>
+      {% for plant in plantsDB.plants %}
+        <span style="podIDStatus" id="podID">{% if plant.plantID == pod.plantID %}
+            {% for i in range(plant.water|int) %}
+              <i style="float:right; color: DodgerBlue;" class="fas fa-tint"></i>
+            {% endfor %}</span>
+          {% endif %}
+        {% endfor %}
+        <br>
         <br>
         <div class="select">
           <select style="color: black;" id="s{{pod.podID}}" onchange="postPlant(this)">

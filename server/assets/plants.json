@@ -2,11 +2,11 @@
   "plants": [{
       "plantID": "000",
       "name": "000-Empty",
-      "latinName": "Vacuus",
+      "latinName": "Vacuum",
       "URL": "",
       "PHMin": "",
       "PHMax": "",
-      "water": "",
+      "water": "0",
       "DtG": "0",
       "DtH": "9999",
       "Notes": ""
@@ -17,7 +17,7 @@
       "URL": "https://pfaf.org/user/plant.aspx?LatinName=Lycopersicon+esculentum",
       "PHMin": "5.8",
       "PHMax": "6.8",
-      "water": "",
+      "water": "0",
       "DtG": "",
       "DtH": "150",
       "Notes": ""
@@ -28,9 +28,9 @@
       "URL": "https://pfaf.org/user/Plant.aspx?LatinName=Lactuca+sativa+capitata",
       "PHMin": "6.0",
       "PHMax": "6.5",
-      "water": "",
+      "water": "3",
       "DtG": "10",
-      "DtH": "0",
+      "DtH": "40",
       "Notes": ""
     }, {
       "plantID": "003",
@@ -39,7 +39,7 @@
       "URL": "https://pfaf.org/user/Plant.aspx?LatinName=Ocimum+basilicum",
       "PHMin": "6.2",
       "PHMax": "6.8",
-      "water": "Below Average",
+      "water": "2",
       "DtG": "14",
       "DtH": "50"
     }, {
@@ -49,7 +49,7 @@
       "URL": "https://pfaf.org/user/Plant.aspx?LatinName=Brassica+oleracea+italica",
       "PHMin": "6.0",
       "PHMax": "7.0",
-      "water": "Average",
+      "water": "3",
       "DtG": "10",
       "DtH": "90",
       "Notes": ""
@@ -60,7 +60,7 @@
       "URL": "https://pfaf.org/User/Plant.aspx?LatinName=Capsicum+annuum",
       "PHMin": "6.2",
       "PHMax": "7.0",
-      "water": "",
+      "water": "0",
       "DtG": "",
       "DtH": "75",
       "Notes": ""
@@ -71,7 +71,7 @@
       "URL": "",
       "PHMin": "",
       "PHMax": "",
-      "water": "",
+      "water": "0",
       "DtG": "14",
       "DtH": "0",
       "Notes": ""
@@ -82,7 +82,7 @@
       "URL": "",
       "PHMin": "",
       "PHMax": "",
-      "water": "",
+      "water": "0",
       "DtG": "",
       "DtH": "0",
       "Notes": ""
@@ -93,7 +93,7 @@
       "URL": "https://pfaf.org/user/plant.aspx?latinname=Fragaria+vesca",
       "PHMin": "5.5",
       "PHMax": "6.8",
-      "water": "Heavy",
+      "water": "5",
       "DtG": "30",
       "DtH": "0"
     }, {
@@ -101,22 +101,23 @@
       "name": "Cutting Lettuce",
       "latinName": "Lactuca Sativa Var Crispa",
       "URL": "https://pfaf.org/user/Plant.aspx?LatinName=Lactuca+sativa+crispa",
-      "PHMin": "",
-      "PHMax": "",
-      "water": "",
-      "DtG": "7",
-      "DtH": "0",
+      "PHMin": "6.0",
+      "PHMax": "6.5",
+      "water": "3",
+      "DtG": "10",
+      "DtH": "40",
       "Notes": ""
     }, {
       "plantID": "010",
       "name": "Leaf Lettuce",
       "latinName": "Lactuca Sativa",
       "URL": "https://pfaf.org/user/Plant.aspx?LatinName=Lactuca+sativa",
-      "PHMin": "",
-      "PHMax": "",
-      "water": "",
-      "DtG": "",
-      "DtH": "0"
+      "PHMin": "6.0",
+      "PHMax": "6.5",
+      "water": "3",
+      "DtG": "10",
+      "DtH": "40",
+      "Notes": ""
     }, {
       "plantID": "011",
       "name": "Malvarosa Halo Mix",
@@ -124,7 +125,7 @@
       "URL": "https://pfaf.org/user/Plant.aspx?LatinName=Alcea+rosea",
       "PHMin": "",
       "PHMax": "",
-      "water": "",
+      "water": "0",
       "DtG": "28",
       "DtH": "0",
       "Notes": ""
@@ -133,9 +134,9 @@
       "name": "Mint Mentha Piperita",
       "latinName": "",
       "URL": "https://pfaf.org/user/Plant.aspx?LatinName=Mentha+x+piperita+officinalis",
-      "PHMin": "",
-      "PHMax": "",
-      "water": "",
+      "PHMin": "6.0",
+      "PHMax": "7.5",
+      "water": "0",
       "DtG": "20",
       "DtH": "0",
       "Notes": ""
@@ -146,7 +147,7 @@
       "URL": "",
       "PHMin": "",
       "PHMax": "",
-      "water": "",
+      "water": "3",
       "DtG": "18",
       "DtH": "40",
       "Notes": ""
@@ -157,7 +158,7 @@
       "URL": "https://pfaf.org/user/plant.aspx?latinname=Origanum+vulgare",
       "PHMin": "6.5",
       "PHMax": "8.0",
-      "water": "",
+      "water": "2",
       "DtG": "10",
       "DtH": "0",
       "Notes": ""
@@ -168,7 +169,7 @@
       "URL": "https://pfaf.org/user/plant.aspx?LatinName=Petroselinum+crispum",
       "PHMin": "",
       "PHMax": "",
-      "water": "",
+      "water": "0",
       "DtG": "",
       "DtH": "0",
       "Notes": ""
@@ -179,7 +180,7 @@
       "URL": "https://pfaf.org/user/plant.aspx?latinname=Rosmarinus+officinalis",
       "PHMin": "6.0",
       "PHMax": "7.0",
-      "water": "",
+      "water": "0",
       "DtG": "",
       "DtH": "0",
       "Notes": ""
@@ -190,7 +191,7 @@
       "URL": "",
       "PHMin": "",
       "PHMax": "",
-      "water": "",
+      "water": "0",
       "DtG": "",
       "DtH": "0",
       "Notes": ""
@@ -201,7 +202,7 @@
       "URL": "https://pfaf.org/user/Plant.aspx?LatinName=Salvia+officinalis",
       "PHMin": "6.5",
       "PHMax": "7.0",
-      "water": "",
+      "water": "0",
       "DtG": "",
       "DtH": "0",
       "Notes": ""
@@ -212,7 +213,7 @@
       "URL": "https://pfaf.org/user/plant.aspx?LatinName=Spinacia+oleracea",
       "PHMin": "6.5",
       "PHMax": "7.0",
-      "water": "",
+      "water": "0",
       "DtG": "",
       "DtH": "0",
       "Notes": ""
@@ -223,7 +224,7 @@
       "URL": "",
       "PHMin": "",
       "PHMax": "",
-      "water": "",
+      "water": "0",
       "DtG": "",
       "DtH": "0",
       "Notes": ""
@@ -234,7 +235,7 @@
       "URL": "",
       "PHMin": "",
       "PHMax": "",
-      "water": "",
+      "water": "0",
       "DtG": "",
       "DtH": "0"
     }, {
@@ -244,7 +245,7 @@
       "URL": "",
       "PHMin": "",
       "PHMax": "",
-      "water": "",
+      "water": "0",
       "DtG": "10",
       "DtH": "90",
       "Notes": ""
@@ -255,20 +256,9 @@
       "URL": "",
       "PHMin": "",
       "PHMax": "",
-      "water": "",
+      "water": "0",
       "DtG": "13",
       "DtH": "150"
-    }, {
-      "plantID": "027",
-      "name": "Spinat",
-      "latinName": "Spinacia oleracea",
-      "URL": "https://pfaf.org/user/plant.aspx?LatinName=Spinacia+oleracea",
-      "PHMin": "6.5",
-      "PHMax": "7.0",
-      "water": "",
-      "DtG": "",
-      "DtH": "0",
-      "Notes": ""
     }
 
   ]
