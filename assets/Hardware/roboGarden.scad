@@ -132,7 +132,7 @@ module roboGarden() {
 
 }
 
-module dome(d = 5, h = 2, hollow = false, wallWidth = 0.5, $fn = 128) {
+module dome(d = 5, h = 2, hollow = false, wallWidth = 2) {
   sphereRadius = (pow(h, 2) + pow((d / 2), 2)) / (2 * h);
 
   translate([0, 0, (sphereRadius - h) * -1]) {
@@ -150,13 +150,13 @@ module dome(d = 5, h = 2, hollow = false, wallWidth = 0.5, $fn = 128) {
 
 module towerDome() {
   difference(){
-   union(){   dome(d = towerDiam, h = 9, hollow = true);
+   union(){dome(d = sprinklerDiam, h = 20, hollow = true,wallWidth=2);
   difference() {
-    translate([0, 0, -10]) cylinder(h = 10, d1 = (sprinklerDiam), d2 = (sprinklerDiam));
-    translate([0, 0, -15]) cylinder(h = 15, d1 = (sprinklerDiam-sprinkleRingThickness), d2 = (sprinklerDiam-sprinkleRingThickness));
+    translate([0, 0, -30]) cylinder(h = 30, d1 = (sprinklerDiam-0.5), d2 = (sprinklerDiam));
+    translate([0, 0, -35]) cylinder(h = 60, d1 = (sprinklerDiam-sprinkleRingThickness), d2 = (sprinklerDiam-sprinkleRingThickness));
     
   } }
-    translate([0, 0, -10]) cylinder(h = 100, d1 = 0.1*sprinklerDiam, d2 = 0.1*sprinklerDiam);
+    translate([0, 0, -10]) cylinder(h = 100, d = 0.2*sprinklerDiam);
 
 }
 }
@@ -402,10 +402,10 @@ rotate([0,0,-90]){
 }
 }
 
-sprinklerFlat();
+//sprinklerFlat();
 //collector();
 //translate([0,0,0])rotate([0, 0, -25])arc(1, 50, towerDiam/2-1, 130);
-//towerDome();
+towerDome();
 //rotate([sprinlkerAngle,0,-75])translate([-sprinklerDiam/2,0,sprinkleRingThickness/2])cube([sprinklerDiam/2, sprinkleRingThickness/2,sprinkleRingThickness/2]);
 //tower();
 //level(1);

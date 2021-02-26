@@ -1,8 +1,8 @@
-1 Babyleaf Mischung
-2 Babyleaf Mischung
-3 Babyleaf Mischung
-4 Nussalad Vera
-5 Nussalad Vera
+1 Babyleaf Mischung	0-0
+2 Babyleaf Mischung	0-1
+3 Babyleaf Mischung	1-0
+4 Nussalad Vera		1-1
+5 Nussalad Vera		
 6 Nussalad Vera
 7 Lollo Mix
 8 Lollo Mix
@@ -16,4 +16,4 @@
 16 Strawberry
 17 Strawberry
 18 Strawberry
-
+erviservice 
