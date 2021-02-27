@@ -83,16 +83,12 @@ function postCommand(cmd, location) {
 }
 
 //Change pump status based on the checkbox TODO based on the arduino feedback
-function pumpControl(checkboxElem) {
+function pumpControl() {
   var x = document.getElementById("pump");
-  if (checkboxElem.checked) {
-    var timer = document.getElementById("pumpPulse").value;
-    var cmd = "pumpRunFor" + " " + timer
-    postCommand(cmd, 'arduinocmd')
-  } else {
-    var cmd = "pumpStop"
-    postCommand(cmd, 'arduinocmd')
-  }
+  var timer = document.getElementById("pumpPulse").value;
+  var cmd = "pumpRunFor" + " " + timer
+  postCommand(cmd, 'arduinocmd')
+
 }
 
 
