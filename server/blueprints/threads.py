@@ -11,7 +11,7 @@ import logging
 from flask_socketio import SocketIO
 from flask_socketio import emit, ConnectionRefusedError, disconnect
 
-from threading import Lock
+from threading import Lock, Timer
 import serial
 from serial.tools import list_ports
 import config
@@ -106,6 +106,12 @@ def arduinoCommand(command):
     time.sleep(0.5)
 
 
+def pumpStop():
+    arduinoCommand("pumpStop")
+    LOG.debug("Pump is OFF")
+
+
+# https://www.askpython.com/python/examples/python-wait-for-a-specific-time
 # This will be called to regulate the pump behaviour. TODO need to add thread and parameterd
 def activatePump(currentProgram):
     obj_now = datetime.now()
@@ -113,12 +119,12 @@ def activatePump(currentProgram):
     if is_between(currentProgram["pumpON"], currentProgram["pumpOFF"], timeNow):
         # Pump ON
         arduinoCommand("pumpStart")
-        LOG.debug("Pump is ON")
+        LOG.debug("Pump is ON for " + str(currentProgram["pumpRunTime"]))
         # We stop the thread so the pump continues pumping
-        time.sleep(int(currentProgram["pumpRunTime"]))
+        t = Timer(int(currentProgram["pumpRunTime"]), pumpStop)
+        t.start()
+        # time.sleep(int(currentProgram["pumpRunTime"]))
         # Pump OFF
-        arduinoCommand("pumpStop")
-        LOG.debug("Pump is OFF")
 
 
 # Function to check the lights. If we are in the time range it will switch the light on and give the current proram RGB color

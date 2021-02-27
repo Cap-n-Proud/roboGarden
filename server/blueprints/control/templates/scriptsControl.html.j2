@@ -48,15 +48,6 @@ socket.on(TELEMETRYTAG, function(msg, cb) {
     cb();
 });
 
-socket.on(INFOTAG, function(msg, cb) {
-  console.log(msg)
-  if (msg =="Pump stopped"){
-     document.getElementById("pump").checked = false;
-     //console.log("INFO")
-   }
-
-});
-
 function loadProgram(ID)
 {
 //console.log(programs.find(item => item.progID === ID))

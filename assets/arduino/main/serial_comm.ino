@@ -98,10 +98,9 @@ bool pumpStop(Commander &Cmdr) {
 
 bool pumpStart(Commander &Cmdr) {
   // Here code to swith the pump on
+  digitalWrite(PUMP_PIN,LOW);
   pumpON = true;
   sendInfo(String("Pump start"));
-  digitalWrite(PUMP_PIN,LOW);
-
   return 0;
 }
 
@@ -150,7 +149,7 @@ bool setBrightness(Commander &Cmdr) {
   //The server has brigtness range 0-255, the hardware is library dependent. We do not scale but keep the same ranger in the GUI Sx:100=Hx:MAX_BRIGHTNESS
   if (Cmdr.getInt(myInt)) {
     Brightness = myInt;
-    FastLED.setBrightness(Brightness);    
+    FastLED.setBrightness(Brightness);
     FastLED.show();
     sendInfo(String("Brightness set to: ") + myInt + String(" (") + 100*myInt/255 + String("%)"));
   }
@@ -165,8 +164,8 @@ bool sysInfo(Commander &Cmdr){
 
   Serial.println(line);
   delay(100);
- 
-  
+
+
 }
 
 //setLightRGB 255 255 255
