@@ -42,9 +42,19 @@ socket.on(TELEMETRYTAG, function(msg, cb) {
 
   var x = msg.RGB.split(" ");
   document.getElementById("LEDColor").value = R_G_BtoHEX(x[0],x[1],x[2]);
+  document.getElementById("LEDBrightness").value = msg.brightness
 
   if (cb)
     cb();
+});
+
+socket.on(INFOTAG, function(msg, cb) {
+  console.log(msg)
+  if (msg =="Pump stopped"){
+     document.getElementById("pump").checked = false;
+     //console.log("INFO")
+   }
+
 });
 
 function loadProgram(ID)
