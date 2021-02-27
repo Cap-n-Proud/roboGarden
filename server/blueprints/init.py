@@ -35,6 +35,7 @@ def initSerial():
         print(p)
 
     serial_port = serial.Serial(port, baud, timeout=None)
+    serial.flushInput()
     LOG.info(
         "Serial interface configured on "
         + port

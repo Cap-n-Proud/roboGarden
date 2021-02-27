@@ -1,3 +1,7 @@
+https://raspberrypi.stackexchange.com/questions/111817/serial-serialutil-serialexception-device-reports-readiness-to-read-but-returned
+
+
+
 https://pfaf.org/user/Plant.aspx?LatinName=Lactuca+sativa+crispa
 https://university.upstartfarmers.com/blog/hydroponic-basil
 
