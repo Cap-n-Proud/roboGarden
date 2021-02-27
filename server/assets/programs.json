@@ -47,6 +47,18 @@
   "lightsOFF": "23:00",
   "progDescription": "Program for plant maturity, higher water and more light hours"
 }, {
+  "progID": "004",
+  "progName": "NoPump - quiet hours, NO watering",
+  "pumpStartEvery": 2700,
+  "pumpRunTime": 20,
+  "pumpON": "08:00",
+  "pumpOFF": "08:02",
+  "lightBrightness": 200,
+  "RGB": "255 150 255",
+  "lightsON": "06:00",
+  "lightsOFF": "23:00",
+  "progDescription": "Program for testing punp does not run."
+}, {
   "progID": "005",
   "progName": "Test",
   "pumpStartEvery": 60,
