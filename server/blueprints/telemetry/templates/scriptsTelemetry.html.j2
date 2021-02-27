@@ -116,7 +116,7 @@ function R_G_BtoHEX(red, green, blue) {
     document.getElementById("LED").style.color= R_G_BtoHEX(0.6*rgb[0],0.6*rgb[1],0.6 *rgb[2]);
     // document.getElementById("LED").setAttribute("style", "color: " + R_G_BtoHEX(0.6*rgb[0],0.6*rgb[1],0.6 *rgb[2]));
     //console.log(R_G_BtoHEX(0.8*rgb[0],0.8*rgb[1],0.8*rgb[2]))
-    document.getElementById("RGBColor").innerHTML = telemetry['RGB'] + " @ " + 100 * telemetry['brightness']/255 + "%";
+    document.getElementById("RGBColor").innerHTML = telemetry['RGB'] + " @ " + Math.floor(100 * telemetry['brightness']/255) + "%";
   }
 
 
