@@ -35,11 +35,11 @@
   <td><label for="pump">Pump</label></td>
   <td>
       <label class="switch">
-        <input id="pump" type="checkbox" checked="false" value="OFF" onchange="pumpControl(this)">
+         <button id="pump" class="button button3" onchange="pumpControl(this)"><i id="pump" class="fas fa-sync-alt"></i></button>
         <span class="slider round"></span>
       </label>
       <label for="pumpPulse">duration</label>
-      <input type="number" id="pumpPulse" name="quantity" default="1" value="20" min="1" max="200" size="2">
+      <input type="number" id="pumpPulse" name="quantity" default="1" value="10" min="1" max="200" size="2">
     </td>
   </tr>
   <tr>
