@@ -115,7 +115,7 @@ def activatePump(currentProgram):
         arduinoCommand("pumpStart")
         LOG.debug("Pump is ON")
         # We stop the thread so the pump continues pumping
-        time.sleep(currentProgram["pumpRunTime"])
+        time.sleep(int(currentProgram["pumpRunTime"]))
         # Pump OFF
         arduinoCommand("pumpStop")
         LOG.debug("Pump is OFF")
