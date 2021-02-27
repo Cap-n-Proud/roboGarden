@@ -1,13 +1,13 @@
 {
-    "progID": "002",
-    "progName": "Quiet hours, medium watering.",
-    "pumpStartEvery": 3600,
+    "progID": "004",
+    "progName": "NoPump - quiet hours, NO watering",
+    "pumpStartEvery": 2700,
     "pumpRunTime": 20,
     "pumpON": "08:00",
-    "pumpOFF": "22:00",
-    "lightBrightness": 255,
+    "pumpOFF": "08:02",
+    "lightBrightness": 200,
     "RGB": "255 150 255",
     "lightsON": "06:00",
     "lightsOFF": "23:00",
-    "progDescription": ""
+    "progDescription": "Program for testing punp does not run."
 }
