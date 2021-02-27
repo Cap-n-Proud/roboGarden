@@ -14,7 +14,7 @@ const commandList_t commands[] = {
 
 // pumpStart
 // pumpStop
-// pumpRunFor 2
+// pumpRunFor 20
 // setBrightness 15
 // setLightRGB 23 10 115
 // stopAll
@@ -115,9 +115,10 @@ bool pumpRunFor(Commander &Cmdr) {
   pumpOverride = true;
   if (Cmdr.getInt(myInt)) {
     pumpON = true;
-    timer.in(myInt * 1000 * 60, pumpStop);
-    timer.in(myInt * 1000 * 60 - 1, removeOverride);
-    sendInfo(String("Pump started for: ") + myInt + String(" minutes"));
+    digitalWrite(PUMP_PIN,LOW);
+    timer.in(myInt * 1000 , pumpStop);
+    timer.in(myInt * 1000 - 1, removeOverride);
+    sendInfo(String("Pump started for: ") + myInt + String(" seconds"));
   }
   else
   { sendInfo(String("Command pumpRunFor failed: no duration supplied"));
