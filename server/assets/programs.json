@@ -70,4 +70,16 @@
   "lightsON": "06:00",
   "lightsOFF": "23:00",
   "progDescription": "Test program pump runs every 300 sec and lights are 100%."
+}, {
+  "progID": "006",
+  "progName": "Test3 - test pump",
+  "pumpStartEvery": 15,
+  "pumpRunTime": 5,
+  "pumpON": "08:00",
+  "pumpOFF": "01:00",
+  "lightBrightness": 200,
+  "RGB": "255 150 150",
+  "lightsON": "06:00",
+  "lightsOFF": "23:00",
+  "progDescription": "Test program pump runs every 15 sec and lights are 100%."
 }]
