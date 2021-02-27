@@ -541,3 +541,4 @@
 {"time": "2021-02-27 11:56:17,929", "name": "roboLog", "level": "INFO", "message": "Lights set to 50"},
 {"time": "2021-02-27 11:57:11,983", "name": "roboLog", "level": "INFO", "message": "Info from Arduino: Pump start"},
 {"time": "2021-02-27 11:57:27,477", "name": "roboLog", "level": "INFO", "message": "Info from Arduino: Pump stopped"},
+{"time": "2021-02-27 11:58:11,962", "name": "roboLog", "level": "INFO", "message": "Info from Arduino: Pump start"},

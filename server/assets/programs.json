@@ -61,8 +61,8 @@
 }, {
   "progID": "006",
   "progName": "Test2 - high power consumption",
-  "pumpStartEvery": 300,
-  "pumpRunTime": 15,
+  "pumpStartEvery": 30,
+  "pumpRunTime": 10,
   "pumpON": "08:00",
   "pumpOFF": "01:00",
   "lightBrightness": 200,
