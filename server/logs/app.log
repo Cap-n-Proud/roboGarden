@@ -1222,3 +1222,7 @@
 {"time": "2021-02-27 21:15:43,570", "name": "roboLog", "level": "INFO", "message": "Info from Arduino: Pump stopped"},
 {"time": "2021-02-27 21:15:53,064", "name": "roboLog", "level": "INFO", "message": "Info from Arduino: Pump start"},
 {"time": "2021-02-27 21:15:58,568", "name": "roboLog", "level": "INFO", "message": "Info from Arduino: Pump stopped"},
+{"time": "2021-02-27 22:57:46,494", "name": "roboLog", "level": "INFO", "message": "Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5"},
+{"time": "2021-02-27 22:57:50,082", "name": "roboLog", "level": "INFO", "message": "System started. System time is: 22:57"},
+{"time": "2021-02-27 22:57:50,082", "name": "roboLog", "level": "INFO", "message": "Current program: {'progID': '006', 'progName': 'Test3 - test pump', 'pumpStartEvery': 15, 'pumpRunTime': 5, 'pumpON': '08:00', 'pumpOFF': '01:00', 'lightBrightness': 200, 'RGB': '255 150 150', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Test program pump runs every 15 sec and lights are 100%.'}"},
+{"time": "2021-02-27 22:57:50,083", "name": "roboLog", "level": "INFO", "message": "Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]"},
