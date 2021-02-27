@@ -238,6 +238,6 @@ void TelemetryTXJSON() //statusReport
 
 //Initialisation function
 void initTimer() {
-  timer.every(0.5  * 1000, TelemetryTXJSON);
+  timer.every(1  * 1000, TelemetryTXJSON);
 
 }
