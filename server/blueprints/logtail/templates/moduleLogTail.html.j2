@@ -3,8 +3,8 @@
 #}
 <table width="100%">
   {% for key in log.records | reverse %}
-    {% if loop.index <= 30 %}
-      <tr>
+    {% if loop.index <= 50 %}
+      <tr {% if loop.index % 2 == 0 %} style="background: gainsboro;"{% endif %}>
         <td>
       {{key.time}}
         </td>
