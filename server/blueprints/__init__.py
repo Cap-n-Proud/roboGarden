@@ -72,7 +72,7 @@ def create_app():
         app.register_blueprint(telemetry.telemetry_bp)
         app.register_blueprint(currentProgram.currentProgram_bp)
         app.register_blueprint(maintenance.maintenance_bp)
-        app.register_blueprint(logTail.logtail_bp)
+        app.register_blueprint(logtail.logtail_bp)
 
         # Compile static assets
         # compile_static_assets(assets)  # Execute logic

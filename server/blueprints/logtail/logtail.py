@@ -6,13 +6,13 @@ import config
 from blueprints.init import timeStarted
 
 # Blueprint Configuration
-getlog_bp = Blueprint(
-    "getlog_bp", __name__, template_folder="templates", static_folder="static"
+logtail_bp = Blueprint(
+    "logtail_bp", __name__, template_folder="templates", static_folder="static"
 )
 
 
 @logtail_bp.route("/getlog", methods=["POST", "GET"])
-def getlog():
+def getapplog():
     """currentProgram page."""
     return render_template(
         "indexLogTail.html.j2",

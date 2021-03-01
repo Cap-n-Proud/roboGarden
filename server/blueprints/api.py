@@ -50,7 +50,8 @@ def getStatus():
 
 def getAppLog():
     with open(config.Config.APPLOGFILE) as f:
-        data = json.load(f)
+        d = "[" + f.read()[:-2] + "]"
+        data = json.loads(d)
     return data
 
 
