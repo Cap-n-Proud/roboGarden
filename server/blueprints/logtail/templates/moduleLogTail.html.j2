@@ -1,8 +1,17 @@
 <table width="100%">
-    <tr>
-      <td>
-      </td>
-      <td>
-      </td>
-    </tr>
+  {% for key, value in log.items() recursive %}
+      <tr>
+        <td>
+      {{key}}
+        </td>
+        <td>
+        {{value}}
+        </td>
+        <td id="id-{{key}}">
+        </td>
+        <td>
+          <i class="fas fa-history" onclick="resetTime('{{key}}')"></i>
+        </td>
+      </tr>
+  {% endfor %}
 </table>

@@ -48,6 +48,12 @@ def getStatus():
     return data
 
 
+def getLog():
+    with open(config.Config.APPLOGFILE) as f:
+        data = json.load(f)
+    return data
+
+
 def sendArduinoCmd(cmd):
     print(cmd)
 
