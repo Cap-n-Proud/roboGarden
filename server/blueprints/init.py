@@ -64,16 +64,16 @@ def initialize():
     initSerial()
     currentProgram = getCurrentProgr()
     # Setup and start the thread to read serial port
-    # thread_lock = Lock()
-    # thread = threading.Thread(
-    #     target=read_from_port,
-    #     args=(
-    #         serial.Serial(
-    #             config.Hardware.SERIALPORT, config.Hardware.SERIALBAUD, timeout=None
-    #         ),
-    #     ),
-    # )
-    # thread.start()
+    thread_lock = Lock()
+    thread = threading.Thread(
+        target=readSer,
+        args=(
+            serial.Serial(
+                config.Hardware.SERIALPORT, config.Hardware.SERIALBAUD, timeout=None
+            ),
+        ),
+    )
+    thread.start()
 
     # checkL = RepeatedTimer(
     #     int(config.Hardware.CHECKLIGHTSINTERVAL), checkLights, currentProgram
@@ -90,19 +90,19 @@ def initialize():
     #     replace_existing=True,
     # )
     scheduler.start()
-    print(int(config.Hardware.READSERIALINTERVAL))
-    scheduler.add_job(
-        read_from_port,
-        "interval",
-        seconds=int(config.Hardware.READSERIALINTERVAL),
-        id="checkS",
-        args=[
-            serial.Serial(
-                config.Hardware.SERIALPORT, config.Hardware.SERIALBAUD, timeout=None
-            )
-        ],
-        replace_existing=True,
-    )
+
+    # scheduler.add_job(
+    #     readSer,
+    #     "interval",
+    #     seconds=int(10),
+    #     id="checkS",
+    #     args=[
+    #         serial.Serial(
+    #             config.Hardware.SERIALPORT, config.Hardware.SERIALBAUD, timeout=None
+    #         )
+    #     ],
+    #     replace_existing=True,
+    # )
     scheduler.add_job(
         checkLights,
         "interval",

@@ -60,6 +60,22 @@ def handle_data(data):
         )
 
 
+def readSer(ser):
+    buf = bytearray()
+    while True:
+        i = max(1, min(2048, ser.in_waiting))
+        data = ser.read(i)
+        i = data.find(b"\n")
+        if i >= 0:
+            r = buf + data[: i + 1]
+            buf[0:] = data[i + 1 :]
+            # print(r)
+            handle_data(r)
+            # return r
+        else:
+            buf.extend(data)
+
+
 # https://stackoverflow.com/questions/17553543/pyserial-non-blocking-read-loop
 def read_from_port(ser):
     except_counter = ""
@@ -67,18 +83,16 @@ def read_from_port(ser):
         # NB: for PySerial v3.0 or later, use property `in_waiting` instead of function `inWaiting()` below!
         try:
             # if incoming bytes are waiting to be read from the serial input bufferser.in_waiting
-            # time.sleep(0.2)
             data_str = ser.readline()
             # read the bytes and co nvert from binary array to ASCII
             handle_data(data_str)
-            # time.sleep(0.2)
+
         except serial.serialutil.SerialException:
             except_counter += 1
             LOG.warning(str(ser.serialutil.SerialException))
             if except_counter == 5:
-                break
                 time.sleep(1)
-
+                # break
         except serial.SerialTimeoutException:
             LOG.warning(str(serial.SerialTimeoutException))
 
