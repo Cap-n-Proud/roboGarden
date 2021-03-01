@@ -1,4 +1,4 @@
-from blueprints.api import getLog
+from blueprints.api import getAppLog
 from flask import Blueprint
 from flask import current_app as app
 from flask import render_template
@@ -19,5 +19,5 @@ def getlog():
         title="logtail",
         subtitle="Demonstration of Flask blueprints in action.",
         template="logtail-template",
-        log=getLog(),
+        log=getAppLog(),
     )

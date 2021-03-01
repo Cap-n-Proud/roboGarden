@@ -48,7 +48,7 @@ def getStatus():
     return data
 
 
-def getLog():
+def getAppLog():
     with open(config.Config.APPLOGFILE) as f:
         data = json.load(f)
     return data
