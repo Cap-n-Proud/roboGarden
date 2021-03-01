@@ -47,7 +47,7 @@
   "lightsOFF": "23:00",
   "progDescription": "Program for plant maturity, higher water and more light hours"
 }, {
-  "progID": "004",
+  "progID": "014",
   "progName": "NoPump - quiet hours, NO watering",
   "pumpStartEvery": 2700,
   "pumpRunTime": 20,
