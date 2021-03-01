@@ -1,16 +1,21 @@
+{#{"time": "2021-03-01 17:43:24,023", "name": "roboLog", "level": "INFO", "message": "Info from Arduino: Pump start"},
+{% for key in log.records  if  key.level == "INFO" %}
+#}
 <table width="100%">
-  {% for key, value in log.items() recursive %}
+  {% for key in log.records | reverse %}
+    {% if loop.index <= 30 %}
       <tr>
         <td>
-      {{key}}
+      {{key.time}}
         </td>
         <td>
-        {{value}}
-        </td>
-        <td id="id-{{key}}">
+            {{key.level}}
         </td>
         <td>
-          <i class="fas fa-history" onclick="resetTime('{{key}}')"></i>
+            {{key.message}}
+        </td>
+        <td>
         </td>
       </tr>
+      {% endif %}
   {% endfor %}</table>

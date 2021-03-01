@@ -1,5 +1,5 @@
 https://raspberrypi.stackexchange.com/questions/111817/serial-serialutil-serialexception-device-reports-readiness-to-read-but-returned
-
+for jnina2: https://jinja.palletsprojects.com/en/2.11.x/templates/#for
 class:
 https://github.com/pyserial/pyserial/issues/216
 https://stackoverflow.com/questions/1093598/pyserial-how-to-read-the-last-line-sent-from-a-serial-device#1093662
