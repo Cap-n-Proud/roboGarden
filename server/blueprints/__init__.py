@@ -60,6 +60,7 @@ def create_app():
         from .telemetry import telemetry
         from .maintenance import maintenance
         from .currentProgram import currentProgram
+        from .logtail import logtail
 
         from blueprints.init import initialize
 
@@ -71,6 +72,7 @@ def create_app():
         app.register_blueprint(telemetry.telemetry_bp)
         app.register_blueprint(currentProgram.currentProgram_bp)
         app.register_blueprint(maintenance.maintenance_bp)
+        app.register_blueprint(logTail.logtail_bp)
 
         # Compile static assets
         # compile_static_assets(assets)  # Execute logic

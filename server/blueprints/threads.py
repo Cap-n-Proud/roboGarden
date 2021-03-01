@@ -27,11 +27,6 @@ LOG = logging.getLogger(config.Config.APPLOGNAME)
 io = SocketIO(app)  # engineio_logger=True)
 
 
-def testThread(param):
-    # time.sleep(2)
-    print("Test thread ", param)
-
-
 # Broadcast info to every client
 def broadcastInfo(data):
     socketio.emit("info", data)
@@ -69,32 +64,10 @@ def readSer(ser):
         if i >= 0:
             r = buf + data[: i + 1]
             buf[0:] = data[i + 1 :]
-            # print(r)
             handle_data(r)
             # return r
         else:
             buf.extend(data)
-
-
-# https://stackoverflow.com/questions/17553543/pyserial-non-blocking-read-loop
-def read_from_port(ser):
-    except_counter = ""
-    while ser.is_open:
-        # NB: for PySerial v3.0 or later, use property `in_waiting` instead of function `inWaiting()` below!
-        try:
-            # if incoming bytes are waiting to be read from the serial input bufferser.in_waiting
-            data_str = ser.readline()
-            # read the bytes and co nvert from binary array to ASCII
-            handle_data(data_str)
-
-        except serial.serialutil.SerialException:
-            except_counter += 1
-            LOG.warning(str(ser.serialutil.SerialException))
-            if except_counter == 5:
-                time.sleep(1)
-                # break
-        except serial.SerialTimeoutException:
-            LOG.warning(str(serial.SerialTimeoutException))
 
 
 def write_to_ser(ser, message):
@@ -138,8 +111,6 @@ def activatePump(currentProgram):
         # We stop the thread so the pump continues pumping
         t = Timer(int(currentProgram["pumpRunTime"]), pumpStop)
         t.start()
-        # time.sleep(int(currentProgram["pumpRunTime"]))
-        # Pump OFF
 
 
 # Function to check the lights. If we are in the time range it will switch the light on and give the current proram RGB color
@@ -160,8 +131,7 @@ def checkLights(currentProgram):
                         "setBrightness " + str(currentProgram["lightBrightness"])
                     )
                     LOG.info("RGB set to " + str(currentProgram["RGB"]))
-                # if dataJSON["RGB"] != currentProgram["RGB"]:
-                # print("Different RGB")
+                    # We can place the override here in the if
                 if dataJSON["RGB"] != currentProgram["RGB"]:
                     arduinoCommand("setLightRGB " + str(currentProgram["RGB"]))
                     LOG.info("Lights set to " + str(currentProgram["lightBrightness"]))
