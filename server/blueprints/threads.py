@@ -30,7 +30,6 @@ io = SocketIO(app)  # engineio_logger=True)
 # Broadcast info to every client
 def broadcastInfo(data):
     socketio.emit("info", data)
-    # print(data + " sent")
 
 
 def handle_data(data):
@@ -111,6 +110,9 @@ def activatePump(currentProgram):
         # We stop the thread so the pump continues pumping
         t = Timer(int(currentProgram["pumpRunTime"]), pumpStop)
         t.start()
+        var = "something"
+        if var == "something":
+            t.cancel()
 
 
 # Function to check the lights. If we are in the time range it will switch the light on and give the current proram RGB color
