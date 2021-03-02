@@ -22,10 +22,6 @@ from flask import (
     url_for,
 )
 
-# status = getStatus()
-# currentProgram = getCurrentProgram()
-# programs = getPrograms()
-
 # Blueprint Configuration
 cmd_bp = Blueprint("cmd", __name__, template_folder="templates", static_folder="static")
 
@@ -36,8 +32,6 @@ def plant():
     newPlant(req)
     plantsDB = getPlantsDB(app)
     status = getStatus()
-    # return make_response("Test worked!", 200)
-    # print(config.Config.ASSETS_FOLDER)
     return redirect(url_for("status_bp.status", message="OK"))
 
 
@@ -73,3 +67,23 @@ def newPlantedD():
 @cmd_bp.route("/api/getlog")
 def getlog():
     return send_file("../" + config.Config.APPLOGFILE, as_attachment=True)
+
+
+import zipfile
+import os
+
+
+@cmd_bp.route("/api/download_all")
+def download_all():
+    zipf = zipfile.ZipFile("assets.zip", "w", zipfile.ZIP_DEFLATED)
+    for root, dirs, files in os.walk("assets/"):
+        for file in files:
+            zipf.write("assets/" + file)
+    zipf.close()
+
+    return send_file(
+        "../assets.zip",
+        mimetype="zip",
+        attachment_filename="assets.zip",
+        as_attachment=True,
+    )
