@@ -114,7 +114,7 @@ def activatePump(currentProgram):
         if var == "something":
             t.cancel()
         # This is a workaround as the lights change color after the pump starts. Need to understand why.
-        arduinoCommand("setLightRGB 0 0 255")
+        arduinoCommand("setBrightness 50")
 
 
 # Function to check the lights. If we are in the time range it will switch the light on and give the current proram RGB color
