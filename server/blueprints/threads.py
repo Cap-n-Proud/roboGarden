@@ -108,11 +108,13 @@ def activatePump(currentProgram):
         arduinoCommand("pumpStart")
         LOG.debug("Pump is ON for " + str(currentProgram["pumpRunTime"]))
         # We stop the thread so the pump continues pumping
-        t = Timer(int(currentProgram["pumpRunTime"]), pumpStop)
-        t.start()
-        var = "something"
-        if var == "something":
-            t.cancel()
+        # t = Timer(int(currentProgram["pumpRunTime"]), pumpStop)
+        # t.start()
+        time.sleep(int(currentProgram["pumpRunTime"]))
+        # var = "something"
+        # if var == "something":
+        #     t.cancel()
+
         # This is a workaround as the lights change color after the pump starts. Need to understand why.
         arduinoCommand("setBrightness 50")
 
