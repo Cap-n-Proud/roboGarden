@@ -73,7 +73,7 @@ import zipfile
 import os
 
 
-@cmd_bp.route("/api/download_all")
+@cmd_bp.route("/api/download_assets")
 def download_all():
     zipf = zipfile.ZipFile("assets.zip", "w", zipfile.ZIP_DEFLATED)
     for root, dirs, files in os.walk("assets/"):
