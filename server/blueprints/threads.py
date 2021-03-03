@@ -113,12 +113,12 @@ def activatePump(currentProgram):
         arduinoCommand("pumpStart")
         LOG.debug("Pump is ON for " + str(currentProgram["pumpRunTime"]))
         # We stop the thread so the pump continues pumping
-        # t = Timer(int(currentProgram["pumpRunTime"]), pumpStop)
-        # t.start()
-        # l = Timer(int(currentProgram["pumpRunTime"]) + 1, setLightRGB, [0, 0, 255])
-        # l.start()
-        time.sleep(int(currentProgram["pumpRunTime"]))
-        arduinoCommand("setLightRGB " + str(0) + " " + str(0) + " " + str(255))
+        t = Timer(int(currentProgram["pumpRunTime"]), pumpStop)
+        t.start()
+        l = Timer(int(currentProgram["pumpRunTime"]) + 1, setLightRGB, [0, 0, 255])
+        l.start()
+        # time.sleep(int(currentProgram["pumpRunTime"]))
+        # arduinoCommand("setLightRGB " + str(0) + " " + str(0) + " " + str(255))
         # var = "something"
         # if var == "something":
         #     t.cancel()
