@@ -1,4 +1,4 @@
-from blueprints.threads import arduinoCommand
+from blueprints.threads import arduinoCommand, setLightRGB
 from blueprints.api import (
     newPlant,
     getStatus,
@@ -37,8 +37,15 @@ def plant():
 
 @cmd_bp.route("/api/arduinocmd", methods=["POST", "GET"])
 def arduinocmd():
+    from threading import Timer
+
     req = request.get_json()
     arduinoCommand(req["command"])
+    cmd = req["command"].split()
+
+    if cmd[0] == "pumpRunFor":
+        l = Timer(int(cmd[1]) + 1, setLightRGB, [0, 0, 255])
+        l.start()
     return redirect(url_for("control_bp.control", message="OK"))
 
 

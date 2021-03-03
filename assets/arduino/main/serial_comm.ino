@@ -101,12 +101,23 @@ bool pumpStart(Commander &Cmdr) {
   digitalWrite(PUMP_PIN,LOW);
   pumpON = true;
   sendInfo(String("Pump start"));
+  //setRGBLED(0,0,255);
   return 0;
 }
 
 bool removeOverride() {
   pumpOverride = false;
 
+}
+
+
+void setRGBLED(R,G,B){
+  RGBLED[0] = R;
+  RGBLED[1] = G;
+  RGBLED[2] = B;
+  leds[0] = CRGB(RGBLED[0], RGBLED[1], RGBLED[2]);
+  FastLED.show();
+  sendInfo(String("LED set to RGB: ") + RGBLED[0] + " " + RGBLED[1] + " " + RGBLED[2]); 
 }
 
 bool pumpRunFor(Commander &Cmdr) {
@@ -118,6 +129,8 @@ bool pumpRunFor(Commander &Cmdr) {
     timer.in(myInt * 1000 , pumpStop);
     timer.in(myInt * 1000 - 1, removeOverride);
     sendInfo(String("Pump started for: ") + myInt + String(" seconds"));
+    //setRGBLED(0,0,255);
+ 
   }
   else
   { sendInfo(String("Command pumpRunFor failed: no duration supplied"));
@@ -160,8 +173,7 @@ bool sysInfo(Commander &Cmdr){
   String line = "";
   String commands ="pumpStart, pumpStop, pumpRunFor 2, setBrightness 15, setLightRGB 23 10 115, stopAll, LEDShow 5 0.2 sysInfo";
   line = String("{\"version\":") + VERSION + ",\"baud rate\":" + "\"" + BAUDRATE + "\"" ",\"commands\":" + "\"" + commands + "\"}";
-
-
+  
   Serial.println(line);
   delay(100);
 

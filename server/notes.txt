@@ -29,6 +29,8 @@ ExecStart=/home/pi/.local/bin/gunicorn -b 0.0.0.0:5000 wsgi:app
 WantedBy=multi-user.target
 
 
+gunicorn wsgi:app  --bind 0.0.0.0:8000 --workers 1 --timeout 300000 --graceful-timeout 300000 --keep-alive 300000
+
 
 
 

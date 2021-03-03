@@ -98,6 +98,11 @@ def pumpStop():
     LOG.debug("Pump is OFF")
 
 
+def setLightRGB(R, G, B):
+    arduinoCommand("setLightRGB " + str(R) + " " + str(G) + " " + str(B))
+    LOG.debug("Light set to " + str(R) + " " + str(G) + " " + str(B))
+
+
 # https://www.askpython.com/python/examples/python-wait-for-a-specific-time
 # This will be called to regulate the pump behaviour. TODO need to add thread and parameterd
 def activatePump(currentProgram):
@@ -110,13 +115,15 @@ def activatePump(currentProgram):
         # We stop the thread so the pump continues pumping
         # t = Timer(int(currentProgram["pumpRunTime"]), pumpStop)
         # t.start()
+        # l = Timer(int(currentProgram["pumpRunTime"]) + 1, setLightRGB, [0, 0, 255])
+        # l.start()
         time.sleep(int(currentProgram["pumpRunTime"]))
+        arduinoCommand("setLightRGB " + str(0) + " " + str(0) + " " + str(255))
         # var = "something"
         # if var == "something":
         #     t.cancel()
 
         # This is a workaround as the lights change color after the pump starts. Need to understand why.
-        arduinoCommand("setBrightness 50")
 
 
 # Function to check the lights. If we are in the time range it will switch the light on and give the current proram RGB color
