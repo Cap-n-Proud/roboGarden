@@ -1,8 +1,8 @@
 [{
   "progID": "001",
   "progName": "Default - quiet hours",
-  "pumpStartEvery": 3600,
-  "pumpRunTime": 10,
+  "pumpStartEvery": 1800,
+  "pumpRunTime": 15,
   "pumpON": "08:00",
   "pumpOFF": "22:00",
   "lightBrightness": 255,
