@@ -14,7 +14,8 @@ telemetry_bp = Blueprint(
     "telemetry_bp", __name__, template_folder="templates", static_folder="static"
 )
 
-
+# Telemetry is the default view
+@telemetry_bp.route("/", methods=["POST", "GET"])
 @telemetry_bp.route("/telemetry", methods=["POST", "GET"])
 def telemetry():
     """Telemetry page."""
