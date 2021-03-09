@@ -12,6 +12,7 @@ class Config:
     APPLOGFILE = "logs/app.log"
     APPLOGNAME = "roboLog"
     WERKZEUGLOGFILE = "logs/werkzeug.log"
+    DEBUGLOGFILE = "logs/debug.log"
     INFOTAG = "I"
     TELEMETRYTAG = "T"
     LOGFORMAT = "%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s"

@@ -14,7 +14,6 @@ import config
 import json
 
 from blueprints.api import getCurrentProgr
-from blueprints.L_events import *
 from blueprints.threads import *
 from flask import current_app as app
 

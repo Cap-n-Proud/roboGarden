@@ -1,0 +1,37 @@
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:No jobs; waiting until a job is added
+INFO:apscheduler.scheduler:Added job "checkLights" to job store "default"
+INFO:apscheduler.scheduler:Added job "activatePump" to job store "default"
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2021-03-09 23:42:56.408437+01:00 (in 4.999171 seconds)
+INFO:roboLog:System started. System time is: 23:42
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2021-03-09 23:42:56.408437+01:00 (in 4.998637 seconds)
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Growth - quiet hours, low watering, more red light', 'pumpStartEvery': 7200, 'pumpRunTime': 15, 'pumpON': '08:00', 'pumpOFF': '21:00', 'lightBrightness': 255, 'RGB': '255 150 150', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program seeds to small plants, less water.'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-09 23:42:56 CET)" (scheduled at 2021-03-09 23:42:56.408437+01:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2021-03-09 23:43:01.408437+01:00 (in 4.998878 seconds)
+INFO:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-09 23:43:01 CET)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2021-03-09 23:43:06.408437+01:00 (in 4.996446 seconds)
+INFO:apscheduler.executors.default:Running job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-09 23:43:06 CET)" (scheduled at 2021-03-09 23:43:01.408437+01:00)
+INFO:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-09 23:43:06 CET)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2021-03-09 23:43:11.408437+01:00 (in 4.998275 seconds)
+INFO:apscheduler.executors.default:Running job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-09 23:43:11 CET)" (scheduled at 2021-03-09 23:43:06.408437+01:00)
+INFO:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-09 23:43:11 CET)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2021-03-09 23:43:16.408437+01:00 (in 4.998142 seconds)
+INFO:apscheduler.executors.default:Running job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-09 23:43:16 CET)" (scheduled at 2021-03-09 23:43:11.408437+01:00)
+INFO:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-09 23:43:16 CET)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2021-03-09 23:43:21.408437+01:00 (in 4.999114 seconds)
+INFO:apscheduler.executors.default:Running job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-09 23:43:21 CET)" (scheduled at 2021-03-09 23:43:16.408437+01:00)
+INFO:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-09 23:43:21 CET)" executed successfully
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 23:55
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Growth - quiet hours, low watering, more red light', 'pumpStartEvery': 7200, 'pumpRunTime': 15, 'pumpON': '08:00', 'pumpOFF': '21:00', 'lightBrightness': 255, 'RGB': '255 150 150', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program seeds to small plants, less water.'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]

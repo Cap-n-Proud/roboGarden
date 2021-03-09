@@ -5,10 +5,10 @@ from flask_socketio import SocketIO
 import config
 import logging
 
-from flask.logging import default_handler
+# from flask.logging import default_handler
 
 # https://stackoverflow.com/questions/11232230/logging-to-two-files-with-different-settings#11233293
-formatter = logging.Formatter("%(asctime)s %(levelname)s %(message)s")
+# formatter = logging.Formatter("%(asctime)s %(levelname)s %(message)s")
 
 
 def setup_logger(name, log_file, level=logging.INFO):
@@ -31,14 +31,39 @@ def setup_logger(name, log_file, level=logging.INFO):
     return logger
 
 
+def setupDebugLog(app):
+    import sys
+
+    logging.basicConfig(filename="logs/debug.log", level=logging.DEBUG)
+    handler = logging.StreamHandler(stream=sys.stdout)
+    handler.setLevel(logging.ERROR)
+    handler.formatter = logging.Formatter(
+        fmt=u"%(asctime)s level=%(levelname)s %(message)s", datefmt="%Y-%m-%dT%H:%M:%SZ"
+    )
+    app.logger.addHandler(handler)
+
+
+import sys
+
+
 def create_app():
     roboG = setup_logger(config.Config.APPLOGNAME, config.Config.APPLOGFILE)
-    log = logging.getLogger("werkzeug")
-    log.setLevel(logging.ERROR)
+    # log = logging.getLogger("werkzeug")
+    # log.setLevel(logging.ERROR)
 
     """Create Flask application."""
     app = Flask(__name__, instance_relative_config=False)
+    # setupDebugLog(app)
     # app.config.from_object("config.Config")
+    # app.logger.setLevel(logging.DEBUG)
+    del app.logger.handlers[:]
+    logging.basicConfig(filename="logs/debug.log", level=logging.ERROR)
+    handler = logging.StreamHandler(stream=sys.stdout)
+    handler.setLevel(logging.ERROR)
+    handler.formatter = logging.Formatter(
+        fmt=u"%(asctime)s level=%(levelname)s %(message)s", datefmt="%Y-%m-%dT%H:%M:%SZ"
+    )
+    app.logger.addHandler(handler)
     # Using a production configuration
     app.config.from_object("config.ProdConfig")
     assets = Environment()  # Create an assets environment
