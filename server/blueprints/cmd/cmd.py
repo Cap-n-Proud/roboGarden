@@ -49,6 +49,14 @@ def arduinocmd():
     return redirect(url_for("control_bp.control", message="OK"))
 
 
+@cmd_bp.route("/api/restartserver", methods=["POST", "GET"])
+def restartserver():
+    req = request.get_json()
+    command = "sudo service robogarden restart"
+    c = os.system(command)
+    return redirect(url_for("control_bp.control", message="Restarting server"))
+
+
 @cmd_bp.route("/api/changeprogram", methods=["POST", "GET"])
 def changeprogram():
     req = request.get_json()

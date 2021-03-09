@@ -62,6 +62,16 @@ for (name in p) {
 }
 }
 
+function restartServer(){
+  var cmd = "restartserver"
+  if (confirm('Do you want to restart the server?')) {
+      postCommand(cmd, 'restartserver');
+      } else {
+          return false;
+      }
+
+}
+
 function postCommand(cmd, location) {
   const URL = `${window.origin}/api/` + location
   // post body data

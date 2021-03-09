@@ -12,6 +12,9 @@ https://tranindigo.github.io/article-django-gunicorn.html
 https://bonnieplants.com/product/dragon-cayenne-pepper/
 
 
+Serial port
+https://forum.arduino.cc/index.php?topic=495039.0
+
  /etc/systemd/system/
 
 

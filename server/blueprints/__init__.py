@@ -34,7 +34,7 @@ def setup_logger(name, log_file, level=logging.INFO):
 def create_app():
     roboG = setup_logger(config.Config.APPLOGNAME, config.Config.APPLOGFILE)
     log = logging.getLogger("werkzeug")
-    log.setLevel(logging.ERROR)
+    log.setLevel(logging.INFO)
 
     """Create Flask application."""
     app = Flask(__name__, instance_relative_config=False)
