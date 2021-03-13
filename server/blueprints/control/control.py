@@ -4,6 +4,7 @@ from blueprints.api import getPlantsDB, getPrograms, getCurrentProgr
 from flask import render_template
 import config
 from blueprints.init import timeStarted
+from flask_login import login_required, current_user
 
 # Blueprint Configuration
 control_bp = Blueprint(
@@ -12,6 +13,7 @@ control_bp = Blueprint(
 
 
 @control_bp.route("/control", methods=["POST", "GET"])
+@login_required
 def control():
     """Control page."""
     programs = getPrograms()

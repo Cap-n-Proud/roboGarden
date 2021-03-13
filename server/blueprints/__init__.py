@@ -4,11 +4,16 @@ from flask_assets import Environment
 from flask_socketio import SocketIO
 import config
 import logging
+from flask_sqlalchemy import SQLAlchemy
+from flask_login import LoginManager
 
 # from flask.logging import default_handler
 
 # https://stackoverflow.com/questions/11232230/logging-to-two-files-with-different-settings#11233293
 # formatter = logging.Formatter("%(asctime)s %(levelname)s %(message)s")
+# init SQLAlchemy so we can use it later in our models
+db = SQLAlchemy()
+login_manager = LoginManager()
 
 
 def setup_logger(name, log_file, level=logging.INFO):
@@ -53,9 +58,23 @@ def create_app():
 
     """Create Flask application."""
     app = Flask(__name__, instance_relative_config=False)
+    app.config.from_object("config.Config")
     # setupDebugLog(app)
     # app.config.from_object("config.Config")
-    # app.logger.setLevel(logging.DEBUG)
+    import random, string
+
+    app.config["SECRET_KEY"] = "".join(
+        [
+            random.SystemRandom().choice(
+                "{}{}{}".format(string.ascii_letters, string.digits, string.punctuation)
+            )
+            for i in range(50)
+        ]
+    )
+    # print(app.config["SECRET_KEY"])
+    app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = "False"
+    app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///db.sqlite"
+
     del app.logger.handlers[:]
     logging.basicConfig(filename="logs/debug.log", level=logging.ERROR)
     handler = logging.StreamHandler(stream=sys.stdout)
@@ -86,10 +105,13 @@ def create_app():
         from .maintenance import maintenance
         from .currentProgram import currentProgram
         from .logtail import logtail
+        from .auth import auth
 
         from blueprints.init import initialize
 
         initialize()
+        # Create Database Models
+        # db.create_all()
 
         app.register_blueprint(status.status_bp)
         app.register_blueprint(control.control_bp)
@@ -98,8 +120,20 @@ def create_app():
         app.register_blueprint(currentProgram.currentProgram_bp)
         app.register_blueprint(maintenance.maintenance_bp)
         app.register_blueprint(logtail.logtail_bp)
+        app.register_blueprint(auth.auth_bp)
 
-        # Compile static assets
-        # compile_static_assets(assets)  # Execute logic
+        db.init_app(app)
+
+        login_manager.login_view = "auth_bp.login"
+        login_manager.init_app(app)
+        from blueprints.auth.models import User
+
+        @login_manager.user_loader
+        def load_user(user_id):
+            # since the user_id is just the primary key of our user table, use it in the query for the user
+            return User.query.get(int(user_id))
+
+        # app.register_blueprint(main_blueprint)  # Compile static assets
+        # # compile_static_assets(assets)  # Execute logic
 
         return app

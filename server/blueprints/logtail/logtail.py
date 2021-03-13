@@ -4,6 +4,7 @@ from flask import current_app as app
 from flask import render_template
 import config
 from blueprints.init import timeStarted
+from flask_login import login_required, current_user
 
 # Blueprint Configuration
 logtail_bp = Blueprint(
@@ -12,6 +13,7 @@ logtail_bp = Blueprint(
 
 
 @logtail_bp.route("/getlog", methods=["POST", "GET"])
+@login_required
 def getapplog():
     """currentProgram page."""
     return render_template(

@@ -21,12 +21,14 @@ from flask import (
     session,
     url_for,
 )
+from flask_login import login_required, current_user
 
 # Blueprint Configuration
 cmd_bp = Blueprint("cmd", __name__, template_folder="templates", static_folder="static")
 
 
 @cmd_bp.route("/api/plant", methods=["POST", "GET"])
+@login_required
 def plant():
     req = request.get_json()
     newPlant(req)
@@ -36,6 +38,7 @@ def plant():
 
 
 @cmd_bp.route("/api/arduinocmd", methods=["POST", "GET"])
+@login_required
 def arduinocmd():
     from threading import Timer
 
@@ -50,6 +53,7 @@ def arduinocmd():
 
 
 @cmd_bp.route("/api/restartserver", methods=["POST", "GET"])
+@login_required
 def restartserver():
     req = request.get_json()
     command = "sudo service robogarden restart"
@@ -58,6 +62,7 @@ def restartserver():
 
 
 @cmd_bp.route("/api/changeprogram", methods=["POST", "GET"])
+@login_required
 def changeprogram():
     req = request.get_json()
     changePrg(req["command"])
@@ -73,6 +78,7 @@ def rMaintInterval():
 
 
 @cmd_bp.route("/api/newPlantedDate", methods=["POST", "GET"])
+@login_required
 def newPlantedD():
     req = request.get_json()
     newPlantedDate(req["command"])
@@ -80,6 +86,7 @@ def newPlantedD():
 
 
 @cmd_bp.route("/api/getlog")
+@login_required
 def getlog():
     return send_file("../" + config.Config.APPLOGFILE, as_attachment=True)
 
@@ -89,6 +96,7 @@ import os
 
 
 @cmd_bp.route("/api/download_assets")
+@login_required
 def download_assets():
     zipf = zipfile.ZipFile("assets.zip", "w", zipfile.ZIP_DEFLATED)
     for root, dirs, files in os.walk("assets/"):

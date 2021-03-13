@@ -3,6 +3,7 @@ from flask import Blueprint
 from flask import current_app as app
 from flask import render_template
 import config
+from flask_login import login_required, current_user
 
 # status = getStatus()
 # currentProgram = getCurrentProgram()
@@ -15,6 +16,7 @@ maintenance_bp = Blueprint(
 
 
 @maintenance_bp.route("/maintenance", methods=["POST", "GET"])
+@login_required
 def maintenance():
     """Maintenance page."""
     return render_template(

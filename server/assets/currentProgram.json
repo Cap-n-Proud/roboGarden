@@ -1,13 +1,13 @@
 {
     "progID": "004",
-    "progName": "Growth - quiet hours, low watering, more red light",
-    "pumpStartEvery": 7200,
-    "pumpRunTime": 15,
+    "progName": "Harvest - quiet hours, high watering",
+    "pumpStartEvery": 1800,
+    "pumpRunTime": 25,
     "pumpON": "08:00",
-    "pumpOFF": "21:00",
+    "pumpOFF": "23:00",
     "lightBrightness": 255,
-    "RGB": "255 150 150",
+    "RGB": "255 150 255",
     "lightsON": "06:00",
     "lightsOFF": "23:00",
-    "progDescription": "Program seeds to small plants, less water."
+    "progDescription": "Program for plant maturity, higher water and more light hours"
 }
