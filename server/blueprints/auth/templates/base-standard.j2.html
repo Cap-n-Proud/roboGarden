@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {% include "head-standard.j2.html" %}
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="starter-template.css" rel="stylesheet">
+</head>
+
+<body>
+  {% include "nav-standard.j2.html" %}
+  <main class="container">
+    {% block content %}
+    {% endblock %}
+  </main><!-- /.container -->
+
+
+  {% include "footer-standard.j2.html" %}
+
+  <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

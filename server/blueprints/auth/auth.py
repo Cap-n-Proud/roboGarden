@@ -15,6 +15,11 @@ auth_bp = Blueprint(
 )
 
 
+@auth_bp.route("/test")
+def test():
+    return render_template("test.j2.html")
+
+
 @auth_bp.route("/login")
 def login():
     return render_template("login.j2.html")
