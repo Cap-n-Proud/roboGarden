@@ -1,7 +1,6 @@
 """Flask configuration."""
 # from os import environ, path
 # from dotenv import load_dotenv
-import random, string
 
 
 class Config:
@@ -20,6 +19,8 @@ class Config:
     CHECKHARVESTINTERVAL = 86400
     TIMEZONE = "Europe/Zurich"
     # SECRET_KEY = environ.get("SECRET_KEY")
+    import random, string
+
     SECRET_KEY = "".join(
         [
             random.SystemRandom().choice(
