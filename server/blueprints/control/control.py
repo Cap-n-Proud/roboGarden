@@ -13,13 +13,13 @@ control_bp = Blueprint(
 
 
 @control_bp.route("/control", methods=["POST", "GET"])
-@login_required
+# @login_required
 def control():
     """Control page."""
     programs = getPrograms()
     currentProgr = getCurrentProgr()
     return render_template(
-        "indexControl.html.j2",
+        "control-index.html.j2",
         title="Control",
         subtitle="Use this to control lights, pump and other features.",
         template="control-template",

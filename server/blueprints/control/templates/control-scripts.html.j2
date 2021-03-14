@@ -1,0 +1,129 @@
+{% block scr %}
+<script>
+  var socket = io();
+  document.getElementById("showTime").addEventListener("click", LEDShow);
+  document.getElementById("changeProgr").addEventListener("click", changeProgram);
+
+  //Load selected proram to arduino
+  function changeProgram() {
+    var prg = document.getElementById("PRGsel").value;
+    //console.log(prg)
+    postCommand(prg, 'changeprogram')
+
+  }
+
+  //Starts a LED show!
+  function LEDShow(checkboxElem) {
+    var d = document.getElementById("LEDShowDur").value;
+    var f = document.getElementById("LEDShowFreq").value;
+    var cmd = "LEDShow " + d + " " + f;
+    postCommand(cmd, 'arduinocmd')
+    //console.log(cmd)
+  }
+
+  function hexTorgb(hex) {
+    return ['0x' + hex[1] + hex[2] | 0, '0x' + hex[3] + hex[4] | 0, '0x' + hex[5] + hex[6] | 0];
+  }
+
+  function R_G_BtoHEX(red, green, blue) {
+    red = red < 0 ? 0 : red > 255 ? 255 : red;
+    green = green < 0 ? 0 : green > 255 ? 255 : green;
+    blue = blue < 0 ? 0 : blue > 255 ? 255 : blue;
+
+    return "#" +
+      ("0" + parseInstatust(red, 10).toString(16)).slice(-2) +
+      ("0" + parseInt(green, 10).toString(16)).slice(-2) +
+      ("0" + parseInt(blue, 10).toString(16)).slice(-2);
+  }
+
+  socket.on(TELEMETRYTAG, function(msg, cb) {
+    //document.getElementById("telemetryBox").innerHTML = msg.RGB + " @   " + msg.brightness
+
+    var x = msg.RGB.split(" ");
+    document.getElementById("LEDColor").value = R_G_BtoHEX(x[0], x[1], x[2]);
+    document.getElementById("LEDBrightness").value = msg.brightness
+
+    if (cb)
+      cb();
+  });
+
+  function loadProgram(ID) {
+    //console.log(programs.find(item => item.progID === ID))
+    var p = programs.find(item => item.progID === ID)
+    var PrgContainer = document.getElementById("progLabel");
+    PrgContainer.innerHTML = ""
+    for (name in p) {
+      var li = document.createElement("li");
+      li.innerHTML = name + ' ' + p[name];
+      PrgContainer.appendChild(li);
+
+    }
+  }
+
+  function restartServer() {
+    var cmd = "restartserver"
+    if (confirm('Do you want to restart the server?')) {
+      postCommand(cmd, 'restartserver');
+    } else {
+      return false;
+    }
+
+  }
+
+  function postCommand(cmd, location) {
+    const URL = `${window.origin}/api/` + location
+    // post body data
+    const command = {
+      command: cmd
+    };
+
+    // request options
+    const options = {
+      method: 'POST',
+      body: JSON.stringify(command),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    }
+    // send POST request
+    fetch(URL, options)
+      .then(res => res.json())
+  }
+
+  //Change pump status based on the checkbox TODO based on the arduino feedback
+  function pumpControl() {
+    var x = document.getElementById("pump");
+    var timer = document.getElementById("pumpPulse").value;
+    var cmd = "pumpRunFor" + " " + timer
+    postCommand(cmd, 'arduinocmd')
+    // console.log("PUMP START")
+  }
+
+
+  function hexTorgb(hex) {
+    return ['0x' + hex[1] + hex[2] | 0, '0x' + hex[3] + hex[4] | 0, '0x' + hex[5] + hex[6] | 0];
+  }
+
+  function R_G_BtoHEX(red, green, blue) {
+    red = red < 0 ? 0 : red > 255 ? 255 : red;
+    green = green < 0 ? 0 : green > 255 ? 255 : green;
+    blue = blue < 0 ? 0 : blue > 255 ? 255 : blue;
+
+    return "#" +
+      ("0" + parseInt(red, 10).toString(16)).slice(-2) +
+      ("0" + parseInt(green, 10).toString(16)).slice(-2) +
+      ("0" + parseInt(blue, 10).toString(16)).slice(-2);
+  }
+
+  function setColor(newColor) {
+    RGB = hexTorgb(newColor)
+    var cmd = "setLightRGB " + RGB[0] + " " + RGB[1] + " " + RGB[2]
+    postCommand(cmd, 'arduinocmd')
+  }
+
+  function setBrightness(newBrightness) {
+    var cmd = "setBrightness " + newBrightness
+    postCommand(cmd, 'arduinocmd')
+  }
+</script>
+{% endblock scr %}
