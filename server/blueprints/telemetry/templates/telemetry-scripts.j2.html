@@ -1,0 +1,135 @@
+{% block scr %}
+<script type="text/javascript">
+  INFOTAG = "{{INFOTAG}}"
+  TELEMETRYTAG = "{{TELEMETRYTAG}}"
+  timeStarted = "{{timeStarted}}"
+</script>
+<script>
+  //Calls functions to load defaults and info.
+  document.addEventListener("DOMContentLoaded", function() {
+
+
+  });
+
+  window.onload = function() {
+    // Month Day, Year Hour:Minute:Second, id-of-element-container
+    //timeStarted = "2021-02-13 21:00:43.405472"
+    countUpFromTime(timeStarted, 'countup1'); // ****** Change this line!
+    updateProgram();
+  };
+  var myT = setInterval(myTimer, 1000);
+
+  function myTimer() {
+    var d = new Date();
+    document.getElementById("timer").innerHTML = d.toLocaleTimeString();
+  }
+
+  var socket = io();
+  var telemetry = {
+    'type': 'N/A',
+    'pumpON': 0,
+    'RGB': '0 0 0',
+    'brightness': 0
+  }
+
+  function hexTorgb(hex) {
+    return ['0x' + hex[1] + hex[2] | 0, '0x' + hex[3] + hex[4] | 0, '0x' + hex[5] + hex[6] | 0];
+  }
+
+  /*
+   * Basic Count Up from Date and Time
+   * Author: @mrwigster / https://guwii.com/bytes/count-date-time-javascript/
+   */
+
+  function countUpFromTime(countFrom, id) {
+    countFrom = new Date(countFrom).getTime();
+    var now = new Date(),
+      countFrom = new Date(countFrom),
+      timeDifference = (now - countFrom);
+
+    var secondsInADay = 60 * 60 * 1000 * 24,
+      secondsInAHour = 60 * 60 * 1000;
+
+    days = Math.floor(timeDifference / (secondsInADay) * 1);
+    hours = Math.floor((timeDifference % (secondsInADay)) / (secondsInAHour) * 1);
+    mins = Math.floor(((timeDifference % (secondsInADay)) % (secondsInAHour)) / (60 * 1000) * 1);
+    secs = Math.floor((((timeDifference % (secondsInADay)) % (secondsInAHour)) % (60 * 1000)) / 1000 * 1);
+
+    var idEl = document.getElementById(id);
+    idEl.getElementsByClassName('days')[0].innerHTML = days;
+    idEl.getElementsByClassName('hours')[0].innerHTML = hours;
+    idEl.getElementsByClassName('minutes')[0].innerHTML = mins;
+    idEl.getElementsByClassName('seconds')[0].innerHTML = secs;
+
+    clearTimeout(countUpFromTime.interval);
+    countUpFromTime.interval = setTimeout(function() {
+      countUpFromTime(countFrom, id);
+    }, 1000);
+  }
+
+
+  function R_G_BtoHEX(red, green, blue) {
+    red = red < 0 ? 0 : red > 255 ? 255 : red;
+    green = green < 0 ? 0 : green > 255 ? 255 : green;
+    blue = blue < 0 ? 0 : blue > 255 ? 255 : blue;
+
+    return "#" +
+      ("0" + parseInt(red, 10).toString(16)).slice(-2) +
+      ("0" + parseInt(green, 10).toString(16)).slice(-2) +
+      ("0" + parseInt(blue, 10).toString(16)).slice(-2);
+  }
+
+  //Capture and publish the information stream
+  socket.on(INFOTAG, function(msg, cb) {
+    document.getElementById("infoBox").innerHTML = msg;
+    if (cb)
+      cb();
+  });
+
+  // Capture and publish the telemetry stream and create the global variable telemetry
+  socket.on(TELEMETRYTAG, function(msg, cb) {
+    updatePumpStatus(msg);
+    updateLightsStatus(msg);
+    // var elem = document.getElementById("telemetry");
+    // elem.innerHTML = "";
+    // for (name in msg) {
+    //   elem.innerHTML = elem.innerHTML + name + ' ' + msg[name] + " ";
+    //
+    // }
+    if (cb)
+      cb();
+  });
+
+  //Capture and publish the pump status
+  function updatePumpStatus(telemetry) {
+    var x = document.getElementById("pump");
+    if (telemetry.pumpON) {
+      //document.getElementById("pump-text").innerHTML = "ON";
+      document.getElementById("pump").setAttribute("style", "color: RoyalBlue");
+    } else {
+      //  document.getElementById("pump-text").innerHTML = "OFF";
+      document.getElementById("pump").setAttribute("style", "color: LightGray");
+    }
+  }
+
+  //Capture and publish the light RGB color
+  function updateLightsStatus(telemetry) {
+    var rgb = telemetry['RGB'].split(" ");
+    hexColor = R_G_BtoHEX(rgb[0], rgb[1], rgb[2])
+
+    document.getElementById("LEDContainer").style.background = R_G_BtoHEX(rgb[0], rgb[1], rgb[2]);
+    document.getElementById("LED").style.color = R_G_BtoHEX(0.6 * rgb[0], 0.6 * rgb[1], 0.6 * rgb[2]);
+    document.getElementById("RGBColor").innerHTML = telemetry['RGB'] + " @ " + Math.floor(100 * telemetry['brightness'] / 255) + "%";
+  }
+
+
+
+  function updateProgram() {
+    var currentProgram = JSON.parse('{{ currentProgram | tojson | safe}}');
+
+    document.getElementById("progID").innerHTML = currentProgram.progID;
+    document.getElementById("progName").innerHTML = currentProgram.progName;
+    document.getElementById("progDescription").innerHTML = currentProgram.progDescription;
+  }
+</script>
+{% endblock scr %}

@@ -555,3 +555,776 @@ Traceback (most recent call last):
 KeyError: 'RGB'
 INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
 INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 18:29
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-14 18:30:07 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 147, in checkLights
+    if dataJSON["RGB"] != currentProgram["RGB"]:
+KeyError: 'RGB'
+ERROR:blueprints:Exception on /telemetry [GET]
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/telemetry/telemetry.py", line 24, in telemetry
+    return render_template(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: indexTelemetry.j2.html
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 18:30
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+ERROR:blueprints:Exception on /telemetry [GET]
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/telemetry/telemetry.py", line 24, in telemetry
+    return render_template(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/telemetry/templates/telemetry-index.j2.html", line 1, in top-level template code
+    {% extends "base-standard.j2.html" %}
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/templates/base-standard.j2.html", line 5, in top-level template code
+    {% include "header-standard.j2.html" %}
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/templates/header-standard.j2.html", line 23, in template
+    {% block header-page %}
+jinja2.exceptions.TemplateSyntaxError: Block names in Jinja have to be valid Python identifiers and may not contain hyphens, use an underscore instead.
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-14 18:31:11 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 147, in checkLights
+    if dataJSON["RGB"] != currentProgram["RGB"]:
+KeyError: 'RGB'
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 18:31
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+ERROR:blueprints:Exception on /telemetry [GET]
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/telemetry/telemetry.py", line 24, in telemetry
+    return render_template(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/telemetry/templates/telemetry-index.j2.html", line 1, in top-level template code
+    {% extends "base-standard.j2.html" %}
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/templates/base-standard.j2.html", line 5, in top-level template code
+    {% include "header-standard.j2.html" %}
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/templates/header-standard.j2.html", line 23, in template
+    {% block header-page %}
+jinja2.exceptions.TemplateSyntaxError: Block names in Jinja have to be valid Python identifiers and may not contain hyphens, use an underscore instead.
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 18:32
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-14 18:32:23 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 147, in checkLights
+    if dataJSON["RGB"] != currentProgram["RGB"]:
+KeyError: 'RGB'
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 18:33
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-14 18:33:50 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 147, in checkLights
+    if dataJSON["RGB"] != currentProgram["RGB"]:
+KeyError: 'RGB'
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 18:34
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-14 18:34:52 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 147, in checkLights
+    if dataJSON["RGB"] != currentProgram["RGB"]:
+KeyError: 'RGB'
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+WARNING:roboLog:Received non-JSON from Arduino: bytearray(b'{'type':'T','pumpON':0,'RGB':'255 150 255','brightness':255}\r\n{'type':'T','pumpON':0,'RGB':'255 150 255','brightness':255}\r\n')Extra data: line 2 column 1 (char 62)
+WARNING:roboLog:Received non-JSON from Arduino: bytearray(b'{'type':'T','pumpON':0,'RGB':'255 150 255','brightness':255}\r\n{'type':'T','pumpON':0,'RGB':'255 150 255','brightness':255}\r\n{'type':'T','pumpON':0,'RGB':'255 150 255','brightness':255}\r\n')Extra data: line 2 column 1 (char 62)
+WARNING:roboLog:Received non-JSON from Arduino: bytearray(b'{'type':'T','pumpON':0,'RGB':'255 150 255','brightness':255}\r\n{'type':'T','pumpON':0,'RGB':'255 150 255','brightness':255}\r\n')Extra data: line 2 column 1 (char 62)
+WARNING:roboLog:Received non-JSON from Arduino: bytearray(b'{'type':'T','pumpON':0,'RGB':'255 150 255','brightness':255}\r\n{'type':'T','pumpON':0,'RGB':'255 150 255','brightness':255}\r\n')Extra data: line 2 column 1 (char 62)
+WARNING:roboLog:Received non-JSON from Arduino: bytearray(b'{'type':'T','pumpON':0,'RGB':'255 150 255','brightness':255}\r\n{'type':'T','pumpON':0,'RGB':'255 150 255','brightness':255}\r\n{'type':'T','pumpON':0,'RGB':'255 150 255','brightness':255}\r\n')Extra data: line 2 column 1 (char 62)
+WARNING:roboLog:Received non-JSON from Arduino: bytearray(b'{'type':'T','pumpON':0,'RGB':'255 150 255','brightness':255}\r\n{'type':'T','pumpON':0,'RGB':'255 150 255','brightness':255}\r\n')Extra data: line 2 column 1 (char 62)
+WARNING:roboLog:Received non-JSON from Arduino: bytearray(b'{'type':'T','pumpON':0,'RGB':'255 150 255','brightness':255}\r\n{'type':'T','pumpON':0,'RGB':'255 150 255','brightness':255}\r\n{'type':'T','pumpON':0,'RGB':'255 150 255','brightness':255}\r\n')Extra data: line 2 column 1 (char 62)
+WARNING:roboLog:Received non-JSON from Arduino: bytearray(b'{'type':'T','pumpON':0,'RGB':'255 150 255','brightness':255}\r\n{'type':'T','pumpON':0,'RGB':'255 150 255','brightness':255}\r\n')Extra data: line 2 column 1 (char 62)
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 20:10
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-14 20:11:09 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 147, in checkLights
+    if dataJSON["RGB"] != currentProgram["RGB"]:
+KeyError: 'RGB'
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 20:18
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-14 20:18:48 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 147, in checkLights
+    if dataJSON["RGB"] != currentProgram["RGB"]:
+KeyError: 'RGB'
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 20:21
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-14 20:21:56 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 147, in checkLights
+    if dataJSON["RGB"] != currentProgram["RGB"]:
+KeyError: 'RGB'
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 20:26
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-14 20:27:05 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 147, in checkLights
+    if dataJSON["RGB"] != currentProgram["RGB"]:
+KeyError: 'RGB'
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 20:27
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-14 20:27:45 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 147, in checkLights
+    if dataJSON["RGB"] != currentProgram["RGB"]:
+KeyError: 'RGB'
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 20:31
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-14 20:31:33 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 147, in checkLights
+    if dataJSON["RGB"] != currentProgram["RGB"]:
+KeyError: 'RGB'
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 20:38
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 20:39
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-14 20:40:15 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 147, in checkLights
+    if dataJSON["RGB"] != currentProgram["RGB"]:
+KeyError: 'RGB'
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 20:41
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 20:41
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 20:42
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 20:43
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-14 20:43:24 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 147, in checkLights
+    if dataJSON["RGB"] != currentProgram["RGB"]:
+KeyError: 'RGB'
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 20:45
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-14 20:45:27 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 147, in checkLights
+    if dataJSON["RGB"] != currentProgram["RGB"]:
+KeyError: 'RGB'
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 20:46
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 20:48
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 20:52
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-14 20:52:34 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 147, in checkLights
+    if dataJSON["RGB"] != currentProgram["RGB"]:
+KeyError: 'RGB'
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 20:55
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-14 20:55:49 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 147, in checkLights
+    if dataJSON["RGB"] != currentProgram["RGB"]:
+KeyError: 'RGB'
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 21:00
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-14 21:01:06 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 147, in checkLights
+    if dataJSON["RGB"] != currentProgram["RGB"]:
+KeyError: 'RGB'
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 21:02
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 21:16
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-14 21:17:00 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 147, in checkLights
+    if dataJSON["RGB"] != currentProgram["RGB"]:
+KeyError: 'RGB'
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 21:25
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-14 21:25:48 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 147, in checkLights
+    if dataJSON["RGB"] != currentProgram["RGB"]:
+KeyError: 'RGB'
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 21:27
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-14 21:27:21 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 147, in checkLights
+    if dataJSON["RGB"] != currentProgram["RGB"]:
+KeyError: 'RGB'
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 21:31
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 21:37
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 21:38
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-14 21:39:14 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 147, in checkLights
+    if dataJSON["RGB"] != currentProgram["RGB"]:
+KeyError: 'RGB'
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 21:39
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 21:45
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 21:49
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 21:50
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 21:51
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 21:55
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-14 21:55:37 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 147, in checkLights
+    if dataJSON["RGB"] != currentProgram["RGB"]:
+KeyError: 'RGB'
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:00
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-14 22:00:52 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 147, in checkLights
+    if dataJSON["RGB"] != currentProgram["RGB"]:
+KeyError: 'RGB'
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:03
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-14 22:03:35 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 147, in checkLights
+    if dataJSON["RGB"] != currentProgram["RGB"]:
+KeyError: 'RGB'
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:22
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:26
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-14 22:26:18 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 147, in checkLights
+    if dataJSON["RGB"] != currentProgram["RGB"]:
+KeyError: 'RGB'
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:26
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:28
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+ERROR:engineio.server:Invalid session anK0ZIrkX_rWZe-_AAAG (further occurrences of this error will be logged with level INFO)
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:28
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-14 22:29:14 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 147, in checkLights
+    if dataJSON["RGB"] != currentProgram["RGB"]:
+KeyError: 'RGB'
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:30
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-14 22:30:58 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 147, in checkLights
+    if dataJSON["RGB"] != currentProgram["RGB"]:
+KeyError: 'RGB'
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:35
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-14 22:36:08 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 147, in checkLights
+    if dataJSON["RGB"] != currentProgram["RGB"]:
+KeyError: 'RGB'
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:36
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-14 22:37:14 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 147, in checkLights
+    if dataJSON["RGB"] != currentProgram["RGB"]:
+KeyError: 'RGB'
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:53
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-14 22:53:33 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 147, in checkLights
+    if dataJSON["RGB"] != currentProgram["RGB"]:
+KeyError: 'RGB'
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:58
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:58
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 23:00
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-14 23:00:37 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 147, in checkLights
+    if dataJSON["RGB"] != currentProgram["RGB"]:
+KeyError: 'RGB'
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Info from Arduino: Brightness set to: 0 (0%)
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 23:04
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 23:08
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 23:09
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 23:17
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 23:20
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 23:22
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 23:29
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 23:53
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]

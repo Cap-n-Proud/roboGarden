@@ -1,0 +1,32 @@
+<div class="container shadow-lg p-3 mb-5 border rounded">
+  <div class="row p-1">
+    <div id="LEDContainer" class="col-2 border rounded" style="background: rgba(0,0, 0,0); text-align:center;"><i id="LED" style="color: rgb(125,125,125)" class="fas fa-lightbulb"></i></div>
+    <div id="RGBColor" class="col"></div>
+    <div class="col-2"><i id="pump" class="fas fa-sync-alt"></i></div>
+  </div>
+  <div class="row p-1">
+    <div id="progID" class="col-2"></div>
+    <div id="progName" class="col-10"></div>
+  </div>
+  <div class="row p-1">
+    <div id="progDescription" class="col-12"></div>
+  </div>
+  <div class="row p-2">
+    <div id="infoBox" class="col"></div>
+    <!-- <div id="telemetry" class="col-8"></div> -->
+  </div>
+  <div class="row p-1">
+    <div id="countup1" class="col-9">
+      <span class="timeel days">00</span>
+      <span class="timeel timeRefDays">days</span>
+      <span class="timeel hours">00</span>
+      <span class="timeel timeRefHours">hours</span>
+      <span class="timeel minutes">00</span>
+      <span class="timeel timeRefMinutes">minutes</span>
+      <span class="timeel seconds">00</span>
+      <span class="timeel timeRefSeconds">seconds</span>
+    </div>
+    <div id="timer" class="col-3"></div>
+  </div>
+</div>
+{% include "telemetry-scripts.j2.html" %}
