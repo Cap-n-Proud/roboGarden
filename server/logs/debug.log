@@ -1418,3 +1418,157 @@ INFO:roboLog:System started. System time is: 00:31
 INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
 INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
 ERROR:engineio.server:Invalid session AtsSRj8v4IPe-HrIAAAD (further occurrences of this error will be logged with level INFO)
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+WARNING:roboLog:Received non-JSON from Arduino: bytearray(b'{type':'T','pumpN':0,'RGB':'0 0 0','brightness':0}\r\n')Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+WARNING:roboLog:Received non-JSON from Arduino: bytearray(b'{type':'T','pumpON':0,'RGB':' 0 0','brightness':0}\r\n')Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+WARNING:roboLog:Received non-JSON from Arduino: bytearray(b'{type':'T','pumpON':,'RGB':'0 0 0','brightness':0}\r\n')Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+WARNING:roboLog:Received non-JSON from Arduino: bytearray(b'{type':'T','pumpON':0,'GB':'0 0 0','brightness':0}\r\n')Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+WARNING:roboLog:Received non-JSON from Arduino: bytearray(b'{upON':0,'RGB':'0 0 0','brightness':0}\r\n')Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+INFO:roboLog:System started. System time is: 21:44
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+WARNING:roboLog:Received non-JSON from Arduino: bytearray(b'{type':'T','pumpON':0,'RGB':'0 0 0','brightnes'0}\r\n')Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+WARNING:roboLog:Received non-JSON from Arduino: bytearray(b'{umpON':0,'RGB':'0 0 0','bightness':0}\r\n')Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-16 21:45:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 147, in checkLights
+    if dataJSON["RGB"] != currentProgram["RGB"]:
+KeyError: 'RGB'
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 21:56
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:00
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:05
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:15
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:17
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+ERROR:engineio.server:Invalid session Mw9x24Fl94R7AQ9pAAAJ (further occurrences of this error will be logged with level INFO)
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:21
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+ERROR:engineio.server:Invalid session lRhbIrIJTJ64yqDgAAAB (further occurrences of this error will be logged with level INFO)
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:23
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+ERROR:engineio.server:Invalid session IIKdmsYVH-D2WrCzAAAJ (further occurrences of this error will be logged with level INFO)
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:29
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+ERROR:engineio.server:Invalid session _ZmRkR_8HnJNzxFfAAAE (further occurrences of this error will be logged with level INFO)
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:33
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:38
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+ERROR:blueprints:Exception on /control [GET]
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/control/control.py", line 21, in control
+    return render_template(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/control/templates/control-index.html.j2", line 10, in top-level template code
+    {% include "control-header.html.j2" %}
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: control-header.html.j2
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:40
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:42
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+ERROR:engineio.server:Invalid session TJnS6FfCJG3EucyOAAAF (further occurrences of this error will be logged with level INFO)
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:45
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:50
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:51
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:55
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 0 (0%)
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 23:04
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 23:07
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 23:09
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 23:11
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 23:16
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 23:20
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 23:21
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]

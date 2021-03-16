@@ -1,7 +1,6 @@
 {% block scr %}
 <script>
   var socket = io();
-  document.getElementById("showTime").addEventListener("click", LEDShow);
   document.getElementById("changeProgr").addEventListener("click", changeProgram);
 
   //Load selected proram to arduino
@@ -10,15 +9,6 @@
     //console.log(prg)
     postCommand(prg, 'changeprogram')
 
-  }
-
-  //Starts a LED show!
-  function LEDShow(checkboxElem) {
-    var d = document.getElementById("LEDShowDur").value;
-    var f = document.getElementById("LEDShowFreq").value;
-    var cmd = "LEDShow " + d + " " + f;
-    postCommand(cmd, 'arduinocmd')
-    //console.log(cmd)
   }
 
   function hexTorgb(hex) {
@@ -40,8 +30,8 @@
     //document.getElementById("telemetryBox").innerHTML = msg.RGB + " @   " + msg.brightness
 
     var x = msg.RGB.split(" ");
-    document.getElementById("LEDColor").value = R_G_BtoHEX(x[0], x[1], x[2]);
-    document.getElementById("LEDBrightness").value = msg.brightness
+    // document.getElementById("LEDColor").value = R_G_BtoHEX(x[0], x[1], x[2]);
+    // document.getElementById("LEDBrightness").value = msg.brightness
 
     if (cb)
       cb();
@@ -60,6 +50,8 @@
     }
   }
 
+
+
   function restartServer() {
     var cmd = "restartserver"
     if (confirm('Do you want to restart the server?')) {
@@ -72,6 +64,7 @@
 
   function postCommand(cmd, location) {
     const URL = `${window.origin}/api/` + location
+    console.log(URL)
     // post body data
     const command = {
       command: cmd
@@ -96,7 +89,7 @@
     var timer = document.getElementById("pumpPulse").value;
     var cmd = "pumpRunFor" + " " + timer
     postCommand(cmd, 'arduinocmd')
-    // console.log("PUMP START")
+    // console.log("PUMP START " + cmd)
   }
 
 

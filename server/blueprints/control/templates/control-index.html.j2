@@ -7,6 +7,15 @@
 {% endblock %}
 #}
 
+{% block header_page %}
+<style>
+  .card-columns {
+    column-count: 2;
+  }
+</style>
+
+{% endblock %}
+
 {% block content %}
 <script type="text/javascript">
   programs = {{programs | tojson}}
@@ -21,16 +30,14 @@
 
 <div class="container shadow-lg p-3 mb-5 border rounded">
    <div class="row p-1">
-     <div class="col-2 rounded">Program
-         <select class="form-select" aria-label="Select program" id="PRGsel" onchange="loadProgram(this.value)">
-        {% for p in programs |sort(attribute='progName')%}
-          <option value="{{p.progID}}" {% if p.progID == currentProgram.progID %} selected{% endif %}>{{p.progName}}</option>
-         {% endfor %}
-         </select><br>
-         <button id="changeProgr" type="button" class="btn btn-outline-primary">change</button>
+     <div class="col-4 rounded">Program
       </div>
-      <div class="col-2"></div>
-      <div id="progLabel" class="col-8"></div>
+      <div class="col-4"> <select class="form-select" aria-label="Select program" id="PRGsel" onchange="loadProgram(this.value)">
+      {% for p in programs |sort(attribute='progName')%}
+        <option value="{{p.progID}}" {% if p.progID == currentProgram.progID %} selected{% endif %}>{{p.progName}}</option>
+       {% endfor %}
+       </select></div>
+      <div class="col-4"><button id="changeProgr" type="button" class="btn btn-outline-primary">change</button></div>
    </div>
    <div class="row p-1">
       <div class="col-2">Pump</div>
@@ -40,11 +47,9 @@
         <input type="number" id="pumpPulse" name="quantity" default="1" value="10" min="1" max="200" size="2"> <button id="pump" type="button" class="btn btn-outline-primary" onclick="pumpControl(this)"><i id="pump" class="fas fa-sync-alt"></i></button>
       </div>
    </div>
-   <div class="row p-1">
-      <div class="col-2"></div>
-      <div class="col-2"></div>
-      <div class="col-8"></div>
-   </div>
+   <div class="row p-1 border-top">
+      <div class="col-12"><ul id="progLabel" class="list-unstyled card-columns"></ul>
+    </div>
    <div class="row p-1">
       <div class="col-2"></div>
       <div class="col-2"></div>
@@ -53,52 +58,6 @@
 </div>
 
 
-
-<table width="100%">
-  <tr>
-    <td><label for="PRGSel">Program</label>
-      <select style="color: black; width: 50px !important;" id="PRGsel" onchange="loadProgram(this.value)">
-        {% for p in programs |sort(attribute='progName')%}
-        <option value="{{p.progID}}" {% if p.progID == currentProgram.progID %} selected{% endif %}>{{p.progName}}</option>
-        {% endfor %}
-      </select><br>
-      <button id="changeProgr" class="button button3" style="float:right">change</button>
-    </td>
-    <td id="progLabel">
-    </td>
-  </tr>
-  <tr>
-    <td><label for="pump">Pump</label></td>
-    <td>
-      <label for="pumpPulse">duration</label>
-      <input type="number" id="pumpPulse" name="quantity" default="1" value="10" min="1" max="200" size="2"> <button id="pump" class="button button3" onclick="pumpControl(this)"><i id="pump" class="fas fa-sync-alt"></i></button>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <label for="LEDBrightness">Color</label>
-    </td>
-    <td><input type="range" min="0" max="255" value="50" id="LEDBrightness" onchange="setBrightness(this.value)">
-      <label for="LEDColor"></label>
-      <input type="color" id="LEDColor" name="LEDColor" onchange="setColor(this.value)">
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <label for="LEDShowDur">Lightshow</label>
-    </td>
-    <td><i id="d" class="far fa-clock"></i><input style="width: 60%;" type="range" min="1" max="10" value="2" id="LEDShowDur"><br>
-
-      <i id="f" class="fas fa-wave-square"></i><input type="range" style="width: 30%;" min="0.1" max="1" step="0.1" value="0.5" id="LEDShowFreq">
-      <button id="showTime" class="button button3">show!</button>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="4" style="text-align:center">
-      <button id="restart" style="  background-color: red ;" class="button button3" onclick="restartServer()"><i class="fab fa-jedi-order fa-5x"></i></button>
-    </td>
-  </tr>
-</table>
 
 {% include "control-scripts.html.j2" %}
 {% endblock %}
