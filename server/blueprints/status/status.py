@@ -17,7 +17,7 @@ status_bp = Blueprint(
 
 
 @status_bp.route("/status", methods=["POST", "GET"])
-@login_required
+# @login_required
 def status():
     """Status page."""
     plantsDB = getPlantsDB(app)

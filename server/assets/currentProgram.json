@@ -1,13 +1,13 @@
 {
-    "progID": "003",
-    "progName": "Growth - quiet hours, low watering, more red light",
-    "pumpStartEvery": 7200,
-    "pumpRunTime": 15,
+    "progID": "005",
+    "progName": "NoPump - quiet hours, NO watering",
+    "pumpStartEvery": 2700,
+    "pumpRunTime": 20,
     "pumpON": "08:00",
-    "pumpOFF": "21:00",
-    "lightBrightness": 255,
-    "RGB": "255 150 150",
+    "pumpOFF": "08:02",
+    "lightBrightness": 200,
+    "RGB": "255 150 255",
     "lightsON": "06:00",
     "lightsOFF": "23:00",
-    "progDescription": "Program seeds to small plants, less water."
+    "progDescription": "Program for testing, punp does not run."
 }
