@@ -1572,3 +1572,16 @@ INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal versio
 INFO:roboLog:System started. System time is: 23:21
 INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
 INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 23:26
+INFO:roboLog:Current program: {'progID': '004', 'progName': 'Harvest - quiet hours, high watering', 'pumpStartEvery': 1800, 'pumpRunTime': 25, 'pumpON': '08:00', 'pumpOFF': '23:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for plant maturity, higher water and more light hours'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255
+INFO:roboLog:Info from Arduino: Pump started for: 10 seconds
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:New program: {'progID': '003', 'progName': 'Growth - quiet hours, low watering, more red light', 'pumpStartEvery': 7200, 'pumpRunTime': 15, 'pumpON': '08:00', 'pumpOFF': '21:00', 'lightBrightness': 255, 'RGB': '255 150 150', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program seeds to small plants, less water.'}
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255
+INFO:roboLog:Info from Arduino: Pump started for: 10 seconds
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
