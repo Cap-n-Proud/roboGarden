@@ -40,11 +40,11 @@
       <div class="col-4"><button id="changeProgr" type="button" class="btn btn-outline-primary">change</button></div>
    </div>
    <div class="row p-1">
-      <div class="col-2">Pump</div>
-      <div class="col-2"></div>
-      <div class="col-8">
+      <div class="col-4">Pump</div>
+      <div class="col-4">
         <label for="pumpPulse">duration</label>
-        <input type="number" id="pumpPulse" name="quantity" default="1" value="10" min="1" max="200" size="2"> <button id="pump" type="button" class="btn btn-outline-primary" onclick="pumpControl(this)"><i id="pump" class="fas fa-sync-alt"></i></button>
+        <input type="number" id="pumpPulse" name="quantity" default="1" value="10" min="1" max="200" size="2"> </div>
+      <div class="col-4"><button id="pump" type="button" class="btn btn-outline-primary" onclick="pumpControl(this)"><i id="pump" class="fas fa-sync-alt"></i></button>
       </div>
    </div>
    <div class="row p-1 border-top">
@@ -56,8 +56,5 @@
       <div class="col-8"></div>
    </div>
 </div>
-
-
-
 {% include "control-scripts.html.j2" %}
 {% endblock %}

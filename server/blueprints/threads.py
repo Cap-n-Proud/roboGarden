@@ -36,12 +36,12 @@ def handle_data(data):
     try:
         dataJSON = json.loads(data.decode())
         if dataJSON["type"] == config.Config.INFOTAG:
-            print(dataJSON)
+            # print(dataJSON)
             LOG.info("Info from Arduino: " + dataJSON["message"])
             io.emit(config.Config.INFOTAG, dataJSON["message"])
 
         if dataJSON["type"] == config.Config.TELEMETRYTAG:
-            print(dataJSON)
+            # print(dataJSON)
             io.emit(config.Config.TELEMETRYTAG, dataJSON)
             # print(threading.active_count())
 
