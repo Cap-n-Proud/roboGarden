@@ -195,12 +195,12 @@ module electricalBoxLid(){
     union(){translate([0,0,lidZ/2])cube([boxX-boxThickness-1, boxY-boxThickness-1, lidZ], center=true);
         translate([0,0,lidZ])cube([boxX, boxY, boxThickness], center=true);
     }
-    translate([0,0,lidZ/2-2])cube([boxX-2*boxThickness, boxY-2*boxThickness,lidZ+2], center=true);
+    translate([0,0,lidZ/2-0.5*boxThickness])cube([boxX-2*boxThickness, boxY-2*boxThickness, lidZ], center=true);
     //Holes for socket
     translate([0,10,-10])rotate([0,0,90])SUB_socketHoles();
      
    //Serial port 
-    translate([0,-boxY/3-2,5])rotate([0,0,90])dsub(1.1,17.04,10);
+    translate([0,-boxY/3,5])rotate([0,0,90])dsub(1.1,17.04,10);
 
     
      
@@ -244,7 +244,7 @@ for ( i = [0 : 3] ){
     translate([25, 0, 0])
     cylinder(d=3,h=30);
 }
- cylinder(d=16,h=30);
+ cylinder(d=6,h=30);
 }
 
 
@@ -261,9 +261,9 @@ module SUB_support(){
 //electricalBox();
 //cableClampUP();
 //electricalBoxLid();
-//translate([0, 0, 15])electricalBoxLid();
+translate([0, 0, 15])electricalBoxLid();
 
-electricalBox();
+//electricalBox();
 //translate([-boxX/2,boxY/3,-boxZ/2])rotate([0,0,90])SUB_support();
 //translate([-boxX/2,-boxY/3,-boxZ/2])rotate([0,0,90])SUB_support();
 //translate([+boxX/2,boxY/3,-boxZ/2])rotate([0,0,-90])SUB_support();
