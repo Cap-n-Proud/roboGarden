@@ -16,11 +16,11 @@ maintenance_bp = Blueprint(
 
 
 @maintenance_bp.route("/maintenance", methods=["POST", "GET"])
-@login_required
+# @login_required
 def maintenance():
     """Maintenance page."""
     return render_template(
-        "indexMaintenance.html.j2",
+        "indexMaintenance.j2.html",
         title="Maintenance",
         subtitle="Demonstration of Flask blueprints in action.",
         template="maintenance-template",
