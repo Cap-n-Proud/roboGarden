@@ -4124,3 +4124,495 @@ INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal versio
 INFO:roboLog:System started. System time is: 17:16
 INFO:roboLog:Current program: {'progID': '006', 'progName': 'Test', 'pumpStartEvery': 60, 'pumpRunTime': 15, 'pumpON': '08:00', 'pumpOFF': '01:00', 'lightBrightness': 50, 'RGB': '255 0 255', 'lightsON': '06:00', 'lightsOFF': '05:00', 'progDescription': 'Test program, pump runs every 60 sec and lights are dimmed.'}
 INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 17:34
+INFO:roboLog:Current program: {'progID': '006', 'progName': 'Test', 'pumpStartEvery': 60, 'pumpRunTime': 15, 'pumpON': '08:00', 'pumpOFF': '01:00', 'lightBrightness': 50, 'RGB': '255 0 255', 'lightsON': '06:00', 'lightsOFF': '05:00', 'progDescription': 'Test program, pump runs every 60 sec and lights are dimmed.'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+ERROR:blueprints:Exception on /maintenance [GET]
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/maintenance/maintenance.py", line 22, in maintenance
+    return render_template(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: indexMaintenance.j2.html
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 17:37
+INFO:roboLog:Current program: {'progID': '006', 'progName': 'Test', 'pumpStartEvery': 60, 'pumpRunTime': 15, 'pumpON': '08:00', 'pumpOFF': '01:00', 'lightBrightness': 50, 'RGB': '255 0 255', 'lightsON': '06:00', 'lightsOFF': '05:00', 'progDescription': 'Test program, pump runs every 60 sec and lights are dimmed.'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 17:38
+INFO:roboLog:Current program: {'progID': '006', 'progName': 'Test', 'pumpStartEvery': 60, 'pumpRunTime': 15, 'pumpON': '08:00', 'pumpOFF': '01:00', 'lightBrightness': 50, 'RGB': '255 0 255', 'lightsON': '06:00', 'lightsOFF': '05:00', 'progDescription': 'Test program, pump runs every 60 sec and lights are dimmed.'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+ERROR:blueprints:Exception on /maintenance [GET]
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/maintenance/maintenance.py", line 22, in maintenance
+    return render_template(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/maintenance/templates/maintenance-index.j2.html", line 1, in top-level template code
+    {% extends "base-standard.j2.html" %}
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/templates/base-standard.j2.html", line 16, in top-level template code
+    {% block content %}
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/maintenance/templates/maintenance-index.j2.html", line 15, in block "content"
+    {% include "maintenance.html.j2" %}
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: maintenance.html.j2
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 18:50:26 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 18:51:26 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 18:51
+INFO:roboLog:Current program: {'progID': '006', 'progName': 'Test', 'pumpStartEvery': 60, 'pumpRunTime': 15, 'pumpON': '08:00', 'pumpOFF': '01:00', 'lightBrightness': 50, 'RGB': '255 0 255', 'lightsON': '06:00', 'lightsOFF': '05:00', 'progDescription': 'Test program, pump runs every 60 sec and lights are dimmed.'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+ERROR:blueprints:Exception on /maintenance [GET]
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/maintenance/maintenance.py", line 22, in maintenance
+    return render_template(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/maintenance/templates/maintenance-index.j2.html", line 1, in top-level template code
+    {% extends "base-standard.j2.html" %}
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/templates/base-standard.j2.html", line 16, in top-level template code
+    {% block content %}
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/maintenance/templates/maintenance-index.j2.html", line 15, in block "content"
+    {% include "maitenence-module.j2.html" %}
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: maitenence-module.j2.html
+INFO:roboLog:Info from Arduino: Brightness set to: 50 (19%)
+INFO:roboLog:RGB set to 255 0 255
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-17 18:51:24 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 147, in checkLights
+    if dataJSON["RGB"] != currentProgram["RGB"]:
+KeyError: 'RGB'
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 18:52
+INFO:roboLog:Current program: {'progID': '006', 'progName': 'Test', 'pumpStartEvery': 60, 'pumpRunTime': 15, 'pumpON': '08:00', 'pumpOFF': '01:00', 'lightBrightness': 50, 'RGB': '255 0 255', 'lightsON': '06:00', 'lightsOFF': '05:00', 'progDescription': 'Test program, pump runs every 60 sec and lights are dimmed.'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 50 (19%)
+INFO:roboLog:RGB set to 255 0 255
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-17 18:53:09 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 147, in checkLights
+    if dataJSON["RGB"] != currentProgram["RGB"]:
+KeyError: 'RGB'
+ERROR:blueprints:Exception on /maintenance [GET]
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/maintenance/maintenance.py", line 22, in maintenance
+    return render_template(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/maintenance/templates/maintenance-index.j2.html", line 1, in top-level template code
+    {% extends "base-standard.j2.html" %}
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/templates/base-standard.j2.html", line 16, in top-level template code
+    {% block content %}
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/maintenance/templates/maintenance-index.j2.html", line 15, in block "content"
+    {% include "maitenance-module.j2.html" %}
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: maitenance-module.j2.html
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 18:53
+INFO:roboLog:Current program: {'progID': '006', 'progName': 'Test', 'pumpStartEvery': 60, 'pumpRunTime': 15, 'pumpON': '08:00', 'pumpOFF': '01:00', 'lightBrightness': 50, 'RGB': '255 0 255', 'lightsON': '06:00', 'lightsOFF': '05:00', 'progDescription': 'Test program, pump runs every 60 sec and lights are dimmed.'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+ERROR:blueprints:Exception on /maintenance [GET]
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/maintenance/maintenance.py", line 22, in maintenance
+    return render_template(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/maintenance/templates/maintenance-index.j2.html", line 1, in top-level template code
+    {% extends "base-standard.j2.html" %}
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/templates/base-standard.j2.html", line 16, in top-level template code
+    {% block content %}
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/maintenance/templates/maintenance-index.j2.html", line 15, in block "content"
+    {% include "maintenance-module.j2.html" %}
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/maintenance/templates/maintenance-module.j2.html", line 18, in top-level template code
+    {% include "maintenance-scripts.html.j2" %}
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: maintenance-scripts.html.j2
+INFO:roboLog:Info from Arduino: Brightness set to: 50 (19%)
+INFO:roboLog:RGB set to 255 0 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 18:54
+INFO:roboLog:Current program: {'progID': '006', 'progName': 'Test', 'pumpStartEvery': 60, 'pumpRunTime': 15, 'pumpON': '08:00', 'pumpOFF': '01:00', 'lightBrightness': 50, 'RGB': '255 0 255', 'lightsON': '06:00', 'lightsOFF': '05:00', 'progDescription': 'Test program, pump runs every 60 sec and lights are dimmed.'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 50 (19%)
+INFO:roboLog:RGB set to 255 0 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255
+INFO:roboLog:Info from Arduino: Pump started for: 10 seconds
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 18:59
+INFO:roboLog:Current program: {'progID': '006', 'progName': 'Test', 'pumpStartEvery': 60, 'pumpRunTime': 15, 'pumpON': '08:00', 'pumpOFF': '01:00', 'lightBrightness': 50, 'RGB': '255 0 255', 'lightsON': '06:00', 'lightsOFF': '05:00', 'progDescription': 'Test program, pump runs every 60 sec and lights are dimmed.'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 50 (19%)
+INFO:roboLog:RGB set to 255 0 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 19:03
+INFO:roboLog:Current program: {'progID': '006', 'progName': 'Test', 'pumpStartEvery': 60, 'pumpRunTime': 15, 'pumpON': '08:00', 'pumpOFF': '01:00', 'lightBrightness': 50, 'RGB': '255 0 255', 'lightsON': '06:00', 'lightsOFF': '05:00', 'progDescription': 'Test program, pump runs every 60 sec and lights are dimmed.'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 50 (19%)
+INFO:roboLog:RGB set to 255 0 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 19:04
+INFO:roboLog:Current program: {'progID': '006', 'progName': 'Test', 'pumpStartEvery': 60, 'pumpRunTime': 15, 'pumpON': '08:00', 'pumpOFF': '01:00', 'lightBrightness': 50, 'RGB': '255 0 255', 'lightsON': '06:00', 'lightsOFF': '05:00', 'progDescription': 'Test program, pump runs every 60 sec and lights are dimmed.'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 50 (19%)
+INFO:roboLog:RGB set to 255 0 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 19:05
+INFO:roboLog:Current program: {'progID': '006', 'progName': 'Test', 'pumpStartEvery': 60, 'pumpRunTime': 15, 'pumpON': '08:00', 'pumpOFF': '01:00', 'lightBrightness': 50, 'RGB': '255 0 255', 'lightsON': '06:00', 'lightsOFF': '05:00', 'progDescription': 'Test program, pump runs every 60 sec and lights are dimmed.'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 50 (19%)
+INFO:roboLog:RGB set to 255 0 255
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-17 19:05:43 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 147, in checkLights
+    if dataJSON["RGB"] != currentProgram["RGB"]:
+KeyError: 'RGB'
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 19:08
+INFO:roboLog:Current program: {'progID': '006', 'progName': 'Test', 'pumpStartEvery': 60, 'pumpRunTime': 15, 'pumpON': '08:00', 'pumpOFF': '01:00', 'lightBrightness': 50, 'RGB': '255 0 255', 'lightsON': '06:00', 'lightsOFF': '05:00', 'progDescription': 'Test program, pump runs every 60 sec and lights are dimmed.'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 50 (19%)
+INFO:roboLog:RGB set to 255 0 255
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-17 19:08:28 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 147, in checkLights
+    if dataJSON["RGB"] != currentProgram["RGB"]:
+KeyError: 'RGB'
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 19:08
+INFO:roboLog:Current program: {'progID': '006', 'progName': 'Test', 'pumpStartEvery': 60, 'pumpRunTime': 15, 'pumpON': '08:00', 'pumpOFF': '01:00', 'lightBrightness': 50, 'RGB': '255 0 255', 'lightsON': '06:00', 'lightsOFF': '05:00', 'progDescription': 'Test program, pump runs every 60 sec and lights are dimmed.'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 50 (19%)
+INFO:roboLog:RGB set to 255 0 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 19:09
+INFO:roboLog:Current program: {'progID': '006', 'progName': 'Test', 'pumpStartEvery': 60, 'pumpRunTime': 15, 'pumpON': '08:00', 'pumpOFF': '01:00', 'lightBrightness': 50, 'RGB': '255 0 255', 'lightsON': '06:00', 'lightsOFF': '05:00', 'progDescription': 'Test program, pump runs every 60 sec and lights are dimmed.'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 50 (19%)
+INFO:roboLog:RGB set to 255 0 255
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-17 19:09:58 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 147, in checkLights
+    if dataJSON["RGB"] != currentProgram["RGB"]:
+KeyError: 'RGB'
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 19:10
+INFO:roboLog:Current program: {'progID': '006', 'progName': 'Test', 'pumpStartEvery': 60, 'pumpRunTime': 15, 'pumpON': '08:00', 'pumpOFF': '01:00', 'lightBrightness': 50, 'RGB': '255 0 255', 'lightsON': '06:00', 'lightsOFF': '05:00', 'progDescription': 'Test program, pump runs every 60 sec and lights are dimmed.'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 50 (19%)
+INFO:roboLog:RGB set to 255 0 255
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-17 19:10:44 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 147, in checkLights
+    if dataJSON["RGB"] != currentProgram["RGB"]:
+KeyError: 'RGB'
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 19:11
+INFO:roboLog:Current program: {'progID': '006', 'progName': 'Test', 'pumpStartEvery': 60, 'pumpRunTime': 15, 'pumpON': '08:00', 'pumpOFF': '01:00', 'lightBrightness': 50, 'RGB': '255 0 255', 'lightsON': '06:00', 'lightsOFF': '05:00', 'progDescription': 'Test program, pump runs every 60 sec and lights are dimmed.'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 50 (19%)
+INFO:roboLog:RGB set to 255 0 255
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-17 19:11:27 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 147, in checkLights
+    if dataJSON["RGB"] != currentProgram["RGB"]:
+KeyError: 'RGB'
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Reset maint interval: {'taskPerformed': 'topWater', 'newDate': '2021-03-17T18:11:43.200Z'}
+INFO:roboLog:Reset maint interval: {'taskPerformed': 'topWater', 'newDate': '2021-03-17T18:11:44.400Z'}
+INFO:roboLog:Reset maint interval: {'taskPerformed': 'addH2O2', 'newDate': '2021-03-17T18:11:45.400Z'}
+INFO:roboLog:Reset maint interval: {'taskPerformed': 'addNutrients', 'newDate': '2021-03-17T18:11:58.700Z'}
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 19:13
+INFO:roboLog:Current program: {'progID': '006', 'progName': 'Test', 'pumpStartEvery': 60, 'pumpRunTime': 15, 'pumpON': '08:00', 'pumpOFF': '01:00', 'lightBrightness': 50, 'RGB': '255 0 255', 'lightsON': '06:00', 'lightsOFF': '05:00', 'progDescription': 'Test program, pump runs every 60 sec and lights are dimmed.'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 50 (19%)
+INFO:roboLog:RGB set to 255 0 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Reset maint interval: {'taskPerformed': 'topWater', 'newDate': '2021-03-17T18:13:24.100Z'}
+INFO:roboLog:Reset maint interval: {'taskPerformed': 'towerMaintenance', 'newDate': '2021-03-17T18:13:46.100Z'}
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Reset maint interval: {'taskPerformed': 'topWater', 'newDate': '2021-03-17T18:16:04.300Z'}
+INFO:roboLog:Reset maint interval: {'taskPerformed': 'addH2O2', 'newDate': '2021-03-17T18:16:05.300Z'}
+INFO:roboLog:Reset maint interval: {'taskPerformed': 'towerMaintenance', 'newDate': '2021-03-17T18:16:06.500Z'}
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Reset maint interval: {'taskPerformed': 'tankMaintenance', 'newDate': '2021-03-17T18:16:23.900Z'}
+INFO:roboLog:Reset maint interval: {'taskPerformed': 'towerMaintenance', 'newDate': '2021-03-17T18:16:24.600Z'}
+INFO:roboLog:Reset maint interval: {'taskPerformed': 'addNutrients', 'newDate': '2021-03-17T18:16:25.200Z'}
+INFO:roboLog:Reset maint interval: {'taskPerformed': 'addH2O2', 'newDate': '2021-03-17T18:16:26.000Z'}
+INFO:roboLog:Reset maint interval: {'taskPerformed': 'topWater', 'newDate': '2021-03-17T18:16:26.600Z'}
+INFO:roboLog:Reset maint interval: {'taskPerformed': 'changeWater', 'newDate': '2021-03-17T18:16:27.400Z'}
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50

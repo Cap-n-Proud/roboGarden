@@ -16,8 +16,6 @@ LOG = logging.getLogger(config.Config.APPLOGNAME)
 io = SocketIO(app)  # engineio_logger=True)
 
 # Retrieve the current program, used to populate the indey.html file
-
-
 def getCurrentProgr():
     with open(config.JSON_Path.CURRENTPROGRAM) as f:
         data = json.load(f)

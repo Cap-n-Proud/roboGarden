@@ -13,12 +13,12 @@
   function updateMaintEvents() {
     ms = Date.now();
     var status = JSON.parse('{{ status | tojson | safe}}');
-    document.getElementById("id-changeWater").innerHTML = timeDifference(ms, new Date(status.maintenance[0].changeWater));
-    document.getElementById("id-addH2O2").innerHTML = timeDifference(ms, new Date(status.maintenance[0].addH2O2));
-    document.getElementById("id-addNutrients").innerHTML = timeDifference(ms, new Date(status.maintenance[0].addNutrients));
-    document.getElementById("id-towerMaintenance").innerHTML = timeDifference(ms, new Date(status.maintenance[0].towerMaintenance));
-    document.getElementById("id-tankMaintenance").innerHTML = timeDifference(ms, new Date(status.maintenance[0].tankMaintenance));
-    document.getElementById("id-topWater").innerHTML = timeDifference(ms, new Date(status.maintenance[0].topWater));
+    document.getElementById("id-changeWater").prepend(timeDifference(ms, new Date(status.maintenance[0].changeWater)) + " / ");
+    document.getElementById("id-addH2O2").prepend(timeDifference(ms, new Date(status.maintenance[0].changeWater)) + " / ");
+    document.getElementById("id-addNutrients").prepend(timeDifference(ms, new Date(status.maintenance[0].changeWater)) + " / ");
+    document.getElementById("id-towerMaintenance").prepend(timeDifference(ms, new Date(status.maintenance[0].changeWater)) + " / ");
+    document.getElementById("id-tankMaintenance").prepend(timeDifference(ms, new Date(status.maintenance[0].changeWater)) + " / ");
+    document.getElementById("id-topWater").prepend(timeDifference(ms, new Date(status.maintenance[0].changeWater)) + " / ");
   }
 
   function timeDifference(date1, date2) {

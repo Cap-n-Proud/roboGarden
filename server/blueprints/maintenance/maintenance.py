@@ -20,7 +20,7 @@ maintenance_bp = Blueprint(
 def maintenance():
     """Maintenance page."""
     return render_template(
-        "indexMaintenance.j2.html",
+        "maintenance-index.j2.html",
         title="Maintenance",
         subtitle="Demonstration of Flask blueprints in action.",
         template="maintenance-template",

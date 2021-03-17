@@ -1,18 +1,17 @@
-<table width="100%">
-{% for key, value in maintSchedule.items() recursive %}
-    <tr>
-      <td>
-    {{key}}
-      </td>
-      <td>
-      {{value}}
-      </td>
-      <td id="id-{{key}}">
-      </td>
-      <td>
-        <i class="fas fa-history" onclick="resetTime('{{key}}')"></i>
-      </td>
-    </tr>
-{% endfor %}
-</table>
-{% include "scriptsMaintenance.html.j2" %}
+{% extends "base-standard.j2.html" %}
+
+
+{% block header_page %}
+<style>
+  .card-columns {
+    column-count: 2;
+  }
+</style>
+
+{% endblock %}
+
+{% block content %}
+
+{% include "maintenance-module.j2.html" %}
+
+{% endblock %}
