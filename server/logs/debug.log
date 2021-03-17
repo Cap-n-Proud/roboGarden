@@ -4616,3 +4616,1615 @@ INFO:roboLog:Info from Arduino: Pump stopped
 INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
 INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
 INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 19:56:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 19:57:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 19:58:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 19:59:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 20:00:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 20:02:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 20:03:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 20:04:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 20:06:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 20:08:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 20:12:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 20:15:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 20:16:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 20:18:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 20:20:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 20:21:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 20:22:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 20:24:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 20:25:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 20:27:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 20:28:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 20:29:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 20:30:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 20:32:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 20:34:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 20:35:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 20:36:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 20:37:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 20:38:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 20:39:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 20:43:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 20:44:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 20:45:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 20:46:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 20:48:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 20:50:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 20:51:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 20:52:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 20:53:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 20:54:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 20:56:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 20:57:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 20:59:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 21:00:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 21:01:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 21:02:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 21:03:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 21:04:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 21:05:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+ERROR:apscheduler.executors.default:Job "activatePump (trigger: interval[0:01:00], next run at: 2021-03-17 21:06:17 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 112, in activatePump
+    arduinoCommand("pumpStart")
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 89, in arduinoCommand
+    serial.Serial(
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 21:09
+INFO:roboLog:Current program: {'progID': '006', 'progName': 'Test', 'pumpStartEvery': 60, 'pumpRunTime': 15, 'pumpON': '08:00', 'pumpOFF': '01:00', 'lightBrightness': 50, 'RGB': '255 0 255', 'lightsON': '06:00', 'lightsOFF': '05:00', 'progDescription': 'Test program, pump runs every 60 sec and lights are dimmed.'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 50 (19%)
+INFO:roboLog:RGB set to 255 0 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:25
+INFO:roboLog:Current program: {'progID': '006', 'progName': 'Test', 'pumpStartEvery': 60, 'pumpRunTime': 15, 'pumpON': '08:00', 'pumpOFF': '01:00', 'lightBrightness': 50, 'RGB': '255 0 255', 'lightsON': '06:00', 'lightsOFF': '05:00', 'progDescription': 'Test program, pump runs every 60 sec and lights are dimmed.'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 50 (19%)
+INFO:roboLog:RGB set to 255 0 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255
+INFO:roboLog:Info from Arduino: Pump started for: 10 seconds
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:57
+INFO:roboLog:Current program: {'progID': '006', 'progName': 'Test', 'pumpStartEvery': 60, 'pumpRunTime': 15, 'pumpON': '08:00', 'pumpOFF': '01:00', 'lightBrightness': 50, 'RGB': '255 0 255', 'lightsON': '06:00', 'lightsOFF': '05:00', 'progDescription': 'Test program, pump runs every 60 sec and lights are dimmed.'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 50 (19%)
+INFO:roboLog:RGB set to 255 0 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:57
+INFO:roboLog:Current program: {'progID': '006', 'progName': 'Test', 'pumpStartEvery': 60, 'pumpRunTime': 15, 'pumpON': '08:00', 'pumpOFF': '01:00', 'lightBrightness': 50, 'RGB': '255 0 255', 'lightsON': '06:00', 'lightsOFF': '05:00', 'progDescription': 'Test program, pump runs every 60 sec and lights are dimmed.'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 50 (19%)
+INFO:roboLog:RGB set to 255 0 255
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-17 22:57:57 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 147, in checkLights
+    if dataJSON["RGB"] != currentProgram["RGB"]:
+KeyError: 'RGB'
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:58
+INFO:roboLog:Current program: {'progID': '006', 'progName': 'Test', 'pumpStartEvery': 60, 'pumpRunTime': 15, 'pumpON': '08:00', 'pumpOFF': '01:00', 'lightBrightness': 50, 'RGB': '255 0 255', 'lightsON': '06:00', 'lightsOFF': '05:00', 'progDescription': 'Test program, pump runs every 60 sec and lights are dimmed.'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 50 (19%)
+INFO:roboLog:RGB set to 255 0 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 23:03
+INFO:roboLog:Current program: {'progID': '006', 'progName': 'Test', 'pumpStartEvery': 60, 'pumpRunTime': 15, 'pumpON': '08:00', 'pumpOFF': '01:00', 'lightBrightness': 50, 'RGB': '255 0 255', 'lightsON': '06:00', 'lightsOFF': '05:00', 'progDescription': 'Test program, pump runs every 60 sec and lights are dimmed.'}
+INFO:roboLog:Background jobs: [<Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 50 (19%)
+INFO:roboLog:RGB set to 255 0 255
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-17 23:03:40 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 147, in checkLights
+    if dataJSON["RGB"] != currentProgram["RGB"]:
+KeyError: 'RGB'
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 

@@ -13,7 +13,6 @@
     column-count: 2;
   }
 </style>
-
 {% endblock %}
 
 {% block content %}
@@ -23,8 +22,7 @@
   TELEMETRYTAG = {{TELEMETRYTAG | tojson}}
   timeStarted = "{{timestarted}}"
 </script>
-
-{% include "telemetry-module.j2.html" %}<br>
+{% include "telemetry-module.j2.html" %}
 <div class="container shadow-lg p-3 mb-5 border rounded">
    <div class="row p-1">
      <div class="col-4 rounded">Program
