@@ -24,7 +24,7 @@ def status():
     status = getStatus()
     # print(config.Config.ASSETS_FOLDER)
     return render_template(
-        "index.jinja2",
+        "status-index.j2.html",
         title="Status",
         subtitle="Control the status of roboGarden and the status of the pods.",
         template="status-template",

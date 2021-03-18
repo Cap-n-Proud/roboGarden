@@ -1,15 +1,13 @@
 {% block scr %}
-
 <script>
-
-// https://stackoverflow.com/questions/610336/retrieving-the-text-of-the-selected-option-in-select-element
+  // https://stackoverflow.com/questions/610336/retrieving-the-text-of-the-selected-option-in-select-element
   function postPlant(cmd) {
     const URL = `${window.origin}/api/plant`
     // post body data
     const command = {
       plantName: cmd.options[cmd.selectedIndex].text,
       plantID: cmd.value,
-      podID: cmd.id.replace('s',''),
+      podID: cmd.id.replace('s', ''),
       plantedDate: (new Date().toJSON())
     };
 
@@ -50,18 +48,12 @@
       .then(res => res.json())
   }
 
-function changePlantedDate(datePicker)
-{
-const command = {
-  podID: datePicker.id.replace('d',''),
-  plantedDate: (new Date(datePicker.value).toJSON())
-};
-  postCommand(command, 'newPlantedDate')
-}
-
-
-
+  function changePlantedDate(datePicker) {
+    const command = {
+      podID: datePicker.id.replace('d', ''),
+      plantedDate: (new Date(datePicker.value).toJSON())
+    };
+    postCommand(command, 'newPlantedDate')
+  }
 </script>
-
-
 {% endblock scr %}
