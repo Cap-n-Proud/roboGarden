@@ -17,7 +17,9 @@
   <div class="row p-1">
     {% for towers in status.towers %}
     <div id={{towers.name}} class="shadow-lg p-3 mb-5 border rounded col-sm">
-      <p class="text-center">{{towers.name}}</p>
+      <p class="text-center">
+      <h5>{{towers.name}}</h5>
+      </p>
       {% for level in towers.levels  | reverse %}
       <div id={{towers.ID}}-{{level.level}} class="row g-4">
         <div class="d-flex justify-content-center">
