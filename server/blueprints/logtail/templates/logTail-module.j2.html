@@ -1,0 +1,15 @@
+{#{"time": "2021-03-01 17:43:24,023", "name": "roboLog", "level": "INFO", "message": "Info from Arduino: Pump start"},
+{% for key in log.records  if  key.level == "INFO" %}
+#}
+
+<div class="container shadow-lg p-3 mb-5 border rounded">
+  {% for key in log.records | reverse %}
+  {% if loop.index <= 50 %}
+  <div class="row p-1" {% if loop.index % 2 == 0 %} style="background: gainsboro;" {% endif %}>
+    <div class="col-2">{{key.time}}</div>
+    <div class="col-2">{{key.level}}</div>
+    <div class="col-8">{{key.message}}</div>
+  </div>
+  {% endif %}
+  {% endfor %}
+</div>

@@ -1,0 +1,29 @@
+<div class="container shadow-lg p-3 mb-5 border rounded">
+  {% for key, value in maintSchedule.items() recursive %}
+  <div class="row p-1">
+    <div class="col-8">{{key}}</div>
+    <!-- <div class="col-3">{{value}}</div> -->
+    <div id="id-{{key}}" class="col-3">{{value}}</div>
+    <div class="col-1"><i class="fas fa-history" onclick="resetTime('{{key}}')"></i></div>
+  </div>
+  {% endfor %}
+</div>
+
+
+<table width="100%">
+  {% for key, value in log.items() recursive %}
+  <tr>
+    <td>
+      {{key}}
+    </td>
+    <td>
+      {{value}}
+    </td>
+    <td id="id-{{key}}">
+    </td>
+    <td>
+      <i class="fas fa-history" onclick="resetTime('{{key}}')"></i>
+    </td>
+  </tr>
+  {% endfor %}
+</table>

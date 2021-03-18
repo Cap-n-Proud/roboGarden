@@ -1,0 +1,9 @@
+<div class="container shadow-lg p-3 mb-5 border rounded">
+  {% for key, value in currentProgram.items() recursive %}
+  <div class="row p-1" {% if loop.index % 2 == 0 %} style="background: gainsboro;" {% endif %}>
+    <div class="col-4">{{key}}</div>
+    <div class="col-8">{{value}}</div>
+  </div>
+  {% endfor %}
+</div>
+{# {% include "scriptsCurrentProgram.jinja2" %} #}

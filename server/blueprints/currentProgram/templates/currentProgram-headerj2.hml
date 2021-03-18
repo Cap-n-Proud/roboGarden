@@ -1,4 +1,4 @@
-{% extends "headerBase.jinja2" %}
+{% extends "base-standard.j2.html" %}
 {% block header %}
 <script type="text/javascript">
         INFOTAG = "{{INFOTAG}}"

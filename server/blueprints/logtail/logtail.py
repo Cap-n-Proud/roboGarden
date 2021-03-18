@@ -13,11 +13,11 @@ logtail_bp = Blueprint(
 
 
 @logtail_bp.route("/getlog", methods=["POST", "GET"])
-@login_required
+# @log  in_required
 def getapplog():
     """currentProgram page."""
     return render_template(
-        "indexLogTail.html.j2",
+        "logTail-index.j2.html",
         title="logtail",
         subtitle="Demonstration of Flask blueprints in action.",
         template="logtail-template",

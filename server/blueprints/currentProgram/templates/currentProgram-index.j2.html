@@ -1,0 +1,15 @@
+{% extends "base-standard.j2.html" %}
+
+{% block header_page %}
+<script type="text/javascript">
+  INFOTAG = "{{INFOTAG}}"
+  TELEMETRYTAG = "{{TELEMETRYTAG}}"
+  timeStarted = "{{timestarted}}"
+</script>
+{% endblock %}
+
+{% block content %}
+
+{% include "currentProgram-module.j2.html" %}
+
+{% endblock %}

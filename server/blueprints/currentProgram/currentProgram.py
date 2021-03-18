@@ -17,11 +17,11 @@ currentProgram_bp = Blueprint(
 
 
 @currentProgram_bp.route("/currentProgram", methods=["POST", "GET"])
-@login_required
+# @login_required
 def currentProgram():
     """currentProgram page."""
     return render_template(
-        "indexCurrentProgram.jinja2",
+        "currentProgram-index.j2.html",
         title="currentProgram",
         subtitle="Demonstration of Flask blueprints in action.",
         template="currentProgram-template",
