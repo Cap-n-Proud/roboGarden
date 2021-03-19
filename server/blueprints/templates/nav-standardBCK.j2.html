@@ -8,19 +8,19 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+    <div class="collapse navbar-collapse p-3" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="{{ url_for('control_bp.control') }}">control</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item -p3">
           <a class="nav-link active" aria-current="page" href="{{ url_for('status_bp.status') }}">status</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="{{ url_for('telemetry_bp.telemetry') }}">telemetry</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{{ url_for('currentProgram_bp.currentProgram') }}">current program</a>
+          <a class="nav-link active p-3" aria-current="page" href="{{ url_for('currentProgram_bp.currentProgram') }}">current program</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="{{ url_for('maintenance_bp.maintenance') }}">maintenance</a>

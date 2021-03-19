@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light p-2">
   <a class="navbar-brand" href="#">
     <img src="{{ url_for('static', filename='favicon.ico') }}" alt="" width="30" height="24" class="d-inline-block align-top">
     roboGarden
@@ -7,7 +7,7 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
     <ul class="navbar-nav me-auto mb-2 mb-md-0">
       <li class="nav-item">
         <a class="nav-link active" aria-current="page" href="{{ url_for('control_bp.control') }}">control</a>
@@ -16,35 +16,27 @@
         <a class="nav-link active" aria-current="page" href="{{ url_for('status_bp.status') }}">status</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="{{ url_for('telemetry_bp.telemetry') }}">telemetry</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="{{ url_for('currentProgram_bp.currentProgram') }}">current program</a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link active" aria-current="page" href="{{ url_for('maintenance_bp.maintenance') }}">maintenance</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="{{ url_for('logtail_bp.getapplog') }}">tail</a>
-      </li>
-      <!-- <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li> -->
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           downloads
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{{ url_for('currentProgram_bp.currentProgram') }}">current program</a>
+          <a class="dropdown-item" href="{{ url_for('telemetry_bp.telemetry') }}">telemetry</a>
+          <a class="dropdown-item" href="{{ url_for('logtail_bp.getapplog') }}">tail</a>
+
+          <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="{{ url_for('cmd.getlog') }}">get log</a>
           <a class="dropdown-item" href="{{url_for( 'cmd.download_assets')}}">get assets</a>
-          <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
+    <!-- <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+    </form> -->
   </div>
 </nav>
