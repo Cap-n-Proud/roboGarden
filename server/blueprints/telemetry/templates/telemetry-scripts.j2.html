@@ -88,6 +88,7 @@
 
   // Capture and publish the telemetry stream and create the global variable telemetry
   socket.on(TELEMETRYTAG, function(msg, cb) {
+    // console.log(msg);
     updatePumpStatus(msg);
     updateLightsStatus(msg);
     // var elem = document.getElementById("telemetry");
@@ -105,21 +106,38 @@
     var x = document.getElementById("pump");
     if (telemetry.pumpON) {
       //document.getElementById("pump-text").innerHTML = "ON";
-      document.getElementById("pump").setAttribute("style", "color: RoyalBlue");
+      document.getElementById("pump").setAttribute("style", "color: RoyalBlue;");
+      document.getElementById("pump").setAttribute("class", "fas fa-sync-alt fa-spin");
+
     } else {
       //  document.getElementById("pump-text").innerHTML = "OFF";
       document.getElementById("pump").setAttribute("style", "color: LightGray");
+      document.getElementById("pump").setAttribute("class", "fas fa-sync-alt");
+
     }
   }
 
   //Capture and publish the light RGB color
   function updateLightsStatus(telemetry) {
-    var rgb = telemetry['RGB'].split(" ");
-    hexColor = R_G_BtoHEX(rgb[0], rgb[1], rgb[2])
+    // console.log(telemetry['lightGrowthON']);
+    if (telemetry['lightGrowthON']) {
+      document.getElementById("lightGrowth").style.background = R_G_BtoHEX(220, 80, 220);
+      document.getElementById("lightIconGrowth").style.color = R_G_BtoHEX(0.6 * 220, 0.6 * 80, 0.6 * 220);
+    } else {
+      document.getElementById("lightGrowth").style.background = R_G_BtoHEX(125, 125, 125);
+      document.getElementById("lightIconGrowth").style.color = R_G_BtoHEX(0.6 * 125, 0.6 * 125, 0.6 * 125);
 
-    document.getElementById("LEDContainer").style.background = R_G_BtoHEX(rgb[0], rgb[1], rgb[2]);
-    document.getElementById("LED").style.color = R_G_BtoHEX(0.6 * rgb[0], 0.6 * rgb[1], 0.6 * rgb[2]);
-    document.getElementById("RGBColor").innerHTML = telemetry['RGB'] + " @ " + Math.floor(100 * telemetry['brightness'] / 255) + "%";
+    }
+    if (telemetry['lightBloomON']) {
+      document.getElementById("lightBloom").style.background = R_G_BtoHEX(240, 240, 255);
+      document.getElementById("lightIconBloom").style.color = R_G_BtoHEX(0.6 * 240, 0.6 * 240, 0.6 * 255);
+
+    } else {
+      document.getElementById("lightBloom").style.background = R_G_BtoHEX(125, 125, 125);
+      document.getElementById("lightIconBloom").style.color = R_G_BtoHEX(0.6 * 125, 0.6 * 125, 0.6 * 125);
+
+    }
+
   }
 
 

@@ -11,6 +11,8 @@
 #define DATA_PIN 2
 #define CLOCK_PIN 3
 #define PUMP_PIN 53
+#define LIGHT_GROWTH_PIN 54
+#define LIGHT_BLOOM_PIN 55
 
 #define MIN_BRIGHTNESS  0
 #define MAX_BRIGHTNESS 255
@@ -29,6 +31,8 @@ bool pumpON = false;
 bool pumpOverride = false;
 int RGBLED[3] = {0, 0, 0};
 long Brightness = 0;
+bool lightGrowthON = false;
+bool lightBloomON= false;
 String info = "";
 
 Commander cmd;

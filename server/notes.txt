@@ -1,6 +1,7 @@
 https://getbootstrap.com/
 
 
+{"type":"T","pumpON":0,"lightGrowthON":0,"lightBloomON":0,"RGB":"0 0 0","brightness":0}
 
 
 

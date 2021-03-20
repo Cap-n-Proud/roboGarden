@@ -1,13 +1,13 @@
 {
-    "progID": "001",
-    "progName": "Default - quiet hours",
-    "pumpStartEvery": 1800,
+    "progID": "006",
+    "progName": "Test",
+    "pumpStartEvery": 60,
     "pumpRunTime": 15,
     "pumpON": "08:00",
-    "pumpOFF": "22:00",
-    "lightBrightness": 255,
-    "RGB": "255 150 255",
+    "pumpOFF": "01:00",
+    "lightBrightness": 50,
+    "RGB": "255 0 255",
     "lightsON": "06:00",
-    "lightsOFF": "22:00",
-    "progDescription": "Default program, lights and pump are off during quiet hours. Medium watering"
+    "lightsOFF": "05:00",
+    "progDescription": "Test program, pump runs every 60 sec and lights are dimmed."
 }

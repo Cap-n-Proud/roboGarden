@@ -2,6 +2,10 @@
 //Now the command list must be defined https://github.com/CreativeRobotics/Commander/blob/master/examples/BasicCommands/masterCommands.ino
 const commandList_t commands[] = {
   {"setLightRGB", setLightRGB,   "Set color of the LED"},
+  {"setLightGrowthON", setLightGrowthON,   "Set LED growth light ON"},
+  {"setLightBloomON", setLightBloomON,   "Set LED bloomlight ON"},
+  {"setLightGrowthOFF", setLightGrowthOFF,   "Set LED growth light ON"},
+  {"setLightBloomOFF", setLightBloomOFF,   "Set LED bloomlight ON"},
   {"pumpRunFor",   pumpRunFor,   "Start pump and run for X minutes"},
   {"pumpStart",   pumpStart,   "Start pump"},
   {"pumpStop",    pumpStop,   "Stop pump"},
@@ -105,20 +109,46 @@ bool pumpStart(Commander &Cmdr) {
   return 0;
 }
 
+
+bool setLightGrowthON(Commander &Cmdr) {
+  // Here code to swith the LED on
+  digitalWrite(LIGHT_GROWTH_PIN,LOW);
+  lightGrowthON = true;
+  sendInfo(String("Light growth set to ON"));
+  return 0;
+}
+
+bool setLightBloomON(Commander &Cmdr) {
+  // Here code to swith the LED on
+  digitalWrite(LIGHT_BLOOM_PIN,LOW);
+  lightBloomON = true;
+  sendInfo(String("Light bloom set to ON"));
+  return 0;
+}
+
+
+bool setLightGrowthOFF(Commander &Cmdr) {
+  // Here code to swith the LED on
+  digitalWrite(LIGHT_GROWTH_PIN,HIGH);
+  lightGrowthON = false;
+  sendInfo(String("LED growth set to OFF"));
+  return 0;
+}
+
+bool setLightBloomOFF(Commander &Cmdr) {
+  // Here code to swith the LED on
+  digitalWrite(LIGHT_BLOOM_PIN,HIGH);
+  lightBloomON = false;
+  sendInfo(String("LED bloom set to OFF"));
+  return 0;
+}
+
 bool removeOverride() {
   pumpOverride = false;
 
 }
 
 
-void setRGBLED(R,G,B){
-  RGBLED[0] = R;
-  RGBLED[1] = G;
-  RGBLED[2] = B;
-  leds[0] = CRGB(RGBLED[0], RGBLED[1], RGBLED[2]);
-  FastLED.show();
-  sendInfo(String("LED set to RGB: ") + RGBLED[0] + " " + RGBLED[1] + " " + RGBLED[2]); 
-}
 
 bool pumpRunFor(Commander &Cmdr) {
   long myInt;
@@ -128,9 +158,9 @@ bool pumpRunFor(Commander &Cmdr) {
     digitalWrite(PUMP_PIN,LOW);
     timer.in(myInt * 1000 , pumpStop);
     timer.in(myInt * 1000 - 1, removeOverride);
-    sendInfo(String("Pump started for: ") + myInt + String(" seconds"));
+    sendInfo(String("Pump started for ") + myInt + String(" seconds"));
     //setRGBLED(0,0,255);
- 
+
   }
   else
   { sendInfo(String("Command pumpRunFor failed: no duration supplied"));
@@ -173,7 +203,7 @@ bool sysInfo(Commander &Cmdr){
   String line = "";
   String commands ="pumpStart, pumpStop, pumpRunFor 2, setBrightness 15, setLightRGB 23 10 115, stopAll, LEDShow 5 0.2 sysInfo";
   line = String("{\"version\":") + VERSION + ",\"baud rate\":" + "\"" + BAUDRATE + "\"" ",\"commands\":" + "\"" + commands + "\"}";
-  
+
   Serial.println(line);
   delay(100);
 
@@ -242,7 +272,7 @@ void TelemetryTXJSON() //statusReport
   //{"type": "I", "pumpON":1,"RGB": "20 255 30","brightness":80}
   delay(100);
   String line = "";
-  line = String("{\"type\":") + String("\"T\",") + "\"pumpON\":" + pumpON + ",\"RGB\":" + "\"" + String(RGBLED[0]) + " " + String(RGBLED[1]) + " " + String(RGBLED[2]) + "\"" + ",\"brightness\":" + Brightness + "}";
+  line = String("{\"type\":") + String("\"T\",") + "\"pumpON\":" + pumpON + ",\"lightGrowthON\":" + lightGrowthON + ",\"lightBloomON\":" + lightBloomON + ",\"RGB\":" + "\"" + String(RGBLED[0]) + " " + String(RGBLED[1]) + " " + String(RGBLED[2]) + "\"" + ",\"brightness\":" + Brightness + "}";
   Serial.println(line);
   //return 0;
 }
