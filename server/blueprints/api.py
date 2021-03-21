@@ -49,9 +49,11 @@ def getStatus():
 def getAppLog():
     with open(config.Config.APPLOGFILE) as f:
         d = '{"records":[' + f.read()[:-2] + "]}"
-        # print(d)
-        data = json.loads(d)
-    return data
+        try:
+            data = json.loads(d)
+            return data
+        except Exception as e:
+            LOG.error("Cannot download app log: " + str(e))
 
 
 def sendArduinoCmd(cmd):
