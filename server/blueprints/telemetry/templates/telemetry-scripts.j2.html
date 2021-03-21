@@ -14,7 +14,7 @@
   window.onload = function() {
     // Month Day, Year Hour:Minute:Second, id-of-element-container
     //timeStarted = "2021-02-13 21:00:43.405472"
-    countUpFromTime(timeStarted, 'countup1'); // ****** Change this line!
+    // countUpFromTime(timeStarted, 'countup1'); // ****** Change this line!
     updateProgram();
   };
   var myT = setInterval(myTimer, 1000);
@@ -101,6 +101,27 @@
       cb();
   });
 
+
+  socket.on("timeStarted", function(msg, cb) {
+    time = Number(msg);
+    var secondsInADay = 60 * 60 * 1000 * 24,
+      secondsInAHour = 60 * 60 * 1000;
+
+    days = Math.floor(time / (secondsInADay));
+    time = time - days * secondsInADay;
+    hours = Math.floor(time / 3600)
+    time = time - hours * 3600;
+    mins = Math.floor(time / 60);
+    secs = time - mins * 60;
+
+    var idEl = document.getElementById("countup1");
+    idEl.getElementsByClassName('days')[0].innerHTML = days;
+    idEl.getElementsByClassName('hours')[0].innerHTML = hours;
+    idEl.getElementsByClassName('minutes')[0].innerHTML = mins;
+    idEl.getElementsByClassName('seconds')[0].innerHTML = secs;
+
+  });
+
   //Capture and publish the pump status
   function updatePumpStatus(telemetry) {
     var x = document.getElementById("pump");
@@ -129,8 +150,8 @@
 
     }
     if (telemetry['lightBloomON']) {
-      document.getElementById("lightBloom").style.background = R_G_BtoHEX(240, 240, 255);
-      document.getElementById("lightIconBloom").style.color = R_G_BtoHEX(0.6 * 240, 0.6 * 240, 0.6 * 255);
+      document.getElementById("lightBloom").style.background = R_G_BtoHEX(200, 240, 255);
+      document.getElementById("lightIconBloom").style.color = R_G_BtoHEX(0.6 * 200, 0.6 * 240, 0.6 * 255);
 
     } else {
       document.getElementById("lightBloom").style.background = R_G_BtoHEX(125, 125, 125);

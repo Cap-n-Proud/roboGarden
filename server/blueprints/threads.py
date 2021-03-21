@@ -31,6 +31,10 @@ def broadcastInfo(data):
     socketio.emit("info", data)
 
 
+def broadcastTime(t):
+    io.emit("timeStarted", int(t.value()))
+
+
 def handle_data(data):
     global dataJSON
     try:

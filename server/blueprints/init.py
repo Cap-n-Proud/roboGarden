@@ -11,6 +11,8 @@ import serial
 from serial.tools import list_ports
 import config
 
+import blueprints.timer
+
 import json
 
 from blueprints.api import getCurrentProgr
@@ -56,6 +58,8 @@ def initSerial():
 
 
 def initialize():
+    timeFromStart = blueprints.timer.Timer()
+    timeFromStart.start()
     global scheduler
     LOG = logging.getLogger(config.Config.APPLOGNAME)
 
@@ -78,30 +82,8 @@ def initialize():
     #     int(config.Hardware.CHECKLIGHTSINTERVAL), checkLights, currentProgram
     # )
     scheduler = BackgroundScheduler()
-    # scheduler.init_app(app)
-    # replace_existing=True
-    # scheduler.add_job(
-    #     checkLights,
-    #     "interval",
-    #     args=currentProgram,
-    #     seconds=2,
-    #     id="12345",
-    #     replace_existing=True,
-    # )
     scheduler.start()
 
-    # scheduler.add_job(
-    #     readSer,
-    #     "interval",
-    #     seconds=int(10),
-    #     id="checkS",
-    #     args=[
-    #         serial.Serial(
-    #             config.Hardware.SERIALPORT, config.Hardware.SERIALBAUD, timeout=None
-    #         )
-    #     ],
-    #     replace_existing=True,
-    # )
     scheduler.add_job(
         checkLights,
         "interval",
@@ -118,7 +100,15 @@ def initialize():
         args=[currentProgram],
         replace_existing=True,
     )
-
+    scheduler.add_job(
+        broadcastTime,
+        "interval",
+        seconds=int(1),
+        id="test",
+        args=[timeFromStart],
+        replace_existing=True,
+    )
+    # print(str(scheduler.get_jobs()))
     # checkH = RepeatedTimer(24 * 60 * 60, guessHarvest, app)
 
     # checkP = RepeatedTimer(
