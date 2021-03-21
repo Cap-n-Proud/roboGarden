@@ -19686,3 +19686,92 @@ INFO:roboLog:Info from Arduino: Light growth set to ON
 INFO:roboLog:Growth lights set to ON
 INFO:roboLog:Info from Arduino: Light bloom set to ON
 INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 10:54
+INFO:roboLog:Current program: {'progID': '006', 'progName': 'Test', 'pumpStartEvery': 60, 'pumpRunTime': 15, 'pumpON': '08:00', 'pumpOFF': '01:00', 'lightBrightness': 50, 'RGB': '255 0 255', 'lightsON': '06:00', 'lightsOFF': '05:00', 'progDescription': 'Test program, pump runs every 60 sec and lights are dimmed.'}
+INFO:roboLog:Background jobs: [<Job (id=test name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 50 (19%)
+INFO:roboLog:RGB set to 255 0 255
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-21 10:54:48 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 151, in checkLights
+    if dataJSON["RGB"] != currentProgram["RGB"]:
+KeyError: 'RGB'
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-21 10:54:53 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 154, in checkLights
+    if (dataJSON["lightGrowthON"]) == 0:
+KeyError: 'lightGrowthON'
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Growth lights set to ON
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-21 10:54:58 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 157, in checkLights
+    if (dataJSON["lightBloomON"]) == 0:
+KeyError: 'lightBloomON'
+INFO:roboLog:Info from Arduino: Light bloom set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-21 10:56:03 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 154, in checkLights
+    if (dataJSON["lightGrowthON"]) == 0:
+KeyError: 'lightGrowthON'
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 10:56
+INFO:roboLog:Current program: {'progID': '006', 'progName': 'Test', 'pumpStartEvery': 60, 'pumpRunTime': 15, 'pumpON': '08:00', 'pumpOFF': '01:00', 'lightBrightness': 50, 'RGB': '255 0 255', 'lightsON': '06:00', 'lightsOFF': '05:00', 'progDescription': 'Test program, pump runs every 60 sec and lights are dimmed.'}
+INFO:roboLog:Background jobs: [<Job (id=test name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 50 (19%)
+INFO:roboLog:RGB set to 255 0 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-21 10:56:43 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 154, in checkLights
+    if (dataJSON["lightGrowthON"]) == 0:
+KeyError: 'lightGrowthON'
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Info from Arduino: Light bloom set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: LED set to RGB: 0 0 255 
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 10:58
+INFO:roboLog:Current program: {'progID': '006', 'progName': 'Test', 'pumpStartEvery': 60, 'pumpRunTime': 15, 'pumpON': '08:00', 'pumpOFF': '01:00', 'lightBrightness': 50, 'RGB': '255 0 255', 'lightsON': '06:00', 'lightsOFF': '05:00', 'progDescription': 'Test program, pump runs every 60 sec and lights are dimmed.'}
+INFO:roboLog:Background jobs: [<Job (id=test name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=checkP name=activatePump)>]
+ERROR:engineio.server:Invalid session mL_w1dqTTyH4zB-nAAAE (further occurrences of this error will be logged with level INFO)
+INFO:roboLog:Info from Arduino: Brightness set to: 50 (19%)
+INFO:roboLog:RGB set to 255 0 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 0 255 
+INFO:roboLog:Lights set to 50
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-03-21 10:58:18 CET)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 154, in checkLights
+    if (dataJSON["lightGrowthON"]) == 0:
+KeyError: 'lightGrowthON'
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Info from Arduino: Light bloom set to ON
+INFO:roboLog:Bloom lights set to ON
