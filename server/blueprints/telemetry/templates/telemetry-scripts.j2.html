@@ -57,12 +57,12 @@
     // console.log(msg);
     updatePumpStatus(msg);
     updateLightsStatus(msg);
-    var elem = document.getElementById("telemetryRaw");
-    elem.innerHTML = "";
-    for (name in msg) {
-      elem.innerHTML = elem.innerHTML + name + ' ' + msg[name] + " ";
-
-    }
+    // var elem = document.getElementById("telemetryRaw");
+    // elem.innerHTML = "";
+    // for (name in msg) {
+    //   elem.innerHTML = elem.innerHTML + name + ' ' + msg[name] + " ";
+    //
+    // }
     if (cb)
       cb();
   });
