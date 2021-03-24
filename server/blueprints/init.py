@@ -62,7 +62,6 @@ def initialize():
     timeFromStart.start()
     global scheduler
     LOG = logging.getLogger(config.Config.APPLOGNAME)
-
     # currentProgram = getCurrentProgr()
     initSerial()
     currentProgram = getCurrentProgr()

@@ -61,20 +61,25 @@ def create_app():
     app.config.from_object("config.Config")
     # setupDebugLog(app)
     # app.config.from_object("config.Config")
-    import random, string
-
-    app.config["SECRET_KEY"] = "".join(
-        [
-            random.SystemRandom().choice(
-                "{}{}{}".format(string.ascii_letters, string.digits, string.punctuation)
-            )
-            for i in range(50)
-        ]
-    )
-    # print(app.config["SECRET_KEY"])
-    # print(config.Config.SECRET_KEY)
-    app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = "False"
-    app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///db.sqlite"
+    # import random, string
+    #
+    # app.config["SECRET_KEY"] = "".join(
+    #     [
+    #         random.SystemRandom().choice(
+    #             "{}{}{}".format(string.ascii_letters, string.digits, string.punctuation)
+    #         )
+    #         for i in range(50)
+    #     ]
+    # )
+    # # print(app.config["SECRET_KEY"])
+    # # print(config.Config.SECRET_KEY)
+    # app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = "False"
+    # app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///db.sqlite"
+    app.config["SECRET_KEY"] = config.Config.SECRET_KEY
+    app.config[
+        "SQLALCHEMY_TRACK_MODIFICATIONS"
+    ] = config.Config.SQLALCHEMY_TRACK_MODIFICATIONS
+    app.config["SQLALCHEMY_DATABASE_URI"] = config.Config.SQLALCHEMY_DATABASE_URI
 
     del app.logger.handlers[:]
     logging.basicConfig(filename="logs/debug.log", level=logging.ERROR)
@@ -127,6 +132,9 @@ def create_app():
 
         login_manager.login_view = "auth_bp.login"
         login_manager.init_app(app)
+        # IMPORTANT: BE SURE TO SET config.Config.LOGIN_DISABLED = False TO ENABLE LOGIN
+        app.config["LOGIN_DISABLED"] = config.Config.LOGIN_DISABLED
+        print(config.Config.LOGIN_DISABLED)
         from blueprints.auth.models import User
 
         @login_manager.user_loader

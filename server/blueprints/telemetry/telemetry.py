@@ -18,7 +18,7 @@ telemetry_bp = Blueprint(
 # Telemetry is the default view
 @telemetry_bp.route("/", methods=["POST", "GET"])
 @telemetry_bp.route("/telemetry", methods=["POST", "GET"])
-# @login_required
+@login_required
 def telemetry():
     """Telemetry page."""
     return render_template(

@@ -13,7 +13,7 @@ control_bp = Blueprint(
 
 
 @control_bp.route("/control", methods=["POST", "GET"])
-# @login_required
+@login_required
 def control():
     """Control page."""
     programs = getPrograms()

@@ -4,10 +4,10 @@
 #
 # basedir = path.abspath(path.dirname(__file__))
 # load_dotenv(path.join(basedir, '.env'))
+import random, string
 
 
 class Config:
-    SECRET_KEY = "GDtfDCFYjD"
     STATIC_FOLDER = "static"
     TEMPLATES_FOLDER = "templates"
     ASSETS_FOLDER = "assets"
@@ -15,9 +15,28 @@ class Config:
     APPLOGFILE = "logs/app.log"
     APPLOGNAME = "roboLog"
     WERKZEUGLOGFILE = "logs/werkzeug.log"
+    DEBUGLOGFILE = "logs/debug.log"
     INFOTAG = "I"
     TELEMETRYTAG = "T"
     LOGFORMAT = "%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s"
+    CHECKHARVESTINTERVAL = 86400
+    TIMEZONE = "Europe/Zurich"
+    LOGIN_DISABLED = True
+
+    # SECRET_KEY = environ.get("SECRET_KEY")
+
+    SECRET_KEY = "".join(
+        [
+            random.SystemRandom().choice(
+                "{}{}{}".format(string.ascii_letters, string.digits, string.punctuation)
+            )
+            for i in range(100)
+        ]
+    )
+    # Flask-SQLAlchemy
+    SQLALCHEMY_DATABASE_URI = "sqlite:///db.sqlite"
+    SQLALCHEMY_ECHO = False
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 
 class Hardware:
