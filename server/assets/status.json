@@ -193,8 +193,8 @@
                             "podID": "01-00-01",
                             "plantID": "008",
                             "plantName": "Strawberry Alexandria",
-                            "plantedDate": "2021-03-25T21:48:46.637Z",
-                            "harvestTime": "-60"
+                            "plantedDate": "2021-03-25T21:06:03.700Z",
+                            "harvestTime": "0"
                         }
                     ]
                 },
@@ -267,10 +267,10 @@
                         },
                         {
                             "podID": "01-04-01",
-                            "plantID": "000",
-                            "plantName": "000-Empty",
-                            "plantedDate": "2021-02-15T22:57:53.200Z",
-                            "harvestTime": "-9961"
+                            "plantID": "002",
+                            "plantName": "Babyleaf Salad",
+                            "plantedDate": "2021-03-22T06:49:19.189Z",
+                            "harvestTime": "-37"
                         }
                     ]
                 },
@@ -279,10 +279,10 @@
                     "pods": [
                         {
                             "podID": "01-05-00",
-                            "plantID": "000",
-                            "plantName": "000-Empty",
-                            "plantedDate": "2021-02-15T22:57:58.700Z",
-                            "harvestTime": "-9961"
+                            "plantID": "002",
+                            "plantName": "Babyleaf Salad",
+                            "plantedDate": "2021-03-22T06:49:30.352Z",
+                            "harvestTime": "-37"
                         },
                         {
                             "podID": "01-05-01",
@@ -336,17 +336,17 @@
                     "pods": [
                         {
                             "podID": "01-08-00",
-                            "plantID": "007",
-                            "plantName": "Fiori Romantic Pink Feeling",
-                            "plantedDate": "2021-02-26T18:04:47.300Z",
-                            "harvestTime": "27"
+                            "plantID": "000",
+                            "plantName": "000-Empty",
+                            "plantedDate": "2021-03-25T21:05:38.900Z",
+                            "harvestTime": "-9999"
                         },
                         {
                             "podID": "01-08-01",
-                            "plantID": "007",
-                            "plantName": "Fiori Romantic Pink Feeling",
-                            "plantedDate": "2021-02-26T18:05:25.600Z",
-                            "harvestTime": "27"
+                            "plantID": "000",
+                            "plantName": "000-Empty",
+                            "plantedDate": "2021-03-25T21:05:41.100Z",
+                            "harvestTime": "-9999"
                         }
                     ]
                 }
