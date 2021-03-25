@@ -134,7 +134,6 @@ def create_app():
         login_manager.init_app(app)
         # IMPORTANT: BE SURE TO SET config.Config.LOGIN_DISABLED = False TO ENABLE LOGIN
         app.config["LOGIN_DISABLED"] = config.Config.LOGIN_DISABLED
-        print(config.Config.LOGIN_DISABLED)
         from blueprints.auth.models import User
 
         @login_manager.user_loader

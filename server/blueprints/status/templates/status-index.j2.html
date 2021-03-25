@@ -17,17 +17,16 @@
   <div class="row p-1">
     {% for towers in status.towers %}
     <div id={{towers.name}} class="shadow-lg p-3 mb-5 border rounded col-sm">
-      <p class="text-center">
       <h5>{{towers.name}}</h5>
-      </p>
       {% for level in towers.levels  | reverse %}
       <div id={{towers.ID}}-{{level.level}} class="row g-4">
         <div class="d-flex justify-content-center">
           {% for pod in level.pods %}
-
           <div class="col">
             <div class="card text-dark bg-light mb-3 g-5" style="max-width: 12rem;mmin-width: 10rem;">
-              <div class="card-header">{{pod.podID}}</div>
+              <div class="card-header">{{pod.podID}}
+                <span style="plantedDateStatus;  float:right; {% if pod.harvestTime | int >= 0 %}background-color:rgba(0,255,0,0.2); color:DodgerBlue;{% endif %}">&emsp;{% if pod.plantID | int != 0 %}{{pod.harvestTime}}{% endif %}</span>
+              </div>
               <div class="card-body">
                 <h5 class="card-title">
                   <select id="s{{pod.podID}}" onchange="postPlant(this)" class="form-select form-select-sm" aria-label=".form-select-sm example">
@@ -40,15 +39,15 @@
                 <input class="card-text" type="date" style="color: gray;border-style: none;" value="{{pod.plantedDate|formatDate}}" id="d{{pod.podID}}" name="plantedDateStatus-{{pod.podID}}" onchange="changePlantedDate(this)"
                   placeholder="planted date">
                 <p class="card-text"></p>
-
-                <span style="plantedDateStatus;  float:right; {% if pod.harvestTime | int >= 0 %}background-color:rgba(0,255,0,0.2); color:DodgerBlue;{% endif %}">&emsp;{{pod.harvestTime}}</span>
+                <!-- <span style="plantedDateStatus;  float:right; {% if pod.harvestTime | int >= 0 %}background-color:rgba(0,255,0,0.2); color:DodgerBlue;{% endif %}">
+                  {% if pod.plantID | int != 0 %}{{pod.harvestTime}}{% else %}<br>{% endif %}</span>
                 {% for plant in plantsDB.plants %}
                 <span class="card-text" style="podIDStatus" id="podID">{% if plant.plantID == pod.plantID %}
                   {% for i in range(plant.water|int) %}
                   <i style="float:left; color: DodgerBlue;" class="fas fa-tint"></i>
                   {% endfor %}</span>
                 {% endif %}
-                {% endfor %}
+                {% endfor %} -->
               </div>
             </div>
           </div>

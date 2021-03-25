@@ -1,13 +1,12 @@
 """Flask configuration."""
 # from os import environ, path
 # from dotenv import load_dotenv
-#
-# basedir = path.abspath(path.dirname(__file__))
-# load_dotenv(path.join(basedir, '.env'))
+
 import random, string
 
 
 class Config:
+    # SECRET_KEY = "GDtfDCFYjD"
     STATIC_FOLDER = "static"
     TEMPLATES_FOLDER = "templates"
     ASSETS_FOLDER = "assets"
@@ -21,7 +20,7 @@ class Config:
     LOGFORMAT = "%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s"
     CHECKHARVESTINTERVAL = 86400
     TIMEZONE = "Europe/Zurich"
-    LOGIN_DISABLED = False
+    LOGIN_ENABLE = "True"
 
     # SECRET_KEY = environ.get("SECRET_KEY")
 
@@ -40,14 +39,15 @@ class Config:
 
 
 class Hardware:
-    READSERIALINTERVAL = 2
-    CHECKLIGHTSINTERVAL = 5
+    READSERIALINTERVAL = 5
+    CHECKLIGHTSINTERVAL = 10
     SERIALPORT = "/dev/ttyACM0"
     SERIALBAUD = 115200
 
 
 class JSON_Path:
-    JSON_PATH = "assets"
+    MSCHEDULE = "assets/maintSchedule.json"
+    JSON_BASE_PATH = "assets"
     CURRENTPROGRAM = "assets/currentProgram.json"
     PROGRAMS = "assets/programs.json"
     PLANTDB = "assets/plants.json"
