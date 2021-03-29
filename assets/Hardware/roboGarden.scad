@@ -321,8 +321,8 @@ module sprinkler_v2() {
 
 module collectorShell(){
 union(){
- translate([0,0,collectorCollarH])cylinder(h=collectorOutFlowH, d2=collectorDiam,d1=collectorDiam);
-translate([0,0,0])cylinder(h=collectorCollarH, d2=towerDiam + 4*towerThickness ,d1=towerDiam + 4*towerThickness);
+ translate([0,0,collectorCollarH])cylinder(h=collectorOutFlowH, d=collectorDiam);
+translate([0,0,0])cylinder(h=collectorCollarH, d=towerDiam + 4*towerThickness);
 }
 
 }
@@ -340,7 +340,7 @@ translate([0,0,-colFunnelHeight])cylinder(h=collectorCollarH, d2=towerDiam ,d1=t
 
 module collector(){
 difference(){
-collectorShell();
+();
 translate([0,0,-2])collectorHole();
     
     
@@ -388,8 +388,6 @@ module lightPoleSupport(){
     
 }
 
-//lightPoleSupport();
-
 //SprinklerShelve();
 module sprinklerFlat(){
 difference(){sprinkler_v2();
@@ -402,13 +400,38 @@ rotate([0,0,-90]){
 }
 }
 
+
+module elbow(diam, radius, angle, lenght){
+ 
+translate([-radius,-radius,0])    
+rotate_extrude(angle=angle,convexity = 10)
+translate([radius, 0, 0])
+circle(d=diam);
+    
+translate([0,-1.0*lenght,0]) 
+   rotate([90,0,0]) cylinder(d=diam,h=lenght, center=true);    
+translate([(-1.0*lenght)*sin(angle),(1.0*lenght)*cos(angle),0]) 
+   rotate([90,0,angle]) cylinder(d=diam,h=lenght, center=true);    
+
+    
+}
+    
+
+//lightPoleSupport();
 //sprinklerFlat();
 //collector();
 //translate([0,0,0])rotate([0, 0, -25])arc(1, 50, towerDiam/2-1, 130);
-towerDome();
+//towerDome();
 //rotate([sprinlkerAngle,0,-75])translate([-sprinklerDiam/2,0,sprinkleRingThickness/2])cube([sprinklerDiam/2, sprinkleRingThickness/2,sprinkleRingThickness/2]);
 //tower();
 //level(1);
 
 //roboGarden();
+
+
+difference(){
+elbow(collectorDiam-6, collectorDiam/2,90,30);
+elbow(collectorDiam-6-6, collectorDiam/2,90,30);
+
+}
 

@@ -96,6 +96,23 @@ import zipfile
 import os
 
 
+@cmd_bp.route("/api/download_logs")
+@login_required
+def download_logs():
+    zipf = zipfile.ZipFile("logs.zip", "w", zipfile.ZIP_DEFLATED)
+    for root, dirs, files in os.walk("logs/"):
+        for file in files:
+            zipf.write("logs/" + file)
+    zipf.close()
+
+    return send_file(
+        "../logs.zip",
+        mimetype="zip",
+        attachment_filename="logs.zip",
+        as_attachment=True,
+    )
+
+
 @cmd_bp.route("/api/download_assets")
 @login_required
 def download_assets():
