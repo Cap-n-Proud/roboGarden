@@ -107,38 +107,23 @@ def setLightRGB(R, G, B):
 
 
 # https://www.askpython.com/python/examples/python-wait-for-a-specific-time
-# This will be called to regulate the pump behaviour. TODO need to add thread and parameterd
+# This will be called to regulate the pump behaviour.
 def activatePump(currentProgram):
     obj_now = datetime.now()
     timeNow = str(obj_now.hour).zfill(2) + ":" + str(obj_now.minute).zfill(2)
     if is_between(currentProgram["pumpON"], currentProgram["pumpOFF"], timeNow):
-        # Pump ON
         arduinoCommand("pumpStart")
         LOG.debug("Pump is ON for " + str(currentProgram["pumpRunTime"]))
-        # We stop the thread so the pump continues pumping
         t = Timer(int(currentProgram["pumpRunTime"]), pumpStop)
         t.start()
-        l = Timer(int(currentProgram["pumpRunTime"]) + 1, setLightRGB, [0, 0, 255])
-        l.start()
-        # time.sleep(int(currentProgram["pumpRunTime"]))
-        # arduinoCommand("setLightRGB " + str(0) + " " + str(0) + " " + str(255))
-        # var = "something"
-        # if var == "something":
-        #     t.cancel()
-
-        # This is a workaround as the lights change color after the pump starts. Need to understand why.
 
 
 # Function to check the lights. If we are in the time range it will switch the light on and give the current proram RGB color
 def checkLights(currentProgram):
     obj_now = datetime.now()
     timeNow = str(obj_now.hour).zfill(2) + ":" + str(obj_now.minute).zfill(2)
-    # # DEBUG:
-    # print(currentProgram["progID"])
-    # print(currentProgram)
     if is_between(currentProgram["lightsON"], currentProgram["lightsOFF"], timeNow):
         if "brightness" in dataJSON:
-            # print("D " + str(dataJSON) + str(currentProgram))
             try:
                 if int(dataJSON["brightness"]) != int(
                     currentProgram["lightBrightness"]
@@ -147,7 +132,6 @@ def checkLights(currentProgram):
                         "setBrightness " + str(currentProgram["lightBrightness"])
                     )
                     LOG.info("RGB set to " + str(currentProgram["RGB"]))
-                    # We can place the override here in the if
                 if dataJSON["RGB"] != currentProgram["RGB"]:
                     arduinoCommand("setLightRGB " + str(currentProgram["RGB"]))
                     LOG.info("Lights set to " + str(currentProgram["lightBrightness"]))
@@ -165,10 +149,10 @@ def checkLights(currentProgram):
         if dataJSON["brightness"] != 0:  # print("Lights should be ON")
             arduinoCommand("setBrightness 0")
             LOG.info("Lights set to " + str(currentProgram["lightBrightness"]))
-        if int(dataJSON["lightGrowthON"]) == true:
+        if int(dataJSON["lightGrowthON"]) == 1:
             arduinoCommand("setLightGrowthOFF")
             LOG.info("Growth lights set to OFF")
-        if int(dataJSON["setLightBloomON"]) == true:
+        if int(dataJSON["setLightBloomON"]) == 1:
             arduinoCommand("setLightBloomOFF")
             LOG.info("Bloom lights set to OFF")
 

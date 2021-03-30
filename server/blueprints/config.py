@@ -20,7 +20,7 @@ class Config:
     LOGFORMAT = "%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s"
     CHECKHARVESTINTERVAL = 86400
     TIMEZONE = "Europe/Zurich"
-    LOGIN_ENABLE = "True"
+    LOGIN_ENABLE = "False"
 
     # SECRET_KEY = environ.get("SECRET_KEY")
 
