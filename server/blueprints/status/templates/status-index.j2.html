@@ -17,9 +17,9 @@
   <div class="row p-1">
     {% for towers in status.towers %}
     <div id={{towers.name}} class="shadow-lg p-3 mb-5 border rounded col-sm">
-      <h5>{{towers.name}}</h5>
+      <h5 class="d-flex justify-content-center">{{towers.name}}</h5>
       {% for level in towers.levels  | reverse %}
-      <div id={{towers.ID}}-{{level.level}} class="row g-4">
+      <div id={{towers.ID}}-{{level.level}} class="row g-4 d-flex justify-content-center">
         <div class="d-flex justify-content-center">
           {% for pod in level.pods %}
           <div class="col">
@@ -29,7 +29,7 @@
               </div>
               <div class="card-body">
                 <h5 class="card-title">
-                  <select id="s{{pod.podID}}" onchange="postPlant(this)" class="form-select form-select-sm" aria-label=".form-select-sm example">
+                  <select id="s{{pod.podID}}" onchange="postPlant(this)" class="form-select form-select-sm" style="max-width:90%;" aria-label=".form-select-sm example">
                     {% for plant in plantsDB.plants |sort(attribute='name')%}
                     <option value="{{plant.plantID}}" {% if plant.plantID == pod.plantID %} selected{% endif %}>{{plant.name}}</option>
                     {% endfor %}
