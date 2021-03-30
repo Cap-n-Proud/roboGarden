@@ -27,7 +27,7 @@
    <div class="row p-1">
      <div class="col-4 rounded">Program
       </div>
-      <div class="col-4"> <select class="form-select" aria-label="Select program" id="PRGsel" onchange="loadProgram(this.value)">
+      <div class="col-4"> <select class="form-select" aria-label="Select program" id="PRGsel" style="max-width:70%;" onchange="loadProgram(this.value)">
       {% for p in programs |sort(attribute='progName')%}
         <option value="{{p.progID}}" {% if p.progID == currentProgram.progID %} selected{% endif %}>{{p.progName}}</option>
        {% endfor %}
