@@ -534,3 +534,7 @@
 {"time": "2021-03-30 20:59:22,920", "name": "roboLog", "level": "INFO", "message": "Growth lights set to ON"},
 {"time": "2021-03-30 20:59:22,931", "name": "roboLog", "level": "INFO", "message": "Info from Arduino: Light bloom set to ON"},
 {"time": "2021-03-30 20:59:23,422", "name": "roboLog", "level": "INFO", "message": "Bloom lights set to ON"},
+{"time": "2021-03-30 21:01:02,425", "name": "roboLog", "level": "INFO", "message": "Info from Arduino: Brightness set to: 0 (0%)"},
+{"time": "2021-03-30 21:01:02,918", "name": "roboLog", "level": "INFO", "message": "Lights set to 255"},
+{"time": "2021-03-30 21:01:02,925", "name": "roboLog", "level": "INFO", "message": "Info from Arduino: LED growth set to OFF"},
+{"time": "2021-03-30 21:01:03,418", "name": "roboLog", "level": "INFO", "message": "Growth lights set to OFF"},
