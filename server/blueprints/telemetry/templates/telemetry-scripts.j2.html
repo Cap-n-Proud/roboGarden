@@ -22,11 +22,14 @@
   }
 
   var socket = io();
-  var telemetry = {
-    'type': 'N/A',
-    'pumpON': 0,
-    'RGB': '0 0 0',
-    'brightness': 0
+  var telemetry = {}
+
+  function toggle(x) {
+    if (document.getElementById(x).style.display == 'none') {
+      document.getElementById(x).style.display = '';
+    } else {
+      document.getElementById(x).style.display = 'none';
+    }
   }
 
   function hexTorgb(hex) {
@@ -57,12 +60,12 @@
     // console.log(msg);
     updatePumpStatus(msg);
     updateLightsStatus(msg);
-    // var elem = document.getElementById("telemetryRaw");
-    // elem.innerHTML = "";
-    // for (name in msg) {
-    //   elem.innerHTML = elem.innerHTML + name + ' ' + msg[name] + " ";
-    //
-    // }
+    var elem = document.getElementById("telemetryRaw");
+    elem.innerHTML = "";
+    for (name in msg) {
+      elem.innerHTML = elem.innerHTML + name + ':' + msg[name] + " | ";
+
+    }
     if (cb)
       cb();
   });
@@ -130,8 +133,11 @@
 
 
   function updateProgram() {
-    var currentProgram = JSON.parse('{{ currentProgram | tojson | safe}}');
-
+    try {
+      var currentProgram = JSON.parse('{{ currentProgram | tojson | safe}}');
+    } catch (err) {
+      console.log(err.message)
+    }
     document.getElementById("progID").innerHTML = currentProgram.progID;
     document.getElementById("progName").innerHTML = currentProgram.progName;
     document.getElementById("progDescription").innerHTML = currentProgram.progDescription;

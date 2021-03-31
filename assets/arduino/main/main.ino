@@ -2,6 +2,7 @@
 #include <arduino-timer.h>
 #include <ArduinoJson.h>
 #include <FastLED.h>
+#include "GravityTDS.h"
 
 
 // How many leds in your strip?
@@ -13,10 +14,11 @@
 #define PUMP_PIN 53
 #define LIGHT_GROWTH_PIN 54
 #define LIGHT_BLOOM_PIN 55
+#define TDS_SENSOR_PIN A1
 
 #define MIN_BRIGHTNESS  0
 #define MAX_BRIGHTNESS 255
-#define VERSION 0.60
+#define VERSION 0.70
 #define BAUDRATE 115200
 
 // Define the array of leds
@@ -33,10 +35,13 @@ int RGBLED[3] = {0, 0, 0};
 long Brightness = 0;
 bool lightGrowthON = false;
 bool lightBloomON= false;
+float temperature = 25,tdsValue = 0;
+
 String info = "";
 
 Commander cmd;
-
+GravityTDS gravityTds;
+  
 String SEPARATOR = ","; //Used as separator for telemetry
 //Now the sketch setup, loop and any other functions
 void setup() {
@@ -55,6 +60,7 @@ void setup() {
   //cmd.printCommandPrompt();
   initTimer();
   initLED();
+  initTDS();
 }
 
 void loop() {
@@ -65,6 +71,13 @@ void loop() {
 
 }
 
+void initTDS() {
+
+  gravityTds.setPin(TDS_SENSOR_PIN);
+  gravityTds.setAref(5.0);  //reference voltage on ADC, default 5.0V on Arduino UNO
+  gravityTds.setAdcRange(1024);  //1024 for 10bit ADC;4096 for 12bit ADC
+  gravityTds.begin();  //initialization
+}
 
 void initLED() {
   int val1 = 0;

@@ -12,6 +12,7 @@ const commandList_t commands[] = {
   {"setBrightness",         setBrightness,   "Set brightness"},
   {"stopAll",         stopAll,   "Stop pump, lights and sensor readings"},
   {"LEDShow",         LEDShow,   "Start a ledshow of n seconds"},
+  {"readTDS",         readTDS,   "Read TDS value"},
   {"sysInfo",         sysInfo,   "Prints some information on the system"},
 
 };
@@ -24,7 +25,7 @@ const commandList_t commands[] = {
 // stopAll
 // LEDShow 5 0.2
 // sysInfo
-
+// readTDS
 // sendInfo
 
 //Initialisation function
@@ -84,6 +85,16 @@ void stopAll(Commander &Cmdr)
 
   return 0;
 }
+
+
+bool readTDS(Commander &Cmdr) {
+ //temperature = readTemperature();  //add your temperature sensor and read it
+  gravityTds.setTemperature(temperature);  // set the temperature and execute temperature compensation
+  gravityTds.update();  //sample and calculate
+  tdsValue = gravityTds.getTdsValue();  // then get the value
+  return 0;
+}
+
 
 bool pumpStop(Commander &Cmdr) {
   if (!pumpOverride)
@@ -201,8 +212,14 @@ bool setBrightness(Commander &Cmdr) {
 
 bool sysInfo(Commander &Cmdr){
   String line = "";
-  String commands ="pumpStart, pumpStop, pumpRunFor 2, setBrightness 15, setLightRGB 23 10 115, stopAll, LEDShow 5 0.2 sysInfo";
-  line = String("{\"version\":") + VERSION + ",\"baud rate\":" + "\"" + BAUDRATE + "\"" ",\"commands\":" + "\"" + commands + "\"}";
+  String commands ="pumpStart, pumpStop, pumpRunFor 2, setBrightness 15, setLightRGB 23 10 115, stopAll, LEDShow 5 0.2, readTDS, sysInfo";
+  line = String("{\"type\":") + String("\"S\",") +
+                "\"version\":" + VERSION + 
+                ",\"baud rate\":" + 
+                "\"" + BAUDRATE + 
+                "\"" ",\"commands\":" + 
+                "\"" + commands + 
+                "\"}";
 
   Serial.println(line);
   delay(100);
@@ -266,13 +283,19 @@ void TelemetryTX()
   //Serial.println(line);
 
 }
-
+ 
 void TelemetryTXJSON() //statusReport
 { // for help on dtostrf http://forum.arduino.cc/index.php?topic=85523.0
   //{"type": "I", "pumpON":1,"RGB": "20 255 30","brightness":80}
   delay(100);
   String line = "";
-  line = String("{\"type\":") + String("\"T\",") + "\"pumpON\":" + pumpON + ",\"lightGrowthON\":" + lightGrowthON + ",\"lightBloomON\":" + lightBloomON + ",\"RGB\":" + "\"" + String(RGBLED[0]) + " " + String(RGBLED[1]) + " " + String(RGBLED[2]) + "\"" + ",\"brightness\":" + Brightness + "}";
+  line = String("{\"type\":") + String("\"T\",") + "\"pumpON\":" + pumpON + 
+                  ",\"lightGrowthON\":" + lightGrowthON + 
+                  ",\"lightBloomON\":" + lightBloomON + 
+                  ",\"RGB\":" + "\"" + String(RGBLED[0]) + " " + String(RGBLED[1]) + " " + String(RGBLED[2]) +
+                  "\"" + ",\"brightness\":" + Brightness +
+                  ",\"tds\":" + tdsValue +
+                  "}";
   Serial.println(line);
   //return 0;
 }

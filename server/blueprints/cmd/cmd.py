@@ -49,7 +49,7 @@ def arduinocmd():
     # if cmd[0] == "pumpRunFor":
     #     l = Timer(int(cmd[1]) + 1, setLightRGB, [0, 0, 255])
     #     l.start()
-    return redirect(url_for("control_bp.control", message="OK"))
+    return redirect(url_for("control_bp.control"))
 
 
 @cmd_bp.route("/api/restartserver", methods=["POST", "GET"])
