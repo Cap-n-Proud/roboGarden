@@ -119,12 +119,13 @@ def activatePump(currentProgram):
 
 
 # Function to check the lights. If we are in the time range it will switch the light on and give the current proram RGB color
+# https://careerkarma.com/blog/python-keyerror/
 def checkLights(currentProgram):
     obj_now = datetime.now()
     timeNow = str(obj_now.hour).zfill(2) + ":" + str(obj_now.minute).zfill(2)
     if is_between(currentProgram["lightsON"], currentProgram["lightsOFF"], timeNow):
-        if "brightness" in dataJSON:
-            try:
+        try:
+            if "brightness" in dataJSON:
                 if int(dataJSON["brightness"]) != int(
                     currentProgram["lightBrightness"]
                 ):
@@ -132,20 +133,21 @@ def checkLights(currentProgram):
                         "setBrightness " + str(currentProgram["lightBrightness"])
                     )
                     LOG.info("RGB set to " + str(currentProgram["RGB"]))
+            if "RGB" in dataJSON:
                 if dataJSON["RGB"] != currentProgram["RGB"]:
                     arduinoCommand("setLightRGB " + str(currentProgram["RGB"]))
                     LOG.info("Lights set to " + str(currentProgram["lightBrightness"]))
-                if "lightGrowthON" in dataJSON:
-                    if dataJSON["lightGrowthON"] == 0:
-                        arduinoCommand("setLightGrowthON")
-                        LOG.info("Growth lights set to ON")
-                if "lightBloomON" in dataJSON:
-                    if dataJSON["lightBloomON"] == 0:
-                        arduinoCommand("setLightBloomON")
-                        LOG.info("Bloom lights set to ON")
+            if "lightGrowthON" in dataJSON:
+                if dataJSON["lightGrowthON"] == 0:
+                    arduinoCommand("setLightGrowthON")
+                    LOG.info("Growth lights set to ON")
+            if "lightBloomON" in dataJSON:
+                if dataJSON["lightBloomON"] == 0:
+                    arduinoCommand("setLightBloomON")
+                    LOG.info("Bloom lights set to ON")
 
-            except ValueError as e:
-                LOG.error(e)
+        except ValueError as e:
+            LOG.error(e)
 
     else:
         if dataJSON["brightness"] != 0:  # print("Lights should be ON")
