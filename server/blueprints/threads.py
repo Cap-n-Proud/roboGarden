@@ -157,7 +157,7 @@ def checkLights(currentProgram):
             if int(dataJSON["lightGrowthON"]) == 1:
                 arduinoCommand("setLightGrowthOFF")
                 LOG.info("Growth lights set to OFF")
-        if "setLightBloomOFF" in dataJSON:
+        if "lightBloomON" in dataJSON:
             if int(dataJSON["lightBloomON"]) == 1:
                 arduinoCommand("setLightBloomOFF")
                 LOG.info("Bloom lights set to OFF")
