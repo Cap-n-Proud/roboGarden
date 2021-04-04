@@ -135,12 +135,14 @@ def checkLights(currentProgram):
                 if dataJSON["RGB"] != currentProgram["RGB"]:
                     arduinoCommand("setLightRGB " + str(currentProgram["RGB"]))
                     LOG.info("Lights set to " + str(currentProgram["lightBrightness"]))
-                if (dataJSON["lightGrowthON"]) == 0:
-                    arduinoCommand("setLightGrowthON")
-                    LOG.info("Growth lights set to ON")
-                if (dataJSON["lightBloomON"]) == 0:
-                    arduinoCommand("setLightBloomON")
-                    LOG.info("Bloom lights set to ON")
+                if "lightGrowthON" in dataJSON:
+                    if dataJSON["lightGrowthON"] == 0:
+                        arduinoCommand("setLightGrowthON")
+                        LOG.info("Growth lights set to ON")
+                if "lightBloomON" in dataJSON:
+                    if dataJSON["lightBloomON"] == 0:
+                        arduinoCommand("setLightBloomON")
+                        LOG.info("Bloom lights set to ON")
 
             except ValueError as e:
                 LOG.error(e)
@@ -149,12 +151,14 @@ def checkLights(currentProgram):
         if dataJSON["brightness"] != 0:  # print("Lights should be ON")
             arduinoCommand("setBrightness 0")
             LOG.info("Lights set to " + str(currentProgram["lightBrightness"]))
-        if int(dataJSON["lightGrowthON"]) == 1:
-            arduinoCommand("setLightGrowthOFF")
-            LOG.info("Growth lights set to OFF")
-        if int(dataJSON["lightBloomON"]) == 1:
-            arduinoCommand("setLightBloomOFF")
-            LOG.info("Bloom lights set to OFF")
+        if "lightGrowthON" in dataJSON:
+            if int(dataJSON["lightGrowthON"]) == 1:
+                arduinoCommand("setLightGrowthOFF")
+                LOG.info("Growth lights set to OFF")
+        if "setLightBloomOFF" in dataJSON:
+            if int(dataJSON["lightBloomON"]) == 1:
+                arduinoCommand("setLightBloomOFF")
+                LOG.info("Bloom lights set to OFF")
 
 
 def formatDate(input):

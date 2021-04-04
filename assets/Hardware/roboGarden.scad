@@ -1,7 +1,7 @@
 $fn = 200;
 towerDiam = 75;
 
-
+PHI = 1.618033988749895;
 
 towerThickness = 2;
 towerID = towerDiam - 2* towerThickness;
@@ -340,7 +340,7 @@ translate([0,0,-colFunnelHeight])cylinder(h=collectorCollarH, d2=towerDiam ,d1=t
 
 module collector(){
 difference(){
-();
+collectorShell();
 translate([0,0,-2])collectorHole();
     
     
@@ -401,7 +401,7 @@ rotate([0,0,-90]){
 }
 
 
-module elbow(diam, radius, angle, lenght){
+module SUB_elbow(diam, radius, angle, lenght){
  
 translate([-radius,-radius,0])    
 rotate_extrude(angle=angle,convexity = 10)
@@ -427,11 +427,29 @@ translate([(-1.0*lenght)*sin(angle),(1.0*lenght)*cos(angle),0])
 //level(1);
 
 //roboGarden();
+dripGuard();
 
-
+module elbow(){
 difference(){
 elbow(collectorDiam-6, collectorDiam/2,90,30);
 elbow(collectorDiam-6-6, collectorDiam/2,90,30);
 
 }
 
+}
+
+dripGuardCollar = 15;
+towerCollarED = 79;
+module dripGuard(){
+    //Collar
+    difference(){
+        cylinder(h= dripGuardCollar, d= towerCollarED+2*towerThickness+1);
+        cylinder(h= dripGuardCollar+2, d= towerCollarED+1);        
+    }
+    translate([0,0,dripGuardCollar])difference(){
+        cylinder(h= dripGuardCollar, d1= towerCollarED+2*towerThickness+1, d2=towerCollarED+15);
+        cylinder(h= dripGuardCollar+2, d1= towerCollarED-2, d2=towerCollarED+10 );        
+        
+        
+    }
+}
