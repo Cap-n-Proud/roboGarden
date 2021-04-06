@@ -103,10 +103,18 @@ def initialize():
         broadcastTime,
         "interval",
         seconds=int(1),
-        id="test",
+        id="broadcastTime",
         args=[timeFromStart],
         replace_existing=True,
     )
+    scheduler.add_job(
+        pingHost,
+        "interval",
+        seconds=int(config.Hardware.PING_EVERY),
+        id="pingHost",
+        replace_existing=True,
+    )
+
     # print(str(scheduler.get_jobs()))
     # checkH = RepeatedTimer(24 * 60 * 60, guessHarvest, app)
 

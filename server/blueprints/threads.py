@@ -35,6 +35,35 @@ def broadcastTime(t):
     io.emit("timeStarted", int(t.value()))
 
 
+def pingHost():
+    import subprocess
+
+    result = subprocess.run(
+        [
+            "ping",
+            "-c",
+            str(config.Hardware.NUMBER_OF_PACKETS),
+            str(config.Hardware.HOST_TO_PING),
+        ],
+        stdout=subprocess.PIPE,
+    )
+
+    if result.returncode != 0:
+        LOG.error(
+            "NEWTORK DOWN: "
+            + str(result.returncode)
+            + " "
+            + result.stdout.decode("utf-8").replace("\n", " ").replace("\r", "")
+        )
+    else:
+        LOG.debug(
+            "NEWTORK UP: "
+            + str(result.returncode)
+            + " "
+            + result.stdout.decode("utf-8").replace("\n", " ").replace("\r", "")
+        )
+
+
 def handle_data(data):
     global dataJSON
     try:

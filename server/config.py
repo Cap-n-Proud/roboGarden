@@ -44,6 +44,10 @@ class Hardware:
     CHECKLIGHTSINTERVAL = 5
     SERIALPORT = "/dev/ttyACM0"
     SERIALBAUD = 115200
+    KEEP_WIFI_ALIVE = True
+    HOST_TO_PING = "192.168.1.1"
+    NUMBER_OF_PACKETS = 1
+    PING_EVERY = 60
 
 
 class JSON_Path:
