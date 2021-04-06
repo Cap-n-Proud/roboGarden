@@ -3,6 +3,7 @@
   INFOTAG = "{{INFOTAG}}"
   TELEMETRYTAG = "{{TELEMETRYTAG}}"
   timeStarted = "{{timeStarted}}"
+  pumpOFF = "{{pumpOFF}}"
 </script>
 <script>
   //Calls functions to load defaults and info.
@@ -93,17 +94,21 @@
 
   //Capture and publish the pump status
   function updatePumpStatus(telemetry) {
-    var x = document.getElementById("pump");
     if (telemetry.pumpON) {
       //document.getElementById("pump-text").innerHTML = "ON";
       document.getElementById("pump").setAttribute("style", "color: RoyalBlue;");
-      document.getElementById("pump").setAttribute("class", "fas fa-sync-alt fa-spin");
+      document.getElementById("pump").setAttribute("class", "fas fa-sync-alt fa-stack-1x fa-spin");
 
     } else {
       //  document.getElementById("pump-text").innerHTML = "OFF";
       document.getElementById("pump").setAttribute("style", "color: LightGray");
-      document.getElementById("pump").setAttribute("class", "fas fa-sync-alt");
+      document.getElementById("pump").setAttribute("class", "fas fa-stack-1x fa-sync-alt");
 
+    }
+    if (pumpOFF) {
+      document.getElementById("pumpBan").setAttribute("class", "fas fa-ban fa-stack-2x");
+    } else {
+      document.getElementById("pumpBan").setAttribute("class", "d-none  fas fa-ban fa-stack-2x");
     }
   }
 

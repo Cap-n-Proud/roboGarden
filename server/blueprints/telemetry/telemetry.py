@@ -4,6 +4,8 @@ from flask import current_app as app
 from flask import render_template
 import config
 from blueprints.init import timeStarted
+from blueprints.threads import is_between
+
 from flask_login import login_required, current_user
 
 # status = getStatus()
@@ -20,6 +22,15 @@ telemetry_bp = Blueprint(
 @telemetry_bp.route("/telemetry", methods=["POST", "GET"])
 @login_required
 def telemetry():
+    from datetime import datetime
+
+    currentProgram = getCurrentProgr()
+    obj_now = datetime.now()
+    timeNow = str(obj_now.hour).zfill(2) + ":" + str(obj_now.minute).zfill(2)
+    if is_between(currentProgram["pumpON"], currentProgram["pumpOFF"], timeNow):
+        pumpOFF = 0
+    else:
+        pumpOFF = 1
     """Telemetry page."""
     return render_template(
         "telemetry-index.j2.html",
@@ -29,5 +40,6 @@ def telemetry():
         INFOTAG=config.Config.INFOTAG,
         TELEMETRYTAG=config.Config.TELEMETRYTAG,
         timeStarted=timeStarted,
-        currentProgram=getCurrentProgr(),
+        currentProgram=currentProgram,
+        pumpOFF=pumpOFF,
     )

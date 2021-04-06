@@ -2,3 +2,127 @@ ERROR:roboLog:NEWTORK DOWN: 1 PING 193.168.1.1 (193.168.1.1) 56(84) bytes of dat
 ERROR:roboLog:NEWTORK DOWN: 1 PING 193.168.1.1 (193.168.1.1) 56(84) bytes of data. From 158.64.39.82 icmp_seq=1 Time to live exceeded  --- 193.168.1.1 ping statistics --- 1 packets transmitted, 0 received, +1 errors, 100% packet loss, time 0ms  
 ERROR:roboLog:NEWTORK DOWN: 1 PING 193.168.1.1 (193.168.1.1) 56(84) bytes of data. From 158.64.39.82 icmp_seq=1 Time to live exceeded  --- 193.168.1.1 ping statistics --- 1 packets transmitted, 0 received, +1 errors, 100% packet loss, time 0ms  
 ERROR:roboLog:NEWTORK DOWN: 1 PING 193.168.1.1 (193.168.1.1) 56(84) bytes of data. From 158.64.39.82 icmp_seq=1 Time to live exceeded  --- 193.168.1.1 ping statistics --- 1 packets transmitted, 0 received, +1 errors, 100% packet loss, time 0ms  
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 23:30
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 23:31
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 23:31
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 23:32
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 23:33
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 23:33
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 23:35
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 23:35
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 23:36
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 23:36
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 23:37
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 23:40
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 23:41
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 23:43
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 23:43
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 23:44
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 23:45
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 23:46
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 00:02
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:New program: {'progID': '005', 'progName': 'NoPump', 'pumpStartEvery': 2700, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '08:02', 'lightBrightness': 200, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for testing, punp does NOT run.'}
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 00:04
+INFO:roboLog:Current program: {'progID': '005', 'progName': 'NoPump', 'pumpStartEvery': 2700, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '08:02', 'lightBrightness': 200, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for testing, punp does NOT run.'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:New program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:New program: {'progID': '005', 'progName': 'NoPump', 'pumpStartEvery': 2700, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '08:02', 'lightBrightness': 200, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for testing, punp does NOT run.'}
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 00:06
+INFO:roboLog:Current program: {'progID': '005', 'progName': 'NoPump', 'pumpStartEvery': 2700, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '08:02', 'lightBrightness': 200, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '23:00', 'progDescription': 'Program for testing, punp does NOT run.'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+ERROR:engineio.server:Invalid session -cYdLSE5ZDn31EB6AAA2 (further occurrences of this error will be logged with level INFO)
+INFO:roboLog:New program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 00:07
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+ERROR:engineio.server:Invalid session Mgok_dunX0VT9Su9AAAe (further occurrences of this error will be logged with level INFO)
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 00:09
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 00:11
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+ERROR:engineio.server:Invalid session eusYzLgWWyeTxgyeAAAM (further occurrences of this error will be logged with level INFO)
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 00:14
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+ERROR:engineio.server:Invalid session 2Bjj04IMuKAeVoQoAAAQ (further occurrences of this error will be logged with level INFO)
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 00:16
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 00:17
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 00:18
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 00:19
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
