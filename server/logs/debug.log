@@ -126,3 +126,607 @@ INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal versio
 INFO:roboLog:System started. System time is: 00:19
 INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
 INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 21:41
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+WARNING:roboLog:Received non-JSON from Arduino: bytearray(b'ghtBloomON':0,'RGB':'0 0 0','brightness':0,'tds':0.00}\r\n')Expecting value: line 1 column 1 (char 0)
+WARNING:roboLog:Received non-JSON from Arduino: bytearray(b'{type':'T','pumpON':0,'lightGrowthON':0,'liy,tGrowthON':0,'lightBloomON':0,'RGB':'0 \r\n')Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+INFO:roboLog:System started. System time is: 22:16
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:System started. System time is: 22:16
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:System started. System time is: 22:16
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:System started. System time is: 22:16
+INFO:roboLog:System started. System time is: 22:16
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+WARNING:roboLog:Received non-JSON from Arduino: bytearray(b''pe':'T'twthON':0,'lightBloo\r\n')Extra data: line 1 column 5 (char 4)
+ERROR:engineio.server:Invalid session XgIxiuMU6WrW0ATEAAAA (further occurrences of this error will be logged with level INFO)
+ERROR:engineio.server:Invalid session XgIxiuMU6WrW0ATEAAAA (further occurrences of this error will be logged with level INFO)
+WARNING:roboLog:Received non-JSON from Arduino: bytearray(b'{'type':'T','pumpON':0,'ligN:0,'RGB':'0 0 0','brightness':0,'tds':0.00}\r\n')Expecting ':' delimiter: line 1 column 33 (char 32)
+ERROR:engineio.server:Invalid session yPeDRWUh9tMQrbxoAAAA (further occurrences of this error will be logged with level INFO)
+ERROR:engineio.server:Invalid session yPeDRWUh9tMQrbxoAAAA (further occurrences of this error will be logged with level INFO)
+WARNING:roboLog:Received non-JSON from Arduino: bytearray(b'{gtBloomON':0,'RGB':'0 0 0','brightness':0,'tds':.00}\r\n')Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+WARNING:roboLog:Received non-JSON from Arduino: bytearray(b'{:0,'ligh{'ype':'T','pumpON':0,'lightGromON':0,'RGB':'0 0 0','brightness':0,'tds':0.00}htGrowthON':0,'lightBloomO''type':'T','pumpON':0,'lightGrowthON':0,'lih0{type':'T','pumpON':0,'lightGrowthON':0,'lightl00}\r\n')Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:16:24 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:16:25 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:16:25 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:16:25 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:engineio.server:Invalid session oncLnV1rEd9OR-DnAAAA (further occurrences of this error will be logged with level INFO)
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:16:29 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:16:30 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:16:30 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:16:30 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:16:34 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:16:35 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:16:35 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:16:35 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:16:39 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:16:40 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:16:40 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:16:40 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:16:44 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:16:45 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:16:45 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:16:45 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:16:49 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:16:50 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:16:50 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:16:50 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:16:54 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:16:55 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:16:55 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:16:55 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:16:59 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:17:00 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:17:00 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:17:00 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:17:04 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:17:05 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:17:05 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:17:05 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:17:09 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:17:10 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:17:10 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:17:10 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:17:14 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:17:15 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:17:15 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:17:15 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:17:19 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:17:20 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:17:20 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:17:20 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+WARNING:roboLog:Received non-JSON from Arduino: bytearray(b''ghtness':0,'ds':0.00}\r\n')Extra data: line 1 column 10 (char 9)
+WARNING:roboLog:Received non-JSON from Arduino: bytearray(b't0,'lightBloomON':0,'RGB':'0 0 0','br'::,'RGB':'0 0 0','brightness':0,'tds':0.00}\r\n')Expecting value: line 1 column 1 (char 0)
+WARNING:roboLog:Received non-JSON from Arduino: bytearray(b'':'T','pumpON0t00}\r\n')Extra data: line 1 column 4 (char 3)
+INFO:roboLog:System started. System time is: 22:17
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:System started. System time is: 22:17
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+ERROR:engineio.server:Invalid session Mp-PEorKJk1r36ZQAAAA (further occurrences of this error will be logged with level INFO)
+INFO:roboLog:System started. System time is: 22:17
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:System started. System time is: 22:17
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:System started. System time is: 22:17
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+ERROR:engineio.server:Invalid session 6bylzpfyZdqqcMqDAAAA (further occurrences of this error will be logged with level INFO)
+WARNING:roboLog:Received non-JSON from Arduino: bytearray(b'{0'typON':0,'RGB':'0 0 0','brightness':0,'tds}\r\n')Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+WARNING:roboLog:Received non-JSON from Arduino: bytearray(b'{T','pumpON':0,'lightGrowthON':0,'lightBloom':0.00type':'T','pumpON':0,'lightGrowthON':0'lightBloomON':0,'RGB':'0 0 0','brightness':0,'ds':0.00}\r\n')Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:17:39 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:17:39 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:17:39 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:17:39 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:17:44 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:17:44 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:17:44 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:17:44 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:engineio.server:Invalid session i629qBQDPFsH_EeRAAAB (further occurrences of this error will be logged with level INFO)
+ERROR:engineio.server:Invalid session SkzOt1AIniRfdioxAAAC (further occurrences of this error will be logged with level INFO)
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:17:49 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:17:49 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:17:49 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:17:49 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:17:54 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:17:54 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:17:54 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-08 22:17:54 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 182, in checkLights
+    if dataJSON["brightness"] != 0:  # print("Lights should be ON")
+TypeError: string indices must be integers
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:17
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:21
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:22
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:24
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:27
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:27
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:29
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:29
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:31
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:32
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:34
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:36
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:36
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:37
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:39
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:41
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:48
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:50
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:51
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:52
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:55
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:56
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 22:57
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]

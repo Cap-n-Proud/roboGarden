@@ -23,13 +23,13 @@
         <div class="d-flex justify-content-center">
           {% for pod in level.pods %}
           <div class="col">
-            <div class="card text-dark bg-light mb-3 g-5" style="max-width: 12rem;mmin-width: 10rem;">
+            <div class="card text-dark bg-light mb-3 g-5" style="max-width: 12rem;">
               <div class="card-header">{{pod.podID}}
                 <span style="plantedDateStatus;  float:right; {% if pod.harvestTime | int >= 0 %}background-color:rgba(0,255,0,0.2); color:DodgerBlue;{% endif %}">&emsp;{% if pod.plantID | int != 0 %}{{pod.harvestTime}}{% endif %}</span>
               </div>
               <div class="card-body">
                 <h5 class="card-title">
-                  <select id="s{{pod.podID}}" onchange="postPlant(this)" class="form-select form-select-sm" style="max-width:90%;" aria-label=".form-select-sm example">
+                  <select id="s{{pod.podID}}" onchange="postPlant(this)" class="form-select form-select-sm" aria-label=".form-select-sm example" style="font-size: 12pt; max-width:90%;">
                     {% for plant in plantsDB.plants |sort(attribute='name')%}
                     <option value="{{plant.plantID}}" {% if plant.plantID == pod.plantID %} selected{% endif %}>{{plant.name}}</option>
                     {% endfor %}

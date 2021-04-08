@@ -79,8 +79,8 @@
 
     days = Math.floor(time / (secondsInADay));
     time = time - days * secondsInADay;
-    hours = Math.floor(time / 3600)
-    time = time - hours * 3600;
+    hours = Math.floor(time / secondsInAHour)
+    time = time - hours * secondsInAHour;
     mins = Math.floor(time / 60);
     secs = time - mins * 60;
 

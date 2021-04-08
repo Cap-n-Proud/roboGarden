@@ -427,8 +427,8 @@ translate([(-1.0*lenght)*sin(angle),(1.0*lenght)*cos(angle),0])
 //level(1);
 
 //roboGarden();
-dripGuard();
-
+//dripGuard();
+patch();
 module elbow(){
 difference(){
 elbow(collectorDiam-6, collectorDiam/2,90,30);
@@ -452,4 +452,14 @@ module dripGuard(){
         
         
     }
+}
+
+module patch(){
+    difference(){
+        cylinder(h= 1.5*podDiam, d= towerCollarED+2*towerThickness+1);
+        cylinder(h= 1.5*podDiam, d= towerCollarED+1); 
+ translate([-2*podDiam,0,0])cube([4*podDiam,2*podDiam,2*podDiam]);
+    rotate([0,0,-45]) translate([-2*podDiam,0,0])cube([4*podDiam,2*podDiam,2*podDiam]);       
+    }
+    
 }
