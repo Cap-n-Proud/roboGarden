@@ -35,6 +35,7 @@ def broadcastTime(t):
     io.emit("timeStarted", int(t.value()))
 
 
+# This is to keep the wifi conenction on
 def pingHost():
     import subprocess
 
