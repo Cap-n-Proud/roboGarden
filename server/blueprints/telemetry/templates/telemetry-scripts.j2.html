@@ -73,24 +73,28 @@
 
 
   socket.on("timeStarted", function(msg, cb) {
-    time = Number(msg);
-    var secondsInADay = 60 * 60 * 1000 * 24,
-      secondsInAHour = 60 * 60 * 1000;
+    n = Number(msg);
 
-    days = Math.floor(time / (secondsInADay));
-    time = time - days * secondsInADay;
-    hours = Math.floor(time / secondsInAHour)
-    time = time - hours * secondsInAHour;
-    mins = Math.floor(time / 60);
-    secs = time - mins * 60;
+    var days = parseInt(n / (24 * 3600));
+
+    n = n % (24 * 3600);
+    var hours = parseInt(n / 3600);
+
+    n %= 3600;
+    var minutes = parseInt(n / 60);
+
+    n %= 60;
+    var seconds = parseInt(n);
 
     var idEl = document.getElementById("countup1");
     idEl.getElementsByClassName('days')[0].innerHTML = days;
     idEl.getElementsByClassName('hours')[0].innerHTML = hours;
-    idEl.getElementsByClassName('minutes')[0].innerHTML = mins;
-    idEl.getElementsByClassName('seconds')[0].innerHTML = secs;
+    idEl.getElementsByClassName('minutes')[0].innerHTML = minutes;
+    idEl.getElementsByClassName('seconds')[0].innerHTML = seconds;
 
   });
+
+
 
   //Capture and publish the pump status
   function updatePumpStatus(telemetry) {

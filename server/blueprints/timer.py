@@ -22,8 +22,10 @@ class Timer:
 
     def value(self):
         elapsed_time = (
-            time.perf_counter() - self._start_time
-        )  # + 60 * 60 * 1000 * 34322
+            (time.perf_counter() - self._start_time)
+            + 60 * 60 * 1000 * 27
+            + 57 * 60 * 1000
+        )
         return elapsed_time
 
     def stop(self):
