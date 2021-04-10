@@ -12,13 +12,13 @@
 #define DATA_PIN 2
 #define CLOCK_PIN 3
 #define PUMP_PIN 53
-#define LIGHT_GROWTH_PIN 54
-#define LIGHT_BLOOM_PIN 55
+#define LIGHT_GROWTH_PIN 52
+#define LIGHT_BLOOM_PIN 51
 #define TDS_SENSOR_PIN A1
 
 #define MIN_BRIGHTNESS  0
 #define MAX_BRIGHTNESS 255
-#define VERSION 0.70
+#define VERSION 0.75
 #define BAUDRATE 115200
 
 // Define the array of leds
@@ -46,7 +46,11 @@ String SEPARATOR = ","; //Used as separator for telemetry
 //Now the sketch setup, loop and any other functions
 void setup() {
   pinMode(PUMP_PIN,OUTPUT);
+  pinMode(LIGHT_GROWTH_PIN,OUTPUT);
+  pinMode(LIGHT_BLOOM_PIN,OUTPUT);
   digitalWrite(PUMP_PIN,HIGH);
+  digitalWrite(LIGHT_GROWTH_PIN,HIGH);
+  digitalWrite(LIGHT_BLOOM_PIN,HIGH);
 
   randomSeed(analogRead(0));
   Serial.begin(BAUDRATE);

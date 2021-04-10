@@ -3,6 +3,8 @@
 const commandList_t commands[] = {
   {"setLightRGB", setLightRGB,   "Set color of the LED"},
   {"setLightGrowthON", setLightGrowthON,   "Set LED growth light ON"},
+  {"setLightsON", setLightsON,   "Set all lights on"},
+  {"setLightsOFF", setLightsOFF,   "Set all lights off"},
   {"setLightBloomON", setLightBloomON,   "Set LED bloomlight ON"},
   {"setLightGrowthOFF", setLightGrowthOFF,   "Set LED growth light ON"},
   {"setLightBloomOFF", setLightBloomOFF,   "Set LED bloomlight ON"},
@@ -120,6 +122,28 @@ bool pumpStart(Commander &Cmdr) {
   return 0;
 }
 
+
+
+bool setLightsON(Commander &Cmdr) {
+  // Here code to swith the LED on
+  digitalWrite(LIGHT_GROWTH_PIN,LOW);
+  digitalWrite(LIGHT_BLOOM_PIN,LOW);
+  lightGrowthON = true;
+  lightBloomON = true;
+  sendInfo(String("All lights set to ON"));
+  return 0;
+}
+
+
+bool setLightsOFF(Commander &Cmdr) {
+  // Here code to swith the LED on
+  digitalWrite(LIGHT_GROWTH_PIN,HIGH);
+  digitalWrite(LIGHT_BLOOM_PIN,HIGH);
+  lightGrowthON = false;
+  lightBloomON = false;
+  sendInfo(String("All lights set to OFF"));
+  return 0;
+}
 
 bool setLightGrowthON(Commander &Cmdr) {
   // Here code to swith the LED on

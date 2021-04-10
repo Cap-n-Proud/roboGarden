@@ -264,9 +264,9 @@ module SUB_support(){
 
 //electricalBox();
 //cableClampUP();
-electricalBoxLid();
+//electricalBoxLid();
 //translate([0, 0, 15])electricalBoxLid();
-
+SUB_cableClamp();
 //electricalBox();
 //translate([-boxX/2,boxY/3,-boxZ/2])rotate([0,0,90])SUB_support();
 //translate([-boxX/2,-boxY/3,-boxZ/2])rotate([0,0,90])SUB_support();

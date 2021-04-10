@@ -42,8 +42,16 @@
       <div class="col-4"><button id="pump" type="button" class="btn btn-outline-primary" onclick="pumpControl(this)"><i id="pump" class="fas fa-sync-alt"></i></button>
       </div>
    </div>
+   <div class="row p-1">
+      <div class="col-4">Lights</div>
+      <div class="col-4"></div>
+
+      <div class="col-4">
+        <div class="col-4"><button id="lights" type="button" class="btn btn-outline-primary" onclick="lights(this)"><i id="lights" class="fas fa-lightbulb"></i></button>
+      </div>
+   </div>
    <div class="row p-1 border-top">
-      <div class="col-12"><ul id="progLabel" class="list-unstyled card-columns"></ul>
+      <div class="col-12"><ul id="progLabel" onclick="lighstSwitch(this.value)" class="list-unstyled card-columns"></ul>
     </div>
    <div class="row p-1">
       <div class="col-2"></div>

@@ -1,5 +1,9 @@
 {% block scr %}
 <script>
+var lightGrowthON = 0
+var lightBloomON = 0
+
+
   var socket = io();
   document.getElementById("changeProgr").addEventListener("click", changeProgram);
 
@@ -30,6 +34,8 @@
     //document.getElementById("telemetryBox").innerHTML = msg.RGB + " @   " + msg.brightness
 
     var x = msg.RGB.split(" ");
+    lightGrowthON = msg.lightGrowthON
+    lightBloomON = msg.lightGrowthON
     // document.getElementById("LEDColor").value = R_G_BtoHEX(x[0], x[1], x[2]);
     // document.getElementById("LEDBrightness").value = msg.brightness
 
@@ -92,6 +98,20 @@
     // console.log("PUMP START " + cmd)
   }
 
+
+//Change pump status based on the checkbox TODO based on the arduino feedback
+function lights(val) {
+  console.log(val)
+  if (lightGrowthON || lightBloomON) {
+    var cmd = "setLightsOFF"
+  }
+  else {
+    var cmd = "setLightsON"
+
+  }
+  postCommand(cmd, 'arduinocmd')
+  // console.log("PUMP START " + cmd)
+}
 
   function hexTorgb(hex) {
     return ['0x' + hex[1] + hex[2] | 0, '0x' + hex[3] + hex[4] | 0, '0x' + hex[5] + hex[6] | 0];
