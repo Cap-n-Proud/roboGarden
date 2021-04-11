@@ -15,6 +15,9 @@ This repositroy is for building a vertical hydroponic system.
 The flask server is hosted by a Rasperry Pi communicating with an Arduino via USB.
 
 
+## Screenshots
+
+
 ## Technologies
 
 ## Setup
