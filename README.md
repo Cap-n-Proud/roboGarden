@@ -16,7 +16,42 @@ The flask server is hosted by a Rasperry Pi communicating with an Arduino via US
 
 
 ## Screenshots
-<img src="https://raw.githubusercontent.com/Cap-n-Proud/roboGarden/main/assets/img/menu.png" width="200" />
+ <table style="width:100%">
+  <tr>
+    <th>Menu'</th>
+    <th>Control</th>
+    <th>Control showing raw telemetry</th>
+  </tr>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/Cap-n-Proud/roboGarden/main/assets/img/menu.png" width="300" />
+</td>
+    <td><img src="https://raw.githubusercontent.com/Cap-n-Proud/roboGarden/main/assets/img/control.png" width="300" /></td>
+    <td><img src="https://raw.githubusercontent.com/Cap-n-Proud/roboGarden/main/assets/img/control-e.png" width="300" /></td>
+  </tr>
+  <tr>
+    <th>Maintenance</th>
+    <th>Current Program</th>
+    <th>Status</th>
+  </tr>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/Cap-n-Proud/roboGarden/main/assets/img/maintenance.png" width="300" />
+</td>
+    <td><img src="https://raw.githubusercontent.com/Cap-n-Proud/roboGarden/main/assets/img/currentProgram.png" width="300" /></td>
+    <td><img src="https://raw.githubusercontent.com/Cap-n-Proud/roboGarden/main/assets/img/status.png" width="300" /></td>
+  </tr>
+
+  <tr>
+    <th>tail</th>
+    <th></th>
+    <th></th>
+  </tr>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/Cap-n-Proud/roboGarden/main/assets/img/tail.png" width="300" />
+</td>
+    <td></td>
+    <td></td>
+  </tr>
+</table> 
 
 ## Technologies
 
