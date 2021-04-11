@@ -16,7 +16,7 @@ The flask server is hosted by a Rasperry Pi communicating with an Arduino via US
 
 
 ## Screenshots
-
+<img src="https://raw.githubusercontent.com/Cap-n-Proud/roboGarden/main/assets/img/menu.png" width="200" />
 
 ## Technologies
 
