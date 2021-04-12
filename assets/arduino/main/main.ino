@@ -31,6 +31,7 @@ auto timer = timer_create_default(); // create a timer with default settings
 
 bool pumpON = false;
 bool pumpOverride = false;
+bool lightOverride = false;
 int RGBLED[3] = {0, 0, 0};
 long Brightness = 0;
 bool lightGrowthON = false;

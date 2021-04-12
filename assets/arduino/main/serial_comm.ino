@@ -12,7 +12,7 @@ const commandList_t commands[] = {
   {"pumpStart",   pumpStart,   "Start pump"},
   {"pumpStop",    pumpStop,   "Stop pump"},
   {"setBrightness",         setBrightness,   "Set brightness"},
-  {"stopAll",         stopAll,   "Stop pump, lights and sensor readings"},
+  {"removeOverrides",         removeOverrides,   "Remove all overrides"},
   {"LEDShow",         LEDShow,   "Start a ledshow of n seconds"},
   {"readTDS",         readTDS,   "Read TDS value"},
   {"sysInfo",         sysInfo,   "Prints some information on the system"},
@@ -29,6 +29,23 @@ const commandList_t commands[] = {
 // sysInfo
 // readTDS
 // sendInfo
+
+// setLightRGB
+// setLightGrowthON
+// setLightsON
+// setLightsOFF
+// setLightBloomON
+// setLightGrowthOFF
+// setLightBloomOFF
+// pumpRunFor
+// pumpStart
+// pumpStop
+// setBrightness
+// removeOverrides
+// LEDShow
+// readTDS
+// sysInfo
+
 
 //Initialisation function
 void initialiseCommander() {
@@ -79,11 +96,12 @@ void sendInfo(String info)
 }
 
 //this will be an emergency stop
-void stopAll(Commander &Cmdr)
+void removeOverrides(Commander &Cmdr)
 {
 
-  removeOverride();
-  sendInfo(String("Override manually removed"));
+  removePumpOverride();
+  removeLightOverride();
+  sendInfo(String("Light and pump override manually removed"));
 
   return 0;
 }
@@ -123,25 +141,57 @@ bool pumpStart(Commander &Cmdr) {
 }
 
 
-
+//setLightsON 1 1000
 bool setLightsON(Commander &Cmdr) {
+  long v[2] = {0, 0};
+  for (int n = 0; n < 2; n++) {
+    //try and unpack an int, if it fails there are no more left so exit the loop
+    if (Cmdr.getInt(v[n])) {
+        Serial.println("*");
+
+    } else break;
+  }  
+
+  if(!lightOverride){
+    digitalWrite(LIGHT_GROWTH_PIN,LOW);
+    digitalWrite(LIGHT_BLOOM_PIN,LOW);
+    lightGrowthON = true;
+    lightBloomON = true;
+    sendInfo(String("All lights set to ON"));    
+  }
+  else {
+    sendInfo(String("Tried to set lights ON but override is active"));    
+  }
+
+  if(v[0]==1){
+    activateLightOverride(v[1]);
+    timer.in(v[1] * 1000 - 1, removeLightOverride); 
+  }
   // Here code to swith the LED on
-  digitalWrite(LIGHT_GROWTH_PIN,LOW);
-  digitalWrite(LIGHT_BLOOM_PIN,LOW);
-  lightGrowthON = true;
-  lightBloomON = true;
-  sendInfo(String("All lights set to ON"));
   return 0;
 }
 
 
 bool setLightsOFF(Commander &Cmdr) {
-  // Here code to swith the LED on
-  digitalWrite(LIGHT_GROWTH_PIN,HIGH);
-  digitalWrite(LIGHT_BLOOM_PIN,HIGH);
-  lightGrowthON = false;
-  lightBloomON = false;
-  sendInfo(String("All lights set to OFF"));
+    int removeOverride = 0;
+    if (Cmdr.getInt(removeOverride)==1){
+
+      removeLightOverride();
+    }
+    
+    if(!lightOverride){
+    // Here code to swith the LED on
+      digitalWrite(LIGHT_GROWTH_PIN,HIGH);
+      digitalWrite(LIGHT_BLOOM_PIN,HIGH);
+      lightGrowthON = false;
+      lightBloomON = false;
+      sendInfo(String("All lights set to OFF"));
+
+  }
+  else {
+    //sendInfo(String("Tried to set lights OFF but override is active"));    
+  }
+
   return 0;
 }
 
@@ -178,11 +228,24 @@ bool setLightBloomOFF(Commander &Cmdr) {
   return 0;
 }
 
-bool removeOverride() {
+bool removePumpOverride() {
   pumpOverride = false;
+  sendInfo(String("Pump override de-activated"));
 
 }
 
+bool removeLightOverride() {
+  lightOverride = false;
+  sendInfo(String("Light override de-activated"));
+
+}
+
+
+bool activateLightOverride(long t) {
+  lightOverride = true;
+  sendInfo(String("Light override activated for ") + String(t) + String(" seconds"));
+
+}
 
 
 bool pumpRunFor(Commander &Cmdr) {
@@ -192,7 +255,7 @@ bool pumpRunFor(Commander &Cmdr) {
     pumpON = true;
     digitalWrite(PUMP_PIN,LOW);
     timer.in(myInt * 1000 , pumpStop);
-    timer.in(myInt * 1000 - 1, removeOverride);
+    timer.in(myInt * 1000 - 1, removePumpOverride);
     sendInfo(String("Pump started for ") + myInt + String(" seconds"));
     //setRGBLED(0,0,255);
 
@@ -319,6 +382,9 @@ void TelemetryTXJSON() //statusReport
                   ",\"RGB\":" + "\"" + String(RGBLED[0]) + " " + String(RGBLED[1]) + " " + String(RGBLED[2]) +
                   "\"" + ",\"brightness\":" + Brightness +
                   ",\"tds\":" + tdsValue +
+                  ",\"pumpOverride\":" + pumpOverride +
+                  ",\"lightOverride\":" + lightOverride +
+
                   "}";
   Serial.println(line);
   //return 0;
