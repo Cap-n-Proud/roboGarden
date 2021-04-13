@@ -43,8 +43,8 @@
       </div>
    </div>
    <div class="row p-1">
-      <div class="col-4">Lights</div>
-      <div class="col-4"></div>
+      <div class="col-4">Lights override</div>
+      <div class="col-4"><input type="range" class="form-control-range" id="lightOverride" min="100" max="3600" value="1000" onInput="$('#rangeval').html($(this).val())"><span id="rangeval">1000<!-- Default value --></span></div>
       <div class="col-4"><button id="lights" type="button" class="btn btn-primary" onclick="lights(this)"><i id="lights" class="fas fa-lightbulb"></i></button></div>
     </div>
     <div class="row p-1">

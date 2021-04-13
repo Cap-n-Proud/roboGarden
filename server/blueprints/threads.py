@@ -70,7 +70,7 @@ def handle_data(data):
 
     try:
         dataJSON = json.loads(data.decode())
-        print(dataJSON)
+        # print(dataJSON)
         if dataJSON["type"] == config.Config.INFOTAG:
             # print(dataJSON)
             LOG.info("Info from Arduino: " + dataJSON["message"])

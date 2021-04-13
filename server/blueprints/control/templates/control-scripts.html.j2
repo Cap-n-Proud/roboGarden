@@ -3,8 +3,7 @@
 var lightGrowthON = 0
 var lightBloomON = 0
 
-
-  var socket = io();
+var socket = io();
   document.getElementById("changeProgr").addEventListener("click", changeProgram);
 
   //Load selected proram to arduino
@@ -56,8 +55,6 @@ var lightBloomON = 0
     }
   }
 
-
-
   function restartServer() {
     var cmd = "restartserver"
     if (confirm('Do you want to restart the server?')) {
@@ -103,10 +100,10 @@ var lightBloomON = 0
 function lights(val) {
   // console.log(val)
   if (lightGrowthON || lightBloomON) {
-    var cmd = "setLightsOFF 3600"
+    var cmd = "setLightsOFF " + document.getElementById("lightOverride").value;
   }
   else {
-    var cmd = "setLightsON 3600"
+    var cmd = "setLightsON " + document.getElementById("lightOverride").value;
 
   }
   postCommand(cmd, 'arduinocmd')

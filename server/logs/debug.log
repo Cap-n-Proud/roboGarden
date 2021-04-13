@@ -1801,3 +1801,268 @@ INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
 INFO:roboLog:RGB set to 255 150 255
 INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
 INFO:roboLog:Lights set to 255
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Info from Arduino: Light bloom set to ON
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 15:43
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Info from Arduino: Light bloom set to ON
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 15:44
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Info from Arduino: Light bloom set to ON
+INFO:roboLog:Info from Arduino: Pump started for 15 seconds
+INFO:roboLog:Info from Arduino: Light override de-activated
+INFO:roboLog:Info from Arduino: All lights set to OFF
+INFO:roboLog:Info from Arduino: Light override activated for 3600 seconds
+INFO:roboLog:Info from Arduino: Punp cannot stop, pump stop override active
+INFO:roboLog:Info from Arduino: Pump override de-activated
+INFO:roboLog:Info from Arduino: Pump started for 15 seconds
+INFO:roboLog:Info from Arduino: Punp cannot stop, pump stop override active
+INFO:roboLog:Info from Arduino: Pump override de-activated
+INFO:roboLog:Info from Arduino: Pump started for 3 seconds
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 15:45
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Info from Arduino: Light bloom set to ON
+INFO:roboLog:Info from Arduino: Pump started for 15 seconds
+INFO:roboLog:Info from Arduino: Pump override de-activated
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: Light override de-activated
+INFO:roboLog:Info from Arduino: All lights set to OFF
+INFO:roboLog:Info from Arduino: Light override activated for 3600 seconds
+INFO:roboLog:Info from Arduino: Light override de-activated
+INFO:roboLog:Info from Arduino: All lights set to OFF
+INFO:roboLog:Info from Arduino: Light override activated for 3600 seconds
+INFO:roboLog:Info from Arduino: Light override de-activated
+INFO:roboLog:Info from Arduino: All lights set to ON
+INFO:roboLog:Info from Arduino: Light override activated for 3600 seconds
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: Light override de-activated
+INFO:roboLog:Info from Arduino: Light override de-activated
+INFO:roboLog:Info from Arduino: Light override de-activated
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Info from Arduino: Pump start
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 18:49
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Info from Arduino: Light bloom set to ON
+INFO:roboLog:Info from Arduino: Light override de-activated
+INFO:roboLog:Info from Arduino: All lights set to OFF
+INFO:roboLog:Info from Arduino: Light override activated for 3600 seconds
+INFO:roboLog:Info from Arduino: Light override de-activated
+INFO:roboLog:Info from Arduino: All lights set to ON
+INFO:roboLog:Info from Arduino: Light override activated for 3600 seconds
+INFO:roboLog:Info from Arduino: Pump started for 15 seconds
+INFO:roboLog:Info from Arduino: Light override de-activated
+INFO:roboLog:Info from Arduino: All lights set to OFF
+INFO:roboLog:Info from Arduino: Light override activated for 3600 seconds
+INFO:roboLog:Info from Arduino: Pump override de-activated
+INFO:roboLog:Info from Arduino: Pump stopped
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 19:56
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Info from Arduino: Light bloom set to ON
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 20:01
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Info from Arduino: Light bloom set to ON
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 20:16
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Info from Arduino: Light bloom set to ON
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 20:18
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Info from Arduino: Light bloom set to ON
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 20:19
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Info from Arduino: Light bloom set to ON
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 20:20
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Info from Arduino: Light bloom set to ON
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 20:22
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Info from Arduino: Light bloom set to ON
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 20:24
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Info from Arduino: Light bloom set to ON
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 20:29
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Info from Arduino: Light bloom set to ON
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 20:30
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Info from Arduino: Light bloom set to ON
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 20:31
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 20:32
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Info from Arduino: Light bloom set to ON
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 20:33
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Info from Arduino: Light override de-activated
+INFO:roboLog:Info from Arduino: All lights set to ON
+INFO:roboLog:Info from Arduino: Light override activated for 788 seconds
+INFO:roboLog:Info from Arduino: Light override de-activated
+INFO:roboLog:Info from Arduino: All lights set to OFF
+INFO:roboLog:Info from Arduino: Light override activated for 100 seconds
+INFO:roboLog:Info from Arduino: Light override de-activated
+INFO:roboLog:Info from Arduino: All lights set to ON
+INFO:roboLog:Info from Arduino: Light override activated for 100 seconds
+INFO:roboLog:Info from Arduino: Light override de-activated
+INFO:roboLog:Info from Arduino: All lights set to OFF
+INFO:roboLog:Info from Arduino: Light override activated for 100 seconds
+INFO:roboLog:Info from Arduino: Light override de-activated
+INFO:roboLog:Info from Arduino: Light bloom set to ON
+INFO:roboLog:Info from Arduino: Light override de-activated
+INFO:roboLog:Info from Arduino: Light override de-activated
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Info from Arduino: Light override de-activated
+INFO:roboLog:Info from Arduino: All lights set to OFF
+INFO:roboLog:Info from Arduino: Light override activated for 100 seconds
+INFO:roboLog:Info from Arduino: Light override de-activated
+INFO:roboLog:Info from Arduino: All lights set to ON
+INFO:roboLog:Info from Arduino: Light override activated for 100 seconds
+INFO:roboLog:Info from Arduino: Light override de-activated
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 20:37
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Info from Arduino: Light bloom set to ON
+INFO:roboLog:Info from Arduino: Light override de-activated
+INFO:roboLog:Info from Arduino: All lights set to OFF
+INFO:roboLog:Info from Arduino: Light override activated for 1850 seconds
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 20:40
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Info from Arduino: Light override de-activated
+INFO:roboLog:Info from Arduino: All lights set to ON
+INFO:roboLog:Info from Arduino: Light override activated for 1000 seconds
