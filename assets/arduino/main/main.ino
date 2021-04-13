@@ -18,7 +18,7 @@
 
 #define MIN_BRIGHTNESS  0
 #define MAX_BRIGHTNESS 255
-#define VERSION 0.75
+#define VERSION "1.0.1"
 #define BAUDRATE 115200
 
 // Define the array of leds
