@@ -101,7 +101,7 @@ var lightBloomON = 0
 
 //Change lights status based on the checkbox TODO add slider for locking time
 function lights(val) {
-  console.log(val)
+  // console.log(val)
   if (lightGrowthON || lightBloomON) {
     var cmd = "setLightsOFF 3600"
   }
@@ -110,7 +110,7 @@ function lights(val) {
 
   }
   postCommand(cmd, 'arduinocmd')
-  console.log(cmd)
+  // console.log(cmd)
 }
 
   function hexTorgb(hex) {
