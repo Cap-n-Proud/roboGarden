@@ -192,12 +192,12 @@ def checkLights(currentProgram):
         if dataJSON["brightness"] != 0:  # print("Lights should be ON")
             arduinoCommand("setBrightness 0")
             LOG.info("Lights set to " + str(currentProgram["lightBrightness"]))
-        if "lightGrowthON" in dataJSON:
-            if int(dataJSON["lightGrowthON"]) == 1:
+        if ("lightGrowthON" in dataJSON) and ("lightOverride" in dataJSON):
+            if int(dataJSON["lightGrowthON"]) == 1 and not dataJSON["lightOverride"]:
                 arduinoCommand("setLightGrowthOFF")
                 LOG.info("Growth lights set to OFF")
-        if "lightBloomON" in dataJSON:
-            if int(dataJSON["lightBloomON"]) == 1:
+        if ("lightBloomON" in dataJSON) and ("lightOverride" in dataJSON):
+            if (int(dataJSON["lightBloomON"]) == 1) and not dataJSON["lightOverride"]:
                 arduinoCommand("setLightBloomOFF")
                 LOG.info("Bloom lights set to OFF")
 
