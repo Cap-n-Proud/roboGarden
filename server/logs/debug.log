@@ -1029,3 +1029,767 @@ INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal versio
 INFO:roboLog:System started. System time is: 23:20
 INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
 INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 14:34
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Info from Arduino: Light bloom set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:Info from Arduino: Light override de-activated
+INFO:roboLog:Info from Arduino: All lights set to OFF
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Info from Arduino: Light bloom set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:Info from Arduino: Light override de-activated
+INFO:roboLog:Info from Arduino: All lights set to OFF
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Info from Arduino: Light bloom set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 14:36
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+WARNING:roboLog:Received non-JSON from Arduino: bytearray(b'*\r\n*\r\n{'type':'I','message':'All lights set to ON'}\r\n')Expecting value: line 1 column 1 (char 0)
+INFO:roboLog:Info from Arduino: Light override activated for 3600 seconds
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Info from Arduino: Light override de-activated
+INFO:roboLog:Info from Arduino: All lights set to OFF
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Info from Arduino: Light bloom set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:Info from Arduino: Light override de-activated
+INFO:roboLog:Info from Arduino: All lights set to OFF
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Info from Arduino: Light bloom set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 14:45
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+WARNING:roboLog:Received non-JSON from Arduino: bytearray(b'*\r\n')Expecting value: line 1 column 1 (char 0)
+WARNING:roboLog:Received non-JSON from Arduino: bytearray(b'*\r\n{'type':'I','message':'All lights set to ON'}\r\n')Expecting value: line 1 column 1 (char 0)
+INFO:roboLog:Info from Arduino: Light override activated for 3600 seconds
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Info from Arduino: Light override de-activated
+INFO:roboLog:Info from Arduino: All lights set to OFF
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Info from Arduino: Light bloom set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 14:59
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Info from Arduino: All lights set to ON
+INFO:roboLog:Info from Arduino: Light override activated for 3600 seconds
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Info from Arduino: Light override activated for 3600 seconds
+INFO:roboLog:Info from Arduino: Light override de-activated
+INFO:roboLog:Info from Arduino: All lights set to OFF
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 14:59:48 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 158, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 14:59:53 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 158, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 14:59:58 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 158, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:00:03 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 158, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:00:08 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 158, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:00:13 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 158, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:00:18 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 158, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:00:23 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 158, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:00:28 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 158, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:00:33 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 158, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:00:38 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 158, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:00:43 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 158, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:00:48 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 158, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:00:53 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 158, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:00:58 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 158, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:01:03 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 158, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:01:08 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 158, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:01:13 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 158, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:01:18 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 158, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:01:23 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 158, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:01:28 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 158, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:01:33 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 158, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:01:38 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 158, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:01:43 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 158, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:01:48 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 158, in checkLights
+    timeNow = str(obj_now.hour).zfill(2) + ":" + str(obj_now.minute).zfill(2)
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:01:53 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 158, in checkLights
+    timeNow = str(obj_now.hour).zfill(2) + ":" + str(obj_now.minute).zfill(2)
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:01:58 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 158, in checkLights
+    timeNow = str(obj_now.hour).zfill(2) + ":" + str(obj_now.minute).zfill(2)
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:02:03 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 158, in checkLights
+    timeNow = str(obj_now.hour).zfill(2) + ":" + str(obj_now.minute).zfill(2)
+TypeError: argument of type 'int' is not iterable
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 15:02
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 15:03
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Info from Arduino: Light bloom set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:Info from Arduino: Light override de-activated
+INFO:roboLog:Info from Arduino: All lights set to OFF
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:04:25 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 161, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:04:30 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 161, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:04:35 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 161, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:04:40 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 161, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:04:45 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 161, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:04:50 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 161, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:04:55 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 161, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:05:00 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 161, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:05:05 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 161, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:05:10 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 161, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 15:05
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Info from Arduino: Light bloom set to ON
+INFO:roboLog:Info from Arduino: Light override de-activated
+INFO:roboLog:Info from Arduino: All lights set to OFF
+INFO:roboLog:Bloom lights set to ON
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:05:42 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 162, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:05:47 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 162, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:05:52 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 162, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:05:57 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 162, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:06:02 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 162, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:06:07 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 162, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:06:12 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 162, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:06:17 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 162, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:06:22 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 162, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:06:27 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 162, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:06:32 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 162, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:06:37 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 162, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+ERROR:apscheduler.executors.default:Job "checkLights (trigger: interval[0:00:05], next run at: 2021-04-13 15:06:42 CEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/paolo/NAS/Software/roboGarden/server/.venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/paolo/NAS/Software/roboGarden/server/blueprints/threads.py", line 162, in checkLights
+    if "brightness" in dataJSON:
+TypeError: argument of type 'int' is not iterable
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 15:06
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Info from Arduino: Light bloom set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:Info from Arduino: Light override de-activated
+INFO:roboLog:Info from Arduino: All lights set to OFF
+INFO:roboLog:Info from Arduino: Light override activated for 100 seconds
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Info from Arduino: Light bloom set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:Info from Arduino: Light override de-activated
+INFO:roboLog:Info from Arduino: All lights set to OFF
+INFO:roboLog:Info from Arduino: Light override activated for 100 seconds
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Info from Arduino: Light bloom set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:Info from Arduino: Light override de-activated
+INFO:roboLog:Info from Arduino: All lights set to OFF
+INFO:roboLog:Info from Arduino: Light override activated for 100 seconds
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Info from Arduino: Light bloom set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:Info from Arduino: Light override de-activated
+INFO:roboLog:Info from Arduino: All lights set to OFF
+INFO:roboLog:Info from Arduino: Light override activated for 100 seconds
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Info from Arduino: Light bloom set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 15:09
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Info from Arduino: All lights set to ON
+INFO:roboLog:Info from Arduino: Light override activated for 3600 seconds
+INFO:roboLog:Info from Arduino: Light override de-activated
+INFO:roboLog:Info from Arduino: All lights set to OFF
+INFO:roboLog:Info from Arduino: Light override activated for 3600 seconds
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Info from Arduino: Light bloom set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 15:17
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+ERROR:engineio.server:Invalid session nG1iqqd4s4qgcxy-AAAC (further occurrences of this error will be logged with level INFO)
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 15:17
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 15:19
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 15:20
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 15:20
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 15:21
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Info from Arduino: Light bloom set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 15:32
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Info from Arduino: Light bloom set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:Info from Arduino: Light override de-activated
+INFO:roboLog:Info from Arduino: All lights set to OFF
+INFO:roboLog:Info from Arduino: Light override activated for 3600 seconds
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Info from Arduino: Light bloom set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Info from Arduino: Light override de-activated
+INFO:roboLog:Info from Arduino: All lights set to ON
+INFO:roboLog:Info from Arduino: Light override activated for 3600 seconds
+INFO:roboLog:Info from Arduino: Light override de-activated
+INFO:roboLog:Info from Arduino: All lights set to OFF
+INFO:roboLog:Info from Arduino: Light override activated for 3600 seconds
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Info from Arduino: Light bloom set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 15:34
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 15:37
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]
+INFO:roboLog:Info from Arduino: Brightness set to: 255 (100%)
+INFO:roboLog:RGB set to 255 150 255
+INFO:roboLog:Info from Arduino: LED set to RGB: 255 150 255 
+INFO:roboLog:Lights set to 255
+INFO:roboLog:Info from Arduino: Light growth set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Info from Arduino: Light bloom set to ON
+INFO:roboLog:Bloom lights set to ON
+INFO:roboLog:Info from Arduino: Light override de-activated
+INFO:roboLog:Info from Arduino: All lights set to OFF
+INFO:roboLog:Info from Arduino: Light override activated for 3600 seconds
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Info from Arduino: Light override de-activated
+INFO:roboLog:Info from Arduino: All lights set to ON
+INFO:roboLog:Info from Arduino: Light override activated for 3600 seconds
+INFO:roboLog:Growth lights set to ON
+INFO:roboLog:Serial interface configured on /dev/ttyACM0@115200 Pyserisal version: 3.5
+INFO:roboLog:System started. System time is: 15:40
+INFO:roboLog:Current program: {'progID': '001', 'progName': 'Default', 'pumpStartEvery': 1800, 'pumpRunTime': 20, 'pumpON': '08:00', 'pumpOFF': '22:00', 'lightBrightness': 255, 'RGB': '255 150 255', 'lightsON': '06:00', 'lightsOFF': '21:00', 'progDescription': 'Default program, lights and pump are off during quiet hours. Medium watering'}
+INFO:roboLog:Background jobs: [<Job (id=broadcastTime name=broadcastTime)>, <Job (id=checkL name=checkLights)>, <Job (id=pingHost name=pingHost)>, <Job (id=checkP name=activatePump)>]

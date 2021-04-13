@@ -18,6 +18,7 @@ class Config:
     DEBUGLOGFILE = "logs/debug.log"
     INFOTAG = "I"
     TELEMETRYTAG = "T"
+    DEBUGTAG = "D"
     LOGFORMAT = "%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s"
     CHECKHARVESTINTERVAL = 86400
     TIMEZONE = "Europe/Zurich"

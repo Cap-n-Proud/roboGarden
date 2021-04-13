@@ -67,8 +67,10 @@ def pingHost():
 
 def handle_data(data):
     global dataJSON
+
     try:
         dataJSON = json.loads(data.decode())
+        print(dataJSON)
         if dataJSON["type"] == config.Config.INFOTAG:
             # print(dataJSON)
             LOG.info("Info from Arduino: " + dataJSON["message"])
@@ -78,6 +80,9 @@ def handle_data(data):
             # print(dataJSON)
             io.emit(config.Config.TELEMETRYTAG, dataJSON)
             # print(threading.active_count())
+        if dataJSON["type"] == config.Config.DEBUGTAG:
+            # print(dataJSON)
+            io.emit(config.Config.DEBUGTAG, dataJSON)
 
     except ValueError as e:
         # We need to replace double quotes with single ones to save it in the json logs
@@ -170,11 +175,15 @@ def checkLights(currentProgram):
             if "lightGrowthON" in dataJSON:
                 if dataJSON["lightGrowthON"] == 0:
                     arduinoCommand("setLightGrowthON")
-                    LOG.info("Growth lights set to ON")
+                    # LOG.info("Growth lights set to ON")
             if "lightBloomON" in dataJSON:
                 if dataJSON["lightBloomON"] == 0:
                     arduinoCommand("setLightBloomON")
-                    LOG.info("Bloom lights set to ON")
+                    # LOG.info("Bloom lights set to ON")
+            # if ("lightGrowthON" in dataJSON) or ("lightBloomON" in dataJSON):
+            #     if (dataJSON["lightGrowthON"] == 0) or (dataJSON["lightBloomON"] == 0):
+            #         arduinoCommand("setLightON")
+            #         LOG.info("Lights set to ON")
 
         except ValueError as e:
             LOG.error(e)

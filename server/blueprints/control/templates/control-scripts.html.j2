@@ -99,18 +99,18 @@ var lightBloomON = 0
   }
 
 
-//Change pump status based on the checkbox TODO based on the arduino feedback
+//Change lights status based on the checkbox TODO add slider for locking time
 function lights(val) {
   console.log(val)
   if (lightGrowthON || lightBloomON) {
-    var cmd = "setLightsOFF"
+    var cmd = "setLightsOFF 3600"
   }
   else {
-    var cmd = "setLightsON 1 3600"
+    var cmd = "setLightsON 3600"
 
   }
   postCommand(cmd, 'arduinocmd')
-  // console.log("PUMP START " + cmd)
+  console.log(cmd)
 }
 
   function hexTorgb(hex) {
