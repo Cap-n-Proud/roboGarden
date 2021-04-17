@@ -1,8 +1,8 @@
 {
-  "changeWater": "30",
-  "topWater": "7",
-  "addH2O2": "7",
-  "addNutrients": "30",
-  "towerMaintenance": "60",
-  "tankMaintenance": "60"
+  "changeWater": "45",
+  "topWater": "10",
+  "addH2O2": "10",
+  "addNutrients": "45",
+  "towerMaintenance": "90",
+  "tankMaintenance": "90"
 }
