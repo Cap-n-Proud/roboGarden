@@ -18,7 +18,8 @@
 
 #define MIN_BRIGHTNESS  0
 #define MAX_BRIGHTNESS 255
-#define VERSION "1.0.1"
+
+#define VERSION "1.1.1"
 #define BAUDRATE 115200
 
 // Define the array of leds
@@ -37,6 +38,7 @@ long Brightness = 0;
 bool lightGrowthON = false;
 bool lightBloomON= false;
 float temperature = 25,tdsValue = 0;
+float PUMP_MAX_RUN = 60; //Max time the pump can run
 
 String info = "";
 

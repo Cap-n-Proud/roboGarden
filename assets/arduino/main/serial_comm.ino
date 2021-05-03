@@ -197,8 +197,11 @@ bool pumpStart(Commander & Cmdr) {
   // Here code to swith the pump on
   digitalWrite(PUMP_PIN, LOW);
   pumpON = true;
-  sendInfo(String("Pump start"));
   //setRGBLED(0,0,255);
+  timer.in(PUMP_MAX_RUN * 1000, pumpStop);
+  timer.in((PUMP_MAX_RUN - 2)* 1000, removePumpOverride);
+  sendInfo(String("Pump start, max run set to " + String(PUMP_MAX_RUN)));
+   
   return 0;
 }
 
