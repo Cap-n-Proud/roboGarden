@@ -24,7 +24,7 @@ from apscheduler.schedulers.background import BackgroundScheduler
 timeStarted = datetime.now()
 checkL = ""
 checkP = ""
-schesuler = ""
+scheduler = ""
 # from apscheduler.schedulers.background import BackgroundScheduler
 def initSerial():
     LOG = logging.getLogger(config.Config.APPLOGNAME)
