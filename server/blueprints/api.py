@@ -1,6 +1,29 @@
 # Collection of functions to perform task on request of blueprints main files.
 # This includes also filters for templates
 
+# API calls are called from js scripts with the function postCommand see below
+
+# function postCommand(cmd, location) {
+# const URL = `${window.origin}/api/` + location
+# // console.log(URL)
+# // post body data
+# const command = {
+#   command: cmd
+# };
+#
+# // request options
+# const options = {
+#   method: 'POST',
+#   body: JSON.stringify(command),
+#   headers: {
+#     'Content-Type': 'application/json'
+#   }
+# }
+# // send POST request
+# fetch(URL, options)
+#   .then(res => res.json())
+# }
+
 import json
 import config
 import logging
@@ -15,7 +38,7 @@ from datetime import datetime
 LOG = logging.getLogger(config.Config.APPLOGNAME)
 io = SocketIO(app)  # engineio_logger=True)
 
-# Retrieve the current program, used to populate the indey.html file
+# Retrieve the current program, used to populate the index.html file
 def getCurrentProgr():
     with open(config.JSON_Path.CURRENTPROGRAM) as f:
         data = json.load(f)
