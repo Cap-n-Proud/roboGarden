@@ -2,6 +2,7 @@
 # This includes also filters for templates
 
 # API calls are called from js scripts with the function postCommand see below
+# Location is the name of the function you want to calls
 
 # function postCommand(cmd, location) {
 # const URL = `${window.origin}/api/` + location
