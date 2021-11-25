@@ -2,7 +2,7 @@ include <BOSL2/std.scad>
 include <BOSL2/screws.scad>
 
 
-$fn=20;
+$fn=200;
 
 module cross(){
     
@@ -21,7 +21,7 @@ union(){
 
 }
 translate([0,0,27])cross();
-translate([0,0,0])cylinder(r=3.5, h=30);
+translate([0,0,0])cylinder(r=2.5, h=30);
     }
 }
 
@@ -34,9 +34,9 @@ difference(){
 translate([0,0,-5])cylinder(r=5, h=30);
    
 }
-nut("M10", 16, 5);
+nut("M10", 16, 5,tolerance="7G", $slop=0);
 }
 
 //cross();
-drain();
-//nut_drain();
+//drain();
+nut_drain();

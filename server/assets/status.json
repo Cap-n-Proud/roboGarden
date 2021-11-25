@@ -1,20 +1,34 @@
 {
     "towers": [
         {
-            "name": "tower01",
+            "name": "Layer01",
             "levels": [
                 {
                     "level": "0",
                     "pods": [
+                      {
+                          "podID": "00-00-00",
+                          "plantID": "000",
+                          "plantName": "000-Empty",
+                          "plantedDate": "2021-02-26T18:03:21.200Z",
+                          "harvestTime": "-9972"
+                      },
+                      {
+                          "podID": "00-00-01",
+                          "plantID": "000",
+                          "plantName": "000-Empty",
+                          "plantedDate": "2021-02-26T18:03:23.700Z",
+                          "harvestTime": "-9972"
+                      },
                         {
-                            "podID": "00-00-00",
+                            "podID": "00-00-02",
                             "plantID": "000",
                             "plantName": "000-Empty",
                             "plantedDate": "2021-02-26T18:03:21.200Z",
                             "harvestTime": "-9972"
                         },
                         {
-                            "podID": "00-00-01",
+                            "podID": "00-00-03",
                             "plantID": "000",
                             "plantName": "000-Empty",
                             "plantedDate": "2021-02-26T18:03:23.700Z",
