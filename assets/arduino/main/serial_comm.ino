@@ -1,4 +1,6 @@
-//Now the command list must be defined https://github.com/CreativeRobotics/Commander/blob/master/examples/BasicCommands/masterCommands.ino
+// Now the command list must be defined
+
+// https://github.com/CreativeRobotics/Commander/blob/master/examples/BasicCommands/masterCommands.ino
 const commandList_t commands[] = {
   {
     "setLightRGB",
@@ -75,7 +77,6 @@ const commandList_t commands[] = {
     sysInfo,
     "Prints some information on the system"
   },
-
 };
 
 // pumpStart
@@ -105,31 +106,33 @@ const commandList_t commands[] = {
 // readTDS
 // sysInfo
 
-//Initialisation function
+// Initialisation function
 void initialiseCommander() {
-  cmd.begin( & Serial, commands, sizeof(commands)); //start Commander on Serial
+  cmd.begin(&Serial, commands, sizeof(commands)); // start Commander on Serial
 }
 
-void LEDShow(Commander & Cmdr) {
-  int val1 = 0;
-  int val2 = 0;
-  int val3 = 0;
-  float freq = 0;
-  float dur = 0;
+void LEDShow(Commander& Cmdr) {
+  int   val1      = 0;
+  int   val2      = 0;
+  int   val3      = 0;
+  float freq      = 0;
+  float dur       = 0;
   float values[3] = {
     0,
     0
   };
-  for (int n = 0; n < 2; n++) {
-    //try and unpack an int, if it fails there are no more left so exit the loop
-    if (Cmdr.getFloat(values[n])) {
 
-    } else break;
+  for (int n = 0; n < 2; n++) {
+    // try and unpack an int, if it fails there are no more left so exit the
+    // loop
+    if (Cmdr.getFloat(values[n])) {} else break;
   }
-  dur = 1000 * values[0];
+  dur  = 1000 * values[0];
   freq = 1000 * values[1];
 
-  sendInfo(String("Lightshow started. Duration " + String(dur / 1000) + " freq " + String((freq / 1000))));
+  sendInfo(String("Lightshow started. Duration " + String(dur / 1000) + " freq " +
+                  String((freq / 1000))));
+
   for (int i = 0; i < dur / freq; i++) {
     val1 = random();
     val2 = random();
@@ -142,30 +145,36 @@ void LEDShow(Commander & Cmdr) {
   leds[0] = CRGB::Black;
   FastLED.show();
   sendInfo(String("Lightshow stopped"));
-
 }
 
-void sendInfo(String info) { // for help on dtostrf http://forum.arduino.cc/index.php?topic=85523.0
-  //{"type": "I", "pumpON":1,"RGB": "20 255 30","brightness":80}
+void sendInfo(String info) { // for help on dtostrf
+                             // http://forum.arduino.cc/index.php?topic=85523.0
+  // {"type": "I", "pumpON":1,"RGB": "20 255 30","brightness":80}
   String line = "";
-  line = String("{\"type\":") + String("\"I\",") + "\"message\":" + "\"" + info + "\"" + "}";
+
+  line = String("{\"type\":") + String("\"I\",") + "\"message\":" + "\"" + info +
+         "\"" + "}";
   Serial.println(line);
   delay(100);
-  //return 0;
+
+  // return 0;
 }
 
-void sendDebug(String info) { // for help on dtostrf http://forum.arduino.cc/index.php?topic=85523.0
-  //{"type": "I", "pumpON":1,"RGB": "20 255 30","brightness":80}
+void sendDebug(String info) { // for help on dtostrf
+                              // http://forum.arduino.cc/index.php?topic=85523.0
+  // {"type": "I", "pumpON":1,"RGB": "20 255 30","brightness":80}
   String line = "";
-  line = String("{\"type\":") + String("\"D\",") + "\"message\":" + "\"" + info + "\"" + "}";
+
+  line = String("{\"type\":") + String("\"D\",") + "\"message\":" + "\"" + info +
+         "\"" + "}";
   Serial.println(line);
   delay(100);
-  //return 0;
+
+  // return 0;
 }
 
-//this will be an emergency stop
-void removeOverrides(Commander & Cmdr) {
-
+// this will be an emergency stop
+void removeOverrides(Commander& Cmdr) {
   removePumpOverride();
   removeLightOverride();
   sendInfo(String("Light and pump override manually removed"));
@@ -173,15 +182,16 @@ void removeOverrides(Commander & Cmdr) {
   return 0;
 }
 
-bool readTDS(Commander & Cmdr) {
-  //temperature = readTemperature();  //add your temperature sensor and read it
-  gravityTds.setTemperature(temperature); // set the temperature and execute temperature compensation
-  gravityTds.update(); //sample and calculate
-  tdsValue = gravityTds.getTdsValue(); // then get the value
+bool readTDS(Commander& Cmdr) {
+  // temperature = readTemperature();  //add your temperature sensor and read it
+  gravityTds.setTemperature(temperature); // set the temperature and execute
+                                          // temperature compensation
+  gravityTds.update();                    // sample and calculate
+  tdsValue = gravityTds.getTdsValue();    // then get the value
   return 0;
 }
 
-bool pumpStop(Commander & Cmdr) {
+bool pumpStop(Commander& Cmdr) {
   if (!pumpOverride) { // Here code to swith the pump off
     pumpON = false;
     digitalWrite(PUMP_PIN, HIGH);
@@ -193,30 +203,32 @@ bool pumpStop(Commander & Cmdr) {
   return 0;
 }
 
-bool pumpStart(Commander & Cmdr) {
+bool pumpStart(Commander& Cmdr) {
   // Here code to swith the pump on
   digitalWrite(PUMP_PIN, LOW);
   pumpON = true;
-  //setRGBLED(0,0,255);
-  timer.in(PUMP_MAX_RUN * 1000, pumpStop);
-  timer.in((PUMP_MAX_RUN - 2)* 1000, removePumpOverride);
+
+  // setRGBLED(0,0,255);
+  timer.in(PUMP_MAX_RUN * 1000,       pumpStop);
+  timer.in((PUMP_MAX_RUN - 2) * 1000, removePumpOverride);
   sendInfo(String("Pump start, max run set to " + String(PUMP_MAX_RUN)));
-   
+
   return 0;
 }
 
-//setLightsON 1000
-bool setLightsON(Commander & Cmdr) {
+// setLightsON 1000
+bool setLightsON(Commander& Cmdr) {
   int sLOverride = 0;
 
   if (Cmdr.getInt(sLOverride) > 0) {
     removeLightOverride();
   }
+
   if (!lightOverride) {
     digitalWrite(LIGHT_GROWTH_PIN, LOW);
-    digitalWrite(LIGHT_BLOOM_PIN, LOW);
+    digitalWrite(LIGHT_BLOOM_PIN,  LOW);
     lightGrowthON = true;
-    lightBloomON = true;
+    lightBloomON  = true;
     sendInfo(String("All lights set to ON"));
   } else {
     sendDebug(String("Tried to set lights ON but override is active"));
@@ -225,11 +237,12 @@ bool setLightsON(Commander & Cmdr) {
   if (sLOverride > 0) {
     setLightOverride(sLOverride);
   }
+
   // Here code to swith the LED on
   return 0;
 }
 
-bool setLightsOFF(Commander & Cmdr) {
+bool setLightsOFF(Commander& Cmdr) {
   int sLOverride = 0;
 
   if (Cmdr.getInt(sLOverride) > 0) {
@@ -239,23 +252,22 @@ bool setLightsOFF(Commander & Cmdr) {
   if (!lightOverride) {
     // Here code to swith the LED on
     digitalWrite(LIGHT_GROWTH_PIN, HIGH);
-    digitalWrite(LIGHT_BLOOM_PIN, HIGH);
+    digitalWrite(LIGHT_BLOOM_PIN,  HIGH);
     lightGrowthON = false;
-    lightBloomON = false;
+    lightBloomON  = false;
     sendInfo(String("All lights set to OFF"));
-
   } else {
     sendDebug(String("Tried to set lights OFF but override is active"));
-
   }
-  //Serial.println(sLOverride);
+
+  // Serial.println(sLOverride);
   if (sLOverride > 0) {
     setLightOverride(sLOverride);
   }
   return 0;
 }
 
-bool setLightGrowthON(Commander & Cmdr) {
+bool setLightGrowthON(Commander& Cmdr) {
   int sLOverride = 0;
 
   if (Cmdr.getInt(sLOverride) > 0) {
@@ -264,25 +276,24 @@ bool setLightGrowthON(Commander & Cmdr) {
 
   if (!lightOverride) {
     // Here code to swith the LED on
-  
-  digitalWrite(LIGHT_GROWTH_PIN, LOW);
-  lightGrowthON = true;
-  sendInfo(String("Light growth set to ON"));
-}
-else {
-  sendDebug(String("Tried to set growth lights ON but override is active"));
 
+    digitalWrite(LIGHT_GROWTH_PIN, LOW);
+    lightGrowthON = true;
+    sendInfo(String("Light growth set to ON"));
+  }
+  else {
+    sendDebug(String("Tried to set growth lights ON but override is active"));
+  }
+
+  if (sLOverride > 0) {
+    setLightOverride(sLOverride);
+  }
+
+  return 0;
 }
 
-if (sLOverride > 0) {
-  setLightOverride(sLOverride);
-}
-
-return 0;
-}
-
-bool setLightBloomON(Commander & Cmdr) {
- int sLOverride = 0;
+bool setLightBloomON(Commander& Cmdr) {
+  int sLOverride = 0;
 
   if (Cmdr.getInt(sLOverride) > 0) {
     removeLightOverride();
@@ -290,65 +301,62 @@ bool setLightBloomON(Commander & Cmdr) {
 
   if (!lightOverride) {
     // Here code to swith the LED on
-  
-  digitalWrite(LIGHT_BLOOM_PIN, LOW);
-  lightBloomON = true;
-  sendInfo(String("Light bloom set to ON"));
-}
-else {
-  sendDebug(String("Tried to set bloom lights ON but override is active"));
 
+    digitalWrite(LIGHT_BLOOM_PIN, LOW);
+    lightBloomON = true;
+    sendInfo(String("Light bloom set to ON"));
+  }
+  else {
+    sendDebug(String("Tried to set bloom lights ON but override is active"));
+  }
+
+  if (sLOverride > 0) {
+    setLightOverride(sLOverride);
+  }
+
+  return 0;
 }
 
-if (sLOverride > 0) {
-  setLightOverride(sLOverride);
-}
-
-return 0;
-}
-
-bool setLightGrowthOFF(Commander & Cmdr) {
+bool setLightGrowthOFF(Commander& Cmdr) {
   int sLOverride = 0;
+
   if (Cmdr.getInt(sLOverride) > 0) {
     removeLightOverride();
   }
-  if (!lightOverride) {
 
+  if (!lightOverride) {
     // Here code to switch the LED on
     digitalWrite(LIGHT_GROWTH_PIN, HIGH);
     lightGrowthON = false;
     sendInfo(String("LED growth set to OFF"));
-
   } else {
     sendDebug(String("Tried to set growth lights OFF but override is active"));
-
   }
 
-  //Serial.println(sLOverride);
+  // Serial.println(sLOverride);
   if (sLOverride > 0) {
     setLightOverride(sLOverride);
   }
   return 0;
 }
 
-bool setLightBloomOFF(Commander & Cmdr) {
+bool setLightBloomOFF(Commander& Cmdr) {
   int sLOverride = 0;
+
   if (Cmdr.getInt(sLOverride) > 0) {
     removeLightOverride();
   }
-  if (!lightOverride) {
 
+  if (!lightOverride) {
     // Here code to switch the LED on
     digitalWrite(LIGHT_BLOOM_PIN, HIGH);
     lightBloomON = false;
     sendInfo(String("LED bloom set to OFF"));
-
   } else {
     sendDebug(String("Tried to set bloom lights OFF but override is active"));
-
   }
 
-  //Serial.println(sLOverride);
+  // Serial.println(sLOverride);
   if (sLOverride > 0) {
     setLightOverride(sLOverride);
   }
@@ -358,34 +366,35 @@ bool setLightBloomOFF(Commander & Cmdr) {
 bool removePumpOverride() {
   pumpOverride = false;
   sendInfo(String("Pump override de-activated"));
-
 }
 
 bool removeLightOverride() {
   lightOverride = false;
   sendInfo(String("Light override de-activated"));
-
 }
 
+// Used to tell the scheduler that lights needs to be on outside schedule hours
 bool setLightOverride(long t) {
   lightOverride = true;
   timer.in(t * 1000 - 1, removeLightOverride);
 
-  sendInfo(String("Light override activated for ") + String(t) + String(" seconds"));
-
+  sendInfo(String("Light override activated for ") + String(t) + String(
+             " seconds"));
 }
 
-bool pumpRunFor(Commander & Cmdr) {
+bool pumpRunFor(Commander& Cmdr) {
   long myInt;
+
   pumpOverride = true;
+
   if (Cmdr.getInt(myInt)) {
     pumpON = true;
     digitalWrite(PUMP_PIN, LOW);
-    timer.in(myInt * 1000, pumpStop);
+    timer.in(myInt * 1000,     pumpStop);
     timer.in(myInt * 1000 - 1, removePumpOverride);
     sendInfo(String("Pump started for ") + myInt + String(" seconds"));
-    //setRGBLED(0,0,255);
 
+    // setRGBLED(0,0,255);
   } else {
     sendInfo(String("Command pumpRunFor failed: no duration supplied"));
   }
@@ -393,69 +402,73 @@ bool pumpRunFor(Commander & Cmdr) {
   return 0;
 }
 
-bool setLightsONTime(Commander & Cmdr) {
+bool setLightsONTime(Commander& Cmdr) {
   String myString = "";
-  int itms = Cmdr.countItems();
+  int    itms     = Cmdr.countItems();
 
   if (Cmdr.getString(myString)) {
-
     sendInfo(String("LED start set fron: ") + myString);
-
   } else Cmdr.println("Operation failed");
 
-  //Cmdr.chain();
-  //Cmdr.printDiagnostics();
+  // Cmdr.chain();
+  // Cmdr.printDiagnostics();
   return 0;
 }
 
-bool setBrightness(Commander & Cmdr) {
+bool setBrightness(Commander& Cmdr) {
   // Here code to swith the pump on
   long myInt;
-  //The server has brigtness range 0-255, the hardware is library dependent. We do not scale but keep the same ranger in the GUI Sx:100=Hx:MAX_BRIGHTNESS
+
+  // The server has brigtness range 0-255, the hardware is library dependent. We
+  // do not scale but keep the same ranger in the GUI Sx:100=Hx:MAX_BRIGHTNESS
   if (Cmdr.getInt(myInt)) {
     Brightness = myInt;
     FastLED.setBrightness(Brightness);
     FastLED.show();
-    sendInfo(String("Brightness set to: ") + myInt + String(" (") + 100 * myInt / 255 + String("%)"));
+    sendInfo(String("Brightness set to: ") + myInt + String(
+               " (") + 100 * myInt / 255 + String("%)"));
   }
   return 0;
 }
 
-bool sysInfo(Commander & Cmdr) {
-  String line = "";
-  String commands = "pumpStart, pumpStop, pumpRunFor 2, setBrightness 15, setLightRGB 23 10 115, stopAll, LEDShow 5 0.2, readTDS, sysInfo";
+bool sysInfo(Commander& Cmdr) {
+  String line     = "";
+  String commands =
+    "pumpStart, pumpStop, pumpRunFor 2, setBrightness 15, setLightRGB 23 10 115, stopAll, LEDShow 5 0.2, readTDS, sysInfo";
+
   line = String("{\"type\":") + String("\"S\",") +
-    "\"version\":" + VERSION +
-    ",\"baud rate\":" +
-    "\"" + BAUDRATE +
-    "\""
-  ",\"commands\":" +
-  "\"" + commands +
-    "\"}";
+         "\"version\":" + VERSION +
+         ",\"baud rate\":" +
+         "\"" + BAUDRATE +
+         "\""
+         ",\"commands\":" +
+         "\"" + commands +
+         "\"}";
 
   Serial.println(line);
   delay(100);
-
 }
 
-//setLightRGB 255 255 255
-bool setLightRGB(Commander & Cmdr) {
-  //create an array to store any values we find
+// setLightRGB 255 255 255
+bool setLightRGB(Commander& Cmdr) {
+  // create an array to store any values we find
   int values[4] = {
     0,
     0,
     0
   };
-  for (int n = 0; n < 3; n++) {
-    //try and unpack an int, if it fails there are no more left so exit the loop
-    if (Cmdr.getInt(values[n])) {
 
-    } else break;
-  }
-  //print it out
-  String pRGB = "";
   for (int n = 0; n < 3; n++) {
-    pRGB = pRGB + String(values[n]) + String(" ");
+    // try and unpack an int, if it fails there are no more left so exit the
+    // loop
+    if (Cmdr.getInt(values[n])) {} else break;
+  }
+
+  // print it out
+  String pRGB = "";
+
+  for (int n = 0; n < 3; n++) {
+    pRGB      = pRGB + String(values[n]) + String(" ");
     RGBLED[n] = values[n];
   }
 
@@ -466,55 +479,61 @@ bool setLightRGB(Commander & Cmdr) {
   return 0;
 }
 
-void TelemetryTX() { // for help on dtostrf http://forum.arduino.cc/index.php?topic=85523.0
-
-  String line = "";
+void TelemetryTX() { // for help on dtostrf
+                     // http://forum.arduino.cc/index.php?topic=85523.0
+  String line        = "";
   String telemMarker = "T";
-  //Need to calculate parameters here because the main loop has a different frequency
-  //TxLoopTime = millis() - TxLoopTime;
+
+  // Need to calculate parameters here because the main loop has a different
+  // frequency
+  // TxLoopTime = millis() - TxLoopTime;
 
   line = telemMarker + SEPARATOR +
-    String(pumpON) + SEPARATOR +
-    String(RGBLED[0]) + " " + String(RGBLED[1]) + " " + String(RGBLED[2]) + SEPARATOR +
-    String(Brightness) + SEPARATOR +
-    String((float(random(1000, 9999)) / 100)) + SEPARATOR +
+         String(pumpON) + SEPARATOR +
+         String(RGBLED[0]) + " " + String(RGBLED[1]) + " " + String(RGBLED[2]) +
+         SEPARATOR +
+         String(Brightness) + SEPARATOR +
+         String((float(random(1000, 9999)) / 100)) + SEPARATOR +
 
-    String(info) + SEPARATOR;
+         String(info) + SEPARATOR;
   Serial.println(line);
 
   /*line = "T" + SEPARATOR
-         + yaw + SEPARATOR
-         + pitch + SEPARATOR
-         + roll + SEPARATOR
-         + heading + SEPARATOR
-         + Info
-    //+ SEPARATOR
-    //+ LastEvent;*/
-  //Serial.println(line);
+   + yaw + SEPARATOR
+   + pitch + SEPARATOR
+   + roll + SEPARATOR
+   + heading + SEPARATOR
+   + Info
+     //+ SEPARATOR
+     //+ LastEvent;*/
 
+  // Serial.println(line);
 }
 
-void TelemetryTXJSON() //statusReport
-{ // for help on dtostrf http://forum.arduino.cc/index.php?topic=85523.0
-  //{"type": "I", "pumpON":1,"RGB": "20 255 30","brightness":80}
+void TelemetryTXJSON() // statusReport
+{                      // for help on dtostrf
+                       // http://forum.arduino.cc/index.php?topic=85523.0
+  // {"type": "I", "pumpON":1,"RGB": "20 255 30","brightness":80}
   delay(100);
   String line = "";
   line = String("{\"type\":") + String("\"T\",") + "\"pumpON\":" + pumpON +
-    ",\"lightGrowthON\":" + lightGrowthON +
-    ",\"lightBloomON\":" + lightBloomON +
-    ",\"RGB\":" + "\"" + String(RGBLED[0]) + " " + String(RGBLED[1]) + " " + String(RGBLED[2]) +
-    "\"" + ",\"brightness\":" + Brightness +
-    ",\"tds\":" + tdsValue +
-    ",\"pumpOverride\":" + pumpOverride +
-    ",\"lightOverride\":" + lightOverride +
+         ",\"lightGrowthON\":" + lightGrowthON +
+         ",\"lightBloomON\":" + lightBloomON +
+         ",\"RGB\":" + "\"" + String(RGBLED[0]) + " " + String(RGBLED[1]) + " " +
+         String(RGBLED[2]) +
+         "\"" + ",\"brightness\":" + Brightness +
+         ",\"tds\":" + tdsValue +
+         ",\"pumpOverride\":" + pumpOverride +
+         ",\"lightOverride\":" + lightOverride +
+         ",\"timestamp\":" + millis() +
 
-    "}";
+         "}";
   Serial.println(line);
-  //return 0;
+
+  // return 0;
 }
 
-//Initialisation function
+// Initialisation function
 void initTimer() {
   timer.every(1 * 1000, TelemetryTXJSON);
-
 }
