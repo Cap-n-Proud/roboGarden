@@ -15,12 +15,12 @@
 #define LIGHT_GROWTH_PIN 52
 #define LIGHT_BLOOM_PIN 51
 #define TDS_SENSOR_PIN A1
-
 #define MIN_BRIGHTNESS  0
 #define MAX_BRIGHTNESS 255
 
 #define VERSION "1.1.2"
 #define BAUDRATE 115200
+#define TELEMTRY_PERIOD 1
 
 // Define the array of leds
 CRGB leds[NUM_LEDS];
