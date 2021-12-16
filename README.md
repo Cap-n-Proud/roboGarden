@@ -10,7 +10,7 @@
 * [ToDo](#ToDo)
 
 ## General info
-This repositroy is for building a vertical hydroponic system.
+This repository is for building a vertical hydroponic system.
 
 The flask server is hosted by a Rasperry Pi communicating with an Arduino via USB.
 
@@ -63,7 +63,7 @@ Folders:
   |  
   +-- Hardware  => Connection schematics, OpenScad fiels for 3D printed parts, etc  
   |  
-  +-- raspberry => list of packages to be isntalled, wireless config, etc  
+  +-- raspberry => list of packages to be installed, wireless config, etc  
 - Server  
   |  
   +--  
@@ -104,10 +104,10 @@ Folders:
 ## ToDo
 There is really a LOT to do. In random order:  
 * Add EC sensor
-* System for authomatic nutrient dosage with peristatic pump
-* System for authomatic hydrogen peroxide dosage with peristatic pump
-* Include computer vision and AI to evaluate harvest tme
-* Frame support for tomateos etc
+* System for automatic nutrient dosage with peristaltic pump
+* System for automatic hydrogen peroxide dosage with peristaltic pump
+* Include computer vision and AI to evaluate harvest time
+* Frame support for tomatoes etc
 
 
 ## References
