@@ -86,14 +86,14 @@ var socket = io();
       .then(res => res.json())
   }
 
-  //Change pump status based on the checkbox TODO based on the arduino feedback
-  function pumpControl() {
-    var x = document.getElementById("pump");
-    var timer = document.getElementById("pumpPulse").value;
-    var cmd = "pumpRunFor" + " " + timer
-    postCommand(cmd, 'arduinocmd')
-    // console.log("PUMP START " + cmd)
-  }
+//Change pump status based on the checkbox TODO based on the arduino feedback
+function pumpControl() {
+  var x = document.getElementById("pump");
+  var timer = document.getElementById("pumpPulse").value;
+  var cmd = "pumpRunFor" + " " + timer
+  postCommand(cmd, 'arduinocmd')
+  // console.log("PUMP START " + cmd)
+}
 
 
 //Change lights status based on the checkbox TODO add slider for locking time
@@ -110,30 +110,6 @@ function lights(val) {
   // console.log(cmd)
 }
 
-  function hexTorgb(hex) {
-    return ['0x' + hex[1] + hex[2] | 0, '0x' + hex[3] + hex[4] | 0, '0x' + hex[5] + hex[6] | 0];
-  }
 
-  function R_G_BtoHEX(red, green, blue) {
-    red = red < 0 ? 0 : red > 255 ? 255 : red;
-    green = green < 0 ? 0 : green > 255 ? 255 : green;
-    blue = blue < 0 ? 0 : blue > 255 ? 255 : blue;
-
-    return "#" +
-      ("0" + parseInt(red, 10).toString(16)).slice(-2) +
-      ("0" + parseInt(green, 10).toString(16)).slice(-2) +
-      ("0" + parseInt(blue, 10).toString(16)).slice(-2);
-  }
-
-  function setColor(newColor) {
-    RGB = hexTorgb(newColor)
-    var cmd = "setLightRGB " + RGB[0] + " " + RGB[1] + " " + RGB[2]
-    postCommand(cmd, 'arduinocmd')
-  }
-
-  function setBrightness(newBrightness) {
-    var cmd = "setBrightness " + newBrightness
-    postCommand(cmd, 'arduinocmd')
-  }
 </script>
 {% endblock scr %}
