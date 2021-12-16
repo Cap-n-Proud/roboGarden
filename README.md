@@ -10,7 +10,7 @@
 * [ToDo](#ToDo)
 
 ## General info
-This repository is for building a vertical hydroponic system.
+This repository is for building hydroponic system.
 
 The flask server is hosted by a Rasperry Pi communicating with an Arduino via USB.
 
@@ -51,7 +51,7 @@ The flask server is hosted by a Rasperry Pi communicating with an Arduino via US
     <td></td>
     <td></td>
   </tr>
-</table> 
+</table>
 
 ## Technologies
 
