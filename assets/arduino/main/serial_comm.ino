@@ -84,13 +84,15 @@ const commandList_t commands[] = {
 // readTDS
 // sysInfo
 
+// --------------------------------------------------------------------
 // Initialisation function
 void initialiseCommander() {
   cmd.begin(&Serial, commands, sizeof(commands)); // start Commander on Serial
 }
 
-void sendInfo(String info) {                      // for help on dtostrf
-                                                  // http://forum.arduino.cc/index.php?topic=85523.0
+// --------------------------------------------------------------------
+void sendInfo(String info) { // for help on dtostrf
+                             // http://forum.arduino.cc/index.php?topic=85523.0
   // {"type": "I", "pumpON":1,"RGB": "20 255 30","brightness":80}
   String line = "";
 
@@ -102,6 +104,7 @@ void sendInfo(String info) {                      // for help on dtostrf
   // return 0;
 }
 
+// --------------------------------------------------------------------
 void sendDebug(String info) { // for help on dtostrf
                               // http://forum.arduino.cc/index.php?topic=85523.0
   // {"type": "I", "pumpON":1,"RGB": "20 255 30","brightness":80}
@@ -115,6 +118,7 @@ void sendDebug(String info) { // for help on dtostrf
   // return 0;
 }
 
+// --------------------------------------------------------------------
 // this will be an emergency stop
 void removeOverrides(Commander& Cmdr) {
   removePumpOverride();
@@ -124,6 +128,7 @@ void removeOverrides(Commander& Cmdr) {
   return 0;
 }
 
+// --------------------------------------------------------------------
 bool readTDS(Commander& Cmdr) {
   // temperature = readTemperature();  //add your temperature sensor and read it
   gravityTds.setTemperature(temperature); // set the temperature and execute
@@ -133,6 +138,7 @@ bool readTDS(Commander& Cmdr) {
   return 0;
 }
 
+// --------------------------------------------------------------------
 bool pumpStop(Commander& Cmdr) {
   if (!pumpOverride) { // Here code to swith the pump off
     pumpON = false;
@@ -199,16 +205,19 @@ bool setLightsOFF(Commander& Cmdr) {
   return 0;
 }
 
+// --------------------------------------------------------------------
 bool removePumpOverride() {
   pumpOverride = false;
   sendInfo(String("Pump override de-activated"));
 }
 
+// --------------------------------------------------------------------
 bool removeLightOverride() {
   lightOverride = false;
   sendInfo(String("Light override de-activated"));
 }
 
+// --------------------------------------------------------------------
 // Used to tell the scheduler that lights needs to be on outside schedule hours
 bool setLightOverride(long t) {
   lightOverride = true;
@@ -218,6 +227,7 @@ bool setLightOverride(long t) {
              " seconds"));
 }
 
+// --------------------------------------------------------------------
 bool pumpRunFor(Commander& Cmdr) {
   long myInt;
 
@@ -238,6 +248,7 @@ bool pumpRunFor(Commander& Cmdr) {
   return 0;
 }
 
+// --------------------------------------------------------------------
 bool sysInfo(Commander& Cmdr) {
   String line     = "";
   String commands =
@@ -256,6 +267,7 @@ bool sysInfo(Commander& Cmdr) {
   delay(100);
 }
 
+// --------------------------------------------------------------------
 void TelemetryTXJSON() // statusReport
 {                      // for help on dtostrf
                        // http://forum.arduino.cc/index.php?topic=85523.0
@@ -279,6 +291,7 @@ void TelemetryTXJSON() // statusReport
   // return 0;
 }
 
+// --------------------------------------------------------------------
 // Initialisation function
 void initTimer() {
   timer.every(TELEMTRY_PERIOD * 1000, TelemetryTXJSON);
