@@ -2,11 +2,7 @@
 
 // https://github.com/CreativeRobotics/Commander/blob/master/examples/BasicCommands/masterCommands.ino
 const commandList_t commands[] = {
-  {
-    "setLightGrowthON",
-    setLightGrowthON,
-    "Set LED growth light ON"
-  },
+  
   {
     "setLightsON",
     setLightsON,
@@ -17,21 +13,8 @@ const commandList_t commands[] = {
     setLightsOFF,
     "Set all lights off"
   },
-  {
-    "setLightBloomON",
-    setLightBloomON,
-    "Set LED bloomlight ON"
-  },
-  {
-    "setLightGrowthOFF",
-    setLightGrowthOFF,
-    "Set LED growth light ON"
-  },
-  {
-    "setLightBloomOFF",
-    setLightBloomOFF,
-    "Set LED bloomlight ON"
-  },
+  
+ 
   {
     "pumpRunFor",
     pumpRunFor,
@@ -59,30 +42,13 @@ const commandList_t commands[] = {
   },
 };
 
-// pumpStart
-// pumpStop
-// pumpRunFor 20
-// setBrightness 15
-// setLightRGB 23 10 115
-// stopAll
-// sysInfo
-// readTDS
-// sendInfo
 
-// setLightGrowthON
-// setLightsON
-// setLightsOFF
-// setLightBloomON
-// setLightGrowthOFF
-// setLightBloomOFF
-// pumpRunFor
-// pumpStart
-// pumpStop
-// setBrightness
-// removeOverrides
-// LEDShow
-// readTDS
-// sysInfo
+//setLightsON
+//setLightsOFF
+//pumpRunFor
+//pumpStop
+//removeOverrides
+//sysInfo
 
 // --------------------------------------------------------------------
 // Initialisation function
@@ -277,9 +243,6 @@ void TelemetryTXJSON() // statusReport
   line = String("{\"type\":") + String("\"T\",") + "\"pumpON\":" + pumpON +
          ",\"lightGrowthON\":" + lightGrowthON +
          ",\"lightBloomON\":" + lightBloomON +
-         ",\"RGB\":" + "\"" + String(RGBLED[0]) + " " + String(RGBLED[1]) + " " +
-         String(RGBLED[2]) +
-         "\"" + ",\"brightness\":" + Brightness +
          ",\"tds\":" + tdsValue +
          ",\"pumpOverride\":" + pumpOverride +
          ",\"lightOverride\":" + lightOverride +
