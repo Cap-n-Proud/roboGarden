@@ -416,19 +416,6 @@ translate([(-1.0*lenght)*sin(angle),(1.0*lenght)*cos(angle),0])
     
 }
     
-
-//lightPoleSupport();
-//sprinklerFlat();
-//collector();
-//translate([0,0,0])rotate([0, 0, -25])arc(1, 50, towerDiam/2-1, 130);
-//towerDome();
-//rotate([sprinlkerAngle,0,-75])translate([-sprinklerDiam/2,0,sprinkleRingThickness/2])cube([sprinklerDiam/2, sprinkleRingThickness/2,sprinkleRingThickness/2]);
-//tower();
-//level(1);
-
-//roboGarden();
-//dripGuard();
-patch();
 module elbow(){
 difference(){
 elbow(collectorDiam-6, collectorDiam/2,90,30);
@@ -463,3 +450,31 @@ module patch(){
     }
     
 }
+
+
+base_hole_diam=30;
+
+module plug_base(){
+    //Collar
+    difference(){
+        cylinder(h= 10, d= 0.95*base_hole_diam);
+        cylinder(h= 8, d= 0.95*base_hole_diam-towerThickness);        
+    }
+    translate([0,0,10])cylinder(h= 2, d1= 1.2*base_hole_diam, d2=0.8*base_hole_diam);
+        
+}
+
+
+//lightPoleSupport();
+//sprinklerFlat();
+//collector();
+//translate([0,0,0])rotate([0, 0, -25])arc(1, 50, towerDiam/2-1, 130);
+//towerDome();
+//rotate([sprinlkerAngle,0,-75])translate([-sprinklerDiam/2,0,sprinkleRingThickness/2])cube([sprinklerDiam/2, sprinkleRingThickness/2,sprinkleRingThickness/2]);
+//tower();
+//level(1);
+
+//roboGarden();
+//dripGuard();
+//patch();
+plug_base();
