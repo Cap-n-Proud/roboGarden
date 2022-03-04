@@ -77,7 +77,7 @@ def getAppLog():
             data = json.loads(d)
             return data
         except Exception as e:
-            LOG.error("Cannot download app log: " + str(e))
+            LOG.error("Cannot open app log: " + str(e))
 
 
 def sendArduinoCmd(cmd):

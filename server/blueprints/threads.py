@@ -35,7 +35,7 @@ def broadcastTime(t):
     io.emit("timeStarted", int(t.value()))
 
 
-# This is to keep the wifi conenction on
+# This is to keep the wifi connection on
 def pingHost():
     import subprocess
 
@@ -160,38 +160,17 @@ def checkLights(currentProgram):
     timeNow = str(obj_now.hour).zfill(2) + ":" + str(obj_now.minute).zfill(2)
     if is_between(currentProgram["lightsON"], currentProgram["lightsOFF"], timeNow):
         try:
-            if "brightness" in dataJSON:
-                if int(dataJSON["brightness"]) != int(
-                    currentProgram["lightBrightness"]
-                ):
-                    arduinoCommand(
-                        "setBrightness " + str(currentProgram["lightBrightness"])
-                    )
-                    LOG.info("RGB set to " + str(currentProgram["RGB"]))
-            if "RGB" in dataJSON:
-                if dataJSON["RGB"] != currentProgram["RGB"]:
-                    arduinoCommand("setLightRGB " + str(currentProgram["RGB"]))
-                    LOG.info("Lights set to " + str(currentProgram["lightBrightness"]))
             if "lightGrowthON" in dataJSON:
                 if dataJSON["lightGrowthON"] == 0:
                     arduinoCommand("setLightGrowthON")
-                    # LOG.info("Growth lights set to ON")
+                    LOG.info("Growth lights set to ON")
             if "lightBloomON" in dataJSON:
                 if dataJSON["lightBloomON"] == 0:
                     arduinoCommand("setLightBloomON")
-                    # LOG.info("Bloom lights set to ON")
-            # if ("lightGrowthON" in dataJSON) or ("lightBloomON" in dataJSON):
-            #     if (dataJSON["lightGrowthON"] == 0) or (dataJSON["lightBloomON"] == 0):
-            #         arduinoCommand("setLightON")
-            #         LOG.info("Lights set to ON")
-
+                    LOG.info("Bloom lights set to ON")
         except ValueError as e:
             LOG.error(e)
-
     else:
-        if dataJSON["brightness"] != 0:  # print("Lights should be ON")
-            arduinoCommand("setBrightness 0")
-            LOG.info("Lights set to " + str(currentProgram["lightBrightness"]))
         if ("lightGrowthON" in dataJSON) and ("lightOverride" in dataJSON):
             if int(dataJSON["lightGrowthON"]) == 1 and not dataJSON["lightOverride"]:
                 arduinoCommand("setLightGrowthOFF")
