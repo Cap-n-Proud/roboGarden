@@ -2,7 +2,6 @@
 
 // https://github.com/CreativeRobotics/Commander/blob/master/examples/BasicCommands/masterCommands.ino
 const commandList_t commands[] = {
-  
   {
     "setLightsON",
     setLightsON,
@@ -13,8 +12,8 @@ const commandList_t commands[] = {
     setLightsOFF,
     "Set all lights off"
   },
-  
- 
+
+
   {
     "pumpRunFor",
     pumpRunFor,
@@ -43,12 +42,12 @@ const commandList_t commands[] = {
 };
 
 
-//setLightsON
-//setLightsOFF
-//pumpRunFor
-//pumpStop
-//removeOverrides
-//sysInfo
+// setLightsON
+// setLightsOFF
+// pumpRunFor
+// pumpStop
+// removeOverrides
+// sysInfo
 
 // --------------------------------------------------------------------
 // Initialisation function
