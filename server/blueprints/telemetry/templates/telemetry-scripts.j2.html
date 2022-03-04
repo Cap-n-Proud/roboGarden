@@ -58,7 +58,7 @@
 
   // Capture and publish the telemetry stream and create the global variable telemetry
   socket.on(TELEMETRYTAG, function(msg, cb) {
-    console.log(msg);
+    // console.log(msg);
     updatePumpStatus(msg);
     updateLightsStatus(msg);
     var elem = document.getElementById("telemetryRaw");

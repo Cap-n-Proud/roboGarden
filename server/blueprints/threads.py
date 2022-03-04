@@ -67,7 +67,6 @@ def pingHost():
 
 def handle_data(data):
     global dataJSON
-
     try:
         dataJSON = json.loads(data.decode())
         # print(dataJSON)

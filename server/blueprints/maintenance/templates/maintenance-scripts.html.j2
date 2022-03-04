@@ -59,10 +59,7 @@
       taskPerformed: task,
       newDate: (new Date().toJSON())
     };
-    console.log(
-          command["taskPerformed"],
-          command["newDate"],
-      )
+    console.log(command)
     postCommand(command, 'resetMaintInterval')
   }
 </script>

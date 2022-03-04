@@ -245,8 +245,7 @@ void TelemetryTXJSON() // statusReport
          ",\"tds\":" + tdsValue +
          ",\"pumpOverride\":" + pumpOverride +
          ",\"lightOverride\":" + lightOverride +
-         ",\"timestamp\":" + millis() +
-
+         ",\"timestamp\":" + millis()
          "}";
   Serial.println(line);
 
