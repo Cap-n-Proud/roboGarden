@@ -124,11 +124,7 @@ def newPlant(r):
 
 def resetMaintInterval(task):
     maint = getStatus()
-    console.log(
-        task["taskPerformed"],
-        maint["maintenance"][0][task["taskPerformed"]],
-        task["newDate"],
-    )
+    console.log(task)
     maint["maintenance"][0][task["taskPerformed"]] = task["newDate"]
 
     json.dump(maint, open(config.JSON_Path.STATUS, "w"), indent=4)
