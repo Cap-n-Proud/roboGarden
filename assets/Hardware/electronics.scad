@@ -282,6 +282,8 @@ module electricalBoxLid2() {
 }
 
 module electricalBox2() {
+    
+
     difference() {
 
         union() {
@@ -300,7 +302,12 @@ module electricalBox2() {
         translate([-boxX/3,2*boxY/2-10,-boxZ/3+boxThickness])rotate([0,90,90])cylinder(d=electWireDiam, h=30);
         //Hole for electricity
         translate([boxX/3,2*boxY/2-10,-boxZ/3+boxThickness])rotate([0,90,90])cylinder(d=electWireDiam, h=30);
-    }
+    translate([+boxX/2.5,boxY-0.5,0])scale([0.4,0.4,0.4])rotate([90,0,180])linear_extrude(4)text("IN 220");
+    translate([-boxX/5,boxY-0.5,0])scale([0.4,0.4,0.4])rotate([90,0,180])linear_extrude(4)text("OUT 220");
+
+
+
+}
 }
 
 
@@ -331,9 +338,9 @@ module SUB_support() {
 //electricalBox();
 //cableClampUP();
 //electricalBoxLid();
-translate([0, 0, 15])electricalBoxLid2();
+//translate([0, 0, 15])electricalBoxLid2();
 //SUB_cableClamp();
-//electricalBox2();
+electricalBox2();
 //translate([-boxX/2,boxY/3,-boxZ/2])rotate([0,0,90])SUB_support();
 //translate([-boxX/2,-boxY/3,-boxZ/2])rotate([0,0,90])SUB_support();
 //translate([+boxX/2,boxY/3,-boxZ/2])rotate([0,0,-90])SUB_support();
