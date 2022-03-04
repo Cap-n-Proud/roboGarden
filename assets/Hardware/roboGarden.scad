@@ -464,6 +464,60 @@ module plug_base(){
         
 }
 
+module fibonacci_golden_spiral(){
+//fibonacci_golden_spiral.scad - Simple implementation of the Fibonacci Spiral's polar equation
+
+phi = (1 + sqrt(5)) / 2; // =~ 1.618
+
+function radius(angle) = 10 * pow(phi, (angle / 90));
+
+for(i = [0:5:540]) {
+    translate([sin(i) * radius(i), cos(i) * radius(i)]) circle(20);
+}
+
+echo(version=version());
+// Written by Fernando Gomes <feromes@gmail.com>
+//
+// To the extent possible under law, the author(s) have dedicated all
+// copyright and related and neighboring rights to this software to the
+// public domain worldwide. This software is distributed without any
+// warranty.
+//
+// You should have received a copy of the CC0 Public Domain
+// Dedication along with this software.
+// If not, see <http://creativecommons.org/publicdomain/zero/1.0/>.
+
+
+}
+
+
+faucet_ID=350;
+faucet_ED=faucet_ID+40;
+fauced_H=150;
+
+module fib(){
+    fibonacci_golden_spiral();
+rotate([0,0,90])fibonacci_golden_spiral();
+rotate([0,0,180])fibonacci_golden_spiral();
+rotate([0,0,270])fibonacci_golden_spiral();
+
+}
+
+module faucet(){
+difference(){
+    cylinder(h= fauced_H, d= faucet_ED);
+    cylinder(h= fauced_H, d= faucet_ID);
+}
+
+difference(){
+    cylinder(h= fauced_H, d= faucet_ID);
+    linear_extrude(300,twist=30)fib();
+}
+}
+
+//scale([0.05,0.05,0.05])faucet();
+ //linear_extrude(300,twist=30)fib();
+//scale([0.1,0.1,0.1])
 
 //lightPoleSupport();
 //sprinklerFlat();
@@ -477,4 +531,26 @@ module plug_base(){
 //roboGarden();
 //dripGuard();
 //patch();
-plug_base();
+//plug_base();
+
+
+nozzle_h_inflow=20;
+areatorDI=24;
+thickness=3;
+pipeDiamIN=7;
+
+difference(){
+    cylinder(h=nozzle_h_inflow,d=pipeDiamIN+thickness);
+    cylinder(h=nozzle_h_inflow,d=pipeDiamIN);
+}
+
+translate([0,0,-nozzle_h_inflow/2+nozzle_h_inflow/6])difference(){
+    cylinder(h=nozzle_h_inflow/3,d2=pipeDiamIN+thickness,d1=areatorDI+thickness);
+    cylinder(h=nozzle_h_inflow/3,d2=pipeDiamIN,d1=areatorDI);
+}
+
+translate([0,0,-nozzle_h_inflow-nozzle_h_inflow/3])difference(){
+    cylinder(h=nozzle_h_inflow,d=areatorDI+thickness);
+    cylinder(h=nozzle_h_inflow,d=areatorDI);
+}
+
