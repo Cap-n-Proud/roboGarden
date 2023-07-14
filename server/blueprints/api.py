@@ -2,7 +2,7 @@
 # This includes also filters for templates
 
 # API calls are called from js scripts with the function postCommand see below
-# Location is the name of the function you want to calls
+# Location is the name of the function you want to call
 
 # function postCommand(cmd, location) {
 # const URL = `${window.origin}/api/` + location
@@ -40,6 +40,8 @@ LOG = logging.getLogger(config.Config.APPLOGNAME)
 io = SocketIO(app)  # engineio_logger=True)
 
 # Retrieve the current program, used to populate the index.html file
+
+
 def getCurrentProgr():
     with open(config.JSON_Path.CURRENTPROGRAM) as f:
         data = json.load(f)
@@ -140,7 +142,8 @@ def changePrg(prg):
     programs = getPrograms()
     for program in programs:
         if program["progID"] == prg:
-            json.dump(program, open(config.JSON_Path.CURRENTPROGRAM, "w"), indent=4)
+            json.dump(program, open(
+                config.JSON_Path.CURRENTPROGRAM, "w"), indent=4)
             scheduler.remove_job(job_id="checkL")
             scheduler.add_job(
                 checkLights,

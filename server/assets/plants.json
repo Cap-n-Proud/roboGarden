@@ -1,5 +1,6 @@
 {
-  "plants": [{
+  "plants": [
+    {
       "plantID": "000",
       "name": "000-Empty",
       "latinName": "Vacuum",
@@ -10,7 +11,8 @@
       "DtG": "0",
       "DtH": "9999",
       "Notes": ""
-    }, {
+    },
+    {
       "plantID": "001",
       "name": "Tomato Montfavet",
       "latinName": "Lycopersicon Esculentum Mil",
@@ -21,7 +23,8 @@
       "DtG": "",
       "DtH": "150",
       "Notes": ""
-    }, {
+    },
+    {
       "plantID": "002",
       "name": "Babyleaf Salad",
       "latinName": "Lactuca Sativa Acephala",
@@ -32,7 +35,8 @@
       "DtG": "10",
       "DtH": "40",
       "Notes": ""
-    }, {
+    },
+    {
       "plantID": "003",
       "name": "Basilico Grande Genovese",
       "latinName": "Ocium Basilicum",
@@ -42,7 +46,8 @@
       "water": "2",
       "DtG": "14",
       "DtH": "50"
-    }, {
+    },
+    {
       "plantID": "004",
       "name": "Broccoletti Marathon",
       "latinName": "Brassica Oleracea Italica",
@@ -53,7 +58,8 @@
       "DtG": "10",
       "DtH": "90",
       "Notes": ""
-    }, {
+    },
+    {
       "plantID": "005",
       "name": "Cayenne Pepper",
       "latinName": "Capsicum annuum",
@@ -64,7 +70,8 @@
       "DtG": "",
       "DtH": "75",
       "Notes": ""
-    }, {
+    },
+    {
       "plantID": "006",
       "name": "Edible Flowers",
       "latinName": "",
@@ -75,7 +82,8 @@
       "DtG": "14",
       "DtH": "0",
       "Notes": ""
-    }, {
+    },
+    {
       "plantID": "007",
       "name": "Fiori Romantic Pink Feeling",
       "latinName": "",
@@ -86,7 +94,8 @@
       "DtG": "",
       "DtH": "0",
       "Notes": ""
-    }, {
+    },
+    {
       "plantID": "008",
       "name": "Strawberry Alexandria",
       "latinName": "Fragaria Vesca",
@@ -96,7 +105,8 @@
       "water": "5",
       "DtG": "30",
       "DtH": "60"
-    }, {
+    },
+    {
       "plantID": "009",
       "name": "Cutting Lettuce",
       "latinName": "Lactuca Sativa Var Crispa",
@@ -107,7 +117,8 @@
       "DtG": "10",
       "DtH": "40",
       "Notes": ""
-    }, {
+    },
+    {
       "plantID": "010",
       "name": "Leaf Lettuce",
       "latinName": "Lactuca Sativa",
@@ -118,7 +129,8 @@
       "DtG": "10",
       "DtH": "40",
       "Notes": ""
-    }, {
+    },
+    {
       "plantID": "011",
       "name": "Malvarosa Halo Mix",
       "latinName": "Alcea rosea, Malvacee",
@@ -129,7 +141,8 @@
       "DtG": "28",
       "DtH": "0",
       "Notes": ""
-    }, {
+    },
+    {
       "plantID": "012",
       "name": "Mint Mentha Piperita",
       "latinName": "",
@@ -140,7 +153,8 @@
       "DtG": "20",
       "DtH": "0",
       "Notes": ""
-    }, {
+    },
+    {
       "plantID": "013",
       "name": "Nussalad Vera",
       "latinName": "",
@@ -151,7 +165,8 @@
       "DtG": "18",
       "DtH": "40",
       "Notes": ""
-    }, {
+    },
+    {
       "plantID": "015",
       "name": "Oregano",
       "latinName": " Origanum vulgare - L.",
@@ -160,9 +175,10 @@
       "PHMax": "8.0",
       "water": "2",
       "DtG": "10",
-      "DtH": "0",
+      "DtH": "70",
       "Notes": ""
-    }, {
+    },
+    {
       "plantID": "016",
       "name": "Parsley",
       "latinName": "Petroselinum crispum - (Mill.)Nyman. ex A.W.Hill.",
@@ -173,7 +189,8 @@
       "DtG": "",
       "DtH": "0",
       "Notes": ""
-    }, {
+    },
+    {
       "plantID": "017",
       "name": "Rosemary",
       "latinName": "Rosmarinus officinalis - L",
@@ -181,10 +198,11 @@
       "PHMin": "6.0",
       "PHMax": "7.0",
       "water": "0",
-      "DtG": "",
-      "DtH": "0",
+      "DtG": "0",
+      "DtH": "70",
       "Notes": ""
-    }, {
+    },
+    {
       "plantID": "018",
       "name": "Rucola Perenne",
       "latinName": "Diplotaxis erucoides",
@@ -195,7 +213,8 @@
       "DtG": "",
       "DtH": "0",
       "Notes": ""
-    }, {
+    },
+    {
       "plantID": "019",
       "name": "Sage",
       "latinName": "Salvia officinalis - L.",
@@ -206,7 +225,8 @@
       "DtG": "",
       "DtH": "0",
       "Notes": ""
-    }, {
+    },
+    {
       "plantID": "020",
       "name": "Smooth-Leaf Spinach",
       "latinName": "Spinacia oleracea - L.",
@@ -217,7 +237,8 @@
       "DtG": "",
       "DtH": "0",
       "Notes": ""
-    }, {
+    },
+    {
       "plantID": "022",
       "name": "Tatsoi",
       "latinName": "",
@@ -228,7 +249,8 @@
       "DtG": "",
       "DtH": "0",
       "Notes": ""
-    }, {
+    },
+    {
       "plantID": "023",
       "name": "Thyme",
       "latinName": "Thymus vulgaris - L.",
@@ -238,7 +260,8 @@
       "water": "0",
       "DtG": "",
       "DtH": "0"
-    }, {
+    },
+    {
       "plantID": "024",
       "name": "Tomato Cherry Red",
       "latinName": "Lycopersicon Esculentum",
@@ -249,7 +272,8 @@
       "DtG": "10",
       "DtH": "90",
       "Notes": ""
-    }, {
+    },
+    {
       "plantID": "026",
       "name": "Tomatoes Red and Yelow Pear",
       "latinName": "Lycopercicon Esculntum",
@@ -260,6 +284,5 @@
       "DtG": "13",
       "DtH": "150"
     }
-
   ]
 }

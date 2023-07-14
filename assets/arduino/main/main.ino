@@ -3,7 +3,6 @@
 #include <ArduinoJson.h>
 #include "GravityTDS.h"
 
-
 // How many leds in your strip?
 #define NUM_LEDS 1
 
@@ -14,61 +13,64 @@
 #define LIGHT_GROWTH_PIN 52
 #define LIGHT_BLOOM_PIN 51
 #define TDS_SENSOR_PIN A1
-#define MIN_BRIGHTNESS  0
+#define MIN_BRIGHTNESS 0
 #define MAX_BRIGHTNESS 255
 
 #define VERSION "1.1.2"
 #define BAUDRATE 115200
 #define TELEMTRY_PERIOD 1
 
-
 auto timer = timer_create_default(); // create a timer with default settings
 
-bool  pumpON = false;
-bool  pumpOverride = false;
-bool  lightOverride = false;
-bool  lightGrowthON = false;
-bool  lightBloomON = false;
+bool pumpON = false;
+bool pumpOverride = false;
+bool lightOverride = false;
+bool lightGrowthON = false;
+bool lightBloomON = false;
 float temperature = 25, tdsValue = 0;
 float PUMP_MAX_RUN = 30; // Max time the pump can run
 
 String info = "";
 
-Commander  cmd;
+Commander cmd;
 GravityTDS gravityTds;
 
 String SEPARATOR = ","; // Used as separator for telemetry
 // Now the sketch setup, loop and any other functions
-void setup() {
-  pinMode(PUMP_PIN,         OUTPUT);
+void setup()
+{
+  pinMode(PUMP_PIN, OUTPUT);
   pinMode(LIGHT_GROWTH_PIN, OUTPUT);
-  pinMode(LIGHT_BLOOM_PIN,  OUTPUT);
-  digitalWrite(PUMP_PIN,         HIGH);
+  pinMode(LIGHT_BLOOM_PIN, OUTPUT);
+  digitalWrite(PUMP_PIN, HIGH);
   digitalWrite(LIGHT_GROWTH_PIN, HIGH);
-  digitalWrite(LIGHT_BLOOM_PIN,  HIGH);
+  digitalWrite(LIGHT_BLOOM_PIN, HIGH);
 
   randomSeed(analogRead(0));
   Serial.begin(BAUDRATE);
 
-  while (!Serial) {
+  while (!Serial)
+  {
     // Wait for the serial port to open (if using USB)
   }
   initialiseCommander();
   cmd.commandPrompt(OFF); // enable the command prompt
-  cmd.echo(false);        // Echo incoming characters to theoutput port
+  cmd.echo(false);        // Echo incoming characters to the output port
   // Serial.println("Hello: Type 'help' to get help");
   // cmd.printCommandPrompt();
   initTimer();
   initTDS();
 }
 
-void loop() {
+void loop()
+{
   // put your main code here, to run repeatedly:
   cmd.update();
   timer.tick(); // tick the timer
 }
 
-void initTDS() {
+void initTDS()
+{
   gravityTds.setPin(TDS_SENSOR_PIN);
   gravityTds.setAref(5.0);      // reference voltage on ADC, default 5.0V on
                                 // Arduino UNO

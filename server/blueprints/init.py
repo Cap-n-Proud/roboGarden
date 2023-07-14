@@ -1,5 +1,4 @@
-# Main script. Although this is not the entry point this collates all the pieces.
-# This initializes the key functionalites such as serial port,threads etc
+# This is the main script. It initializes the key functionalities such as serial port, threads, etc.
 
 import threading
 import time
@@ -21,11 +20,18 @@ from flask import current_app as app
 
 from apscheduler.schedulers.background import BackgroundScheduler
 
+# This is the time when the system started.
 timeStarted = datetime.now()
+# This is the checkLights function that will be called periodically.
 checkL = ""
+# This is the activatePump function that will be called periodically.
 checkP = ""
+# This is the scheduler object that will be used to schedule the periodic functions.
 scheduler = ""
-# from apscheduler.schedulers.background import BackgroundScheduler
+
+# This function initializes the serial port and starts the thread to read from it.
+
+
 def initSerial():
     LOG = logging.getLogger(config.Config.APPLOGNAME)
     port = config.Hardware.SERIALPORT
@@ -56,16 +62,17 @@ def initSerial():
     )
     time.sleep(2)
 
+# This function initializes the system. It gets the current program, starts the serial port thread, and schedules the periodic functions.
+
 
 def initialize():
     timeFromStart = blueprints.timer.Timer()
     timeFromStart.start()
     global scheduler
     LOG = logging.getLogger(config.Config.APPLOGNAME)
-    # currentProgram = getCurrentProgr()
-    initSerial()
+    # This gets the current program from the API.
     currentProgram = getCurrentProgr()
-    # Setup and start the thread to read serial port
+    # This starts the thread to read from the serial port.
     thread_lock = Lock()
     thread = threading.Thread(
         target=readSer,
@@ -77,12 +84,12 @@ def initialize():
     )
     thread.start()
 
-    # checkL = RepeatedTimer(
-    #     int(config.Hardware.CHECKLIGHTSINTERVAL), checkLights, currentProgram
-    # )
+    # This schedules the checkLights function to be called periodically.
+    # scheduler.add_job(checkLights, "interval", seconds=int(config.Hardware.CHECKLIGHTSINTERVAL), id="checkL", args=[currentProgram], replace_existing=True)
     scheduler = BackgroundScheduler()
     scheduler.start()
 
+    # This schedules the activatePump function to be called periodically.
     scheduler.add_job(
         checkLights,
         "interval",
@@ -115,20 +122,7 @@ def initialize():
         replace_existing=True,
     )
 
+    # This prints the current program and the scheduled jobs.
     # print(str(scheduler.get_jobs()))
-    # checkH = RepeatedTimer(24 * 60 * 60, guessHarvest, app)
-
-    # checkP = RepeatedTimer(
-    #     int(currentProgram["pumpStartEvery"]), activatePump, currentProgram
-    # )
-
-    timeNow = str(timeStarted.hour).zfill(2) + ":" + str(timeStarted.minute).zfill(2)
-    LOG.info("System started. System time is: " + timeNow)
-    LOG.info("Current program: " + str(currentProgram))
-    LOG.info("Background jobs: " + str(scheduler.get_jobs()))
-    # print(
-    #     "System started. System time is: "
-    #     + timeNow
-    #     + " current program "
-    #     + str(currentProgram)
-    # )
+    # This schedules the guessHarvest function to be called once a day.
+    # checkH = RepeatedTimer(24 * 60 * 60, guessHarvest, app

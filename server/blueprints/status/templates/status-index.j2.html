@@ -1,6 +1,5 @@
 {% extends "base-standard.j2.html" %}
 
-
 {% block header_page %}
 <script type="text/javascript">
   INFOTAG = "{{INFOTAG}}"
@@ -18,25 +17,40 @@
     {% for towers in status.towers %}
     <div id={{towers.name}} class="shadow-lg p-1 mb-3 border rounded col-sm">
       <h5 class="d-flex justify-content-center">{{towers.name}}</h5>
-      {% for level in towers.levels  | reverse %}
-      <div id={{towers.ID}}-{{level.level}} class="row g-4 d-flex justify-content-center">
+      {% for level in towers.levels | reverse %}
+      <div id={{towers.ID}}-{{level.level}}
+        class="row g-4 d-flex justify-content-center">
         <div class="d-flex justify-content-center">
           {% for pod in level.pods %}
           <div class="col">
-            <div class="card text-dark bg-light mb-2 g-3" style="max-width: 10rem;">
+            <div class="card text-dark bg-light mb-2 g-3"
+              style="max-width: 10rem;">
               <div class="card-header">{{pod.podID}}
-                <span style="plantedDateStatus;  float:right; {% if pod.harvestTime | int >= 0 %}background-color:rgba(0,255,0,0.2); color:DodgerBlue;{% endif %}">&emsp;{% if pod.plantID | int != 0 %}{{pod.harvestTime}}{% endif %}</span>
+                <span
+                  style="plantedDateStatus;  float:right; {% if pod.harvestTime | int >= 0 %}background-color:rgba(0,255,0,0.2); color:DodgerBlue;{% endif %}">&emsp;{%
+                  if pod.plantID | int != 0 %}{{pod.harvestTime}}{% endif %}</span>
               </div>
-              <div class="card-body">
+              <div class="card-body" {% if pod.plantID !='000' %}
+                style="background-color:lightgreen;"
+                {% endif %}>
+                <!-- <div class="card-body"> -->
                 <h5 class="card-title">
-                  <select id="s{{pod.podID}}" onchange="postPlant(this)" class="form-select form-select-sm" aria-label=".form-select-sm example" style="font-size: 12pt; max-width:80%;">
+                  <select id="s{{pod.podID}}" onchange="postPlant(this)"
+                    class="form-select form-select-sm"
+                    aria-label=".form-select-sm example"
+                    style="font-size: 12pt; max-width:80%;">
                     {% for plant in plantsDB.plants |sort(attribute='name')%}
-                    <option value="{{plant.plantID}}" {% if plant.plantID == pod.plantID %} selected{% endif %}>{{plant.name}}</option>
+                    <option value="{{plant.plantID}}" {% if plant.plantID ==
+                      pod.plantID %} selected{% endif %}>{{plant.name}}</option>
                     {% endfor %}
                   </select>
                 </h5>
                 <p class="card-text"></p>
-                <input class="card-text" type="date" style="color: gray;border-style: none;" value="{{pod.plantedDate|formatDate}}" id="d{{pod.podID}}" name="plantedDateStatus-{{pod.podID}}" onchange="changePlantedDate(this)"
+                <input class="card-text" type="date"
+                  style="color: gray;border-style: none;"
+                  value="{{pod.plantedDate|formatDate}}" id="d{{pod.podID}}"
+                  name="plantedDateStatus-{{pod.podID}}"
+                  onchange="changePlantedDate(this)"
                   placeholder="planted date">
                 <p class="card-text"></p>
                 <!-- <span style="plantedDateStatus;  float:right; {% if pod.harvestTime | int >= 0 %}background-color:rgba(0,255,0,0.2); color:DodgerBlue;{% endif %}">
