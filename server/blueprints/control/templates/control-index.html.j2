@@ -1,9 +1,9 @@
 {% extends "base-standard.j2.html" %}
 
 {#{% block pagestyles %}
-  {% assets "status_less_bundle" %}
-    <link href="{{ ASSET_URL }}" rel="stylesheet" type="text/css">
-  {% endassets %}
+{% assets "status_less_bundle" %}
+<link href="{{ ASSET_URL }}" rel="stylesheet" type="text/css">
+{% endassets %}
 {% endblock %}
 #}
 
@@ -17,49 +17,59 @@
 
 {% block content %}
 <script type="text/javascript">
-  programs = {{programs | tojson}}
-  INFOTAG = {{INFOTAG | tojson}}
-  TELEMETRYTAG = {{TELEMETRYTAG | tojson}}
+  programs = {{ programs | tojson }}
+  INFOTAG = {{ INFOTAG | tojson }}
+  TELEMETRYTAG = {{ TELEMETRYTAG | tojson }}
   timeStarted = "{{timestarted}}"
 </script>
 {% include "telemetry-module.j2.html" %}
 <div class="container shadow-lg p-3 mb-5 border rounded">
-   <div class="row p-1">
-     <div class="col-4 rounded">Program
-      </div>
-      <div class="col-4"> <select class="form-select" aria-label="Select program" id="PRGsel" style="max-width:70%;" onchange="loadProgram(this.value)">
-      {% for p in programs |sort(attribute='progName')%}
-        <option value="{{p.progID}}" {% if p.progID == currentProgram.progID %} selected{% endif %}>{{p.progName}}</option>
-       {% endfor %}
-       </select></div>
-      <div class="col-4"><button id="changeProgr" type="button" class="btn btn-primary">change</button></div>
-   </div>
-   <div class="row p-1">
-      <div class="col-4">Pump</div>
-      <div class="col-4">
-        <label for="pumpPulse"></label>
-        <input type="number" id="pumpPulse" name="quantity" default="1" value="30" min="1" max="200" size="4"> </div>
-      <div class="col-4"><button id="pump" type="button" class="btn btn-primary" onclick="pumpControl(this)"><i id="pump" class="fas fa-sync-alt"></i></button>
-      </div>
-   </div>
-   <div class="row p-1">
-      <div class="col-4">Lights override</div>
-      <div class="col-4"><input type="range" class="form-control-range" id="lightOverride" min="100" max="3600" value="1000" onInput="$('#rangeval').html($(this).val())"><span id="rangeval">1000<!-- Default value --></span></div>
-      <div class="col-4"><button id="lights" type="button" class="btn btn-primary" onclick="lights(this)"><i id="lights" class="fas fa-lightbulb"></i></button></div>
+  <div class="row p-1">
+    <div class="col-4 rounded">Program
     </div>
-    <div class="row p-1">
-       <div class="col-4">Restart</div>
-       <div class="col-4"></div>
-       <div class="col-4"><button id="lights" type="button" class="btn btn-danger" onclick="restartServer()"><i id="restart" class="fas fa-power-off"></i></button></div>
-     </div>
-   <div class="row p-1 border-top">
-      <div class="col-12"><ul id="progLabel" onclick="lighstSwitch(this.value)" class="list-unstyled card-columns"></ul></div>
+    <div class="col-4"> <select class="form-select" aria-label="Select program" id="PRGsel" style="max-width:70%;"
+        onchange="loadProgram(this.value)">
+        {% for p in programs |sort(attribute='progName')%}
+        <option value="{{p.progID}}" {% if p.progID==currentProgram.progID %} selected{% endif %}>{{p.progName}}
+        </option>
+        {% endfor %}
+      </select></div>
+    <div class="col-4"><button id="changeProgr" type="button" class="btn btn-primary">change</button></div>
+  </div>
+  <div class="row p-1">
+    <div class="col-4">Pump</div>
+    <div class="col-4">
+      <label for="pumpPulse"></label>
+      <input type="number" id="pumpPulse" name="quantity" default="1" value="30" min="1" max="200" size="4">
     </div>
-   <div class="row p-1">
-      <div class="col-2"></div>
-      <div class="col-2"></div>
-      <div class="col-8"></div>
-   </div>
+    <div class="col-4"><button id="pump" type="button" class="btn btn-primary" onclick="pumpControl(this)"><i id="pump"
+          class="fas fa-sync-alt"></i></button>
+    </div>
+  </div>
+  <div class="row p-1">
+    <div class="col-4">Lights override</div>
+    <div class="col-4"><input type="range" class="form-control-range" id="lightOverride" min="100" max="3600"
+        value="1000" onInput="$('#rangeval').html($(this).val())"><span id="rangeval">1000<!-- Default value --></span>
+    </div>
+    <div class="col-4"><button id="lights" type="button" class="btn btn-primary" onclick="lights(this)"><i id="lights"
+          class="fas fa-lightbulb"></i></button></div>
+  </div>
+  <div class="row p-1">
+    <div class="col-4">Restart</div>
+    <div class="col-4"></div>
+    <div class="col-4"><button id="lights" type="button" class="btn btn-danger" onclick="restartServer()"><i
+          id="restart" class="fas fa-power-off"></i></button></div>
+  </div>
+  <div class="row p-1 border-top">
+    <div class="col-12">
+      <ul id="progLabel" onclick="lighstSwitch(this.value)" class="list-unstyled card-columns"></ul>
+    </div>
+  </div>
+  <div class="row p-1">
+    <div class="col-2"></div>
+    <div class="col-2"></div>
+    <div class="col-8"></div>
+  </div>
 </div>
 {% include "control-scripts.html.j2" %}
 {% endblock %}

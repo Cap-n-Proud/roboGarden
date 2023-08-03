@@ -1,3 +1,4 @@
+# Import required modules
 from flask import Blueprint
 from flask import current_app as app
 from blueprints.api import getPlantsDB, getPrograms, getCurrentProgr
@@ -16,8 +17,11 @@ control_bp = Blueprint(
 @login_required
 def control():
     """Control page."""
+    # Get the available programs from the API
     programs = getPrograms()
+    # Get the current program from the API
     currentProgr = getCurrentProgr()
+
     return render_template(
         "control-index.html.j2",
         title="Control",

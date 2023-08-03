@@ -1,9 +1,9 @@
 {% block scr %}
 <script>
-var lightGrowthON = 0
-var lightBloomON = 0
+  var lightGrowthON = 0
+  var lightBloomON = 0
 
-var socket = io();
+  var socket = io();
   document.getElementById("changeProgr").addEventListener("click", changeProgram);
 
   //Load selected proram to arduino
@@ -14,7 +14,7 @@ var socket = io();
 
   }
 
-  socket.on(TELEMETRYTAG, function(msg, cb) {
+  socket.on(TELEMETRYTAG, function (msg, cb) {
     //document.getElementById("telemetryBox").innerHTML = msg.RGB + " @   " + msg.brightness
 
     var x = msg.RGB.split(" ");
@@ -71,29 +71,29 @@ var socket = io();
       .then(res => res.json())
   }
 
-//Change pump status based on the checkbox TODO based on the arduino feedback
-function pumpControl() {
-  var x = document.getElementById("pump");
-  var timer = document.getElementById("pumpPulse").value;
-  var cmd = "pumpRunFor" + " " + timer
-  postCommand(cmd, 'arduinocmd')
-  // console.log("PUMP START " + cmd)
-}
-
-
-//Change lights status based on the checkbox TODO add slider for locking time
-function lights(val) {
-  // console.log(val)
-  if (lightGrowthON || lightBloomON) {
-    var cmd = "setLightsOFF " + document.getElementById("lightOverride").value;
+  //Change pump status based on the checkbox TODO based on the arduino feedback
+  function pumpControl() {
+    var x = document.getElementById("pump");
+    var timer = document.getElementById("pumpPulse").value;
+    var cmd = "pumpRunFor" + " " + timer
+    postCommand(cmd, 'arduinocmd')
+    // console.log("PUMP START " + cmd)
   }
-  else {
-    var cmd = "setLightsON " + document.getElementById("lightOverride").value;
 
+
+  //Change lights status based on the checkbox TODO add slider for locking time
+  function lights(val) {
+    // console.log(val)
+    if (lightGrowthON || lightBloomON) {
+      var cmd = "setLightsOFF " + document.getElementById("lightOverride").value;
+    }
+    else {
+      var cmd = "setLightsON " + document.getElementById("lightOverride").value;
+
+    }
+    postCommand(cmd, 'arduinocmd')
+    // console.log(cmd)
   }
-  postCommand(cmd, 'arduinocmd')
-  // console.log(cmd)
-}
 
 
 </script>

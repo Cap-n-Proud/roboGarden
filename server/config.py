@@ -4,7 +4,10 @@
 #
 # basedir = path.abspath(path.dirname(__file__))
 # load_dotenv(path.join(basedir, '.env'))
-import random, string
+# We are creating a class called Config. This class stores all of the configuration settings for the Flask application. This includes the static folder, templates folder, assets folder, and the Flask application file. We then define a class called Hardware to store the settings related to hardware. This includes the serial port, baud rate, and other settings. We then define a class called JSON_Path to store the paths for the JSON files used by the application. This includes the current program, programs, plant database, and status files. Finally, we define two more classes: ProdConfig and DevConfig. These classes are used to specify the configuration settings for the production and development environments. They are similar to the Config class, but they include additional settings such as the Flask environment, debug mode, and testing mode.
+
+import random
+import string
 
 
 class Config:
@@ -29,7 +32,8 @@ class Config:
     SECRET_KEY = "".join(
         [
             random.SystemRandom().choice(
-                "{}{}{}".format(string.ascii_letters, string.digits, string.punctuation)
+                "{}{}{}".format(string.ascii_letters,
+                                string.digits, string.punctuation)
             )
             for i in range(100)
         ]

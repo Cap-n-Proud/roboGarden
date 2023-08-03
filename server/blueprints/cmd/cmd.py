@@ -1,3 +1,4 @@
+# Import required modules
 from blueprints.threads import arduinoCommand, setLightRGB
 from blueprints.api import (
     newPlant,
@@ -9,7 +10,7 @@ from blueprints.api import (
 )
 import config
 
-# from flask import render_template
+# Import Flask modules
 from flask import Blueprint, Flask, send_file
 from flask import current_app as app
 from flask import (
@@ -23,10 +24,12 @@ from flask import (
 )
 from flask_login import login_required, current_user
 
-# Blueprint Configuration
-cmd_bp = Blueprint("cmd", __name__, template_folder="templates", static_folder="static")
+# Create a Blueprint for commands
+cmd_bp = Blueprint(
+    "cmd", __name__, template_folder="templates", static_folder="static")
 
 
+# Route to handle plant API requests
 @cmd_bp.route("/api/plant", methods=["POST", "GET"])
 @login_required
 def plant():
@@ -37,6 +40,7 @@ def plant():
     return redirect(url_for("status_bp.status", message="OK"))
 
 
+# Route to handle Arduino command API requests
 @cmd_bp.route("/api/arduinocmd", methods=["POST", "GET"])
 @login_required
 def arduinocmd():
@@ -45,13 +49,16 @@ def arduinocmd():
     req = request.get_json()
     arduinoCommand(req["command"])
     cmd = req["command"].split()
-    #
+
+    # Example usage of Timer for setting light RGB
     # if cmd[0] == "pumpRunFor":
     #     l = Timer(int(cmd[1]) + 1, setLightRGB, [0, 0, 255])
     #     l.start()
+
     return redirect(url_for("control_bp.control"))
 
 
+# Route to handle server restart API requests
 @cmd_bp.route("/api/restartserver", methods=["POST", "GET"])
 @login_required
 def restartserver():
@@ -61,6 +68,7 @@ def restartserver():
     return redirect(url_for("control_bp.control", message="Restarting server"))
 
 
+# Route to handle program change API requests
 @cmd_bp.route("/api/changeprogram", methods=["POST", "GET"])
 @login_required
 def changeprogram():
@@ -69,6 +77,7 @@ def changeprogram():
     return redirect(url_for("control_bp.control", message="OK"))
 
 
+# Route to handle maintenance interval reset API requests
 @cmd_bp.route("/api/resetMaintInterval", methods=["POST", "GET"])
 @login_required
 def rMaintInterval():
@@ -78,6 +87,7 @@ def rMaintInterval():
     return redirect(url_for("maintenance_bp.maintenance", message="OK"))
 
 
+# Route to handle new planted date API requests
 @cmd_bp.route("/api/newPlantedDate", methods=["POST", "GET"])
 @login_required
 def newPlantedD():
@@ -86,16 +96,14 @@ def newPlantedD():
     return redirect(url_for("status_bp.status", message="OK"))
 
 
+# Route to download log file
 @cmd_bp.route("/api/getlog")
 @login_required
 def getlog():
     return send_file("../" + config.Config.APPLOGFILE, as_attachment=True)
 
 
-import zipfile
-import os
-
-
+# Route to download logs as a zip file
 @cmd_bp.route("/api/download_logs")
 @login_required
 def download_logs():
@@ -113,6 +121,7 @@ def download_logs():
     )
 
 
+# Route to download assets as a zip file
 @cmd_bp.route("/api/download_assets")
 @login_required
 def download_assets():
