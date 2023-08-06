@@ -72,17 +72,19 @@ def initialize():
     LOG = logging.getLogger(config.Config.APPLOGNAME)
     # This gets the current program from the API.
     currentProgram = getCurrentProgr()
-    # This starts the thread to read from the serial port.
-    thread_lock = Lock()
-    thread = threading.Thread(
-        target=readSer,
-        args=(
-            serial.Serial(
-                config.Hardware.SERIALPORT, config.Hardware.SERIALBAUD, timeout=None
-            ),
-        ),
-    )
-    thread.start()
+   # This starts the thread to read from the serial port.
+    try:
+        serial_port = serial.Serial(
+            config.Hardware.SERIALPORT, config.Hardware.SERIALBAUD, timeout=None)
+        thread_lock = Lock()
+        thread = threading.Thread(target=readSer, args=(serial_port,))
+        thread.start()
+    except serial.SerialException:
+        # Serial port initialization failed, enter simulation mode
+        serial_port = None
+        LOG.warning("Serial device not found. Entering simulation mode.")
+        print("Serial device not found. Entering simulation mode.")
+        # Handle any other necessary tasks for simulation mode.
 
     # This schedules the checkLights function to be called periodically.
     # scheduler.add_job(checkLights, "interval", seconds=int(config.Hardware.CHECKLIGHTSINTERVAL), id="checkL", args=[currentProgram], replace_existing=True)

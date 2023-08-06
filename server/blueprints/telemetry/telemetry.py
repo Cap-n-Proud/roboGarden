@@ -18,9 +18,12 @@ telemetry_bp = Blueprint(
 )
 
 # Telemetry is the default view
+
+
 @telemetry_bp.route("/", methods=["POST", "GET"])
 @telemetry_bp.route("/telemetry", methods=["POST", "GET"])
-@login_required
+if config.LOGIN == "True":
+    @login_required
 def telemetry():
     from datetime import datetime
 

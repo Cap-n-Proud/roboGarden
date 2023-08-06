@@ -16,7 +16,8 @@ maintenance_bp = Blueprint(
 
 
 @maintenance_bp.route("/maintenance", methods=["POST", "GET"])
-@login_required
+if config.LOGIN == "True":
+    @login_required
 def maintenance():
     """Maintenance page."""
     return render_template(
