@@ -14,8 +14,7 @@ control_bp = Blueprint(
 
 
 @control_bp.route("/control", methods=["POST", "GET"])
-if config.LOGIN == "True":
-    @login_required
+@login_required
 def control():
     """Control page."""
     # Get the available programs from the API
