@@ -1,4 +1,5 @@
 """Initialize Flask app."""
+import sys
 from flask import Flask
 from flask_assets import Environment
 from flask_socketio import SocketIO
@@ -13,6 +14,7 @@ from flask_login import LoginManager
 # formatter = logging.Formatter("%(asctime)s %(levelname)s %(message)s")
 # init SQLAlchemy so we can use it later in our models
 db = SQLAlchemy()
+
 login_manager = LoginManager()
 
 
@@ -21,7 +23,8 @@ def setup_logger(name, log_file, level=logging.INFO):
 
     file_handler = logging.FileHandler(log_file)
     stream_handler = logging.StreamHandler()
-    stream_formatter = logging.Formatter("%(asctime)-15s %(levelname)-8s %(message)s")
+    stream_formatter = logging.Formatter(
+        "%(asctime)-15s %(levelname)-8s %(message)s")
     file_formatter = logging.Formatter(
         '{"time": "%(asctime)s", "name": "%(name)s", "level": "%(levelname)s", "message": "%(message)s"},'
     )
@@ -48,9 +51,6 @@ def setupDebugLog(app):
     app.logger.addHandler(handler)
 
 
-import sys
-
-
 def create_app():
     roboG = setup_logger(config.Config.APPLOGNAME, config.Config.APPLOGFILE)
     # log = logging.getLogger("werkzeug")
@@ -59,6 +59,7 @@ def create_app():
     """Create Flask application."""
     app = Flask(__name__, instance_relative_config=False)
     app.config.from_object("config.Config")
+
     # setupDebugLog(app)
     # app.config.from_object("config.Config")
     # import random, string
@@ -80,6 +81,7 @@ def create_app():
         "SQLALCHEMY_TRACK_MODIFICATIONS"
     ] = config.Config.SQLALCHEMY_TRACK_MODIFICATIONS
     app.config["SQLALCHEMY_DATABASE_URI"] = config.Config.SQLALCHEMY_DATABASE_URI
+    db.init_app(app)
 
     del app.logger.handlers[:]
     logging.basicConfig(filename="logs/debug.log", level=logging.ERROR)

@@ -22,8 +22,7 @@ telemetry_bp = Blueprint(
 
 @telemetry_bp.route("/", methods=["POST", "GET"])
 @telemetry_bp.route("/telemetry", methods=["POST", "GET"])
-if config.LOGIN == "True":
-    @login_required
+@login_required
 def telemetry():
     from datetime import datetime
 

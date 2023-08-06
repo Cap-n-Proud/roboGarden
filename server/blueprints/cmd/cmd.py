@@ -31,8 +31,7 @@ cmd_bp = Blueprint(
 
 # Route to handle plant API requests
 @cmd_bp.route("/api/plant", methods=["POST", "GET"])
-if config.LOGIN == "True":
-    @login_required
+@login_required
 def plant():
     req = request.get_json()
     newPlant(req)
@@ -43,8 +42,7 @@ def plant():
 
 # Route to handle Arduino command API requests
 @cmd_bp.route("/api/arduinocmd", methods=["POST", "GET"])
-if config.LOGIN == "True":
-    @login_required
+@login_required
 def arduinocmd():
     from threading import Timer
 
@@ -62,8 +60,7 @@ def arduinocmd():
 
 # Route to handle server restart API requests
 @cmd_bp.route("/api/restartserver", methods=["POST", "GET"])
-if config.LOGIN == "True":
-    @login_required
+@login_required
 def restartserver():
     req = request.get_json()
     command = "sudo service robogarden restart"
@@ -73,8 +70,7 @@ def restartserver():
 
 # Route to handle program change API requests
 @cmd_bp.route("/api/changeprogram", methods=["POST", "GET"])
-if config.LOGIN == "True":
-    @login_required
+@login_required
 def changeprogram():
     req = request.get_json()
     changePrg(req["command"])
@@ -83,8 +79,7 @@ def changeprogram():
 
 # Route to handle maintenance interval reset API requests
 @cmd_bp.route("/api/resetMaintInterval", methods=["POST", "GET"])
-if config.LOGIN == "True":
-    @login_required
+@login_required
 def rMaintInterval():
     req = request.get_json()
     resetMaintInterval(req["command"])
@@ -94,8 +89,7 @@ def rMaintInterval():
 
 # Route to handle new planted date API requests
 @cmd_bp.route("/api/newPlantedDate", methods=["POST", "GET"])
-if config.LOGIN == "True":
-    @login_required
+@login_required
 def newPlantedD():
     req = request.get_json()
     newPlantedDate(req["command"])
@@ -104,16 +98,14 @@ def newPlantedD():
 
 # Route to download log file
 @cmd_bp.route("/api/getlog")
-if config.LOGIN == "True":
-    @login_required
+@login_required
 def getlog():
     return send_file("../" + config.Config.APPLOGFILE, as_attachment=True)
 
 
 # Route to download logs as a zip file
 @cmd_bp.route("/api/download_logs")
-if config.LOGIN == "True":
-    @login_required
+@login_required
 def download_logs():
     zipf = zipfile.ZipFile("logs.zip", "w", zipfile.ZIP_DEFLATED)
     for root, dirs, files in os.walk("logs/"):
@@ -131,8 +123,7 @@ def download_logs():
 
 # Route to download assets as a zip file
 @cmd_bp.route("/api/download_assets")
-if config.LOGIN == "True":
-    @login_required
+@login_required
 def download_assets():
     zipf = zipfile.ZipFile("assets.zip", "w", zipfile.ZIP_DEFLATED)
     for root, dirs, files in os.walk("assets/"):
