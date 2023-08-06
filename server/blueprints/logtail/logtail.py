@@ -13,7 +13,8 @@ logtail_bp = Blueprint(
 
 
 @logtail_bp.route("/getlog", methods=["POST", "GET"])
-@login_required
+if config.LOGIN == "True":
+    @login_required
 def getapplog():
     """currentProgram page."""
     return render_template(
