@@ -1,7 +1,7 @@
 #################################
 # Hydroponic Garden App: User Manual
 #################################
-
+ 
 ## 1. Introduction
 
 Welcome to your smart hydroponic garden! This application allows you to monitor, program, and manage your garden from a web browser. You can track your plants, manage lighting and pump schedules, and get reminders for maintenance.
