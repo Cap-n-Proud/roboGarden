@@ -28,7 +28,7 @@ bool lightOverride = false;
 bool lightGrowthON = false;
 bool lightBloomON = false;
 float temperature = 25, tdsValue = 0;
-float PUMP_MAX_RUN = 30; // Max time the pump can run
+float PUMP_MAX_RUN = 90; // Max time the pump can run
 
 String info = "";
 

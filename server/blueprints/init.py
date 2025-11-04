@@ -1,5 +1,3 @@
-# This is the main script. It initializes the key functionalities such as serial port, threads, etc.
-
 import threading
 import time
 from datetime import datetime
@@ -11,7 +9,6 @@ from serial.tools import list_ports
 import config
 
 import blueprints.timer
-
 import json
 
 from blueprints.api import getCurrentProgr
@@ -20,16 +17,11 @@ from flask import current_app as app
 
 from apscheduler.schedulers.background import BackgroundScheduler
 
-# This is the time when the system started.
+# Global variables to be used later
 timeStarted = datetime.now()
-# This is the checkLights function that will be called periodically.
-checkL = ""
-# This is the activatePump function that will be called periodically.
-checkP = ""
-# This is the scheduler object that will be used to schedule the periodic functions.
-scheduler = ""
+scheduler = None
 
-# This function initializes the serial port and starts the thread to read from it.
+# Function to initialize the serial port and start the thread to read from it.
 
 
 def initSerial():
@@ -37,43 +29,43 @@ def initSerial():
     port = config.Hardware.SERIALPORT
     baud = config.Hardware.SERIALBAUD
 
+    # List available ports (for debugging)
     ports = list(serial.tools.list_ports.comports())
     for p in ports:
         print(p)
 
-    serial_port = serial.Serial(port, baud, timeout=None)
-    # serial.flushInput()
-    LOG.info(
-        "Serial interface configured on "
-        + port
-        + "@"
-        + str(baud)
-        + " Pyserisal version: "
-        + serial.VERSION
-    )
+    try:
+        serial_port = serial.Serial(port, baud, timeout=None)
+        LOG.info(
+            f"Serial interface configured on {port}@{baud}. Pyserial version: {serial.VERSION}")
+        print(
+            f"Serial interface configured on {port}@{baud}. Pyserial version: {serial.VERSION}")
+        time.sleep(2)
+    except serial.SerialException:
+        # Serial port initialization failed, enter simulation mode
+        serial_port = None
+        LOG.warning("Serial device not found. Entering simulation mode.")
+        print("Serial device not found. Entering simulation mode.")
+        # Handle any other necessary tasks for simulation mode.
+        # Redirect to /dev/null for simulation mode
+        config.Hardware.SERIALPORT = "/dev/null"
 
-    print(
-        "Serial interface configured on "
-        + port
-        + "@"
-        + str(baud)
-        + " Pyserisal version: "
-        + serial.VERSION
-    )
-    time.sleep(2)
-
-# This function initializes the system. It gets the current program, starts the serial port thread, and schedules the periodic functions.
+# Function to initialize the system, get the current program, start the serial port thread, and schedule periodic functions.
 
 
 def initialize():
-    timeFromStart = blueprints.timer.Timer()
-    timeFromStart.start()
     global scheduler
     LOG = logging.getLogger(config.Config.APPLOGNAME)
-    # This gets the current program from the API.
+
+    # Timer to track time from system start
+    timeFromStart = blueprints.timer.Timer()
+    timeFromStart.start()
+
+    # Get the current program from the API
     currentProgram = getCurrentProgr()
-   # This starts the thread to read from the serial port.
+
     try:
+        # Start the thread to read from the serial port
         serial_port = serial.Serial(
             config.Hardware.SERIALPORT, config.Hardware.SERIALBAUD, timeout=None)
         thread_lock = Lock()
@@ -85,46 +77,25 @@ def initialize():
         LOG.warning("Serial device not found. Entering simulation mode.")
         print("Serial device not found. Entering simulation mode.")
         # Handle any other necessary tasks for simulation mode.
+        # Redirect to /dev/null for simulation mode
+        config.Hardware.SERIALPORT = "/dev/null"
 
-    # This schedules the checkLights function to be called periodically.
-    # scheduler.add_job(checkLights, "interval", seconds=int(config.Hardware.CHECKLIGHTSINTERVAL), id="checkL", args=[currentProgram], replace_existing=True)
+    # Initialize the BackgroundScheduler
     scheduler = BackgroundScheduler()
     scheduler.start()
 
-    # This schedules the activatePump function to be called periodically.
-    scheduler.add_job(
-        checkLights,
-        "interval",
-        seconds=int(config.Hardware.CHECKLIGHTSINTERVAL),
-        id="checkL",
-        args=[currentProgram],
-        replace_existing=True,
-    )
-    scheduler.add_job(
-        activatePump,
-        "interval",
-        seconds=int(currentProgram["pumpStartEvery"]),
-        id="checkP",
-        args=[currentProgram],
-        replace_existing=True,
-    )
-    scheduler.add_job(
-        broadcastTime,
-        "interval",
-        seconds=int(1),
-        id="broadcastTime",
-        args=[timeFromStart],
-        replace_existing=True,
-    )
-    scheduler.add_job(
-        pingHost,
-        "interval",
-        seconds=int(config.Hardware.PING_EVERY),
-        id="pingHost",
-        replace_existing=True,
-    )
+    # Schedule periodic functions
+    scheduler.add_job(checkLights, "interval", seconds=int(
+        config.Hardware.CHECKLIGHTSINTERVAL), id="checkL", args=[currentProgram], replace_existing=True)
+    scheduler.add_job(activatePump, "interval", seconds=int(
+        currentProgram["pumpStartEvery"]), id="checkP", args=[currentProgram], replace_existing=True)
+    scheduler.add_job(broadcastTime, "interval", seconds=int(
+        1), id="broadcastTime", args=[timeFromStart], replace_existing=True)
+    scheduler.add_job(pingHost, "interval", seconds=int(
+        config.Hardware.PING_EVERY), id="pingHost", replace_existing=True)
 
-    # This prints the current program and the scheduled jobs.
+    # Print the current program and the scheduled jobs (for debugging)
     # print(str(scheduler.get_jobs()))
-    # This schedules the guessHarvest function to be called once a day.
+
+    # Schedule the guessHarvest function to be called once a day (not included in the provided code)
     # checkH = RepeatedTimer(24 * 60 * 60, guessHarvest, app

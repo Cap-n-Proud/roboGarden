@@ -52,6 +52,19 @@
     "progDescription": "Water only once a day and 20 min of light"
   },
   {
+    "progID": "011",
+    "progName": "Mixed seeds and plants",
+    "pumpStartEvery": 43200,
+    "pumpRunTime": 60,
+    "pumpON": "14:00",
+    "pumpOFF": "18:00",
+    "lightBrightness": 255,
+    "RGB": "255 150 255",
+    "lightsON": "14:00",
+    "lightsOFF": "18:00",
+    "progDescription": "Program to provide some lights while having a mix of seeds and plants in the bed."
+  },
+  {
     "progID": "005",
     "progName": "NoPump",
     "pumpStartEvery": 2700,

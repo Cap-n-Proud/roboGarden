@@ -11,6 +11,7 @@ import string
 
 
 class Config:
+    VERSION = "2.0"
     STATIC_FOLDER = "static"
     TEMPLATES_FOLDER = "templates"
     ASSETS_FOLDER = "assets"
@@ -46,6 +47,7 @@ class Config:
 
 
 class Hardware:
+    VERSION = "2.0"
     READSERIALINTERVAL = 2
     CHECKLIGHTSINTERVAL = 5
     SERIALPORT = "/dev/ttyACM0"

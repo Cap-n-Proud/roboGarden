@@ -1,0 +1,32 @@
+{
+    "change_water": {
+        "interval": "45",
+        "last_reset": null,
+        "notes": "",
+        "visible": true
+    },
+    "add_water": {
+        "interval": "15",
+        "last_reset": null,
+        "notes": "",
+        "visible": true
+    },
+    "add_nutrients": {
+        "interval": "45",
+        "last_reset": null,
+        "notes": "",
+        "visible": true
+    },
+    "tower_maintenance": {
+        "interval": "90",
+        "last_reset": null,
+        "notes": "",
+        "visible": false
+    },
+    "tank_maintenance": {
+        "interval": "90",
+        "last_reset": null,
+        "notes": "",
+        "visible": true
+    }
+}
