@@ -14,7 +14,7 @@ To use the app, you must be connected to the same Wi-Fi network as the garden co
 
 1.  Open a web browser (like Chrome or Firefox) on your phone or computer.
 2.  Navigate to the IP address of the controller. This is typically an address like http://192.168.1.XX or a hostname like http://garden-pi.local.
-
+ 
 ---
 
 ## 3. Main Features
